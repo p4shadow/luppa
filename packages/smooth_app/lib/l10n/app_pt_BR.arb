@@ -776,7 +776,10 @@
   "score_add_missing_nutrition_facts": "Adicionar informações nutricionais que faltam",
   "score_add_missing_product_traces": "Add missing product traces",
   "score_add_missing_product_category": "Selecionar uma categoria",
+<<<<<<< HEAD
   "score_add_missing_precise_product_category": "Selecione uma categoria mais precisa",
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Adicionar países que faltam de produtos",
   "score_add_missing_product_emb": "Adicionar códigos de rastreabilidade que faltam de produtos",
   "score_add_missing_product_labels": "Adicionar rótulos que faltam de produtos",
@@ -1250,7 +1253,11 @@
   "bsky_link": "https://bsky.app/profile/openfoodfacts.bsky.social",
   "blog": "Blogue",
   "faq": "Perguntas frequentes",
+<<<<<<< HEAD
   "discover": "Descobrir",
+=======
+  "discover": "Descubra",
+>>>>>>> 33fe57b5c (Primer commit)
   "how_to_contribute": "Como contribuir",
   "hint_knowledge_panel_message": "Pode tocar em qualquer parte do cartão para obter mais detalhes sobre o que vê. Tente agora!",
   "@hint_knowledge_panel_message": {
@@ -3856,6 +3863,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Partilhar",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "true",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "O Nutri-Score está evoluindo: explicações!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3893,6 +3907,7 @@
   "guide_nutriscore_v2_unchanged_paragraph1": "O Nutri-Score é uma pontuação projetada para **medir a qualidade nutricional**. É **complementar ao grupo NOVA** sobre **alimentos ultraprocessados** (também presente no aplicativo).",
   "guide_nutriscore_v2_unchanged_paragraph2": "Para os fabricantes, a exibição do Nutri-Score **continua opcional**.",
   "guide_nutriscore_v2_share_link": "https://world.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Eco-Pontuação",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3961,12 @@
   "guide_greenscore_transparency_arg2_title": "Como os fabricantes podem ajudar",
   "guide_greenscore_transparency_arg2_text": "Os fabricantes podem nos enviar suas informações diretamente por meio de nossa plataforma gratuita para produtores.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/green-score",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Pré-visualizar",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"

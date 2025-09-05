@@ -776,7 +776,10 @@
   "score_add_missing_nutrition_facts": "Tilføj manglende ernæringsfakta",
   "score_add_missing_product_traces": "Tilføj manglende produktspor",
   "score_add_missing_product_category": "Tilføj manglende produktkategori",
+<<<<<<< HEAD
   "score_add_missing_precise_product_category": "Vælg en mere præcis kategori",
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Tilføj manglende produktlande",
   "score_add_missing_product_emb": "Tilføj manglende produktsporbarhedskoder",
   "score_add_missing_product_labels": "Tilføj manglende produktketiketter",
@@ -3856,6 +3859,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Del",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "true",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "Nutri-Score udvikler sig: forklaringer!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3893,6 +3903,7 @@
   "guide_nutriscore_v2_unchanged_paragraph1": "Nutri-Score er en score designet til at **måle ernæringskvalitet**. Den er **supplerende til NOVA-gruppen** om **ultraforarbejdede fødevarer** (også til stede i ansøgningen).",
   "guide_nutriscore_v2_unchanged_paragraph2": "For producenter er visningen af Nutri-Score ** fortsat valgfri**.",
   "guide_nutriscore_v2_share_link": "https://world.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Øko-Score",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3957,12 @@
   "guide_greenscore_transparency_arg2_title": "Hvordan producenter kan hjælpe",
   "guide_greenscore_transparency_arg2_text": "Producenter kan sende os deres oplysninger direkte via vores gratis platform for producenter.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/green-score",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Forhåndsvisning",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"

@@ -9,7 +9,10 @@ import 'package:smooth_app/data_models/news_feed/newsfeed_provider.dart';
 import 'package:smooth_app/data_models/preferences/user_preferences.dart';
 import 'package:smooth_app/data_models/product_preferences.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
+<<<<<<< HEAD
 import 'package:smooth_app/pages/guides/guide/guide_green_score.dart';
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 import 'package:smooth_app/pages/guides/guide/guide_nutriscore_v2.dart';
 import 'package:smooth_app/pages/navigator/error_page.dart';
 import 'package:smooth_app/pages/navigator/external_page.dart';
@@ -243,6 +246,7 @@ class _SmoothGoRouter {
                   path: _InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE,
                   builder: (_, _) => const GuideNutriscoreV2(),
                 ),
+<<<<<<< HEAD
                 GoRoute(
                   path: _InternalAppRoutes.GUIDE_GREEN_SCORE_PAGE,
                   builder: (_, _) => const GuideGreenScore(),
@@ -253,6 +257,12 @@ class _SmoothGoRouter {
                         _InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE ||
                     state.uri.pathSegments.last !=
                         _InternalAppRoutes.GUIDE_GREEN_SCORE_PAGE) {
+=======
+              ],
+              redirect: (_, GoRouterState state) {
+                if (state.uri.pathSegments.last !=
+                    _InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE) {
+>>>>>>> 33fe57b5c (Primer commit)
                   return AppRoutes.EXTERNAL(state.path ?? '');
                 } else {
                   return null;
@@ -334,8 +344,11 @@ class _SmoothGoRouter {
             return AppRoutes.HOME();
           } else if (path == _ExternalRoutes.GUIDE_NUTRISCORE_V2) {
             return AppRoutes.GUIDE_NUTRISCORE_V2;
+<<<<<<< HEAD
           } else if (path == _ExternalRoutes.GUIDE_GREEN_SCORE) {
             return AppRoutes.GUIDE_GREEN_SCORE;
+=======
+>>>>>>> 33fe57b5c (Primer commit)
           } else if (path == _ExternalRoutes.SIGNUP) {
             return AppRoutes.SIGNUP;
           } else if (path != _InternalAppRoutes.HOME_PAGE) {
@@ -448,13 +461,19 @@ class _InternalAppRoutes {
 
   static const String _GUIDES = '_guides';
   static const String GUIDE_NUTRISCORE_V2_PAGE = '_nutriscore-v2';
+<<<<<<< HEAD
   static const String GUIDE_GREEN_SCORE_PAGE = '_green-score';
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 }
 
 class _ExternalRoutes {
   static const String MOBILE_APP_DOWNLOAD = '/open-food-facts-mobile-app';
   static const String PRODUCT_EDITION = '/cgi/product.pl';
+<<<<<<< HEAD
   static const String GUIDE_GREEN_SCORE = '/green-score';
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   static const String GUIDE_NUTRISCORE_V2 = '/nutriscore-v2';
   static const String SIGNUP = '/signup';
 }
@@ -502,6 +521,7 @@ class AppRoutes {
   // Search view
   static String get SEARCH => '/${_InternalAppRoutes.SEARCH_PAGE}';
 
+<<<<<<< HEAD
   // Guide for NutriScore
   static String get GUIDE_NUTRISCORE_V2 =>
       '/${_InternalAppRoutes._GUIDES}/${_InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE}';
@@ -510,6 +530,12 @@ class AppRoutes {
   static String get GUIDE_GREEN_SCORE =>
       '/${_InternalAppRoutes._GUIDES}/${_InternalAppRoutes.GUIDE_GREEN_SCORE_PAGE}';
 
+=======
+  // Guide for NutriScore (TODO: If we have more guides, we should use a more generic algorithm)
+  static String get GUIDE_NUTRISCORE_V2 =>
+      '/${_InternalAppRoutes._GUIDES}/${_InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE}';
+
+>>>>>>> 33fe57b5c (Primer commit)
   static String get SIGNUP => '/${_InternalAppRoutes.SIGNUP_PAGE}';
 
   // Open an external link in the browser or custom tabs

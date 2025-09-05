@@ -591,6 +591,7 @@ class NutriScoreAnimation extends StatefulWidget {
     };
   }
 
+<<<<<<< HEAD
   const NutriScoreAnimation.unknown({this.size, super.key}) : level = -1;
 
   const NutriScoreAnimation.A({this.size, super.key}) : level = 0;
@@ -602,6 +603,27 @@ class NutriScoreAnimation extends StatefulWidget {
   const NutriScoreAnimation.D({this.size, super.key}) : level = 3;
 
   const NutriScoreAnimation.E({this.size, super.key}) : level = 4;
+=======
+  const NutriScoreAnimation.unknown({
+    this.size = const Size(100, 50),
+    super.key,
+  }) : level = -1;
+
+  const NutriScoreAnimation.A({this.size = const Size(100, 50), super.key})
+    : level = 0;
+
+  const NutriScoreAnimation.B({this.size = const Size(100, 50), super.key})
+    : level = 1;
+
+  const NutriScoreAnimation.C({this.size = const Size(100, 50), super.key})
+    : level = 2;
+
+  const NutriScoreAnimation.D({this.size = const Size(100, 50), super.key})
+    : level = 3;
+
+  const NutriScoreAnimation.E({this.size = const Size(100, 50), super.key})
+    : level = 4;
+>>>>>>> 33fe57b5c (Primer commit)
 
   final int level;
   final Size? size;

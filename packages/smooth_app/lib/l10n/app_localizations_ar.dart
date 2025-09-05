@@ -976,7 +976,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get score_add_missing_product_category => 'إضافة فئة المنتج مفقودة';
 
   @override
+<<<<<<< HEAD
   String get score_add_missing_precise_product_category => 'حدد فئة أكثر دقة';
+=======
+  String get score_add_missing_precise_product_category =>
+      'Select a more precise category';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get score_add_missing_product_countries =>
@@ -4097,6 +4102,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get guide_share_label => 'مشاركة';
 
   @override
+<<<<<<< HEAD
+=======
+  String get guide_nutriscore_v2_enabled => 'true';
+
+  @override
+>>>>>>> 33fe57b5c (Primer commit)
   String get guide_nutriscore_v2_title => 'الدرجة الغذائية في تطور: تفسيرات!';
 
   @override
@@ -4205,6 +4216,7 @@ class AppLocalizationsAr extends AppLocalizations {
       'https://world.openfoodfacts.org/nutriscore-v2';
 
   @override
+<<<<<<< HEAD
   String get guide_greenscore_title => 'النتيجة البيئية';
 
   @override
@@ -4355,6 +4367,9 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get guide_greenscore_share_link =>
       'https://fr.openfoodfacts.org/green-score';
+=======
+  String get guide_nutriscore_v2_share_message => '';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get preview_badge => 'Preview';

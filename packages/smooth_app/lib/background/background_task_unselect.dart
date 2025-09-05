@@ -129,6 +129,7 @@ class BackgroundTaskUnselect extends BackgroundTaskBarcode
 
   /// Unselects the product image.
   @override
+<<<<<<< HEAD
   Future<void> upload() async {
     final OpenFoodFactsLanguage language = getLanguage();
     try {
@@ -143,6 +144,15 @@ class BackgroundTaskUnselect extends BackgroundTaskBarcode
       throw Exception('$e (${language.offTag} $imageField $barcode)');
     }
   }
+=======
+  Future<void> upload() async => OpenFoodAPIClient.unselectProductImage(
+    barcode: barcode,
+    imageField: ImageField.fromOffTag(imageField)!,
+    language: getLanguage(),
+    user: getUser(),
+    uriHelper: uriProductHelper,
+  );
+>>>>>>> 33fe57b5c (Primer commit)
 
   /// Returns a product with "unselected" image.
   ///

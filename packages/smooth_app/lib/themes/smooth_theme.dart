@@ -199,6 +199,7 @@ class SmoothTheme {
   }
 
   static const TextTheme _TEXT_THEME = TextTheme(
+<<<<<<< HEAD
     displayLarge: TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
     displayMedium: TextStyle(
       fontSize: 24.0,
@@ -208,6 +209,17 @@ class SmoothTheme {
     displaySmall: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
     headlineMedium: TextStyle(
       fontSize: LARGE_SPACE,
+=======
+    displayLarge: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold),
+    displayMedium: TextStyle(
+      fontSize: 28.0,
+      fontWeight: FontWeight.bold,
+      color: Colors.black,
+    ),
+    displaySmall: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+    headlineMedium: TextStyle(
+      fontSize: 22.0,
+>>>>>>> 33fe57b5c (Primer commit)
       fontWeight: FontWeight.bold,
       color: Colors.black,
     ),

@@ -176,6 +176,7 @@ class BackgroundTaskCrop extends BackgroundTaskUpload {
   @override
   Future<void> upload() async {
     final ProductImage productImage = getProductImageChange();
+<<<<<<< HEAD
     try {
       final String? imageUrl = await OpenFoodAPIClient.setProductImageCrop(
         barcode: barcode,
@@ -195,6 +196,23 @@ class BackgroundTaskCrop extends BackgroundTaskUpload {
       }
     } catch (e) {
       throw Exception('$e $productImage');
+=======
+    final String? imageUrl = await OpenFoodAPIClient.setProductImageCrop(
+      barcode: barcode,
+      imageField: productImage.field!,
+      language: getLanguage(),
+      imgid: productImage.imgid!,
+      angle: productImage.angle!,
+      x1: productImage.x1!,
+      y1: productImage.y1!,
+      x2: productImage.x2!,
+      y2: productImage.y2!,
+      user: getUser(),
+      uriHelper: uriProductHelper,
+    );
+    if (imageUrl == null) {
+      throw Exception('Could not select picture');
+>>>>>>> 33fe57b5c (Primer commit)
     }
   }
 }

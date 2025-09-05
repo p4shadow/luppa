@@ -33,5 +33,9 @@
     "unfocus",
     "webview"
   ],
+<<<<<<< HEAD
   "dart.flutterSdkPath": ".fvm/versions/3.27.4"
+=======
+  "dart.flutterSdkPath": ".fvm/versions/3.35.2"
+>>>>>>> 33fe57b5c (Primer commit)
 }

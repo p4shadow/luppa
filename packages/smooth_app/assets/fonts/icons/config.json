@@ -2181,6 +2181,7 @@
       "search": [
         "shopping_cart"
       ]
+<<<<<<< HEAD
     },
     {
       "uid": "d3169a0b9adf033bf8959844ba06cd63",
@@ -2307,6 +2308,8 @@
       "search": [
         "environment"
       ]
+=======
+>>>>>>> 33fe57b5c (Primer commit)
     }
   ]
 }

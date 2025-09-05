@@ -4103,6 +4103,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get guide_share_label => 'Share';
 
   @override
+<<<<<<< HEAD
+=======
+  String get guide_nutriscore_v2_enabled => 'true';
+
+  @override
+>>>>>>> 33fe57b5c (Primer commit)
   String get guide_nutriscore_v2_title =>
       'The Nutri-Score is evolving: explanations!';
 
@@ -4212,6 +4218,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'https://world.openfoodfacts.org/nutriscore-v2';
 
   @override
+<<<<<<< HEAD
   String get guide_greenscore_title => 'Green-Score';
 
   @override
@@ -4368,6 +4375,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get guide_greenscore_share_link =>
       'https://fr.openfoodfacts.org/green-score';
+=======
+  String get guide_nutriscore_v2_share_message => '';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get preview_badge => 'Preview';

@@ -776,7 +776,10 @@
   "score_add_missing_nutrition_facts": "Lisää puuttuva ravintosisältö",
   "score_add_missing_product_traces": "Add missing product traces",
   "score_add_missing_product_category": "Lisää puuttuva tuoteluokka",
+<<<<<<< HEAD
   "score_add_missing_precise_product_category": "Valitse tarkempi kategoria",
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Lisää valmistusmaa",
   "score_add_missing_product_emb": "Lisää jäljitettävyyskoodi",
   "score_add_missing_product_labels": "Lisää puuttuvat merkit",
@@ -3856,6 +3859,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Jaa",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "true",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "Nutri-Score kehittyy: selityksiä!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3893,6 +3903,7 @@
   "guide_nutriscore_v2_unchanged_paragraph1": "Nutri-Score on pistemäärä, joka on suunniteltu **mittaamaan ravintoarvoa**. Se **täydentää NOVA-ryhmää** **ultrajalostetuissa elintarvikkeissa** (sisältyy myös hakemukseen).",
   "guide_nutriscore_v2_unchanged_paragraph2": "Valmistajille Nutri-Score-näyttö **pysyy valinnaisena**.",
   "guide_nutriscore_v2_share_link": "https://world-fi.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Green-Score",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3957,12 @@
   "guide_greenscore_transparency_arg2_title": "Miten valmistajat voivat auttaa",
   "guide_greenscore_transparency_arg2_text": "Valmistajat voivat lähettää meille tietonsa suoraan ilmaisen tuottaja-alustamme kautta.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/green-score",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Esikatselu",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"

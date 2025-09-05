@@ -22,6 +22,10 @@ jobs:
       contents: read
       pull-requests: write
     steps:
+<<<<<<< HEAD
     - uses: actions/labeler@v6
+=======
+    - uses: actions/labeler@v5
+>>>>>>> 33fe57b5c (Primer commit)
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"

@@ -134,7 +134,13 @@ class _ProductTitleCardName extends StatelessWidget {
 
     return Text(
       getProductName(product, appLocalizations),
+<<<<<<< HEAD
       style: dense ? textStyle : textStyle?.copyWith(fontSize: 18.0),
+=======
+      style: dense
+          ? textStyle?.copyWith(fontWeight: FontWeight.bold)
+          : textStyle?.copyWith(fontSize: 24.0, fontWeight: FontWeight.bold),
+>>>>>>> 33fe57b5c (Primer commit)
       textAlign: TextAlign.start,
       maxLines: 2,
       overflow: TextOverflow.ellipsis,

@@ -1,6 +1,10 @@
 name: smooth_app
 description: The next generation of the Open Food Facts mobile apps.
+<<<<<<< HEAD
 version: 0.0.0+734
+=======
+version: 0.0.2+734
+>>>>>>> 33fe57b5c (Primer commit)
 publish_to: "none"
 
 environment:
@@ -13,12 +17,20 @@ dependencies:
     sdk: flutter
 
   async: 2.13.0
+<<<<<<< HEAD
   go_router: 16.2.1
   barcode_widget: 2.0.4
   carousel_slider: 5.1.1
   cupertino_icons: 1.0.8
   flutter_svg: 2.2.1
   vector_graphics: 1.1.19
+=======
+  go_router: ^16.2.1
+  barcode_widget: 2.0.4
+  carousel_slider: 5.1.1
+  cupertino_icons: 1.0.8
+  flutter_svg: 2.2.0
+>>>>>>> 33fe57b5c (Primer commit)
   flutter_map: 8.2.1
   html: 0.15.6
   flutter_widget_from_html_core: 0.17.0
@@ -46,7 +58,11 @@ dependencies:
   diacritic: 0.1.6
   app_store_shared:
     path: ../app_store/shared
+<<<<<<< HEAD
   audioplayers: 6.5.1
+=======
+  audioplayers: 6.5.0
+>>>>>>> 33fe57b5c (Primer commit)
   flutter_email_sender: 7.0.0
   flutter_native_splash: 2.4.6
   image: 4.5.4
@@ -62,7 +78,11 @@ dependencies:
   shimmer: ^3.0.0
   rive: 0.13.20
   webview_flutter: 4.13.0
+<<<<<<< HEAD
   webview_flutter_android: 4.8.2
+=======
+  webview_flutter_android: ^4.10.1
+>>>>>>> 33fe57b5c (Primer commit)
   webview_flutter_wkwebview: 3.23.0
   flutter_custom_tabs: 2.4.0
   flutter_image_compress: 2.4.0
@@ -102,10 +122,17 @@ dependencies:
   scanner_zxing:
     path: ../scanner/zxing
 
+<<<<<<< HEAD
 
   openfoodfacts: 3.24.0
   # openfoodfacts:
   #   path: ../../../openfoodfacts-dart
+=======
+  # For development, you can use a local version of the OpenFoodFacts package
+  #openfoodfacts: 3.24.0
+  openfoodfacts:
+    path: ../../../openfoodfacts-dart
+>>>>>>> 33fe57b5c (Primer commit)
 
 dev_dependencies:
   integration_test:
@@ -114,7 +141,11 @@ dev_dependencies:
     sdk: flutter
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
   mockito: 5.5.1
+=======
+  mockito: 5.5.0
+>>>>>>> 33fe57b5c (Primer commit)
   path_provider_platform_interface: 2.1.2
   plugin_platform_interface: 2.1.8
   flutter_lints: 6.0.0
@@ -155,7 +186,10 @@ flutter:
     - assets/audio/
     - assets/cache/
     - assets/cacheTintable/
+<<<<<<< HEAD
     - assets/guides/greenscore/
+=======
+>>>>>>> 33fe57b5c (Primer commit)
     - assets/metadata/
     - assets/misc/
     - assets/network/cert.pem

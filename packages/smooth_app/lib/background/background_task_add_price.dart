@@ -4,7 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:http_parser/http_parser.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:provider/provider.dart';
+<<<<<<< HEAD
 import 'package:smooth_app/background/background_crop_result.dart';
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 import 'package:smooth_app/background/background_task.dart';
 import 'package:smooth_app/background/background_task_add_other_price.dart';
 import 'package:smooth_app/background/background_task_image.dart';
@@ -237,6 +240,7 @@ class BackgroundTaskAddPrice extends BackgroundTaskPrice {
 
   @override
   Future<void> execute(final LocalDatabase localDatabase) async {
+<<<<<<< HEAD
     final BackgroundCropResult cropResult =
         await BackgroundTaskImage.cropIfNeeded(
           fullPath: fullPath,
@@ -250,6 +254,19 @@ class BackgroundTaskAddPrice extends BackgroundTaskPrice {
           eraserCoordinates: eraserCoordinates,
         );
     final String? path = cropResult.filePath;
+=======
+    final String? path = await BackgroundTaskImage.cropIfNeeded(
+      fullPath: fullPath,
+      rotationDegrees: rotationDegrees,
+      cropX1: cropX1,
+      cropY1: cropY1,
+      cropX2: cropX2,
+      cropY2: cropY2,
+      compressQuality: 80,
+      forceCompression: true,
+      eraserCoordinates: eraserCoordinates,
+    );
+>>>>>>> 33fe57b5c (Primer commit)
     if (path == null) {
       // TODO(monsieurtanuki): maybe something more refined when we dismiss the picture, like alerting the user, though it's not supposed to happen anymore from upstream.
       return;

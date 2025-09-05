@@ -9,7 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+<<<<<<< HEAD
   flutter_svg: ^2.2.1
+=======
+  flutter_svg: 2.2.0
+>>>>>>> 33fe57b5c (Primer commit)
   visibility_detector: 0.4.0+2
   provider: 6.1.5
 

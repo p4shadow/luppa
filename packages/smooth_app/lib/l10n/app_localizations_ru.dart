@@ -1006,7 +1006,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get score_add_missing_precise_product_category =>
+<<<<<<< HEAD
       'Выберите более точную категорию';
+=======
+      'Select a more precise category';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get score_add_missing_product_countries =>
@@ -1290,17 +1294,28 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+<<<<<<< HEAD
   String get product_tags_title => 'Свойства продукта';
+=======
+  String get product_tags_title => 'Свойства товара';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get no_product_tags_found_message =>
       'No product properties found. Properties can be used to describe products in more details, in a flexible way. Tap to add.';
 
   @override
+<<<<<<< HEAD
   String get add_tag => 'Добавить свойство';
 
   @override
   String get add_tags => 'Добавить свойства';
+=======
+  String get add_tag => 'Add property';
+
+  @override
+  String get add_tags => 'Добавить свойство';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get add_edit_tags => 'Добавить или изменить свойства';
@@ -1324,7 +1339,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tag_value => 'Значение';
 
   @override
+<<<<<<< HEAD
   String get tag_value_input_hint => 'Введите значение';
+=======
+  String get tag_value_input_hint => 'Введите цену';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get tag_key_item => 'Свойство:';
@@ -3705,12 +3724,21 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
+<<<<<<< HEAD
       other: 'Следующий $count вопрос',
       one: 'Следующий вопрос',
       many: 'Следующие $count вопросов',
       few: 'Следующие $count вопроса',
     );
     return '$_temp0';
+=======
+      other: '$count вопросы',
+      one: 'вопрос',
+      many: '$count вопросы',
+      few: '$count вопросы',
+    );
+    return 'Следующий $_temp0';
+>>>>>>> 33fe57b5c (Primer commit)
   }
 
   @override
@@ -4207,6 +4235,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get guide_share_label => 'Поделиться';
 
   @override
+<<<<<<< HEAD
+=======
+  String get guide_nutriscore_v2_enabled => 'true';
+
+  @override
+>>>>>>> 33fe57b5c (Primer commit)
   String get guide_nutriscore_v2_title =>
       'The Nutri-Score is evolving: explanations!';
 
@@ -4316,6 +4350,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'https://world.openfoodfacts.org/nutriscore-v2';
 
   @override
+<<<<<<< HEAD
   String get guide_greenscore_title => 'Green-Score';
 
   @override
@@ -4471,6 +4506,9 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get guide_greenscore_share_link =>
       'https://fr.openfoodfacts.org/green-score';
+=======
+  String get guide_nutriscore_v2_share_message => '';
+>>>>>>> 33fe57b5c (Primer commit)
 
   @override
   String get preview_badge => 'Предварительный просмотр';

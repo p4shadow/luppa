@@ -776,7 +776,10 @@
   "score_add_missing_nutrition_facts": "Add missing nutrition facts",
   "score_add_missing_product_traces": "Add missing product traces",
   "score_add_missing_product_category": "Select a category",
+<<<<<<< HEAD
   "score_add_missing_precise_product_category": "Khetha udidi oluchane ngakumbi",
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Add missing product countries",
   "score_add_missing_product_emb": "Add missing product traceability codes",
   "score_add_missing_product_labels": "Add missing product labels",
@@ -3856,6 +3859,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Share",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "true",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "The Nutri-Score is evolving: explanations!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3893,6 +3903,7 @@
   "guide_nutriscore_v2_unchanged_paragraph1": "The Nutri-Score is a score designed to **measure nutritional quality**. It is **complementary to the NOVA group** on **ultra-processed foods** (also present in the application).",
   "guide_nutriscore_v2_unchanged_paragraph2": "For manufacturers, the display of the Nutri-Score **remains optional**.",
   "guide_nutriscore_v2_share_link": "https://world.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Green-Score",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3957,12 @@
   "guide_greenscore_transparency_arg2_title": "Banokunceda njani abavelisi",
   "guide_greenscore_transparency_arg2_text": "Abavelisi banokusithumela ulwazi lwabo ngokuthe ngqo ngeqonga lethu lasimahla labavelisi.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/green-score",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Preview",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"

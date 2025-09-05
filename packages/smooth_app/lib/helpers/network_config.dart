@@ -41,7 +41,11 @@ Future<void> _initUserAgent() async {
     name: name,
     version: version,
     system: system,
+<<<<<<< HEAD
     url: 'https://world.openfoodfacts.org/',
+=======
+    url: 'https://luppa.ar/',
+>>>>>>> 33fe57b5c (Primer commit)
     comment: comment,
   );
 }

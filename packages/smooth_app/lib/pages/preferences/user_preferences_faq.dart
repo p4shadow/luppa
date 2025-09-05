@@ -9,7 +9,10 @@ import 'package:smooth_app/helpers/app_helper.dart';
 import 'package:smooth_app/helpers/global_vars.dart';
 import 'package:smooth_app/helpers/launch_url_helper.dart';
 import 'package:smooth_app/helpers/user_feedback_helper.dart';
+<<<<<<< HEAD
 import 'package:smooth_app/pages/guides/guide/guide_green_score.dart';
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 import 'package:smooth_app/pages/guides/guide/guide_nutriscore_v2.dart';
 import 'package:smooth_app/pages/preferences/abstract_user_preferences.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_item.dart';
@@ -65,6 +68,7 @@ class UserPreferencesFaq extends AbstractUserPreferences {
       /// Hide the icon
       icon: const Icon(Icons.info, size: 0.0),
     ),
+<<<<<<< HEAD
     _getListTile(
       title: appLocalizations.environmental_score_generic,
       leadingSvg: 'assets/cache/green-score-b.svg',
@@ -76,6 +80,12 @@ class UserPreferencesFaq extends AbstractUserPreferences {
 
       /// Hide the icon
       icon: const Icon(Icons.info, size: 0.0),
+=======
+    _getNutriListTile(
+      title: appLocalizations.environmental_score_generic,
+      url: 'https://world.openfoodfacts.org/ecoscore',
+      svg: 'assets/cache/green-score-b.svg',
+>>>>>>> 33fe57b5c (Primer commit)
     ),
     _getNutriListTile(
       title: appLocalizations.nova_group_generic,

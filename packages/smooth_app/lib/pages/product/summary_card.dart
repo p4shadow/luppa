@@ -236,12 +236,16 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     );
     if (attributeChips.isNotEmpty) {
       displayedGroups.add(
+<<<<<<< HEAD
         SummaryAttributeGroup(
           attributeChips: attributeChips,
           isClickable: widget.attributeGroupsClickable,
           isFirstGroup: displayedGroups.isEmpty,
           groupName: null,
         ),
+=======
+        Wrap(spacing: 8.0, runSpacing: 4.0, children: attributeChips),
+>>>>>>> 33fe57b5c (Primer commit)
       );
     }
     // Then, all groups, each with very important and important attributes
@@ -357,6 +361,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
   }
 
   List<Widget> _getAttributes(List<Attribute> scoreAttributes) {
+<<<<<<< HEAD
     final List<Widget> attributes = <Widget>[];
 
     for (final Attribute attribute in scoreAttributes) {
@@ -382,6 +387,32 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
       }
     }
     return attributes;
+=======
+    if (scoreAttributes.isEmpty) {
+      return <Widget>[];
+    }
+
+    if (scoreAttributes.length == 1) {
+      return <Widget>[
+        ScoreCard.attribute(attribute: scoreAttributes[0], isClickable: false),
+      ];
+    }
+
+    return <Widget>[
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          for (final Attribute attribute in scoreAttributes)
+            Flexible(
+              child: ScoreCard.attribute(
+                attribute: attribute,
+                isClickable: widget.isFullVersion,
+              ),
+            ),
+        ],
+      ),
+    ];
+>>>>>>> 33fe57b5c (Primer commit)
   }
 
   List<Widget> _buildAttributeChips(final List<Attribute> attributes) {
@@ -407,6 +438,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     if (attributeDisplayTitle == null) {
       return null;
     }
+<<<<<<< HEAD
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         return SizedBox(
@@ -430,6 +462,38 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
           ),
         );
       },
+=======
+    return InkWell(
+      borderRadius: ANGULAR_BORDER_RADIUS,
+      enableFeedback: _isAttributeOpeningAllowed(attribute),
+      onTap: () async => _openFullKnowledgePanel(attribute: attribute),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: LARGE_SPACE,
+          children: <Widget>[
+            attributeIcon,
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    attribute.title ?? '',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                  Text(
+                    attribute.descriptionShort ?? '',
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+>>>>>>> 33fe57b5c (Primer commit)
     );
   }
 

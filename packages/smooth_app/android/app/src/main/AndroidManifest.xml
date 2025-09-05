@@ -16,7 +16,11 @@
     </queries>
 
     <application
+<<<<<<< HEAD
             android:label="OpenFoodFacts"
+=======
+            android:label="Luppa"
+>>>>>>> 33fe57b5c (Primer commit)
             android:name="${applicationName}"
             android:icon="@mipmap/ic_launcher"
             android:hasFragileUserData="true"

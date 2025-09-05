@@ -3,6 +3,11 @@ import 'dart:io';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+<<<<<<< HEAD
+=======
+import 'package:provider/provider.dart';
+import 'package:smooth_app/data_models/preferences/user_preferences.dart';
+>>>>>>> 33fe57b5c (Primer commit)
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/app_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
@@ -74,6 +79,7 @@ class WelcomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+<<<<<<< HEAD
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -145,6 +151,9 @@ class WelcomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+=======
+                    _buildCountrySelector(context, bodyTextStyle),
+>>>>>>> 33fe57b5c (Primer commit)
                   ],
                 ),
               ),
@@ -159,4 +168,75 @@ class WelcomePage extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
+=======
+
+  Widget _buildCountrySelector(BuildContext context, TextStyle bodyTextStyle) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context);
+    final ThemeData theme = Theme.of(context);
+    final UserPreferences userPreferences = context.watch<UserPreferences>();
+
+    if (userPreferences.userCountryCode != null) {
+      return const SizedBox.shrink();
+    }
+
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Text(
+          appLocalizations.onboarding_country_chooser_label,
+          style: bodyTextStyle,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: MEDIUM_SPACE),
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border.fromBorderSide(
+                BorderSide(color: theme.colorScheme.inversePrimary, width: 1),
+              ),
+              borderRadius: ANGULAR_BORDER_RADIUS,
+              color: theme.colorScheme.onPrimary,
+            ),
+            child: SizedBox(
+              width: double.infinity,
+              child: Material(
+                type: MaterialType.transparency,
+                child: CountrySelector(
+                  autoValidate: true,
+                  forceCurrencyChange: true,
+                  padding: const EdgeInsetsDirectional.only(
+                    start: SMALL_SPACE,
+                    end: LARGE_SPACE,
+                    top: SMALL_SPACE,
+                    bottom: SMALL_SPACE,
+                  ),
+                  inkWellBorderRadius: ANGULAR_BORDER_RADIUS,
+                  icon: const DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.all(SMALL_SPACE),
+                      child: icons.Arrow.right(size: 15.0, color: Colors.white),
+                    ),
+                  ),
+                  textStyle: TextStyle(color: theme.primaryColor),
+                ),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsetsDirectional.only(bottom: VERY_SMALL_SPACE),
+          child: Text(
+            appLocalizations.country_selection_explanation,
+            style: bodyTextStyle,
+          ),
+        ),
+      ],
+    );
+  }
+>>>>>>> 33fe57b5c (Primer commit)
 }

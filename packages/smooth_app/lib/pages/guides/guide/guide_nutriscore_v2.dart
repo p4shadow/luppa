@@ -5,7 +5,11 @@ import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/guides/helpers/guides_content.dart';
 import 'package:smooth_app/pages/guides/helpers/guides_footer.dart';
 import 'package:smooth_app/pages/guides/helpers/guides_header.dart';
+<<<<<<< HEAD
 import 'package:smooth_app/resources/app_icons.dart' as icons;
+=======
+import 'package:smooth_app/resources/app_icons.dart';
+>>>>>>> 33fe57b5c (Primer commit)
 
 class GuideNutriscoreV2 extends StatelessWidget {
   const GuideNutriscoreV2({super.key});
@@ -26,6 +30,10 @@ class GuideNutriscoreV2 extends StatelessWidget {
       ],
       footer: SliverToBoxAdapter(
         child: GuidesFooter(
+<<<<<<< HEAD
+=======
+          shareMessage: appLocalizations.guide_nutriscore_v2_share_message,
+>>>>>>> 33fe57b5c (Primer commit)
           shareUrl: appLocalizations.guide_nutriscore_v2_share_link,
         ),
       ),
@@ -60,7 +68,11 @@ class _NutriScoreHeaderIllustration extends StatelessWidget {
             SvgCache.getAssetsCacheForNutriscore(NutriScoreValue.a, false),
           ),
         ),
+<<<<<<< HEAD
         const Expanded(flex: 28, child: icons.Arrow.down(color: Colors.white)),
+=======
+        const Expanded(flex: 28, child: Arrow.down(color: Colors.white)),
+>>>>>>> 33fe57b5c (Primer commit)
         Expanded(
           flex: 40,
           child: SvgPicture.asset(
@@ -116,27 +128,47 @@ class _NutriScoreSection2 extends StatelessWidget {
         GuidesText(text: appLocalizations.guide_nutriscore_v2_why_v2_intro),
         GuidesTitleWithText(
           title: appLocalizations.guide_nutriscore_v2_why_v2_arg1_title,
+<<<<<<< HEAD
           icon: const icons.Milk(),
+=======
+          icon: const Milk(),
+>>>>>>> 33fe57b5c (Primer commit)
           text: appLocalizations.guide_nutriscore_v2_why_v2_arg1_text,
         ),
         GuidesTitleWithText(
           title: appLocalizations.guide_nutriscore_v2_why_v2_arg2_title,
+<<<<<<< HEAD
           icon: const icons.Soda.unhappy(),
+=======
+          icon: const Soda.unhappy(),
+>>>>>>> 33fe57b5c (Primer commit)
           text: appLocalizations.guide_nutriscore_v2_why_v2_arg2_text,
         ),
         GuidesTitleWithText(
           title: appLocalizations.guide_nutriscore_v2_why_v2_arg3_title,
+<<<<<<< HEAD
           icon: const icons.Salt(),
+=======
+          icon: const Salt(),
+>>>>>>> 33fe57b5c (Primer commit)
           text: appLocalizations.guide_nutriscore_v2_why_v2_arg3_text,
         ),
         GuidesTitleWithText(
           title: appLocalizations.guide_nutriscore_v2_why_v2_arg4_title,
+<<<<<<< HEAD
           icon: const icons.Fish(),
+=======
+          icon: const Fish(),
+>>>>>>> 33fe57b5c (Primer commit)
           text: appLocalizations.guide_nutriscore_v2_why_v2_arg4_text,
         ),
         GuidesTitleWithText(
           title: appLocalizations.guide_nutriscore_v2_why_v2_arg5_title,
+<<<<<<< HEAD
           icon: const icons.Chicken(),
+=======
+          icon: const Chicken(),
+>>>>>>> 33fe57b5c (Primer commit)
           text: appLocalizations.guide_nutriscore_v2_why_v2_arg5_text,
         ),
       ],

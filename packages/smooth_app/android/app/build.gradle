@@ -1,0 +1,75 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+
+android {
+    namespace = "com.luppaapp.app"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = "27.0.12077973"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "org.luppaappcomida.scanner"
+        minSdkVersion = flutter.minSdkVersion 
+        targetSdk = flutter.targetSdkVersion
+        targetSdkVersion = 33 //
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Usuario\\android-keystores\\upload-keystore.jks')
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: "Milagros31832504!"
+            keyAlias System.getenv("KEY_ALIAS") ?: "upload"
+            keyPassword System.getenv("KEY_PASSWORD") ?: "Milagros31832504!"
+        }
+    }
+
+        //   signingConfigs {
+         //       release {
+         //           storeFile System.getenv('SIGN_STORE_PATH') ? file(System.getenv('SIGN_STORE_PATH')) : null
+         //           storePassword System.getenv('SIGN_STORE_PASSWORD')
+         //           keyAlias System.getenv('SIGN_KEY_ALIAS')
+         //           keyPassword System.getenv('SIGN_KEY_PASSWORD')
+         //       }
+         //   }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true //
+            shrinkResources true //
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro' //
+        }
+        debug{
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.2'
+}

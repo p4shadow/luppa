@@ -337,6 +337,7 @@ class Certification extends AppIcon {
   }) : super._(_IconsFont.certification);
 }
 
+<<<<<<< HEAD
 class Charity extends AppIcon {
   const Charity({
     super.color,
@@ -347,6 +348,8 @@ class Charity extends AppIcon {
   }) : super._(_IconsFont.charity);
 }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class Chicken extends AppIcon {
   const Chicken({
     super.color,
@@ -842,6 +845,7 @@ class Environment extends AppIcon {
     super.semanticLabel,
     super.key,
   }) : super._(_IconsFont.environment);
+<<<<<<< HEAD
 
   const Environment.alt({
     super.color,
@@ -850,6 +854,8 @@ class Environment extends AppIcon {
     super.semanticLabel,
     super.key,
   }) : super._(_IconsFont.environment_alt);
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 }
 
 class ExternalLink extends AppIcon {
@@ -950,6 +956,7 @@ class Info extends AppIcon {
   }) : super._(_IconsFont.info);
 }
 
+<<<<<<< HEAD
 class Farmer extends AppIcon {
   const Farmer({
     super.color,
@@ -970,6 +977,8 @@ class Gears extends AppIcon {
   }) : super._(_IconsFont.gears);
 }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class Graph extends AppIcon {
   const Graph({
     super.color,
@@ -1064,6 +1073,7 @@ class Lab extends AppIcon {
     super.semanticLabel,
     super.key,
   }) : super._(_IconsFont.lab);
+<<<<<<< HEAD
 
   const Lab.alt({
     super.color,
@@ -1072,6 +1082,8 @@ class Lab extends AppIcon {
     super.semanticLabel,
     super.key,
   }) : super._(_IconsFont.lab_alt);
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 }
 
 class Labels extends AppIcon {
@@ -1162,6 +1174,7 @@ class MagicWand extends AppIcon {
   }) : super._(_IconsFont.magic_wand);
 }
 
+<<<<<<< HEAD
 class Manufacturing extends AppIcon {
   const Manufacturing({
     super.color,
@@ -1172,6 +1185,8 @@ class Manufacturing extends AppIcon {
   }) : super._(_IconsFont.manufacturing);
 }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class Menu extends AppIcon {
   const Menu.hamburger({
     super.color,
@@ -1242,6 +1257,7 @@ class Milk extends AppIcon {
   }) : super._(_IconsFont.milk_filled_unhappy);
 }
 
+<<<<<<< HEAD
 class Monkey extends AppIcon {
   const Monkey.happy({
     super.color,
@@ -1260,6 +1276,8 @@ class Monkey extends AppIcon {
   }) : super._(_IconsFont.monkey_sad);
 }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class Move extends AppIcon {
   const Move({
     super.color,
@@ -1308,6 +1326,7 @@ class OCR extends AppIcon {
   }) : super._(_IconsFont.ocr);
 }
 
+<<<<<<< HEAD
 class Origins extends AppIcon {
   const Origins({
     super.color,
@@ -1318,6 +1337,8 @@ class Origins extends AppIcon {
   }) : super._(_IconsFont.origins);
 }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class Outdated extends AppIcon {
   const Outdated({
     super.color,

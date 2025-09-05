@@ -9,14 +9,22 @@ import 'package:smooth_app/generic_lib/design_constants.dart';
 /// Main attributes, to be displayed on top
 const List<String> SCORE_ATTRIBUTE_IDS = <String>[
   Attribute.ATTRIBUTE_NUTRISCORE,
+<<<<<<< HEAD
   Attribute.ATTRIBUTE_ECOSCORE,
+=======
+  Attribute.ATTRIBUTE_NOVA,
+>>>>>>> 33fe57b5c (Primer commit)
 ];
 
 // ignore: avoid_classes_with_only_static_members
 /// Creates the Size or flex for widgets that contains icons.
 class IconWidgetSizer {
   /// Ratio of Widget size taken up by an icon.
+<<<<<<< HEAD
   static const double _ICON_WIDGET_SIZE_RATIO = 1 / 10;
+=======
+  static const double _ICON_WIDGET_SIZE_RATIO = 2 / 10;
+>>>>>>> 33fe57b5c (Primer commit)
 
   static double getIconSizeFromContext(BuildContext context) {
     final Size screenSize = MediaQuery.sizeOf(context);

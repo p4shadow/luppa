@@ -7153,6 +7153,15 @@ abstract class AppLocalizations {
   /// **'Share'**
   String get guide_share_label;
 
+<<<<<<< HEAD
+=======
+  /// Please NEVER touch this value and let the OFF team change it!
+  ///
+  /// In en, this message translates to:
+  /// **'true'**
+  String get guide_nutriscore_v2_enabled;
+
+>>>>>>> 33fe57b5c (Primer commit)
   /// The title of the guide (please don't forget the use of non-breaking spaces)
   ///
   /// In en, this message translates to:
@@ -7321,6 +7330,7 @@ abstract class AppLocalizations {
   /// **'https://world.openfoodfacts.org/nutriscore-v2'**
   String get guide_nutriscore_v2_share_link;
 
+<<<<<<< HEAD
   /// The title of the guide (please don't forget the use of non-breaking spaces)
   ///
   /// In en, this message translates to:
@@ -7584,6 +7594,13 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'https://fr.openfoodfacts.org/green-score'**
   String get guide_greenscore_share_link;
+=======
+  /// Please let empty for now (maybe use in the future)
+  ///
+  /// In en, this message translates to:
+  /// **''**
+  String get guide_nutriscore_v2_share_message;
+>>>>>>> 33fe57b5c (Primer commit)
 
   /// Badge to indicate that the product is in preview mode (Be careful with this translation)
   ///

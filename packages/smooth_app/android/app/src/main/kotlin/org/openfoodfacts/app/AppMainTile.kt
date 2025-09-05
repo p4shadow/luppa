@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package org.openfoodfacts.app
+=======
+package com.luppaapp.app
+>>>>>>> 33fe57b5c (Primer commit)
 
 import android.app.PendingIntent
 import android.content.Intent
@@ -6,7 +10,11 @@ import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import androidx.annotation.RequiresApi
+<<<<<<< HEAD
 import org.openfoodfacts.app.MainActivity
+=======
+import com.luppaapp.app.MainActivity
+>>>>>>> 33fe57b5c (Primer commit)
 
 @RequiresApi(Build.VERSION_CODES.N)
 class AppMainTile : TileService() {

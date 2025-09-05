@@ -776,7 +776,10 @@
   "score_add_missing_nutrition_facts": "Aggiungi i valori nutrizionali mancanti",
   "score_add_missing_product_traces": "Add missing product traces",
   "score_add_missing_product_category": "Seleziona una categoria",
+<<<<<<< HEAD
   "score_add_missing_precise_product_category": "Seleziona una categoria più precisa",
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Aggiungi i paesi mancanti del prodotto",
   "score_add_missing_product_emb": "Aggiungi i codici di tracciabilità mancanti del prodotto",
   "score_add_missing_product_labels": "Aggiungi le etichette mancanti del prodotto",
@@ -3856,6 +3859,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Condividi",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "true",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "Il Nutri-Score è in evoluzione: spiegazioni!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3893,6 +3903,7 @@
   "guide_nutriscore_v2_unchanged_paragraph1": "Il Nutri-Score è un punteggio progettato per **misurare la qualità nutrizionale**. È **complementare al gruppo NOVA** sugli **alimenti ultra-trasformati** (anch'esso presente nell'applicazione).",
   "guide_nutriscore_v2_unchanged_paragraph2": "Per i produttori, l'esposizione del Nutri-Score **rimane facoltativa**.",
   "guide_nutriscore_v2_share_link": "https://world-it.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Green-Score",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3957,12 @@
   "guide_greenscore_transparency_arg2_title": "Come possono aiutare i produttori",
   "guide_greenscore_transparency_arg2_text": "I produttori possono inviarci le loro informazioni direttamente tramite la nostra piattaforma gratuita per produttori.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/green-score",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Anteprima",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"

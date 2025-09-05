@@ -776,7 +776,10 @@
   "score_add_missing_nutrition_facts": "Přidejte chybějící výživová fakta",
   "score_add_missing_product_traces": "Add missing product traces",
   "score_add_missing_product_category": "Přidejte chybějící kategorii produktu",
+<<<<<<< HEAD
   "score_add_missing_precise_product_category": "Vyberte přesnější kategorii",
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Přidat chybějící země produktu",
   "score_add_missing_product_emb": "Přidat chybějící kódy sledovatelnosti produktu",
   "score_add_missing_product_labels": "Přidat chybějící štítky produktu",
@@ -3856,6 +3859,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Sdílet",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "pravda",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "Nutri-Score se vyvíjí: vysvětlení!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3893,6 +3903,7 @@
   "guide_nutriscore_v2_unchanged_paragraph1": "Nutri-Score je skóre navržené k **měření nutriční kvality**. Je **doplňkem skupiny NOVA** pro **ultra zpracované potraviny** (taktéž přítomných v aplikaci).",
   "guide_nutriscore_v2_unchanged_paragraph2": "Pro výrobce zůstává zobrazení Nutri-Score **nepovinné**.",
   "guide_nutriscore_v2_share_link": "https://world-cs.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Eco-score",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3957,12 @@
   "guide_greenscore_transparency_arg2_title": "Jak mohou výrobci pomoci",
   "guide_greenscore_transparency_arg2_text": "Výrobci nám mohou zasílat své informace přímo prostřednictvím naší bezplatné platformy pro výrobce.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/green-score",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Náhled",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"

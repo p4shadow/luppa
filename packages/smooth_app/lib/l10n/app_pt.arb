@@ -407,7 +407,11 @@
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
   },
+<<<<<<< HEAD
   "contribute_prices_gdpr": "Contribua com os preços solicitando uma exportação GDPR dos dados dos seus cartões de fidelidade",
+=======
+  "contribute_prices_gdpr": "Contribute prices by requesting a GDPR export of your loyalty cards data",
+>>>>>>> 33fe57b5c (Primer commit)
   "@contribute_prices_gdpr": {
     "description": "Label for option to contribute prices using GDPR export from loyalty cards"
   },
@@ -774,9 +778,14 @@
   "score_add_missing_ingredients": "Adicionar ingredientes que faltam",
   "score_add_missing_packaging_image": "Adicionar imagem de embalagem que falta",
   "score_add_missing_nutrition_facts": "Adicionar informações nutricionais que faltam",
+<<<<<<< HEAD
   "score_add_missing_product_traces": "Adicionar vestígios de produtos em falta",
   "score_add_missing_product_category": "Selecionar uma categoria",
   "score_add_missing_precise_product_category": "Selecione uma categoria mais precisa",
+=======
+  "score_add_missing_product_traces": "Add missing product traces",
+  "score_add_missing_product_category": "Selecionar uma categoria",
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Adicionar países que faltam de produtos",
   "score_add_missing_product_emb": "Adicionar códigos de rastreabilidade que faltam de produtos",
   "score_add_missing_product_labels": "Adicionar rótulos que faltam de produtos",
@@ -1606,7 +1615,11 @@
   "@edit_product_form_item_add_action_category": {
     "description": "Tooltip to show when the user long presses the (+) button on a category"
   },
+<<<<<<< HEAD
   "edit_product_form_item_add_action_trace": "Adicionar um novo vestígio",
+=======
+  "edit_product_form_item_add_action_trace": "Add a new trace",
+>>>>>>> 33fe57b5c (Primer commit)
   "@edit_product_form_item_add_action_trace": {
     "description": "Tooltip to show when the user long presses the (+) button on a trace"
   },
@@ -1818,7 +1831,11 @@
   "@edit_product_form_item_traces_hint": {
     "description": "Product edition - Traces - input textfield hint"
   },
+<<<<<<< HEAD
   "edit_product_form_item_traces_type": "Insira um vestígio (p. ex.: soja)",
+=======
+  "edit_product_form_item_traces_type": "Input a trace (eg: Soy beans)",
+>>>>>>> 33fe57b5c (Primer commit)
   "@edit_product_form_item_traces_type": {
     "description": "Product edition - Traces - input textfield type"
   },
@@ -2287,11 +2304,19 @@
   },
   "prices_app_dev_mode_flag": "Atalho para a aplicação Preços na página do produto",
   "prices_app_button": "Ir para a aplicação Preços",
+<<<<<<< HEAD
   "prices_bulk_proof_upload_select": "Adicione etiquetas de preço diretamente da galeria",
   "prices_bulk_proof_upload_warning": "Depois de selecionar as imagens, não será possível editá-las!",
   "prices_bulk_proof_upload_warning_ai": "A IA irá analisar as suas provas para extrair os preços.",
   "prices_bulk_proof_upload_community_switch": "Permitir que a comunidade valide os preços extraídos pela IA.",
   "prices_bulk_proof_upload_subtitle": "Várias etiquetas de preço",
+=======
+  "prices_bulk_proof_upload_select": "Add price tags directly from gallery",
+  "prices_bulk_proof_upload_warning": "Once you've selected images, you won't be able to edit them!",
+  "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
+  "prices_bulk_proof_upload_community_switch": "Permitir que a comunidade valide os preços extraídos pela IA.",
+  "prices_bulk_proof_upload_subtitle": "Multiple Price Tags",
+>>>>>>> 33fe57b5c (Primer commit)
   "prices_bulk_proof_upload_title": "Envio em lote de comprovativos",
   "prices_bulk_proof_upload_step_selecting": "Selecionando ficheiros",
   "prices_bulk_proof_upload_step_starting": "Iniciando o upload",
@@ -2732,7 +2757,11 @@
   "@prices_challenges_page": {
     "description": "Community challenges of open prices"
   },
+<<<<<<< HEAD
   "prices_multiple_proof_addition_system": "Adicionar várias provas",
+=======
+  "prices_multiple_proof_addition_system": "Add Multiple Proofs",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_multiple_proof_addition_system": {
     "description": "Upload multiple proofs"
   },
@@ -2848,7 +2877,11 @@
   "@add_basic_details_product_name_add_translation": {
     "description": "Button to add a new translation for the product name"
   },
+<<<<<<< HEAD
   "add_basic_details_product_name_warning_translations": "Antes de validar, certifique-se de adicionar uma tradução apenas **se o idioma estiver presente na embalagem**",
+=======
+  "add_basic_details_product_name_warning_translations": "Before validating, please ensure you only add a translation **if the language is present on the packaging**",
+>>>>>>> 33fe57b5c (Primer commit)
   "@add_basic_details_product_name_warning_translations": {
     "description": "Warning message displayed on top of new translations for the product name"
   },
@@ -3817,7 +3850,11 @@
   "contact_title_press_page": "Página de imprensa",
   "contact_title_press_email": "Contactos de imprensa",
   "contact_title_newsletter": "Assine o nosso boletim informativo",
+<<<<<<< HEAD
   "contact_title_calendar": "Inscreva-se no nosso calendário comunitário",
+=======
+  "contact_title_calendar": "Subscribe to our community calendar",
+>>>>>>> 33fe57b5c (Primer commit)
   "hunger_games_loading_line1": "Por favor, dê-nos alguns segundos…",
   "hunger_games_loading_line2": "Estamos a descarregar as perguntas!",
   "hunger_games_error_label": "Ups! Algo correu mal... e não conseguimos carregar as perguntas.",
@@ -3856,6 +3893,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Partilhar",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "verdadeiro",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "O Nutri-Score está a evoluir: explicações!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3886,13 +3930,19 @@
   "guide_nutriscore_v2_new_logo_text": "A partir de agora, o logótipo pode apresentar uma menção \"**Novo cálculo**\" para esclarecer que se trata efetivamente do novo cálculo.",
   "guide_nutriscore_v2_new_logo_image_caption": "O logótipo do novo Nutri-Score",
   "guide_nutriscore_v2_where_title": "Onde encontrar o novo cálculo do Nutri-Score?",
+<<<<<<< HEAD
   "guide_nutriscore_v2_where_paragraph1": "O Nutri-Score é aplicado em 7 países: França, Alemanha, Bélgica, Espanha, Luxemburgo, Países Baixos e Suíça.",
   "guide_nutriscore_v2_where_paragraph2": "Os fabricantes têm, no máximo, **2 anos** após a assinatura do decreto **para substituir** o cálculo antigo pelo novo.",
+=======
+  "guide_nutriscore_v2_where_paragraph1": "The Nutri-Score is applied in 7 countries: France, Germany, Belgium, Spain, Luxembourg, the Netherlands and Switzerland.",
+  "guide_nutriscore_v2_where_paragraph2": "Manufacturers have at most **2 years** at the latest after the signature of the decree **to replace** the old calculation with the new one.",
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_where_paragraph3": "Sem ter de esperar, já encontrará na aplicação OpenFoodFacts** o novo cálculo, mesmo que os fabricantes não tenham atualizado a classificação.",
   "guide_nutriscore_v2_unchanged_title": "O que não muda",
   "guide_nutriscore_v2_unchanged_paragraph1": "O Nutri-Score é uma pontuação concebida para **medir a qualidade nutricional**. É **complementar ao grupo NOVA** sobre **alimentos ultra-processados** (também presente na aplicação).",
   "guide_nutriscore_v2_unchanged_paragraph2": "Para os fabricantes, a indicação do Nutri-Score **continua a ser facultativa**.",
   "guide_nutriscore_v2_share_link": "https://world.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Green-Score",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3996,12 @@
   "guide_greenscore_transparency_arg2_title": "Como podem os fabricantes ajudar",
   "guide_greenscore_transparency_arg2_text": "Os fabricantes podem enviar-nos as suas informações diretamente através da nossa plataforma gratuita para produtores.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/green-score",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Pré-visualizar",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"
@@ -4300,7 +4356,11 @@
   "@product_page_tab_prices": {
     "description": "Label of the prices tab on the product page"
   },
+<<<<<<< HEAD
   "product_page_tab_folksonomy": "Folksonomia",
+=======
+  "product_page_tab_folksonomy": "Folksonomy",
+>>>>>>> 33fe57b5c (Primer commit)
   "@product_page_tab_folksonomy": {
     "description": "Label of the folksonomy tab on the product page"
   },
@@ -4368,11 +4428,19 @@
   "@prices_discount": {
     "description": "Label for the discount on prices"
   },
+<<<<<<< HEAD
   "prices_stats_statistics": "Estatísticas",
   "@prices_stats_statistics": {
     "description": "Label for statistics section"
   },
   "prices_stats_title": "Estatísticas de preços",
+=======
+  "prices_stats_statistics": "Statistics",
+  "@prices_stats_statistics": {
+    "description": "Label for statistics section"
+  },
+  "prices_stats_title": "Prices Statistics",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_stats_title": {
     "description": "Title for the prices statistics page"
   },
@@ -4512,6 +4580,7 @@
   "@prices_stats_other": {
     "description": "Label for other sources"
   },
+<<<<<<< HEAD
   "prices_stats_last_updated": "Última atualização em",
   "@prices_stats_last_updated": {
     "description": "Label for last updated timestamp"
@@ -4521,6 +4590,17 @@
     "description": "Error message shown when price statistics fail to load"
   },
   "product_edit_robotoff_question_answered": "Pergunta respondida!",
+=======
+  "prices_stats_last_updated": "Last updated on",
+  "@prices_stats_last_updated": {
+    "description": "Label for last updated timestamp"
+  },
+  "prices_stats_error": "An error occurred while loading statistics.",
+  "@prices_stats_error": {
+    "description": "Error message shown when price statistics fail to load"
+  },
+  "product_edit_robotoff_question_answered": "Question answered!",
+>>>>>>> 33fe57b5c (Primer commit)
   "@product_edit_robotoff_question_answered": {
     "description": "Message displayed when a question from the Robotoff is answered"
   },

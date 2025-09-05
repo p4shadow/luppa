@@ -47,6 +47,7 @@ Widget getAttributeDisplayIcon(
       EMPTY_WIDGET;
 }
 
+<<<<<<< HEAD
 Color getAttributeDisplayBackgroundColor(final Attribute attribute) =>
     _attributeMatchComparison<Color>(
       attribute,
@@ -57,6 +58,22 @@ Color getAttributeDisplayBackgroundColor(final Attribute attribute) =>
       LIGHT_GREEN_COLOR,
       LIGHT_GREEN_COLOR,
     );
+=======
+Color getAttributeDisplayBackgroundColor(final Attribute attribute) {
+  if (attribute.id == Attribute.ATTRIBUTE_NOVA) {
+    return LIGHT_ORANGE_COLOR;
+  }
+  return _attributeMatchComparison<Color>(
+    attribute,
+    FAIR_GREY_COLOR,
+    RED_COLOR,
+    LIGHT_ORANGE_COLOR,
+    LIGHT_ORANGE_COLOR,
+    LIGHT_GREEN_COLOR,
+    LIGHT_GREEN_COLOR,
+  );
+}
+>>>>>>> 33fe57b5c (Primer commit)
 
 IconData getAttributeDisplayIconData(final Attribute attribute) =>
     _attributeMatchComparison<IconData>(

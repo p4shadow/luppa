@@ -776,7 +776,10 @@
   "score_add_missing_nutrition_facts": "Eksik besin değerlerini ekle",
   "score_add_missing_product_traces": "Eksik ürün izlerini ekleyin",
   "score_add_missing_product_category": "Eksik ürün kategori bilgisini ekle",
+<<<<<<< HEAD
   "score_add_missing_precise_product_category": "Daha kesin bir kategori seçin",
+=======
+>>>>>>> 33fe57b5c (Primer commit)
   "score_add_missing_product_countries": "Eksik ürün ülkelerini ekleyin",
   "score_add_missing_product_emb": "Eksik ürün izlenebilirlik kodlarını ekleyin",
   "score_add_missing_product_labels": "Eksik ürün etiketlerini ekleyin",
@@ -1205,7 +1208,11 @@
       "count": {}
     }
   },
+<<<<<<< HEAD
   "multiselect_title": "{count,plural, =0{Seçili ürün yok} =1{Bir seçili ürün} other{{count} seçili ürünler}}",
+=======
+  "multiselect_title": "{count,plural, one {}=0{Seçili ürün yok} =1{Bir seçili ürün} other{{count} seçili ürünler}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@multiselect_title": {
     "description": "Page title with the number of selected items",
     "placeholders": {
@@ -2332,8 +2339,13 @@
     }
   },
   "prices_generic_title": "Fiyatlar",
+<<<<<<< HEAD
   "prices_add_n_prices": "{count,plural, =1{Bir fiyat ekleyin} other{{count} fiyat ekleyin}}",
   "prices_send_n_prices": "{count,plural, =1{Fiyatı gönder} other{{count} fiyatlarını gönder}}",
+=======
+  "prices_add_n_prices": "{count,plural, one {}=1{Bir fiyat ekleyin} other{{count} fiyat ekleyin}}",
+  "prices_send_n_prices": "{count,plural, one {}=1{Fiyatı gönder} other{{count} fiyatlarını gönder}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "prices_add_an_item": "Bir öge ekle",
   "prices_add_a_price": "Fiyat ekleyin",
   "prices_add_a_receipt": "Bir makbuz ekle",
@@ -2405,7 +2417,11 @@
   "prices_entry_menu_my_prices": "Diğer fiyatlarımı görüntüle",
   "prices_entry_menu_author_prices": "Yazarın diğer fiyatlarını görüntüle",
   "prices_entry_menu_shop_prices": "Mağazadaki diğer fiyatları görün",
+<<<<<<< HEAD
   "prices_product_accessibility_summary": "{count,plural, =1{1 fiyat} other{{count} fiyatlar}} için {product}",
+=======
+  "prices_product_accessibility_summary": "{count,plural, one {}=1{1 fiyat} other{{count} fiyatlar}} için {product}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_product_accessibility_summary": {
     "description": "A card summarizing the number of prices for a product",
     "placeholders": {
@@ -2417,7 +2433,11 @@
       }
     }
   },
+<<<<<<< HEAD
   "prices_list_length_one_page": "{count,plural, =0{Henüz fiyat yok} =1{Sadece bir fiyat} other{Tüm {count} fiyatları}}",
+=======
+  "prices_list_length_one_page": "{count,plural, one {}=0{Henüz fiyat yok} =1{Sadece bir fiyat} other{Tüm {count} fiyatları}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_list_length_one_page": {
     "description": "Number of prices for one-page result",
     "placeholders": {
@@ -2469,7 +2489,11 @@
   "@prices_open_proof": {
     "description": "Button to open a proof"
   },
+<<<<<<< HEAD
   "prices_proofs_list_length_one_page": "{count,plural, =0{Henüz kanıt yok} =1{Sadece bir kanıt} other{Tüm {count} kanıtlar}}",
+=======
+  "prices_proofs_list_length_one_page": "{count,plural, one {}=0{Henüz kanıt yok} =1{Sadece bir kanıt} other{Tüm {count} kanıtlar}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_proofs_list_length_one_page": {
     "description": "Number of proofs for one-page result",
     "placeholders": {
@@ -2514,7 +2538,11 @@
       }
     }
   },
+<<<<<<< HEAD
   "prices_button_count_proof": "{count,plural, =0{Kanıt yok} =1{Bir kanıt} other{{count} kanıt}}",
+=======
+  "prices_button_count_proof": "{count,plural, one {}=0{Kanıt yok} =1{Bir kanıt} other{{count} kanıt}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_button_count_proof": {
     "description": "Number of proofs, for a button",
     "placeholders": {
@@ -2523,7 +2551,11 @@
       }
     }
   },
+<<<<<<< HEAD
   "prices_button_count_product": "{count,plural, =0{Ürün yok} =1{Bir ürün} other{{count} ürün}}",
+=======
+  "prices_button_count_product": "{count,plural, one {}=0{Ürün yok} =1{Bir ürün} other{{count} ürün}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_button_count_product": {
     "description": "Number of products, for a button",
     "placeholders": {
@@ -2532,7 +2564,11 @@
       }
     }
   },
+<<<<<<< HEAD
   "prices_button_count_user": "{count,plural, =0{Kullanıcı yok} =1{Bir kullanıcı} other{{count} kullanıcı}}",
+=======
+  "prices_button_count_user": "{count,plural, one {}=0{Kullanıcı yok} =1{Bir kullanıcı} other{{count} kullanıcı}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_button_count_user": {
     "description": "Number of users, for a button",
     "placeholders": {
@@ -2541,7 +2577,11 @@
       }
     }
   },
+<<<<<<< HEAD
   "prices_button_count_price": "{count,plural, =0{Fiyat yok} =1{Tek fiyat} other{{count} fiyatlar}}",
+=======
+  "prices_button_count_price": "{count,plural, one {}=0{Fiyat yok} =1{Tek fiyat} other{{count} fiyatlar}}",
+>>>>>>> 33fe57b5c (Primer commit)
   "@prices_button_count_price": {
     "description": "Number of prices, for a button",
     "placeholders": {
@@ -3856,6 +3896,13 @@
     "description": "A title for a guide"
   },
   "guide_share_label": "Paylaş",
+<<<<<<< HEAD
+=======
+  "guide_nutriscore_v2_enabled": "true",
+  "@guide_nutriscore_v2_enabled": {
+    "description": "Please NEVER touch this value and let the OFF team change it!"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "guide_nutriscore_v2_title": "Nutri-Score gelişiyor: açıklamalar!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3893,6 +3940,7 @@
   "guide_nutriscore_v2_unchanged_paragraph1": "Nutri-Score, **besin kalitesini ölçmek** için tasarlanmış bir puandır. **NOVA grubunun** **ultra işlenmiş gıdalar** (uygulamada da mevcuttur) konusundaki çalışmalarını **tamamlayıcı** niteliktedir.",
   "guide_nutriscore_v2_unchanged_paragraph2": "Üreticiler için Nutri-Score'un görüntülenmesi **isteğe bağlı** kalmaktadır.",
   "guide_nutriscore_v2_share_link": "https://world.openfoodfacts.org/nutriscore-v2",
+<<<<<<< HEAD
   "guide_greenscore_title": "Green-Score",
   "@guide_greenscore_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
@@ -3946,6 +3994,12 @@
   "guide_greenscore_transparency_arg2_title": "Üreticiler nasıl yardımcı olabilir?",
   "guide_greenscore_transparency_arg2_text": "Üreticiler bilgilerini doğrudan üreticilere özel ücretsiz platformumuz üzerinden bize gönderebilirler.",
   "guide_greenscore_share_link": "https://fr.openfoodfacts.org/yeşil-puan",
+=======
+  "guide_nutriscore_v2_share_message": "",
+  "@guide_nutriscore_v2_share_message": {
+    "description": "Please let empty for now (maybe use in the future)"
+  },
+>>>>>>> 33fe57b5c (Primer commit)
   "preview_badge": "Ön izleme",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"

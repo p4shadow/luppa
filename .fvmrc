@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
   "flutter": "3.27.4"
+=======
+  "flutter": "3.35.2"
+>>>>>>> 33fe57b5c (Primer commit)
 }

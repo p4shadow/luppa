@@ -17,7 +17,11 @@ jobs:
       uses: actions/checkout@v5
 
     - name: crowdin action
+<<<<<<< HEAD
       uses: crowdin/github-action@v2.11.0
+=======
+      uses: crowdin/github-action@v2.10.0
+>>>>>>> 33fe57b5c (Primer commit)
       continue-on-error: true
       with:
         # Upload sources to Crowdin

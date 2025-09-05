@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:collection/collection.dart';
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:matomo_tracker/matomo_tracker.dart';
@@ -8,6 +11,7 @@ import 'package:sliver_tools/sliver_tools.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/physics.dart';
 import 'package:smooth_app/pages/guides/helpers/guides_header.dart';
+<<<<<<< HEAD
 import 'package:smooth_app/resources/app_icons.dart' as icons;
 import 'package:smooth_app/resources/app_icons.dart';
 import 'package:smooth_app/themes/smooth_theme.dart';
@@ -16,6 +20,12 @@ import 'package:smooth_app/themes/theme_provider.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
 import 'package:smooth_app/widgets/text/text_highlighter.dart';
 import 'package:vector_graphics/vector_graphics.dart';
+=======
+import 'package:smooth_app/resources/app_icons.dart';
+import 'package:smooth_app/themes/smooth_theme_colors.dart';
+import 'package:smooth_app/widgets/smooth_scaffold.dart';
+import 'package:smooth_app/widgets/text/text_highlighter.dart';
+>>>>>>> 33fe57b5c (Primer commit)
 
 class GuidesPage extends StatelessWidget {
   const GuidesPage({
@@ -24,7 +34,11 @@ class GuidesPage extends StatelessWidget {
     required this.pageName,
     this.footer,
     super.key,
+<<<<<<< HEAD
   }) : assert(pageName.length > 0);
+=======
+  });
+>>>>>>> 33fe57b5c (Primer commit)
 
   final Widget header;
   final List<Widget> body;
@@ -164,8 +178,14 @@ class _GuidesParagraphTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final SmoothColorsThemeExtension colors = context
         .extension<SmoothColorsThemeExtension>();
+=======
+    final SmoothColorsThemeExtension colors = Theme.of(
+      context,
+    ).extension<SmoothColorsThemeExtension>()!;
+>>>>>>> 33fe57b5c (Primer commit)
 
     return Semantics(
       label: title,
@@ -181,19 +201,30 @@ class _GuidesParagraphTitle extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.baseline,
             textBaseline: TextBaseline.ideographic,
+<<<<<<< HEAD
             spacing: BALANCED_SPACE,
+=======
+>>>>>>> 33fe57b5c (Primer commit)
             children: <Widget>[
               const Padding(
                 padding: EdgeInsetsDirectional.only(top: 3.3),
                 child: _GuidesParagraphArrow(),
               ),
+<<<<<<< HEAD
+=======
+              const SizedBox(width: BALANCED_SPACE),
+>>>>>>> 33fe57b5c (Primer commit)
               Expanded(
                 child: Text(
                   title,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 17.0,
+<<<<<<< HEAD
                     fontWeight: FontWeight.w600,
+=======
+                    fontWeight: FontWeight.w500,
+>>>>>>> 33fe57b5c (Primer commit)
                   ),
                 ),
               ),
@@ -210,8 +241,14 @@ class _GuidesParagraphArrow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final SmoothColorsThemeExtension colors = context
         .extension<SmoothColorsThemeExtension>();
+=======
+    final SmoothColorsThemeExtension colors = Theme.of(
+      context,
+    ).extension<SmoothColorsThemeExtension>()!;
+>>>>>>> 33fe57b5c (Primer commit)
 
     return SizedBox.square(
       dimension: 20.0,
@@ -270,8 +307,14 @@ class GuidesIllustratedText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final SmoothColorsThemeExtension colors = context
         .extension<SmoothColorsThemeExtension>();
+=======
+    final SmoothColorsThemeExtension colors = Theme.of(
+      context,
+    ).extension<SmoothColorsThemeExtension>()!;
+>>>>>>> 33fe57b5c (Primer commit)
     final int imageWidth =
         (desiredWidthPercent != null ? desiredWidthPercent! : 0.25) *
         100.0 ~/
@@ -290,12 +333,19 @@ class GuidesIllustratedText extends StatelessWidget {
               horizontal: GuidesParagraph._HORIZONTAL_PADDING,
             ),
             child: Row(
+<<<<<<< HEAD
               spacing: 15.0,
+=======
+>>>>>>> 33fe57b5c (Primer commit)
               children: <Widget>[
                 Expanded(
                   flex: imageWidth,
                   child: _ImageFromAssets(imagePath: imagePath),
                 ),
+<<<<<<< HEAD
+=======
+                const SizedBox(width: 15.0),
+>>>>>>> 33fe57b5c (Primer commit)
                 Expanded(
                   flex: 100 - imageWidth,
                   child: DefaultTextStyle.merge(
@@ -312,6 +362,7 @@ class GuidesIllustratedText extends StatelessWidget {
   }
 }
 
+<<<<<<< HEAD
 class GuidesTitleContainer extends StatelessWidget {
   const GuidesTitleContainer({
     required this.child,
@@ -345,6 +396,8 @@ class GuidesTitleContainer extends StatelessWidget {
   }
 }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class GuidesTitleWithText extends StatelessWidget {
   const GuidesTitleWithText({
     required this.title,
@@ -359,6 +412,7 @@ class GuidesTitleWithText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return GuidesTitleContainer(
       title: title,
       icon: icon,
@@ -430,13 +484,35 @@ class GuidesTitleWithBulletPoints extends StatelessWidget {
               ),
             )
             .toList(growable: false),
+=======
+    return Padding(
+      padding: const EdgeInsetsDirectional.only(
+        top: 15.0,
+        bottom: 15.0,
+        start: GuidesParagraph._HORIZONTAL_PADDING - 2.0,
+        end: GuidesParagraph._HORIZONTAL_PADDING - 2.0,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          _GuidesTextTitle(title: title, icon: icon),
+          const SizedBox(height: 15.0),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 2.0),
+            child: _GuidesFormattedText(text: text),
+          ),
+        ],
+>>>>>>> 33fe57b5c (Primer commit)
       ),
     );
   }
 }
 
+<<<<<<< HEAD
 enum BulletPointType { arrow, number }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class _GuidesTextTitle extends StatelessWidget {
   const _GuidesTextTitle({required this.title, required this.icon})
     : assert(title.length > 0);
@@ -446,8 +522,14 @@ class _GuidesTextTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final SmoothColorsThemeExtension colors = context
         .extension<SmoothColorsThemeExtension>();
+=======
+    final SmoothColorsThemeExtension colors = Theme.of(
+      context,
+    ).extension<SmoothColorsThemeExtension>()!;
+>>>>>>> 33fe57b5c (Primer commit)
 
     return DecoratedBox(
       decoration: BoxDecoration(
@@ -489,6 +571,7 @@ class _GuidesTextTitle extends StatelessWidget {
   }
 }
 
+<<<<<<< HEAD
 class GuidesContainer extends StatelessWidget {
   const GuidesContainer({
     required this.child,
@@ -681,6 +764,8 @@ class GuidesCaptionContainer extends StatelessWidget {
   }
 }
 
+=======
+>>>>>>> 33fe57b5c (Primer commit)
 class GuidesImage extends StatelessWidget {
   const GuidesImage({
     required this.imagePath,
@@ -705,12 +790,61 @@ class GuidesImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return GuidesCaptionContainer(
       caption: caption,
       child: _ImageFromAssets(
         imagePath: imagePath,
         desiredWidthPercent: desiredWidthPercent,
         desiredHeightPercent: desiredHeightPercent,
+=======
+    final SmoothColorsThemeExtension colors = Theme.of(
+      context,
+    ).extension<SmoothColorsThemeExtension>()!;
+
+    return Semantics(
+      label: caption,
+      image: true,
+      excludeSemantics: true,
+      child: Padding(
+        padding: const EdgeInsetsDirectional.only(
+          top: BALANCED_SPACE,
+          start: GuidesParagraph._HORIZONTAL_PADDING,
+          end: GuidesParagraph._HORIZONTAL_PADDING,
+        ),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: colors.primaryMedium,
+            borderRadius: BorderRadius.circular(20.0),
+          ),
+          child: Padding(
+            padding: const EdgeInsetsDirectional.only(
+              top: 14.0,
+              bottom: SMALL_SPACE,
+              start: MEDIUM_SPACE,
+              end: MEDIUM_SPACE,
+            ),
+            child: Column(
+              children: <Widget>[
+                _ImageFromAssets(
+                  imagePath: imagePath,
+                  desiredWidthPercent: desiredWidthPercent,
+                  desiredHeightPercent: desiredHeightPercent,
+                ),
+                const SizedBox(height: 5.0),
+                Text(
+                  caption,
+                  style: const TextStyle(
+                    fontSize: 13.0,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.black,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+>>>>>>> 33fe57b5c (Primer commit)
       ),
     );
   }
@@ -748,6 +882,7 @@ class _ImageFromAssets extends StatelessWidget {
                 ? constraints.maxHeight * desiredHeightPercent!
                 : null,
           );
+<<<<<<< HEAD
         } else if (imagePath.endsWith('.vec')) {
           return SvgPicture(
             AssetBytesLoader(imagePath),
@@ -758,6 +893,8 @@ class _ImageFromAssets extends StatelessWidget {
                 ? constraints.maxHeight * desiredHeightPercent!
                 : null,
           );
+=======
+>>>>>>> 33fe57b5c (Primer commit)
         } else {
           return Image.asset(
             imagePath,

@@ -21,7 +21,11 @@ platform :android do
   lane :getOldVersionCode do
       begin
           old_version_code = google_play_track_version_codes(
+<<<<<<< HEAD
               package_name: "org.openfoodfacts.scanner",
+=======
+              package_name: "org.luppaappcomida.scanner",
+>>>>>>> 33fe57b5c (Primer commit)
               track: "internal",
               json_key: "./fastlane/envfiles/api-4712693179220384697-162836-33ea08672303.json",
           ).last().to_i
@@ -61,7 +65,11 @@ platform :android do
         track: 'internal',
         aab: '../build/app/outputs/bundle/release/app-release.aab',
         skip_upload_metadata: true,
+<<<<<<< HEAD
         package_name: "org.openfoodfacts.scanner",
+=======
+        package_name: "org.luppaappcomida.scanner",
+>>>>>>> 33fe57b5c (Primer commit)
         skip_upload_images: true,
         skip_upload_screenshots: true,
         skip_upload_changelogs: true,
