@@ -336,21 +336,21 @@ class UserPreferencesDevMode extends AbstractUserPreferences {
         _showSuccessMessage();
       },
     ),
-    UserPreferencesItemSwitch(
-      title: appLocalizations.dev_mode_hide_environmental_score_title,
-      value: userPreferences.getExcludedAttributeIds().contains(
-        Attribute.ATTRIBUTE_ECOSCORE,
-      ),
-      onChanged: (bool value) async {
-        const String tag = Attribute.ATTRIBUTE_ECOSCORE;
-        final List<String> list = userPreferences.getExcludedAttributeIds();
-        list.removeWhere((final String element) => element == tag);
-        if (value) {
-          list.add(tag);
-        }
-        await userPreferences.setExcludedAttributeIds(list);
-      },
-    ),
+    //UserPreferencesItemSwitch(
+    // title: appLocalizations.dev_mode_hide_environmental_score_title,
+    // value: userPreferences.getExcludedAttributeIds().contains(
+    //   Attribute.ATTRIBUTE_ECOSCORE,
+    // ),
+    // onChanged: (bool value) async {
+    //   const String tag = Attribute.ATTRIBUTE_ECOSCORE;
+    //   final List<String> list = userPreferences.getExcludedAttributeIds();
+    //    list.removeWhere((final String element) => element == tag);
+    //    if (value) {
+    //      list.add(tag);
+    //    }
+    //    await userPreferences.setExcludedAttributeIds(list);
+    //  },
+    //),
     UserPreferencesItemSwitch(
       title: appLocalizations.dev_preferences_show_folksonomy_title,
       value: userPreferences.getFlag(userPreferencesFlagHideFolksonomy) ?? true,

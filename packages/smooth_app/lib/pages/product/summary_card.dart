@@ -32,7 +32,7 @@ const List<String> _ATTRIBUTE_GROUP_ORDER = <String>[
   AttributeGroup.ATTRIBUTE_GROUP_PROCESSING,
   AttributeGroup.ATTRIBUTE_GROUP_NUTRITIONAL_QUALITY,
   AttributeGroup.ATTRIBUTE_GROUP_LABELS,
-  AttributeGroup.ATTRIBUTE_GROUP_ENVIRONMENT,
+  //AttributeGroup.ATTRIBUTE_GROUP_ENVIRONMENT,
 ];
 
 class SummaryCard extends StatefulWidget {

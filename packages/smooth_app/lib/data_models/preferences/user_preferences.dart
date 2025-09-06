@@ -378,9 +378,15 @@ class UserPreferences extends ChangeNotifier {
   bool? getFlag(final String key) =>
       _sharedPreferences.getBool(_getFlagTag(key));
 
-  List<String> getExcludedAttributeIds() =>
-      _sharedPreferences.getStringList(_TAG_EXCLUDED_ATTRIBUTE_IDS) ??
-      <String>[];
+  List<String> getExcludedAttributeIds() {
+    final List<String> list =
+        _sharedPreferences.getStringList(_TAG_EXCLUDED_ATTRIBUTE_IDS) ??
+        <String>[];
+    if (!list.contains(Attribute.ATTRIBUTE_ECOSCORE)) {
+      list.add(Attribute.ATTRIBUTE_ECOSCORE);
+    }
+    return list;
+  }
 
   Future<void> setExcludedAttributeIds(final List<String> value) async {
     await _sharedPreferences.setStringList(_TAG_EXCLUDED_ATTRIBUTE_IDS, value);
