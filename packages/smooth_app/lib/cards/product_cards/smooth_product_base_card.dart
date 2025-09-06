@@ -65,24 +65,12 @@ class ScanProductBaseCard extends StatelessWidget {
           ),
           child: DecoratedBox(
             decoration: BoxDecoration(
-<<<<<<< HEAD
-              borderRadius: ROUNDED_BORDER_RADIUS,
-              boxShadow: <BoxShadow>[
-                BoxShadow(
-                  color: Theme.of(context).shadowColor.withValues(
-                    alpha: context.lightTheme() ? 0.08 : 0.3,
-                  ),
-                  offset: const Offset(0.0, 2.0),
-                  blurRadius: 5.0,
-                  spreadRadius: 1.0,
-=======
               borderRadius: ANGULAR_BORDER_RADIUS,
               boxShadow: <BoxShadow>[
                 BoxShadow(
                   color: Colors.black.withOpacity(0.1),
                   offset: const Offset(0.0, 5.0),
                   blurRadius: 10.0,
->>>>>>> 33fe57b5c (Primer commit)
                 ),
               ],
             ),

@@ -148,10 +148,6 @@ class ProductPageState extends State<ProductPage>
                 ),
               ),
             ),
-<<<<<<< HEAD
-            ProductPageTabBar(tabController: _tabController, tabs: _tabs),
-=======
->>>>>>> 33fe57b5c (Primer commit)
           ];
         },
         body: TabBarView(

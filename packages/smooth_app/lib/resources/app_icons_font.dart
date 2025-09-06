@@ -139,14 +139,6 @@ class _IconsFont {
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-<<<<<<< HEAD
-  static const IconData farmer = IconData(
-    0xe81a,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-=======
->>>>>>> 33fe57b5c (Primer commit)
   static const IconData toggle_camera = IconData(
     0xe81b,
     fontFamily: _kFontFam,
@@ -587,14 +579,6 @@ class _IconsFont {
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-<<<<<<< HEAD
-  static const IconData manufacturing = IconData(
-    0xe873,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-=======
->>>>>>> 33fe57b5c (Primer commit)
   static const IconData image_error = IconData(
     0xe876,
     fontFamily: _kFontFam,
@@ -765,14 +749,6 @@ class _IconsFont {
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-<<<<<<< HEAD
-  static const IconData charity = IconData(
-    0xe89b,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-=======
->>>>>>> 33fe57b5c (Primer commit)
   static const IconData traces = IconData(
     0xe89c,
     fontFamily: _kFontFam,
@@ -783,39 +759,6 @@ class _IconsFont {
     fontFamily: _kFontFam,
     fontPackage: _kFontPkg,
   );
-<<<<<<< HEAD
-  static const IconData monkey_sad = IconData(
-    0xe89e,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-  static const IconData origins = IconData(
-    0xe89f,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-  static const IconData monkey_happy = IconData(
-    0xe8a0,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-  static const IconData environment_alt = IconData(
-    0xe8a1,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-  static const IconData gears = IconData(
-    0xe8a2,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-  static const IconData lab_alt = IconData(
-    0xe8a3,
-    fontFamily: _kFontFam,
-    fontPackage: _kFontPkg,
-  );
-=======
->>>>>>> 33fe57b5c (Primer commit)
   static const IconData share_cupertino = IconData(
     0xe8a4,
     fontFamily: _kFontFam,

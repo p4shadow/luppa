@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:collection/collection.dart';
-=======
->>>>>>> 33fe57b5c (Primer commit)
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:matomo_tracker/matomo_tracker.dart';
@@ -11,21 +6,10 @@ import 'package:sliver_tools/sliver_tools.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/physics.dart';
 import 'package:smooth_app/pages/guides/helpers/guides_header.dart';
-<<<<<<< HEAD
-import 'package:smooth_app/resources/app_icons.dart' as icons;
-import 'package:smooth_app/resources/app_icons.dart';
-import 'package:smooth_app/themes/smooth_theme.dart';
-import 'package:smooth_app/themes/smooth_theme_colors.dart';
-import 'package:smooth_app/themes/theme_provider.dart';
-import 'package:smooth_app/widgets/smooth_scaffold.dart';
-import 'package:smooth_app/widgets/text/text_highlighter.dart';
-import 'package:vector_graphics/vector_graphics.dart';
-=======
 import 'package:smooth_app/resources/app_icons.dart';
 import 'package:smooth_app/themes/smooth_theme_colors.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
 import 'package:smooth_app/widgets/text/text_highlighter.dart';
->>>>>>> 33fe57b5c (Primer commit)
 
 class GuidesPage extends StatelessWidget {
   const GuidesPage({
@@ -34,11 +18,7 @@ class GuidesPage extends StatelessWidget {
     required this.pageName,
     this.footer,
     super.key,
-<<<<<<< HEAD
-  }) : assert(pageName.length > 0);
-=======
   });
->>>>>>> 33fe57b5c (Primer commit)
 
   final Widget header;
   final List<Widget> body;
@@ -178,14 +158,9 @@ class _GuidesParagraphTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    final SmoothColorsThemeExtension colors = context
-        .extension<SmoothColorsThemeExtension>();
-=======
     final SmoothColorsThemeExtension colors = Theme.of(
       context,
     ).extension<SmoothColorsThemeExtension>()!;
->>>>>>> 33fe57b5c (Primer commit)
 
     return Semantics(
       label: title,
@@ -201,30 +176,19 @@ class _GuidesParagraphTitle extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.baseline,
             textBaseline: TextBaseline.ideographic,
-<<<<<<< HEAD
-            spacing: BALANCED_SPACE,
-=======
->>>>>>> 33fe57b5c (Primer commit)
             children: <Widget>[
               const Padding(
                 padding: EdgeInsetsDirectional.only(top: 3.3),
                 child: _GuidesParagraphArrow(),
               ),
-<<<<<<< HEAD
-=======
               const SizedBox(width: BALANCED_SPACE),
->>>>>>> 33fe57b5c (Primer commit)
               Expanded(
                 child: Text(
                   title,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 17.0,
-<<<<<<< HEAD
-                    fontWeight: FontWeight.w600,
-=======
                     fontWeight: FontWeight.w500,
->>>>>>> 33fe57b5c (Primer commit)
                   ),
                 ),
               ),
@@ -241,14 +205,9 @@ class _GuidesParagraphArrow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    final SmoothColorsThemeExtension colors = context
-        .extension<SmoothColorsThemeExtension>();
-=======
     final SmoothColorsThemeExtension colors = Theme.of(
       context,
     ).extension<SmoothColorsThemeExtension>()!;
->>>>>>> 33fe57b5c (Primer commit)
 
     return SizedBox.square(
       dimension: 20.0,
@@ -307,14 +266,9 @@ class GuidesIllustratedText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    final SmoothColorsThemeExtension colors = context
-        .extension<SmoothColorsThemeExtension>();
-=======
     final SmoothColorsThemeExtension colors = Theme.of(
       context,
     ).extension<SmoothColorsThemeExtension>()!;
->>>>>>> 33fe57b5c (Primer commit)
     final int imageWidth =
         (desiredWidthPercent != null ? desiredWidthPercent! : 0.25) *
         100.0 ~/
@@ -333,19 +287,12 @@ class GuidesIllustratedText extends StatelessWidget {
               horizontal: GuidesParagraph._HORIZONTAL_PADDING,
             ),
             child: Row(
-<<<<<<< HEAD
-              spacing: 15.0,
-=======
->>>>>>> 33fe57b5c (Primer commit)
               children: <Widget>[
                 Expanded(
                   flex: imageWidth,
                   child: _ImageFromAssets(imagePath: imagePath),
                 ),
-<<<<<<< HEAD
-=======
                 const SizedBox(width: 15.0),
->>>>>>> 33fe57b5c (Primer commit)
                 Expanded(
                   flex: 100 - imageWidth,
                   child: DefaultTextStyle.merge(
@@ -362,42 +309,6 @@ class GuidesIllustratedText extends StatelessWidget {
   }
 }
 
-<<<<<<< HEAD
-class GuidesTitleContainer extends StatelessWidget {
-  const GuidesTitleContainer({
-    required this.child,
-    required this.icon,
-    required this.title,
-    super.key,
-  }) : assert(title.length > 0);
-
-  final Widget child;
-  final AppIcon icon;
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsetsDirectional.only(
-        top: 15.0,
-        bottom: 15.0,
-        start: GuidesParagraph._HORIZONTAL_PADDING - 2.0,
-        end: GuidesParagraph._HORIZONTAL_PADDING - 2.0,
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        spacing: 15.0,
-        children: <Widget>[
-          _GuidesTextTitle(title: title, icon: icon),
-          child,
-        ],
-      ),
-    );
-  }
-}
-
-=======
->>>>>>> 33fe57b5c (Primer commit)
 class GuidesTitleWithText extends StatelessWidget {
   const GuidesTitleWithText({
     required this.title,
@@ -412,79 +323,6 @@ class GuidesTitleWithText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return GuidesTitleContainer(
-      title: title,
-      icon: icon,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 2.0),
-        child: _GuidesFormattedText(text: text),
-      ),
-    );
-  }
-}
-
-class GuidesTitleWithBulletPoints extends StatelessWidget {
-  const GuidesTitleWithBulletPoints({
-    required this.title,
-    required this.icon,
-    required this.bulletPoints,
-    this.type = BulletPointType.arrow,
-    super.key,
-  });
-
-  final String title;
-  final AppIcon icon;
-  final List<String> bulletPoints;
-  final BulletPointType type;
-
-  @override
-  Widget build(BuildContext context) {
-    final SmoothColorsThemeExtension colors = context
-        .extension<SmoothColorsThemeExtension>();
-
-    return GuidesTitleContainer(
-      title: title,
-      icon: icon,
-      child: Column(
-        children: bulletPoints
-            .mapIndexed(
-              (int position, String item) => Padding(
-                padding: EdgeInsetsDirectional.only(
-                  start: LARGE_SPACE,
-                  end: LARGE_SPACE,
-                  top: type == BulletPointType.arrow ? 8.0 : 0.0,
-                ),
-                child: Row(
-                  spacing: 10.0,
-                  children: <Widget>[
-                    switch (type) {
-                      BulletPointType.arrow => icons.CircledArrow.right(
-                        type: CircledArrowType.normal,
-                        circleColor: colors.primarySemiDark,
-                      ),
-                      BulletPointType.number => Container(
-                        decoration: BoxDecoration(
-                          color: colors.primarySemiDark,
-                          shape: BoxShape.circle,
-                        ),
-                        padding: const EdgeInsetsDirectional.all(SMALL_SPACE),
-                        child: Text(
-                          (position + 1).toString(),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ),
-                    },
-                    Expanded(child: _GuidesFormattedText(text: item)),
-                  ],
-                ),
-              ),
-            )
-            .toList(growable: false),
-=======
     return Padding(
       padding: const EdgeInsetsDirectional.only(
         top: 15.0,
@@ -502,17 +340,11 @@ class GuidesTitleWithBulletPoints extends StatelessWidget {
             child: _GuidesFormattedText(text: text),
           ),
         ],
->>>>>>> 33fe57b5c (Primer commit)
       ),
     );
   }
 }
 
-<<<<<<< HEAD
-enum BulletPointType { arrow, number }
-
-=======
->>>>>>> 33fe57b5c (Primer commit)
 class _GuidesTextTitle extends StatelessWidget {
   const _GuidesTextTitle({required this.title, required this.icon})
     : assert(title.length > 0);
@@ -522,14 +354,9 @@ class _GuidesTextTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    final SmoothColorsThemeExtension colors = context
-        .extension<SmoothColorsThemeExtension>();
-=======
     final SmoothColorsThemeExtension colors = Theme.of(
       context,
     ).extension<SmoothColorsThemeExtension>()!;
->>>>>>> 33fe57b5c (Primer commit)
 
     return DecoratedBox(
       decoration: BoxDecoration(
@@ -571,201 +398,6 @@ class _GuidesTextTitle extends StatelessWidget {
   }
 }
 
-<<<<<<< HEAD
-class GuidesContainer extends StatelessWidget {
-  const GuidesContainer({
-    required this.child,
-    this.color,
-    this.margin,
-    this.padding,
-    super.key,
-  });
-
-  final Widget child;
-
-  final Color? color;
-  final EdgeInsetsGeometry? margin;
-  final EdgeInsetsGeometry? padding;
-
-  @override
-  Widget build(BuildContext context) {
-    final SmoothColorsThemeExtension colors = context
-        .extension<SmoothColorsThemeExtension>();
-
-    return Padding(
-      padding:
-          margin ??
-          const EdgeInsetsDirectional.only(
-            top: BALANCED_SPACE,
-            start: GuidesParagraph._HORIZONTAL_PADDING,
-            end: GuidesParagraph._HORIZONTAL_PADDING,
-          ),
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color:
-              color ??
-              (context.lightTheme()
-                  ? colors.primaryMedium
-                  : colors.primaryUltraBlack),
-          borderRadius: BorderRadius.circular(20.0),
-        ),
-        child: Padding(
-          padding:
-              padding ??
-              const EdgeInsetsDirectional.only(
-                top: 14.0,
-                bottom: SMALL_SPACE,
-                start: MEDIUM_SPACE,
-                end: MEDIUM_SPACE,
-              ),
-          child: child,
-        ),
-      ),
-    );
-  }
-}
-
-class GuidesGrid extends StatelessWidget {
-  const GuidesGrid({
-    required this.items,
-    this.columns,
-    this.horizontalSpacing,
-    this.verticalSpacing,
-    this.itemAssetHeight,
-    super.key,
-  });
-
-  final List<GuidesGridItem> items;
-  final double? itemAssetHeight;
-  final double? horizontalSpacing;
-  final double? verticalSpacing;
-  final int? columns;
-
-  @override
-  Widget build(BuildContext context) {
-    final SmoothColorsThemeExtension colors = context
-        .extension<SmoothColorsThemeExtension>();
-    final bool lightTheme = context.lightTheme();
-
-    final double spacing = horizontalSpacing ?? 0.0;
-    final int columns = this.columns ?? 3;
-
-    return GuidesContainer(
-      padding: const EdgeInsetsDirectional.symmetric(
-        vertical: SMALL_SPACE,
-        horizontal: BALANCED_SPACE,
-      ),
-      margin: const EdgeInsetsDirectional.symmetric(horizontal: SMALL_SPACE),
-      color: lightTheme ? null : colors.primaryTone,
-      child: SizedBox(
-        width: double.infinity,
-        child: LayoutBuilder(
-          builder: (_, BoxConstraints constraints) {
-            return Wrap(
-              spacing: spacing,
-              runSpacing: verticalSpacing ?? 0.0,
-              children: items
-                  .map(
-                    (GuidesGridItem item) => SizedBox(
-                      width:
-                          constraints.maxWidth / columns -
-                          (spacing * (columns - 1) / columns),
-                      child: Material(
-                        color: lightTheme
-                            ? colors.primaryLight
-                            : colors.primaryUltraBlack,
-                        borderRadius: BorderRadius.circular(15.0),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.symmetric(
-                            horizontal: SMALL_SPACE,
-                            vertical: BALANCED_SPACE,
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            mainAxisSize: MainAxisSize.min,
-                            spacing: MEDIUM_SPACE,
-                            children: <Widget>[
-                              SizedBox(
-                                height: 30.0,
-                                child: Align(
-                                  alignment: AlignmentDirectional.bottomCenter,
-                                  child: _ImageFromAssets(
-                                    imagePath: item.asset,
-                                  ),
-                                ),
-                              ),
-                              AutoSizeText(
-                                item.label,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  fontSize: 13.0,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  )
-                  .toList(growable: false),
-            );
-          },
-        ),
-      ),
-    );
-  }
-}
-
-@immutable
-class GuidesGridItem {
-  const GuidesGridItem({required this.asset, required this.label});
-
-  final String asset;
-  final String label;
-}
-
-class GuidesCaptionContainer extends StatelessWidget {
-  const GuidesCaptionContainer({
-    required this.caption,
-    required this.child,
-    super.key,
-  }) : assert(caption.length > 0);
-
-  final String caption;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Semantics(
-      label: caption,
-      image: true,
-      excludeSemantics: true,
-      child: GuidesContainer(
-        child: Column(
-          spacing: 5.0,
-          children: <Widget>[
-            child,
-            Text(
-              caption,
-              style: TextStyle(
-                fontSize: 13.0,
-                fontStyle: FontStyle.italic,
-                color: context.lightTheme() ? Colors.black : Colors.white,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-=======
->>>>>>> 33fe57b5c (Primer commit)
 class GuidesImage extends StatelessWidget {
   const GuidesImage({
     required this.imagePath,
@@ -790,14 +422,6 @@ class GuidesImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return GuidesCaptionContainer(
-      caption: caption,
-      child: _ImageFromAssets(
-        imagePath: imagePath,
-        desiredWidthPercent: desiredWidthPercent,
-        desiredHeightPercent: desiredHeightPercent,
-=======
     final SmoothColorsThemeExtension colors = Theme.of(
       context,
     ).extension<SmoothColorsThemeExtension>()!;
@@ -844,7 +468,6 @@ class GuidesImage extends StatelessWidget {
             ),
           ),
         ),
->>>>>>> 33fe57b5c (Primer commit)
       ),
     );
   }
@@ -882,19 +505,6 @@ class _ImageFromAssets extends StatelessWidget {
                 ? constraints.maxHeight * desiredHeightPercent!
                 : null,
           );
-<<<<<<< HEAD
-        } else if (imagePath.endsWith('.vec')) {
-          return SvgPicture(
-            AssetBytesLoader(imagePath),
-            width: desiredWidthPercent != null
-                ? constraints.maxWidth * desiredWidthPercent!
-                : null,
-            height: desiredHeightPercent != null
-                ? constraints.maxHeight * desiredHeightPercent!
-                : null,
-          );
-=======
->>>>>>> 33fe57b5c (Primer commit)
         } else {
           return Image.asset(
             imagePath,

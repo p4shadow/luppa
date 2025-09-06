@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-<<<<<<< HEAD
-        <color android:color="@color/background_splashscreen" />
-=======
         <color android:color="@color/background_splashscreen"/>
->>>>>>> 33fe57b5c (Primer commit)
     </item>
 
     <item>
         <bitmap
-<<<<<<< HEAD
-            android:gravity="center"
-            android:src="@drawable/ic_launcher_foreground" />
-    </item>
-
-    <item
-        android:width="200dp"
-        android:height="80dp"
-        android:bottom="20dp">
-        <bitmap
-            android:gravity="bottom"
-            android:src="@drawable/logo_text" />
-=======
                 android:src="@drawable/ic_launcher_foreground"
                 android:gravity="center"/>
     </item>
@@ -31,7 +14,6 @@
         <bitmap
                 android:src="@drawable/logo_text"
                 android:gravity="bottom"/>
->>>>>>> 33fe57b5c (Primer commit)
     </item>
 
 </layer-list>

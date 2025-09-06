@@ -27,11 +27,8 @@ class SmoothColorsThemeExtension
     required this.greyLight,
     required this.cellOdd,
     required this.cellEven,
-<<<<<<< HEAD
-=======
     required this.nova,
     required this.recommendation,
->>>>>>> 33fe57b5c (Primer commit)
   });
 
   SmoothColorsThemeExtension.defaultValues(bool lightTheme)
@@ -58,13 +55,9 @@ class SmoothColorsThemeExtension
       greyMedium = const Color(0xFF8F8F8F),
       greyLight = const Color(0xFFE0E0E0),
       cellOdd = lightTheme ? const Color(0xFFFAF8F6) : const Color(0xFF2D251E),
-<<<<<<< HEAD
-      cellEven = lightTheme ? const Color(0xFFFFFFFF) : const Color(0xFF201A17);
-=======
       cellEven = lightTheme ? const Color(0xFFFFFFFF) : const Color(0xFF201A17),
       nova = const Color(0xFFFFF0E4),
       recommendation = const Color(0xFFFFFFE0);
->>>>>>> 33fe57b5c (Primer commit)
 
   // Ristreto
   final Color primaryUltraBlack;
@@ -108,11 +101,8 @@ class SmoothColorsThemeExtension
 
   final Color cellOdd;
   final Color cellEven;
-<<<<<<< HEAD
-=======
   final Color nova;
   final Color recommendation;
->>>>>>> 33fe57b5c (Primer commit)
 
   @override
   ThemeExtension<SmoothColorsThemeExtension> copyWith({
@@ -140,11 +130,8 @@ class SmoothColorsThemeExtension
     Color? greyLight,
     Color? cellOdd,
     Color? cellEven,
-<<<<<<< HEAD
-=======
     Color? nova,
     Color? recommendation,
->>>>>>> 33fe57b5c (Primer commit)
   }) {
     return SmoothColorsThemeExtension(
       primaryUltraBlack: primaryUltraBlack ?? this.primaryUltraBlack,
@@ -171,11 +158,8 @@ class SmoothColorsThemeExtension
       greyLight: greyLight ?? this.greyLight,
       cellOdd: cellOdd ?? this.cellOdd,
       cellEven: cellEven ?? this.cellEven,
-<<<<<<< HEAD
-=======
       nova: nova ?? this.nova,
       recommendation: recommendation ?? this.recommendation,
->>>>>>> 33fe57b5c (Primer commit)
     );
   }
 
@@ -229,11 +213,8 @@ class SmoothColorsThemeExtension
       greyLight: Color.lerp(greyLight, other.greyLight, t)!,
       cellOdd: Color.lerp(cellOdd, other.cellOdd, t)!,
       cellEven: Color.lerp(cellEven, other.cellEven, t)!,
-<<<<<<< HEAD
-=======
       nova: Color.lerp(nova, other.nova, t)!,
       recommendation: Color.lerp(recommendation, other.recommendation, t)!,
->>>>>>> 33fe57b5c (Primer commit)
     );
   }
 }

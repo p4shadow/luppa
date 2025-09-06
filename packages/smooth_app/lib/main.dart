@@ -187,8 +187,6 @@ class _SmoothAppState extends State<SmoothApp> {
     if (!_screenshots) {
       await _userPreferences.init(_productPreferences);
     }
-<<<<<<< HEAD
-=======
 
     if (_userPreferences.userCountryCode == null) {
       await ProductQuery.setCountry(_userPreferences, 'AR');
@@ -197,7 +195,6 @@ class _SmoothAppState extends State<SmoothApp> {
       }
     }
 
->>>>>>> 33fe57b5c (Primer commit)
     return true;
   }
 

@@ -8,10 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:path/path.dart';
 import 'package:provider/provider.dart';
-<<<<<<< HEAD
-import 'package:smooth_app/background/background_crop_result.dart';
-=======
->>>>>>> 33fe57b5c (Primer commit)
 import 'package:smooth_app/background/background_task_barcode.dart';
 import 'package:smooth_app/background/background_task_price.dart';
 import 'package:smooth_app/background/background_task_queue.dart';
@@ -250,11 +246,7 @@ class BackgroundTaskImage extends BackgroundTaskUpload {
   /// Returns directly the original [fullPath] if no crop operation was needed.
   /// Returns the path of the cropped file if relevant.
   /// Returns null if the image (cropped or not) is too small.
-<<<<<<< HEAD
-  static Future<BackgroundCropResult> cropIfNeeded({
-=======
   static Future<String?> cropIfNeeded({
->>>>>>> 33fe57b5c (Primer commit)
     required final String fullPath,
     required final int rotationDegrees,
     required final int cropX1,
@@ -282,14 +274,9 @@ class BackgroundTaskImage extends BackgroundTaskUpload {
               cropY2,
             ),
           );
-<<<<<<< HEAD
-    final File fullFile = await BackgroundTaskUpload.getFile(fullPath);
-    final ui.Image full = await loadUiImage(await fullFile.readAsBytes());
-=======
     final ui.Image full = await loadUiImage(
       await (await BackgroundTaskUpload.getFile(fullPath)).readAsBytes(),
     );
->>>>>>> 33fe57b5c (Primer commit)
     if (!forceCompression) {
       if (cropX1 == 0 &&
           cropY1 == 0 &&
@@ -297,27 +284,11 @@ class BackgroundTaskImage extends BackgroundTaskUpload {
           cropY2 == _cropConversionFactor &&
           rotationDegrees == 0) {
         if (!isPictureBigEnough(full.width, full.height)) {
-<<<<<<< HEAD
-          return BackgroundCropResult.error(
-            'Picture too small (${full.width} x ${full.height})',
-          );
-        }
-        // in that case, no need to crop
-        if (overlayPainter == null) {
-          return BackgroundCropResult.success(
-            filePath: fullPath,
-            fileSize: await fullFile.length(),
-            width: full.width,
-            height: full.height,
-            message: 'Full image "as-is"',
-          );
-=======
           return null;
         }
         // in that case, no need to crop
         if (overlayPainter == null) {
           return fullPath;
->>>>>>> 33fe57b5c (Primer commit)
         }
       }
     }
@@ -342,13 +313,7 @@ class BackgroundTaskImage extends BackgroundTaskUpload {
 
     final Size croppedSize = getCroppedSize();
     if (!isPictureBigEnough(croppedSize.width, croppedSize.height)) {
-<<<<<<< HEAD
-      return BackgroundCropResult.error(
-        'Cropped picture too small (${croppedSize.width} x ${croppedSize.height})',
-      );
-=======
       return null;
->>>>>>> 33fe57b5c (Primer commit)
     }
     final ui.Image cropped = await CropController.getCroppedBitmap(
       crop: getDownsizedRect(cropX1, cropY1, cropX2, cropY2),
@@ -358,28 +323,12 @@ class BackgroundTaskImage extends BackgroundTaskUpload {
       quality: FilterQuality.high,
       overlayPainter: overlayPainter,
     );
-<<<<<<< HEAD
-    final File croppedFile = await BackgroundTaskUpload.getFile(croppedPath);
-    await saveJpeg(
-      file: croppedFile,
-      source: cropped,
-      quality: compressQuality,
-    );
-    return BackgroundCropResult.success(
-      filePath: croppedPath,
-      fileSize: await croppedFile.length(),
-      width: cropped.width,
-      height: cropped.height,
-      message: 'Cropped',
-    );
-=======
     await saveJpeg(
       file: await BackgroundTaskUpload.getFile(croppedPath),
       source: cropped,
       quality: compressQuality,
     );
     return croppedPath;
->>>>>>> 33fe57b5c (Primer commit)
   }
 
   static Future<String> getCroppedPath(final String fullPath) async {
@@ -404,70 +353,6 @@ class BackgroundTaskImage extends BackgroundTaskUpload {
   /// Uploads the product image.
   @override
   Future<void> upload() async {
-<<<<<<< HEAD
-    SendImage? image;
-    BackgroundCropResult? cropResult;
-    try {
-      cropResult = await cropIfNeeded(
-        fullPath: fullPath,
-        rotationDegrees: rotationDegrees,
-        cropX1: cropX1,
-        cropY1: cropY1,
-        cropX2: cropX2,
-        cropY2: cropY2,
-        compressQuality: 100,
-        forceCompression: false,
-        eraserCoordinates: eraserCoordinates,
-      );
-      final String? path = cropResult.filePath;
-      if (path == null) {
-        // TODO(monsieurtanuki): maybe something more refined when we dismiss the picture, like alerting the user, though it's not supposed to happen anymore from upstream.
-        return;
-      }
-      final ImageField imageField = ImageField.fromOffTag(this.imageField)!;
-      final OpenFoodFactsLanguage language = getLanguage();
-      final User user = getUser();
-      image = SendImage(
-        lang: language,
-        barcode: barcode,
-        imageField: imageField,
-        imageUri: Uri.parse(path),
-      );
-
-      final Status status = await OpenFoodAPIClient.addProductImage(
-        user,
-        image,
-        uriHelper: uriProductHelper,
-      );
-      if (status.status == 'status ok') {
-        // successfully uploaded a new picture and set it as field+language
-        return;
-      }
-      final int? imageId = status.imageId;
-      if (status.status == 'status not ok' && imageId != null) {
-        // The very same image was already uploaded and therefore was rejected.
-        // We just have to select this image, with no angle.
-        final String? imageUrl = await OpenFoodAPIClient.setProductImageAngle(
-          barcode: barcode,
-          imageField: imageField,
-          language: language,
-          imgid: '$imageId',
-          angle: ImageAngle.NOON,
-          user: user,
-          uriHelper: uriProductHelper,
-        );
-        if (imageUrl == null) {
-          throw Exception('Could not select picture');
-        }
-        return;
-      }
-      throw Exception(
-        'Could not upload picture: ${status.status} / ${status.error}',
-      );
-    } catch (e) {
-      throw Exception('$e $cropResult - ${image?.toJson()}');
-    }
-=======
     final String? path = await cropIfNeeded(
       fullPath: fullPath,
       rotationDegrees: rotationDegrees,
@@ -523,7 +408,6 @@ class BackgroundTaskImage extends BackgroundTaskUpload {
     throw Exception(
       'Could not upload picture: ${status.status} / ${status.error}',
     );
->>>>>>> 33fe57b5c (Primer commit)
   }
 
   static bool _isFileWritable(File file) {

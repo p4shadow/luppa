@@ -236,16 +236,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     );
     if (attributeChips.isNotEmpty) {
       displayedGroups.add(
-<<<<<<< HEAD
-        SummaryAttributeGroup(
-          attributeChips: attributeChips,
-          isClickable: widget.attributeGroupsClickable,
-          isFirstGroup: displayedGroups.isEmpty,
-          groupName: null,
-        ),
-=======
         Wrap(spacing: 8.0, runSpacing: 4.0, children: attributeChips),
->>>>>>> 33fe57b5c (Primer commit)
       );
     }
     // Then, all groups, each with very important and important attributes
@@ -361,33 +352,6 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
   }
 
   List<Widget> _getAttributes(List<Attribute> scoreAttributes) {
-<<<<<<< HEAD
-    final List<Widget> attributes = <Widget>[];
-
-    for (final Attribute attribute in scoreAttributes) {
-      if (widget.isFullVersion) {
-        attributes.add(
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
-            child: InkWell(
-              borderRadius: ANGULAR_BORDER_RADIUS,
-              onTap: () async => _openFullKnowledgePanel(attribute: attribute),
-              child: ScoreCard.attribute(
-                attribute: attribute,
-                isClickable: true,
-                margin: EdgeInsets.zero,
-              ),
-            ),
-          ),
-        );
-      } else {
-        attributes.add(
-          ScoreCard.attribute(attribute: attribute, isClickable: false),
-        );
-      }
-    }
-    return attributes;
-=======
     if (scoreAttributes.isEmpty) {
       return <Widget>[];
     }
@@ -412,7 +376,6 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
         ],
       ),
     ];
->>>>>>> 33fe57b5c (Primer commit)
   }
 
   List<Widget> _buildAttributeChips(final List<Attribute> attributes) {
@@ -438,31 +401,6 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     if (attributeDisplayTitle == null) {
       return null;
     }
-<<<<<<< HEAD
-    return LayoutBuilder(
-      builder: (BuildContext context, BoxConstraints constraints) {
-        return SizedBox(
-          width: constraints.maxWidth / 2,
-          child: InkWell(
-            borderRadius: ANGULAR_BORDER_RADIUS,
-            enableFeedback: _isAttributeOpeningAllowed(attribute),
-            onTap: () async => _openFullKnowledgePanel(attribute: attribute),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                spacing: SMALL_SPACE,
-                children: <Widget>[
-                  attributeIcon,
-                  Expanded(child: Text(attributeDisplayTitle)),
-                ],
-              ),
-            ),
-          ),
-        );
-      },
-=======
     return InkWell(
       borderRadius: ANGULAR_BORDER_RADIUS,
       enableFeedback: _isAttributeOpeningAllowed(attribute),
@@ -493,7 +431,6 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
           ],
         ),
       ),
->>>>>>> 33fe57b5c (Primer commit)
     );
   }
 

@@ -81,11 +81,7 @@ class _GuidesHeaderDelegate extends SliverPersistentHeaderDelegate {
         decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
-<<<<<<< HEAD
-              bottom: HEADER_ROUNDED_RADIUS * (1.0 - progress),
-=======
               bottom: HEADER_ROUNDED_RADIUS * (1 - progress),
->>>>>>> 33fe57b5c (Primer commit)
             ),
           ),
           color: colors.primaryDark,
@@ -114,11 +110,7 @@ class _GuidesHeaderDelegate extends SliverPersistentHeaderDelegate {
                     fit: OverflowBoxFit.deferToChild,
                     maxHeight:
                         GuidesHeader.HEADER_HEIGHT -
-<<<<<<< HEAD
-                        10.0 -
-=======
                         10 -
->>>>>>> 33fe57b5c (Primer commit)
                         _CloseButtonLayout._CLOSE_BUTTON_SIZE,
                     child: Align(
                       alignment: Alignment.bottomLeft,
@@ -142,22 +134,11 @@ class _GuidesHeaderDelegate extends SliverPersistentHeaderDelegate {
               LayoutId(
                 id: _GuidesHeaderLayoutId.illustration,
                 child: OverflowBox(
-<<<<<<< HEAD
-                  maxHeight: GuidesHeader.HEADER_HEIGHT - 33.0,
-                  fit: OverflowBoxFit.deferToChild,
-                  child: Offstage(
-                    offstage: progress == 1.0,
-                    child: Opacity(
-                      opacity: 1.0 - progress,
-                      child: illustration,
-                    ),
-=======
                   maxHeight: GuidesHeader.HEADER_HEIGHT - 33,
                   fit: OverflowBoxFit.deferToChild,
                   child: Offstage(
                     offstage: progress == 1.0,
                     child: Opacity(opacity: 1 - progress, child: illustration),
->>>>>>> 33fe57b5c (Primer commit)
                   ),
                 ),
               ),

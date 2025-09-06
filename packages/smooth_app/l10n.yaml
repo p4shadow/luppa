@@ -4,7 +4,4 @@ arb-dir: lib/l10n
 template-arb-file: app_en.arb
 output-localization-file: app_localizations.dart
 nullable-getter: false
-<<<<<<< HEAD
-=======
 synthetic-package: false
->>>>>>> 33fe57b5c (Primer commit)

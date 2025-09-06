@@ -36,12 +36,6 @@ abstract class AbstractSimpleInputPageHelper extends ChangeNotifier {
   /// "Have the terms been changed?"
   bool _changed = false;
 
-<<<<<<< HEAD
-  /// If at least one call to [reInit] was done.
-  bool _initialized = false;
-
-=======
->>>>>>> 33fe57b5c (Primer commit)
   /// Starts from scratch with a new (or refreshed) [Product].
   void reInit(final Product product, {final bool backgroundTask = false}) {
     this.product = product;
@@ -58,10 +52,6 @@ abstract class AbstractSimpleInputPageHelper extends ChangeNotifier {
       unawaited(_loadRobotoffQuestions());
     } catch (_) {}
 
-<<<<<<< HEAD
-    _initialized = true;
-=======
->>>>>>> 33fe57b5c (Primer commit)
     notifyListeners();
   }
 
@@ -698,11 +688,7 @@ class SimpleInputPageOriginHelper extends AbstractSimpleInputPageHelper {
   TagType? getTagType() => TagType.ORIGINS;
 
   @override
-<<<<<<< HEAD
-  Widget getIcon() => const icons.Origins();
-=======
   Widget getIcon() => const Icon(Icons.travel_explore);
->>>>>>> 33fe57b5c (Primer commit)
 
   @override
   BackgroundTaskDetailsStamp getStamp() => BackgroundTaskDetailsStamp.origins;
@@ -960,17 +946,6 @@ class SimpleInputPageCategoryHelper extends AbstractSimpleInputPageHelper {
       product.categoriesTagsInLanguages?[getLanguage()] ?? <String>[];
 
   @override
-<<<<<<< HEAD
-  bool isPopulated(Product product) {
-    if (!_initialized) {
-      reInit(product);
-    }
-    return super.isPopulated(product);
-  }
-
-  @override
-=======
->>>>>>> 33fe57b5c (Primer commit)
   void changeProduct(final Product changedProduct) {
     // for the local change
     changedProduct.categoriesTagsInLanguages =

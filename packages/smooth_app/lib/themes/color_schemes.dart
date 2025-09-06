@@ -5,17 +5,10 @@ const Color seed = Color(0xFF99460D);
 
 const ColorScheme lightColorScheme = ColorScheme(
   brightness: Brightness.light,
-<<<<<<< HEAD
-  primary: Color.fromRGBO(133, 116, 108, 1.0),
-  inversePrimary: Color(0xFF341100),
-  onPrimary: Color(0xFFFFFFFF),
-  secondary: Color(0xFFEDE0DB),
-=======
   primary: Color(0xFF4CAF50), // Vibrant Green
   inversePrimary: Color(0xFF341100),
   onPrimary: Color(0xFFFFFFFF),
   secondary: Color(0xFFC8E6C9), // Light Green
->>>>>>> 33fe57b5c (Primer commit)
   onSecondary: Color(0xFF000000),
   error: Color(0xFFEB5757),
   onError: Color(0xFFFFFFFF),

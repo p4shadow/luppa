@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-package org.openfoodfacts.scanner
-=======
 package org.luppaappcomida.scanner
->>>>>>> 33fe57b5c (Primer commit)
 
 
 import androidx.annotation.NonNull
