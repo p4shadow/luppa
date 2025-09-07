@@ -252,24 +252,34 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
         continue;
       }
       final AttributeGroup group = groupIterable.single;
+      final List<Attribute> veryImportantAttributes = getFilteredAttributes(
+        group,
+        PreferenceImportance.ID_VERY_IMPORTANT,
+        _attributesToExcludeIfStatusIsUnknown,
+        widget._productPreferences,
+      );
+      final List<Attribute> importantAttributes = getFilteredAttributes(
+        group,
+        PreferenceImportance.ID_IMPORTANT,
+        _attributesToExcludeIfStatusIsUnknown,
+        widget._productPreferences,
+      );
+
+      if (group.id == AttributeGroup.ATTRIBUTE_GROUP_NUTRITIONAL_QUALITY) {
+        veryImportantAttributes.removeWhere(
+          (Attribute attribute) =>
+              attribute.id == Attribute.ATTRIBUTE_NUTRISCORE,
+        );
+        importantAttributes.removeWhere(
+          (Attribute attribute) =>
+              attribute.id == Attribute.ATTRIBUTE_NUTRISCORE,
+        );
+      }
+
       final List<Widget> attributeChips = _buildAttributeChips(
-        getFilteredAttributes(
-          group,
-          PreferenceImportance.ID_VERY_IMPORTANT,
-          _attributesToExcludeIfStatusIsUnknown,
-          widget._productPreferences,
-        ),
+        veryImportantAttributes,
       );
-      attributeChips.addAll(
-        _buildAttributeChips(
-          getFilteredAttributes(
-            group,
-            PreferenceImportance.ID_IMPORTANT,
-            _attributesToExcludeIfStatusIsUnknown,
-            widget._productPreferences,
-          ),
-        ),
-      );
+      attributeChips.addAll(_buildAttributeChips(importantAttributes));
       if (attributeChips.isNotEmpty) {
         displayedGroups.add(
           SummaryAttributeGroup(

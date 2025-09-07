@@ -4817,4 +4817,31 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get prices_proof_error =>
       'Falló la autenticación, no se pueden obtener pruebas';
+
+  @override
+  String get nova_group_1_title =>
+      'Alimentos no procesados o mínimamente procesados';
+
+  @override
+  String get nova_group_2_title => 'Ingredientes culinarios procesados';
+
+  @override
+  String get nova_group_3_title => 'Alimentos procesados';
+
+  @override
+  String get nova_group_4_title => 'Alimentos y bebidas ultraprocesados';
+
+  @override
+  String get nova_group_1_text =>
+      'Alimentos sin procesar o mínimamente procesados';
+
+  @override
+  String get nova_group_2_text => 'Ingredientes culinarios procesados';
+
+  @override
+  String get nova_group_3_text => 'Alimentos procesados';
+
+  @override
+  String get nova_group_4_text =>
+      'Productos alimenticios y bebidas ultraprocesados';
 }

@@ -8274,6 +8274,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Authentication failed, unable to fetch proofs'**
   String get prices_proof_error;
+
+  /// No description provided for @nova_group_1_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Unprocessed or minimally processed foods'**
+  String get nova_group_1_title;
+
+  /// No description provided for @nova_group_2_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Processed culinary ingredients'**
+  String get nova_group_2_title;
+
+  /// No description provided for @nova_group_3_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Processed foods'**
+  String get nova_group_3_title;
+
+  /// No description provided for @nova_group_4_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Ultra-processed food and drink products'**
+  String get nova_group_4_title;
+
+  /// No description provided for @nova_group_1_text.
+  ///
+  /// In en, this message translates to:
+  /// **'Unprocessed or minimally processed foods'**
+  String get nova_group_1_text;
+
+  /// No description provided for @nova_group_2_text.
+  ///
+  /// In en, this message translates to:
+  /// **'Processed culinary ingredients'**
+  String get nova_group_2_text;
+
+  /// No description provided for @nova_group_3_text.
+  ///
+  /// In en, this message translates to:
+  /// **'Processed foods'**
+  String get nova_group_3_text;
+
+  /// No description provided for @nova_group_4_text.
+  ///
+  /// In en, this message translates to:
+  /// **'Ultra-processed food and drink products'**
+  String get nova_group_4_text;
 }
 
 class _AppLocalizationsDelegate

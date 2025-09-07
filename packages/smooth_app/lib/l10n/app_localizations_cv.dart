@@ -4742,4 +4742,28 @@ class AppLocalizationsCv extends AppLocalizations {
   @override
   String get prices_proof_error =>
       'Аутентификаци ӑнӑҫсӑр пулчӗ, ҫирӗплетӳсем илме май килмерӗ';
+
+  @override
+  String get nova_group_1_title => 'Unprocessed or minimally processed foods';
+
+  @override
+  String get nova_group_2_title => 'Processed culinary ingredients';
+
+  @override
+  String get nova_group_3_title => 'Processed foods';
+
+  @override
+  String get nova_group_4_title => 'Ultra-processed food and drink products';
+
+  @override
+  String get nova_group_1_text => 'Unprocessed or minimally processed foods';
+
+  @override
+  String get nova_group_2_text => 'Processed culinary ingredients';
+
+  @override
+  String get nova_group_3_text => 'Processed foods';
+
+  @override
+  String get nova_group_4_text => 'Ultra-processed food and drink products';
 }

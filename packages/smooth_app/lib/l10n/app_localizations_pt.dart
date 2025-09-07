@@ -4825,6 +4825,30 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get prices_proof_error =>
       'Falha na autenticação, não foi possível obter provas';
+
+  @override
+  String get nova_group_1_title => 'Unprocessed or minimally processed foods';
+
+  @override
+  String get nova_group_2_title => 'Processed culinary ingredients';
+
+  @override
+  String get nova_group_3_title => 'Processed foods';
+
+  @override
+  String get nova_group_4_title => 'Ultra-processed food and drink products';
+
+  @override
+  String get nova_group_1_text => 'Unprocessed or minimally processed foods';
+
+  @override
+  String get nova_group_2_text => 'Processed culinary ingredients';
+
+  @override
+  String get nova_group_3_text => 'Processed foods';
+
+  @override
+  String get nova_group_4_text => 'Ultra-processed food and drink products';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).

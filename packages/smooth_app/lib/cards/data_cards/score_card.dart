@@ -36,25 +36,30 @@ enum CardEvaluation {
 
 class ScoreCard extends StatelessWidget {
   ScoreCard.attribute({
-    required Attribute attribute,
+    required this.attribute,
     required this.isClickable,
     this.margin,
   }) : type = ScoreCardType.attribute,
-       iconUrl = attribute.iconUrl,
-       description = attribute.descriptionShort ?? attribute.description ?? '',
-       cardEvaluation = getCardEvaluationFromAttribute(attribute);
+       iconUrl = attribute?.iconUrl,
+       description =
+           attribute?.descriptionShort ?? attribute?.description ?? '',
+       cardEvaluation = attribute != null
+           ? getCardEvaluationFromAttribute(attribute)
+           : CardEvaluation.UNKNOWN;
 
   ScoreCard.titleElement({
     required TitleElement titleElement,
     required this.isClickable,
     this.margin,
   }) : type = ScoreCardType.title,
+       attribute = null,
        iconUrl = titleElement.iconUrl,
        description = titleElement.title,
        cardEvaluation = getCardEvaluationFromKnowledgePanelTitleElement(
          titleElement,
        );
 
+  final Attribute? attribute;
   final String? iconUrl;
   final String description;
   final CardEvaluation cardEvaluation;
@@ -97,21 +102,16 @@ class ScoreCard extends StatelessWidget {
                   padding: const EdgeInsetsDirectional.only(end: SMALL_SPACE),
                   child: iconChip,
                 ),
-              //Flexible(
-              // child: Column(
-              //  crossAxisAlignment: CrossAxisAlignment.center,
-              //  children: <Widget>[
-              // Text(
-              //  description,
-              //  style: themeData.textTheme.headlineMedium!.apply(
-              //    color: textColor,
-              //  ),
-              //  textAlign: TextAlign.center,
+              //if (attribute?.id == Attribute.ATTRIBUTE_NOVA)
+              // Flexible(
+              //   child: Text(
+              //     'Producto procesado',
+              //     style: themeData.textTheme.headlineMedium!.apply(
+              //       color: cardEvaluation.textColor,
+              //     ),
+              //     textAlign: TextAlign.center,
+              //   ),
               // ),
-              //],
-              //),
-              //),
-              //if (isClickable) Icon(ConstantIcons.forwardIcon),
             ],
           ),
         ),

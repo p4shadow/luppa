@@ -4562,5 +4562,13 @@
   "prices_proof_error": "Authentication failed, unable to fetch proofs",
   "@prices_proof_error": {
     "description": "Error message shown when unable to fetch proofs"
-  }
+  },  
+  "nova_group_1_title": "Unprocessed or minimally processed foods",
+  "nova_group_2_title": "Processed culinary ingredients",
+  "nova_group_3_title": "Processed foods",
+  "nova_group_4_title": "Ultra-processed food and drink products",
+  "nova_group_1_text": "Unprocessed or minimally processed foods",
+  "nova_group_2_text": "Processed culinary ingredients",
+  "nova_group_3_text": "Processed foods",
+  "nova_group_4_text": "Ultra-processed food and drink products"
 }
