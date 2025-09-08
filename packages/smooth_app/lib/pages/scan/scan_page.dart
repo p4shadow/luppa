@@ -35,7 +35,7 @@ class _ScanPageState extends State<ScanPage> {
   late UserPreferences _userPreferences;
 
   /// Percentage of the bottom part of the screen that hosts the carousel.
-  static const int _carouselHeightPct = 57;
+  static const int _carouselHeightPct = 60;
 
   @override
   void didChangeDependencies() {

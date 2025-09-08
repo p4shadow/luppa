@@ -32,7 +32,7 @@ class AppNewsProvider extends ChangeNotifier {
         UserPreferencesDevMode.userPreferencesFlagProd,
       ) {
     _preferences.addListener(_onPreferencesChanged);
-    loadLatestNews();
+    loadLatestNews(forceUpdate: true);
   }
 
   final UserPreferences _preferences;
@@ -147,13 +147,14 @@ class AppNewsProvider extends ChangeNotifier {
 
   /// Based on the platform, the URL may differ
   String get _newsUrl {
-    final String env = _prodEnv != false ? 'prod' : 'dev';
+    //final String env = _prodEnv != false ? 'prod' : 'dev';
 
     if (Platform.isIOS || Platform.isMacOS) {
-      return 'https://raw.githubusercontent.com/openfoodfacts/smooth-app_assets/refs/heads/main/$env/tagline/ios/main.json';
+      return 'https://luppa.ar/images/noticias/ios/noticias.json';
     } else {
-      return 'https://raw.githubusercontent.com/openfoodfacts/smooth-app_assets/refs/heads/main/$env/tagline/android/main.json';
+      return 'https://luppa.ar/images/noticias/android/noticias.json';
     }
+    // return 'https://luppa.ar/images/noticias/android/noticias.json';
   }
 
   Future<File> get _newsCacheFile => getApplicationCacheDirectory().then(
