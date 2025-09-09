@@ -26,7 +26,9 @@ class ScanSearchCard extends StatelessWidget {
     final bool lightTheme = !context.watch<ThemeProvider>().isDarkMode(context);
 
     final Widget widget = SmoothCard(
-      color: lightTheme ? Colors.grey.withValues(alpha: 0.1) : Colors.black,
+      color: lightTheme
+          ? const Color.fromARGB(255, 255, 255, 255).withValues(alpha: 0.1)
+          : Colors.black,
       padding: EdgeInsets.zero,
       margin: const EdgeInsets.symmetric(
         horizontal: 0.0,
@@ -41,19 +43,19 @@ class ScanSearchCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            LayoutBuilder(
-              builder: (_, BoxConstraints constraints) {
-                return SvgPicture.asset(
-                  lightTheme
-                      ? 'assets/app/logo_text_black.svg'
-                      : 'assets/app/logo_text_white.svg',
-                  width: math.min(311.0, constraints.maxWidth * 0.85),
-                  semanticsLabel:
-                      localizations.homepage_main_card_logo_description,
-                );
-              },
-            ),
-            const SizedBox(height: VERY_SMALL_SPACE),
+            // LayoutBuilder(
+            //   builder: (_, BoxConstraints constraints) {
+            //     return SvgPicture.asset(
+            //       lightTheme
+            //           ? 'assets/app/logo_text_black.svg'
+            //           : 'assets/app/logo_text_white.svg',
+            //       width: math.min(311.0, constraints.maxWidth * 0.85),
+            //       semanticsLabel:
+            //           localizations.homepage_main_card_logo_description,
+            //     );
+            //   },
+            // ),
+            // const SizedBox(height: VERY_SMALL_SPACE),
             TextWithBoldParts(
               text: localizations.homepage_main_card_subheading,
               textAlign: TextAlign.center,
@@ -87,8 +89,6 @@ class ScanSearchCard extends StatelessWidget {
     } else {
       return (MEDIUM_SPACE * 3) +
           (VERY_SMALL_SPACE * 3) +
-          // Logo
-          54.0 +
           // Text
           ((2 * DefaultTextStyle.of(context).style.fontSize!) * 1.3) *
               context.textScaler() +

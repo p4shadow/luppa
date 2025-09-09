@@ -146,11 +146,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get looking_for => 'Looking for';
 
   @override
-  String get welcomeToOpenFoodFacts => 'Welcome to Open Food Facts';
+  String get welcomeToOpenFoodFacts => 'Welcome to Luppa';
 
   @override
   String get whatIsOff =>
-      'Open Food Facts is a global non-profit powered by local communities.';
+      'luppa is a global non-profit powered by local communities.';
 
   @override
   String get productDataUtility =>
@@ -168,7 +168,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sign_in_text =>
-      'Sign in to your Open Food Facts account to save your contributions';
+      'Sign in to your luppa account to save your contributions';
 
   @override
   String get incorrect_credentials => 'Incorrect username or password.';
@@ -315,17 +315,16 @@ class AppLocalizationsEn extends AppLocalizations {
       'Passwords don\'t match';
 
   @override
-  String get sign_up_page_agree_text => 'I agree to the Open Food Facts';
+  String get sign_up_page_agree_text => 'I agree to the luppa';
 
   @override
   String get sign_up_page_terms_text => 'terms of use and contribution';
 
   @override
-  String get sign_up_page_agree_url =>
-      'https://world-en.openfoodfacts.org/terms-of-use';
+  String get sign_up_page_agree_url => 'https://world-en.luppa.ar/terms-of-use';
 
   @override
-  String get donate_url => 'https://donate.openfoodfacts.org/';
+  String get donate_url => 'https://donate.luppa.ar/';
 
   @override
   String get sign_up_page_agree_error_invalid =>
@@ -343,7 +342,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sign_up_page_subscribe_checkbox =>
-      'I\'d like to subscribe to the Open Food Facts newsletter (You can unsubscribe from it at any time)';
+      'I\'d like to subscribe to the luppa newsletter (You can unsubscribe from it at any time)';
 
   @override
   String get sign_up_page_user_name_already_used =>
@@ -433,11 +432,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contribute_develop_text =>
-      'The code for every Open Food Facts product is available on GitHub. You are welcome to reuse the code (it\'s open source) and help us improve it, for everyone, on all the planet.';
+      'The code for every luppa product is available on GitHub. You are welcome to reuse the code (it\'s open source) and help us improve it, for everyone, on all the planet.';
 
   @override
   String get contribute_develop_text_2 =>
-      'You can join the Open Food Facts Slack chatroom which is the preferred way to ask questions.';
+      'You can join the luppa Slack chatroom which is the preferred way to ask questions.';
 
   @override
   String get contribute_develop_dev_mode_title => 'DEV Mode?';
@@ -449,7 +448,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get contribute_donate_title => 'Donate';
 
   @override
-  String get contribute_donate_header => 'Donate to Open Food Facts';
+  String get contribute_donate_header => 'Donate to luppa';
 
   @override
   String get contribute_enroll_alpha => 'Enroll in internal alpha version';
@@ -467,7 +466,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contribute_improve_text =>
-      'The database is the core of the project. It\'s easy and very quick to help. You can download the mobile app for your phone, and start adding or improving products.\n\nOn the other hand, Open Food Facts website offers many ways to contribute: ';
+      'The database is the core of the project. It\'s easy and very quick to help. You can download the mobile app for your phone, and start adding or improving products.\n\nOn the other hand, luppa website offers many ways to contribute: ';
 
   @override
   String get contribute_translate_header => 'Translate';
@@ -480,7 +479,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contribute_translate_text =>
-      'Open Food Facts is a global project, containing products from more than 160 countries. Open Food Facts is translated into dozens of languages, with constantly evolving content.';
+      'luppa is a global project, containing products from more than 160 countries. luppa is translated into dozens of languages, with constantly evolving content.';
 
   @override
   String get contribute_translate_text_2 =>
@@ -491,12 +490,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'Contribute your skills to Open Food Facts. Join the skill pool!';
 
   @override
-  String get contribute_share_header =>
-      'Share Open Food Facts with your friends';
+  String get contribute_share_header => 'Share luppa with your friends';
 
   @override
   String get contribute_share_content =>
-      'I wanted to let you know about the app I\'ve been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it\'s free, does not require registration, and you can even help increase the number of products decyphered. Here\'s the link to get it for your phone: https://openfoodfacts.app';
+      'I wanted to let you know about the app I\'ve been using, luppa, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it\'s free, does not require registration, and you can even help increase the number of products decyphered. Here\'s the link to get it for your phone: https://luppa.ar';
 
   @override
   String get contribute_prices_gdpr =>
@@ -522,7 +520,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get question_sign_in_text =>
-      'Sign in to your Open Food Facts account to get credit for your contributions';
+      'Sign in to your luppa account to get credit for your contributions';
 
   @override
   String get question_yes_button_accessibility_value => 'Answer with yes';
@@ -541,7 +539,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get account_create_message =>
-      'Create your account and join the Open Food Facts community to help build food knowledge all over the world!';
+      'Create your account and join the luppa community to help build food knowledge all over the world!';
 
   @override
   String get join_us => 'Join us';
@@ -551,7 +549,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get myPreferences_profile_subtitle =>
-      'Manage your Open Food Facts contributor account.';
+      'Manage your luppa contributor account.';
 
   @override
   String get myPreferences_settings_title => 'App Settings';
@@ -568,7 +566,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get myPreferences_food_comment =>
-      'Choose what information about food matters most to you, in order to rank food according to your preferences, see the information you care about first, and get a compatibility summary. Those food preferences stay on your device, and are not associated with your Open Food Facts contributor account if you have one.';
+      'Choose what information about food matters most to you, in order to rank food according to your preferences, see the information you care about first, and get a compatibility summary. Those food preferences stay on your device.';
 
   @override
   String get confirmResetPreferences => 'Reset your food preferences?';
@@ -718,7 +716,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get add_product_take_photos =>
-      'Take photos of the packaging to add this product to Open Food Facts';
+      'Take photos of the packaging to add this product to luppa';
 
   @override
   String get add_product_take_photos_descriptive =>
@@ -939,28 +937,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get uploading_image => 'Uploading photo to the server';
 
   @override
-  String get uploading_image_type_front =>
-      'Uploading front image to Open Food Facts';
+  String get uploading_image_type_front => 'Uploading front image to luppa';
 
   @override
   String get uploading_image_type_ingredients =>
-      'Uploading ingredients image to Open Food Facts';
+      'Uploading ingredients image to luppa';
 
   @override
   String get uploading_image_type_nutrition =>
-      'Uploading nutrition image to Open Food Facts';
+      'Uploading nutrition image to luppa';
 
   @override
   String get uploading_image_type_packaging =>
-      'Uploading packaging image to Open Food Facts';
+      'Uploading packaging image to luppa';
 
   @override
-  String get uploading_image_type_other =>
-      'Uploading other image to Open Food Facts';
+  String get uploading_image_type_other => 'Uploading other image to luppa';
 
   @override
-  String get uploading_image_type_generic =>
-      'Uploading image to Open Food Facts';
+  String get uploading_image_type_generic => 'Uploading image to luppa';
 
   @override
   String get score_add_missing_ingredients => 'Add missing ingredients';
@@ -1201,8 +1196,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get product_image_details_date_unknown => 'Unknown';
 
   @override
-  String get homepage_main_card_logo_description =>
-      'Welcome to Open Food Facts';
+  String get homepage_main_card_logo_description => 'Welcome to luppa';
 
   @override
   String get homepage_main_card_subheading =>
@@ -1385,8 +1379,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get native_app_settings => 'Native App Settings';
 
   @override
-  String get native_app_description =>
-      'Open systems settings for Open Food Facts';
+  String get native_app_description => 'Open systems settings for luppa';
 
   @override
   String get product_removed_history => 'Product removed from history';
@@ -1528,7 +1521,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tiktok => 'Follow us on TikTok';
 
   @override
-  String get tiktok_link => 'https://www.tiktok.com/@openfoodfacts';
+  String get tiktok_link => 'https://www.tiktok.com/@luppa';
 
   @override
   String get instagram => 'Follow us on Instagram';
@@ -1540,19 +1533,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get twitter => 'Follow us on X (formerly Twitter)';
 
   @override
-  String get twitter_link => 'https://www.twitter.com/openfoodfacts';
+  String get twitter_link => 'https://www.twitter.com/luppa';
 
   @override
   String get mastodon => 'Follow us on Mastodon';
 
   @override
-  String get mastodon_link => 'https://mastodon.social/@openfoodfacts';
+  String get mastodon_link => 'https://mastodon.social/@luppa';
 
   @override
   String get bsky => 'Follow us on BlueSky';
 
   @override
-  String get bsky_link => 'https://bsky.app/profile/openfoodfacts.bsky.social';
+  String get bsky_link => 'https://bsky.app/profile/luppa.bsky.social';
 
   @override
   String get blog => 'Blog';
@@ -1700,11 +1693,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get user_profile_subtitle_guest =>
-      'Sign-in or sign-up to join the Open Food Facts community';
+      'Sign-in or sign-up to join the luppa community';
 
   @override
   String user_profile_title_id_email(String email) {
-    return 'Open Food Facts login: $email';
+    return 'luppa login: $email';
   }
 
   @override
@@ -1717,7 +1710,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String email_body_account_deletion(String userId) {
-    return 'Hi there, please delete my Open Food Facts account: $userId';
+    return 'Hi there, please delete my luppa account: $userId';
   }
 
   @override
@@ -1757,14 +1750,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get crash_reporting_toggle_subtitle =>
-      'When enabled, crash reports are automatically submitted to Open Food Facts\' error tracking system, so that bugs can be fixed and thus improve the app.';
+      'When enabled, crash reports are automatically submitted to luppa\' error tracking system, so that bugs can be fixed and thus improve the app.';
 
   @override
   String get send_anonymous_data_toggle_title => 'Report us feature usage';
 
   @override
   String get send_anonymous_data_toggle_subtitle =>
-      'When enabled, strictly anonymous information regarding feature usage will be sent to the Open Food Facts servers, so that we can understand how features are used in order to improve them. Otherwise, a 0 id will be sent.';
+      'When enabled, strictly anonymous information regarding feature usage will be sent to the luppa servers, so that we can understand how features are used in order to improve them. Otherwise, a 0 id will be sent.';
 
   @override
   String get product_edit_photo_title => 'Edit Photo';
@@ -2080,7 +2073,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get edit_product_form_item_categories_explanation_info2_content =>
-      'In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Open Food Facts in your country.';
+      'In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve luppa in your country.';
 
   @override
   String get edit_product_form_item_categories_explanation_good_examples_1 =>
@@ -2368,7 +2361,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dev_preferences_environment_switch_title =>
-      'Switch between openfoodfacts.org (PROD) and test env';
+      'Switch between luppa.ar (PROD) and test env';
 
   @override
   String get dev_preferences_test_environment_title =>
@@ -3031,8 +3024,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get edit_product_action_confirm => 'Confirm';
 
   @override
-  String get signup_page_terms_of_use_line1 =>
-      'I agree to the Open Food Facts ';
+  String get signup_page_terms_of_use_line1 => 'I agree to the luppa ';
 
   @override
   String get signup_page_terms_of_use_line2 => 'terms of use and contribution';
@@ -3387,7 +3379,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String share_product_text(String url) {
-    return 'Have a look at this product on Open Food Facts: $url';
+    return 'Have a look at this product on luppa: $url';
   }
 
   @override
@@ -3407,7 +3399,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String share_product_list_text(String url) {
-    return 'Have a look at my list of products on Open Food Facts: $url';
+    return 'Have a look at my list of products on luppa: $url';
   }
 
   @override
@@ -3496,7 +3488,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get currency_picker_label => 'Your currency';
 
   @override
-  String get help_with_openfoodfacts => 'Help with OpenFoodFacts';
+  String get help_with_openfoodfacts => 'Help with luppa';
 
   @override
   String get product_task_background_schedule =>
@@ -3507,7 +3499,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get no_email_client_available_dialog_content =>
-      'Please send us manually an email to mobile@openfoodfacts.org';
+      'Please send us manually an email to mobile@luppa.ar';
 
   @override
   String get all_images => 'All Images';
@@ -3880,7 +3872,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get update_local_database_sub =>
-      'Update the local product database with the latest data from Open Food Facts';
+      'Update the local product database with the latest data from luppa';
 
   @override
   String get clear_local_database => 'Clear offline product data';
@@ -4197,7 +4189,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guide_nutriscore_v2_where_paragraph3 =>
-      'Without waiting, you **will already find in the OpenFoodFacts application**, the new calculation, including if the manufacturers have not updated the score.';
+      'Without waiting, you **will already find in the luppa application**, the new calculation, including if the manufacturers have not updated the score.';
 
   @override
   String get guide_nutriscore_v2_unchanged_title => 'What doesn\'t change';
@@ -4212,7 +4204,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guide_nutriscore_v2_share_link =>
-      'https://world.openfoodfacts.org/nutriscore-v2';
+      'https://world.luppa.ar/nutriscore-v2';
 
   @override
   String get guide_nutriscore_v2_share_message => '';
@@ -4369,7 +4361,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get carousel_unsupported_text =>
-      'The barcode scanned is not supported by Open Food Facts!';
+      'The barcode scanned is not supported by luppa!';
 
   @override
   String get carousel_error_header => 'Error!';
@@ -4764,4 +4756,42 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get nova_group_4_text => 'Ultra-processed food and drink products';
+
+  @override
+  String get positive_attributes => 'Some positive characteristics';
+
+  @override
+  String get negative_attributes => 'Not so good characteristics';
+
+  @override
+  String get nutriscore_a_message =>
+      'You can eat it regularly without concern.';
+
+  @override
+  String get nutriscore_b_message =>
+      'It’s fine to include in your diet regularly, just balance it with other healthy foods.';
+
+  @override
+  String get nutriscore_c_message =>
+      'It’s okay now and then, but I wouldn’t make it a daily habit.';
+
+  @override
+  String get nutriscore_d_message =>
+      'It’s not the healthiest option out there.';
+
+  @override
+  String get nutriscore_e_message =>
+      'I’d avoid it if possible — or keep it as a rare treat, not something you eat regularly.';
+
+  @override
+  String get nutrition_energy => 'Energy';
+
+  @override
+  String get nutrition_fat => 'Fat';
+
+  @override
+  String get nutrition_carbohydrates => 'Carbohydrates';
+
+  @override
+  String get nutrition_proteins => 'Proteins';
 }

@@ -72,6 +72,9 @@ class KnowledgePanelExpandedCard extends StatelessWidget {
   }
 
   List<Widget>? _getSummary(KnowledgePanel panel) {
+    if (panelId == 'nutriscore_2023') {
+      return null;
+    }
     final Widget? summary = KnowledgePanelsBuilder.getPanelSummaryWidget(
       panel,
       isClickable: false,

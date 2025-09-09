@@ -132,12 +132,12 @@ enum PreferencePageType {
   ) => <PreferencePageType>[
     PreferencePageType.ACCOUNT,
     PreferencePageType.FOOD,
-    PreferencePageType.PRICES,
-    PreferencePageType.DONATION,
+    // PreferencePageType.PRICES,
+    // PreferencePageType.DONATION,
     PreferencePageType.SETTINGS,
-    PreferencePageType.CONTRIBUTE,
-    PreferencePageType.FAQ,
-    PreferencePageType.CONNECT,
+    // PreferencePageType.CONTRIBUTE,
+    // PreferencePageType.FAQ,
+    // PreferencePageType.CONNECT,
     if (userPreferences.devMode > 0) PreferencePageType.DEV_MODE,
   ];
 }

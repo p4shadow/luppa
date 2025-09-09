@@ -620,13 +620,13 @@ abstract class AppLocalizations {
   /// No description provided for @welcomeToOpenFoodFacts.
   ///
   /// In en, this message translates to:
-  /// **'Welcome to Open Food Facts'**
+  /// **'Welcome to Luppa'**
   String get welcomeToOpenFoodFacts;
 
-  /// Description of Open Food Facts organization.
+  /// Description of luppa organization.
   ///
   /// In en, this message translates to:
-  /// **'Open Food Facts is a global non-profit powered by local communities.'**
+  /// **'luppa is a global non-profit powered by local communities.'**
   String get whatIsOff;
 
   /// Description of what a user can use the product data for.
@@ -656,7 +656,7 @@ abstract class AppLocalizations {
   /// No description provided for @sign_in_text.
   ///
   /// In en, this message translates to:
-  /// **'Sign in to your Open Food Facts account to save your contributions'**
+  /// **'Sign in to your luppa account to save your contributions'**
   String get sign_in_text;
 
   /// No description provided for @incorrect_credentials.
@@ -917,10 +917,10 @@ abstract class AppLocalizations {
   /// **'Passwords don\'t match'**
   String get sign_up_page_confirm_password_error_invalid;
 
-  /// I agree to the Open Food Facts is followed by sign_up_page_terms_text
+  /// I agree to the luppa is followed by sign_up_page_terms_text
   ///
   /// In en, this message translates to:
-  /// **'I agree to the Open Food Facts'**
+  /// **'I agree to the luppa'**
   String get sign_up_page_agree_text;
 
   /// terms of use and contribution is preceded by sign_up_page_agree_text
@@ -929,16 +929,16 @@ abstract class AppLocalizations {
   /// **'terms of use and contribution'**
   String get sign_up_page_terms_text;
 
-  /// Please insert the right url here. Go to the Open Food Facts homepage, switch to your country and then on the bottom left footer is Terms of use from which the url should be taken
+  /// Please insert the right url here. Go to the luppa homepage, switch to your country and then on the bottom left footer is Terms of use from which the url should be taken
   ///
   /// In en, this message translates to:
-  /// **'https://world-en.openfoodfacts.org/terms-of-use'**
+  /// **'https://world-en.luppa.ar/terms-of-use'**
   String get sign_up_page_agree_url;
 
   /// Please insert the right url from the website here.
   ///
   /// In en, this message translates to:
-  /// **'https://donate.openfoodfacts.org/'**
+  /// **'https://donate.luppa.ar/'**
   String get donate_url;
 
   /// Error message: You have to agree to the terms-of-use (A checkbox to do so is above this error message)
@@ -968,7 +968,7 @@ abstract class AppLocalizations {
   /// No description provided for @sign_up_page_subscribe_checkbox.
   ///
   /// In en, this message translates to:
-  /// **'I\'d like to subscribe to the Open Food Facts newsletter (You can unsubscribe from it at any time)'**
+  /// **'I\'d like to subscribe to the luppa newsletter (You can unsubscribe from it at any time)'**
   String get sign_up_page_subscribe_checkbox;
 
   /// No description provided for @sign_up_page_user_name_already_used.
@@ -1130,13 +1130,13 @@ abstract class AppLocalizations {
   /// No description provided for @contribute_develop_text.
   ///
   /// In en, this message translates to:
-  /// **'The code for every Open Food Facts product is available on GitHub. You are welcome to reuse the code (it\'s open source) and help us improve it, for everyone, on all the planet.'**
+  /// **'The code for every luppa product is available on GitHub. You are welcome to reuse the code (it\'s open source) and help us improve it, for everyone, on all the planet.'**
   String get contribute_develop_text;
 
   /// No description provided for @contribute_develop_text_2.
   ///
   /// In en, this message translates to:
-  /// **'You can join the Open Food Facts Slack chatroom which is the preferred way to ask questions.'**
+  /// **'You can join the luppa Slack chatroom which is the preferred way to ask questions.'**
   String get contribute_develop_text_2;
 
   /// No description provided for @contribute_develop_dev_mode_title.
@@ -1160,7 +1160,7 @@ abstract class AppLocalizations {
   /// No description provided for @contribute_donate_header.
   ///
   /// In en, this message translates to:
-  /// **'Donate to Open Food Facts'**
+  /// **'Donate to luppa'**
   String get contribute_donate_header;
 
   /// No description provided for @contribute_enroll_alpha.
@@ -1190,7 +1190,7 @@ abstract class AppLocalizations {
   /// No description provided for @contribute_improve_text.
   ///
   /// In en, this message translates to:
-  /// **'The database is the core of the project. It\'s easy and very quick to help. You can download the mobile app for your phone, and start adding or improving products.\n\nOn the other hand, Open Food Facts website offers many ways to contribute: '**
+  /// **'The database is the core of the project. It\'s easy and very quick to help. You can download the mobile app for your phone, and start adding or improving products.\n\nOn the other hand, luppa website offers many ways to contribute: '**
   String get contribute_improve_text;
 
   /// Button label + pop up window title: Shows information about helping by translating
@@ -1214,7 +1214,7 @@ abstract class AppLocalizations {
   /// No description provided for @contribute_translate_text.
   ///
   /// In en, this message translates to:
-  /// **'Open Food Facts is a global project, containing products from more than 160 countries. Open Food Facts is translated into dozens of languages, with constantly evolving content.'**
+  /// **'luppa is a global project, containing products from more than 160 countries. luppa is translated into dozens of languages, with constantly evolving content.'**
   String get contribute_translate_text;
 
   /// No description provided for @contribute_translate_text_2.
@@ -1232,13 +1232,13 @@ abstract class AppLocalizations {
   /// No description provided for @contribute_share_header.
   ///
   /// In en, this message translates to:
-  /// **'Share Open Food Facts with your friends'**
+  /// **'Share luppa with your friends'**
   String get contribute_share_header;
 
   /// Content that will be shared, don't forget to include the URL
   ///
   /// In en, this message translates to:
-  /// **'I wanted to let you know about the app I\'ve been using, Open Food Facts, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it\'s free, does not require registration, and you can even help increase the number of products decyphered. Here\'s the link to get it for your phone: https://openfoodfacts.app'**
+  /// **'I wanted to let you know about the app I\'ve been using, luppa, which allows you to get the health and environmental impacts of your food, in a personalized way. It works by scanning the barcodes on the packaging. Finally it\'s free, does not require registration, and you can even help increase the number of products decyphered. Here\'s the link to get it for your phone: https://luppa.ar'**
   String get contribute_share_content;
 
   /// Label for option to contribute prices using GDPR export from loyalty cards
@@ -1247,7 +1247,7 @@ abstract class AppLocalizations {
   /// **'Contribute prices by requesting a GDPR export of your loyalty cards data'**
   String get contribute_prices_gdpr;
 
-  /// Button label shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts and gain rewards.
+  /// Button label shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to luppa and gain rewards.
   ///
   /// In en, this message translates to:
   /// **'Tap here to answer questions'**
@@ -1271,7 +1271,7 @@ abstract class AppLocalizations {
   /// **'Saving your answer'**
   String get saving_answer;
 
-  /// Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts.
+  /// Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to luppa.
   ///
   /// In en, this message translates to:
   /// **'Become an actor of food transparency'**
@@ -1280,7 +1280,7 @@ abstract class AppLocalizations {
   /// No description provided for @question_sign_in_text.
   ///
   /// In en, this message translates to:
-  /// **'Sign in to your Open Food Facts account to get credit for your contributions'**
+  /// **'Sign in to your luppa account to get credit for your contributions'**
   String get question_sign_in_text;
 
   /// No description provided for @question_yes_button_accessibility_value.
@@ -1316,7 +1316,7 @@ abstract class AppLocalizations {
   /// The Message to be displayed if the user does not have an account and wants to contribute
   ///
   /// In en, this message translates to:
-  /// **'Create your account and join the Open Food Facts community to help build food knowledge all over the world!'**
+  /// **'Create your account and join the luppa community to help build food knowledge all over the world!'**
   String get account_create_message;
 
   /// Join which is actually Signup
@@ -1334,7 +1334,7 @@ abstract class AppLocalizations {
   /// No description provided for @myPreferences_profile_subtitle.
   ///
   /// In en, this message translates to:
-  /// **'Manage your Open Food Facts contributor account.'**
+  /// **'Manage your luppa contributor account.'**
   String get myPreferences_profile_subtitle;
 
   /// No description provided for @myPreferences_settings_title.
@@ -1364,7 +1364,7 @@ abstract class AppLocalizations {
   /// No description provided for @myPreferences_food_comment.
   ///
   /// In en, this message translates to:
-  /// **'Choose what information about food matters most to you, in order to rank food according to your preferences, see the information you care about first, and get a compatibility summary. Those food preferences stay on your device, and are not associated with your Open Food Facts contributor account if you have one.'**
+  /// **'Choose what information about food matters most to you, in order to rank food according to your preferences, see the information you care about first, and get a compatibility summary. Those food preferences stay on your device.'**
   String get myPreferences_food_comment;
 
   /// Pop up title: Reassuring if the food preferences should really be reset
@@ -1646,7 +1646,7 @@ abstract class AppLocalizations {
   /// No description provided for @add_product_take_photos.
   ///
   /// In en, this message translates to:
-  /// **'Take photos of the packaging to add this product to Open Food Facts'**
+  /// **'Take photos of the packaging to add this product to luppa'**
   String get add_product_take_photos;
 
   /// No description provided for @add_product_take_photos_descriptive.
@@ -2035,37 +2035,37 @@ abstract class AppLocalizations {
   /// Message when a new front picture is being uploaded to the server
   ///
   /// In en, this message translates to:
-  /// **'Uploading front image to Open Food Facts'**
+  /// **'Uploading front image to luppa'**
   String get uploading_image_type_front;
 
   /// Message when a new ingredients picture is being uploaded to the server
   ///
   /// In en, this message translates to:
-  /// **'Uploading ingredients image to Open Food Facts'**
+  /// **'Uploading ingredients image to luppa'**
   String get uploading_image_type_ingredients;
 
   /// Message when a new nutrition picture is being uploaded to the server
   ///
   /// In en, this message translates to:
-  /// **'Uploading nutrition image to Open Food Facts'**
+  /// **'Uploading nutrition image to luppa'**
   String get uploading_image_type_nutrition;
 
   /// Message when a new packaging picture is being uploaded to the server
   ///
   /// In en, this message translates to:
-  /// **'Uploading packaging image to Open Food Facts'**
+  /// **'Uploading packaging image to luppa'**
   String get uploading_image_type_packaging;
 
   /// Message when a new other picture is being uploaded to the server
   ///
   /// In en, this message translates to:
-  /// **'Uploading other image to Open Food Facts'**
+  /// **'Uploading other image to luppa'**
   String get uploading_image_type_other;
 
   /// Message when a new picture is being uploaded to the server
   ///
   /// In en, this message translates to:
-  /// **'Uploading image to Open Food Facts'**
+  /// **'Uploading image to luppa'**
   String get uploading_image_type_generic;
 
   /// No description provided for @score_add_missing_ingredients.
@@ -2479,7 +2479,7 @@ abstract class AppLocalizations {
   /// Description for accessibility of the Open Food Facts logo on the homepage
   ///
   /// In en, this message translates to:
-  /// **'Welcome to Open Food Facts'**
+  /// **'Welcome to luppa'**
   String get homepage_main_card_logo_description;
 
   /// Text between asterisks (eg: **My Text**) means text in bold. Please keep it.
@@ -2800,7 +2800,7 @@ abstract class AppLocalizations {
   /// Native App description in app settings
   ///
   /// In en, this message translates to:
-  /// **'Open systems settings for Open Food Facts'**
+  /// **'Open systems settings for luppa'**
   String get native_app_description;
 
   /// Product got removed from history
@@ -2962,7 +2962,7 @@ abstract class AppLocalizations {
   /// No description provided for @tiktok_link.
   ///
   /// In en, this message translates to:
-  /// **'https://www.tiktok.com/@openfoodfacts'**
+  /// **'https://www.tiktok.com/@luppa'**
   String get tiktok_link;
 
   /// No description provided for @instagram.
@@ -2986,7 +2986,7 @@ abstract class AppLocalizations {
   /// No description provided for @twitter_link.
   ///
   /// In en, this message translates to:
-  /// **'https://www.twitter.com/openfoodfacts'**
+  /// **'https://www.twitter.com/luppa'**
   String get twitter_link;
 
   /// No description provided for @mastodon.
@@ -2998,7 +2998,7 @@ abstract class AppLocalizations {
   /// No description provided for @mastodon_link.
   ///
   /// In en, this message translates to:
-  /// **'https://mastodon.social/@openfoodfacts'**
+  /// **'https://mastodon.social/@luppa'**
   String get mastodon_link;
 
   /// No description provided for @bsky.
@@ -3010,7 +3010,7 @@ abstract class AppLocalizations {
   /// No description provided for @bsky_link.
   ///
   /// In en, this message translates to:
-  /// **'https://bsky.app/profile/openfoodfacts.bsky.social'**
+  /// **'https://bsky.app/profile/luppa.bsky.social'**
   String get bsky_link;
 
   /// No description provided for @blog.
@@ -3224,13 +3224,13 @@ abstract class AppLocalizations {
   /// No description provided for @user_profile_subtitle_guest.
   ///
   /// In en, this message translates to:
-  /// **'Sign-in or sign-up to join the Open Food Facts community'**
+  /// **'Sign-in or sign-up to join the luppa community'**
   String get user_profile_subtitle_guest;
 
   /// User login (when it's an email)
   ///
   /// In en, this message translates to:
-  /// **'Open Food Facts login: {email}'**
+  /// **'luppa login: {email}'**
   String user_profile_title_id_email(String email);
 
   /// User login (when it's an id)
@@ -3248,7 +3248,7 @@ abstract class AppLocalizations {
   /// Email body for an account deletion
   ///
   /// In en, this message translates to:
-  /// **'Hi there, please delete my Open Food Facts account: {userId}'**
+  /// **'Hi there, please delete my luppa account: {userId}'**
   String email_body_account_deletion(String userId);
 
   /// No description provided for @settings_app_app.
@@ -3320,7 +3320,7 @@ abstract class AppLocalizations {
   /// SubTitle for the Crash reporting toggle
   ///
   /// In en, this message translates to:
-  /// **'When enabled, crash reports are automatically submitted to Open Food Facts\' error tracking system, so that bugs can be fixed and thus improve the app.'**
+  /// **'When enabled, crash reports are automatically submitted to luppa\' error tracking system, so that bugs can be fixed and thus improve the app.'**
   String get crash_reporting_toggle_subtitle;
 
   /// No description provided for @send_anonymous_data_toggle_title.
@@ -3332,7 +3332,7 @@ abstract class AppLocalizations {
   /// No description provided for @send_anonymous_data_toggle_subtitle.
   ///
   /// In en, this message translates to:
-  /// **'When enabled, strictly anonymous information regarding feature usage will be sent to the Open Food Facts servers, so that we can understand how features are used in order to improve them. Otherwise, a 0 id will be sent.'**
+  /// **'When enabled, strictly anonymous information regarding feature usage will be sent to the luppa servers, so that we can understand how features are used in order to improve them. Otherwise, a 0 id will be sent.'**
   String get send_anonymous_data_toggle_subtitle;
 
   /// Toolbar Title while editing a photo (Android only)
@@ -3860,7 +3860,7 @@ abstract class AppLocalizations {
   /// Product edition - Categories - input explainer, part 2
   ///
   /// In en, this message translates to:
-  /// **'In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Open Food Facts in your country.'**
+  /// **'In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve luppa in your country.'**
   String get edit_product_form_item_categories_explanation_info2_content;
 
   /// Product edition - Categories - input explainer, part 3
@@ -4364,7 +4364,7 @@ abstract class AppLocalizations {
   /// User dev preferences - Environment (prod/test) switcher - Title
   ///
   /// In en, this message translates to:
-  /// **'Switch between openfoodfacts.org (PROD) and test env'**
+  /// **'Switch between luppa.ar (PROD) and test env'**
   String get dev_preferences_environment_switch_title;
 
   /// User dev preferences - Info about test environment - Title
@@ -5372,7 +5372,7 @@ abstract class AppLocalizations {
   /// User consent for terms of use (line 1)
   ///
   /// In en, this message translates to:
-  /// **'I agree to the Open Food Facts '**
+  /// **'I agree to the luppa '**
   String get signup_page_terms_of_use_line1;
 
   /// User consent for terms of use (line 2)
@@ -5932,7 +5932,7 @@ abstract class AppLocalizations {
   /// The content which is send, when sharing a 'food' product
   ///
   /// In en, this message translates to:
-  /// **'Have a look at this product on Open Food Facts: {url}'**
+  /// **'Have a look at this product on luppa: {url}'**
   String share_product_text(String url);
 
   /// The content which is send, when sharing a 'beauty' product
@@ -5956,7 +5956,7 @@ abstract class AppLocalizations {
   /// The content which is send, when sharing a product list
   ///
   /// In en, this message translates to:
-  /// **'Have a look at my list of products on Open Food Facts: {url}'**
+  /// **'Have a look at my list of products on luppa: {url}'**
   String share_product_list_text(String url);
 
   /// Button label for taking a new photo (= there's already one)
@@ -6112,7 +6112,7 @@ abstract class AppLocalizations {
   /// Label for the email title
   ///
   /// In en, this message translates to:
-  /// **'Help with OpenFoodFacts'**
+  /// **'Help with luppa'**
   String get help_with_openfoodfacts;
 
   /// Message when a product is scheduled for background update
@@ -6130,7 +6130,7 @@ abstract class AppLocalizations {
   /// Content for the dialog when no email client is installed on the device
   ///
   /// In en, this message translates to:
-  /// **'Please send us manually an email to mobile@openfoodfacts.org'**
+  /// **'Please send us manually an email to mobile@luppa.ar'**
   String get no_email_client_available_dialog_content;
 
   /// No description provided for @all_images.
@@ -6589,7 +6589,7 @@ abstract class AppLocalizations {
   /// **'Green'**
   String get color_green;
 
-  /// Color Light Brown, Default Open Food Facts Color
+  /// Color Light Brown, Default luppa Color
   ///
   /// In en, this message translates to:
   /// **'Default'**
@@ -6754,7 +6754,7 @@ abstract class AppLocalizations {
   /// Update the local product database with the latest data from server
   ///
   /// In en, this message translates to:
-  /// **'Update the local product database with the latest data from Open Food Facts'**
+  /// **'Update the local product database with the latest data from luppa'**
   String get update_local_database_sub;
 
   /// List tile title for the clear local database page
@@ -7300,7 +7300,7 @@ abstract class AppLocalizations {
   /// No description provided for @guide_nutriscore_v2_where_paragraph3.
   ///
   /// In en, this message translates to:
-  /// **'Without waiting, you **will already find in the OpenFoodFacts application**, the new calculation, including if the manufacturers have not updated the score.'**
+  /// **'Without waiting, you **will already find in the luppa application**, the new calculation, including if the manufacturers have not updated the score.'**
   String get guide_nutriscore_v2_where_paragraph3;
 
   /// No description provided for @guide_nutriscore_v2_unchanged_title.
@@ -7324,7 +7324,7 @@ abstract class AppLocalizations {
   /// No description provided for @guide_nutriscore_v2_share_link.
   ///
   /// In en, this message translates to:
-  /// **'https://world.openfoodfacts.org/nutriscore-v2'**
+  /// **'https://world.luppa.ar/nutriscore-v2'**
   String get guide_nutriscore_v2_share_link;
 
   /// Please let empty for now (maybe use in the future)
@@ -7594,7 +7594,7 @@ abstract class AppLocalizations {
   /// No description provided for @carousel_unsupported_text.
   ///
   /// In en, this message translates to:
-  /// **'The barcode scanned is not supported by Open Food Facts!'**
+  /// **'The barcode scanned is not supported by luppa!'**
   String get carousel_unsupported_text;
 
   /// A label on top of the carousel card when there is an error (mainly network issues)
@@ -8322,6 +8322,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ultra-processed food and drink products'**
   String get nova_group_4_text;
+
+  /// No description provided for @positive_attributes.
+  ///
+  /// In en, this message translates to:
+  /// **'Some positive characteristics'**
+  String get positive_attributes;
+
+  /// No description provided for @negative_attributes.
+  ///
+  /// In en, this message translates to:
+  /// **'Not so good characteristics'**
+  String get negative_attributes;
+
+  /// No description provided for @nutriscore_a_message.
+  ///
+  /// In en, this message translates to:
+  /// **'You can eat it regularly without concern.'**
+  String get nutriscore_a_message;
+
+  /// No description provided for @nutriscore_b_message.
+  ///
+  /// In en, this message translates to:
+  /// **'It’s fine to include in your diet regularly, just balance it with other healthy foods.'**
+  String get nutriscore_b_message;
+
+  /// No description provided for @nutriscore_c_message.
+  ///
+  /// In en, this message translates to:
+  /// **'It’s okay now and then, but I wouldn’t make it a daily habit.'**
+  String get nutriscore_c_message;
+
+  /// No description provided for @nutriscore_d_message.
+  ///
+  /// In en, this message translates to:
+  /// **'It’s not the healthiest option out there.'**
+  String get nutriscore_d_message;
+
+  /// No description provided for @nutriscore_e_message.
+  ///
+  /// In en, this message translates to:
+  /// **'I’d avoid it if possible — or keep it as a rare treat, not something you eat regularly.'**
+  String get nutriscore_e_message;
+
+  /// No description provided for @nutrition_energy.
+  ///
+  /// In en, this message translates to:
+  /// **'Energy'**
+  String get nutrition_energy;
+
+  /// No description provided for @nutrition_fat.
+  ///
+  /// In en, this message translates to:
+  /// **'Fat'**
+  String get nutrition_fat;
+
+  /// No description provided for @nutrition_carbohydrates.
+  ///
+  /// In en, this message translates to:
+  /// **'Carbohydrates'**
+  String get nutrition_carbohydrates;
+
+  /// No description provided for @nutrition_proteins.
+  ///
+  /// In en, this message translates to:
+  /// **'Proteins'**
+  String get nutrition_proteins;
 }
 
 class _AppLocalizationsDelegate

@@ -28,9 +28,9 @@ class UserPreferencesFood extends AbstractUserPreferences {
   static const List<String> _ORDERED_ATTRIBUTE_GROUP_IDS = <String>[
     AttributeGroup.ATTRIBUTE_GROUP_NUTRITIONAL_QUALITY,
     AttributeGroup.ATTRIBUTE_GROUP_INGREDIENT_ANALYSIS,
-    AttributeGroup.ATTRIBUTE_GROUP_ENVIRONMENT,
+    // AttributeGroup.ATTRIBUTE_GROUP_ENVIRONMENT,
     AttributeGroup.ATTRIBUTE_GROUP_PROCESSING,
-    AttributeGroup.ATTRIBUTE_GROUP_LABELS,
+    // AttributeGroup.ATTRIBUTE_GROUP_LABELS,
     AttributeGroup.ATTRIBUTE_GROUP_ALLERGENS,
   ];
 
@@ -139,6 +139,10 @@ class UserPreferencesFood extends AbstractUserPreferences {
       ),
     ];
     for (final AttributeGroup group in groups) {
+      if (group.id == AttributeGroup.ATTRIBUTE_GROUP_ENVIRONMENT ||
+          group.id == AttributeGroup.ATTRIBUTE_GROUP_LABELS) {
+        continue;
+      }
       result.addAll(
         UserPreferencesAttributeGroup(
           productPreferences: productPreferences,

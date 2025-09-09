@@ -223,23 +223,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
       excludedAttributeIds,
     );
 
-    final List<Widget> displayedGroups = <Widget>[];
-
-    // First, a virtual group with mandatory attributes of all groups
-    final List<Widget> attributeChips = _buildAttributeChips(
-      getMandatoryAttributes(
-        upToDateProduct,
-        _ATTRIBUTE_GROUP_ORDER,
-        _attributesToExcludeIfStatusIsUnknown,
-        widget._productPreferences,
-      ),
-    );
-    if (attributeChips.isNotEmpty) {
-      displayedGroups.add(
-        Wrap(spacing: 8.0, runSpacing: 4.0, children: attributeChips),
-      );
-    }
-    // Then, all groups, each with very important and important attributes
+    final List<Attribute> allAttributes = <Attribute>[];
     for (final String groupId in _ATTRIBUTE_GROUP_ORDER) {
       if (upToDateProduct.attributeGroups == null) {
         continue;
@@ -275,24 +259,45 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
               attribute.id == Attribute.ATTRIBUTE_NUTRISCORE,
         );
       }
+      allAttributes.addAll(veryImportantAttributes);
+      allAttributes.addAll(importantAttributes);
+    }
 
-      final List<Widget> attributeChips = _buildAttributeChips(
-        veryImportantAttributes,
-      );
-      attributeChips.addAll(_buildAttributeChips(importantAttributes));
-      if (attributeChips.isNotEmpty) {
-        displayedGroups.add(
-          SummaryAttributeGroup(
-            attributeChips: attributeChips,
-            isClickable: widget.attributeGroupsClickable,
-            isFirstGroup: displayedGroups.isEmpty,
-            groupName: group.id == AttributeGroup.ATTRIBUTE_GROUP_ALLERGENS
-                ? group.name!
-                : null,
-          ),
-        );
+    final List<Attribute> positiveAttributes = <Attribute>[];
+    final List<Attribute> negativeAttributes = <Attribute>[];
+
+    for (final Attribute attribute in allAttributes) {
+      if (attribute.match == 1.0) {
+        positiveAttributes.add(attribute);
+      } else {
+        negativeAttributes.add(attribute);
       }
     }
+
+    final List<Widget> displayedGroups = <Widget>[];
+
+    if (positiveAttributes.isNotEmpty) {
+      displayedGroups.add(
+        SummaryAttributeGroup(
+          attributeChips: _buildAttributeChips(positiveAttributes),
+          isClickable: widget.attributeGroupsClickable,
+          isFirstGroup: displayedGroups.isEmpty,
+          groupName: localizations.positive_attributes,
+        ),
+      );
+    }
+
+    if (negativeAttributes.isNotEmpty) {
+      displayedGroups.add(
+        SummaryAttributeGroup(
+          attributeChips: _buildAttributeChips(negativeAttributes),
+          isClickable: widget.attributeGroupsClickable,
+          isFirstGroup: displayedGroups.isEmpty,
+          groupName: localizations.negative_attributes,
+        ),
+      );
+    }
+
     final Widget attributesContainer = displayedGroups.isNotEmpty
         ? Container(
             alignment: AlignmentDirectional.topStart,
@@ -349,8 +354,10 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
         if (ProductIncompleteCard.isProductIncomplete(upToDateProduct))
           ProductIncompleteCard(product: upToDateProduct),
         ..._getAttributes(scoreAttributes),
+        _buildNutritionSummary(upToDateProduct.nutriments),
         attributesContainer,
         ...summaryCardButtons,
+        _getNutriScoreMessage(upToDateProduct.nutriscore),
       ],
     );
 
@@ -359,6 +366,112 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     } else {
       return child;
     }
+  }
+
+  Widget _buildNutritionSummary(Nutriments? nutriments) {
+    if (nutriments == null) {
+      return const SizedBox.shrink();
+    }
+
+    final AppLocalizations localizations = AppLocalizations.of(context);
+    final nutrimentsList = <Widget>[];
+    final energy = nutriments.getValue(
+      Nutrient.energyKCal,
+      PerSize.oneHundredGrams,
+    );
+    if (energy != null) {
+      nutrimentsList.add(
+        Text(
+          '${localizations.nutrition_energy}: ${energy.toStringAsFixed(2)} kcal',
+        ),
+      );
+    }
+
+    final fat = nutriments.getValue(Nutrient.fat, PerSize.oneHundredGrams);
+    if (fat != null) {
+      nutrimentsList.add(
+        Text('${localizations.nutrition_fat}: ${fat.toStringAsFixed(2)} g'),
+      );
+    }
+
+    final carbohydrates = nutriments.getValue(
+      Nutrient.carbohydrates,
+      PerSize.oneHundredGrams,
+    );
+    if (carbohydrates != null) {
+      nutrimentsList.add(
+        Text(
+          '${localizations.nutrition_carbohydrates}: ${carbohydrates.toStringAsFixed(2)} g',
+        ),
+      );
+    }
+
+    final proteins = nutriments.getValue(
+      Nutrient.proteins,
+      PerSize.oneHundredGrams,
+    );
+    if (proteins != null) {
+      nutrimentsList.add(
+        Text(
+          '${localizations.nutrition_proteins}: ${proteins.toStringAsFixed(2)} g',
+        ),
+      );
+    }
+
+    if (nutrimentsList.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: nutrimentsList,
+    );
+  }
+
+  Widget _getNutriScoreMessage(String? nutriScore) {
+    if (nutriScore == null) {
+      return const SizedBox.shrink();
+    }
+
+    final AppLocalizations localizations = AppLocalizations.of(context);
+    final String message;
+    final String icon;
+
+    switch (nutriScore.toUpperCase()) {
+      case 'A':
+        message = localizations.nutriscore_a_message;
+        icon = '✅';
+        break;
+      case 'B':
+        message = localizations.nutriscore_b_message;
+        icon = '✅';
+        break;
+      case 'C':
+        message = localizations.nutriscore_c_message;
+        icon = '⚠️';
+        break;
+      case 'D':
+        message = localizations.nutriscore_d_message;
+        icon = '⚠️';
+        break;
+      case 'E':
+        message = localizations.nutriscore_e_message;
+        icon = '❌';
+        break;
+      default:
+        return const SizedBox.shrink();
+    }
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: MEDIUM_SPACE),
+      child: Row(
+        children: <Widget>[
+          Text(icon, style: const TextStyle(fontSize: 24)),
+          const SizedBox(width: SMALL_SPACE),
+          Expanded(child: Text(message)),
+        ],
+      ),
+    );
   }
 
   List<Widget> _getAttributes(List<Attribute> scoreAttributes) {

@@ -4772,4 +4772,42 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get nova_group_4_text => 'Ultra-processed food and drink products';
+
+  @override
+  String get positive_attributes => 'Some positive characteristics';
+
+  @override
+  String get negative_attributes => 'Not so good characteristics';
+
+  @override
+  String get nutriscore_a_message =>
+      'You can eat it regularly without concern.';
+
+  @override
+  String get nutriscore_b_message =>
+      'It’s fine to include in your diet regularly, just balance it with other healthy foods.';
+
+  @override
+  String get nutriscore_c_message =>
+      'It’s okay now and then, but I wouldn’t make it a daily habit.';
+
+  @override
+  String get nutriscore_d_message =>
+      'It’s not the healthiest option out there.';
+
+  @override
+  String get nutriscore_e_message =>
+      'I’d avoid it if possible — or keep it as a rare treat, not something you eat regularly.';
+
+  @override
+  String get nutrition_energy => 'Energy';
+
+  @override
+  String get nutrition_fat => 'Fat';
+
+  @override
+  String get nutrition_carbohydrates => 'Carbohydrates';
+
+  @override
+  String get nutrition_proteins => 'Proteins';
 }

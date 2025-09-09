@@ -1528,7 +1528,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tiktok => 'Follow us on TikTok';
 
   @override
-  String get tiktok_link => 'https://www.tiktok.com/@openfoodfacts';
+  String get tiktok_link => 'https://www.tiktok.com/@luppa';
 
   @override
   String get instagram => 'Follow us on Instagram';
@@ -1546,13 +1546,13 @@ class AppLocalizationsAf extends AppLocalizations {
   String get mastodon => 'Follow us on Mastodon';
 
   @override
-  String get mastodon_link => 'https://mastodon.social/@openfoodfacts';
+  String get mastodon_link => 'https://mastodon.social/@luppa';
 
   @override
   String get bsky => 'Follow us on BlueSky';
 
   @override
-  String get bsky_link => 'https://bsky.app/profile/openfoodfacts.bsky.social';
+  String get bsky_link => 'https://bsky.app/profile/luppa.bsky.social';
 
   @override
   String get blog => 'Blog';
@@ -2081,7 +2081,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get edit_product_form_item_categories_explanation_info2_content =>
-      'In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Open Food Facts in your country.';
+      'In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve luppa in your country.';
 
   @override
   String get edit_product_form_item_categories_explanation_good_examples_1 =>
@@ -4766,4 +4766,42 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get nova_group_4_text => 'Ultra-processed food and drink products';
+
+  @override
+  String get positive_attributes => 'Some positive characteristics';
+
+  @override
+  String get negative_attributes => 'Not so good characteristics';
+
+  @override
+  String get nutriscore_a_message =>
+      'You can eat it regularly without concern.';
+
+  @override
+  String get nutriscore_b_message =>
+      'It’s fine to include in your diet regularly, just balance it with other healthy foods.';
+
+  @override
+  String get nutriscore_c_message =>
+      'It’s okay now and then, but I wouldn’t make it a daily habit.';
+
+  @override
+  String get nutriscore_d_message =>
+      'It’s not the healthiest option out there.';
+
+  @override
+  String get nutriscore_e_message =>
+      'I’d avoid it if possible — or keep it as a rare treat, not something you eat regularly.';
+
+  @override
+  String get nutrition_energy => 'Energy';
+
+  @override
+  String get nutrition_fat => 'Fat';
+
+  @override
+  String get nutrition_carbohydrates => 'Carbohydrates';
+
+  @override
+  String get nutrition_proteins => 'Proteins';
 }
