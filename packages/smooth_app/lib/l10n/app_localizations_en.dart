@@ -207,8 +207,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sign_in_mandatory => 'For that feature we need you to sign in.';
 
   @override
-  String get help_improve_country =>
-      'Help improve Open Food Facts in your country';
+  String get help_improve_country => 'Help improve Luppa in your country';
 
   @override
   String get sign_out => 'Sign out';
@@ -487,7 +486,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contribute_join_skill_pool =>
-      'Contribute your skills to Open Food Facts. Join the skill pool!';
+      'Contribute your skills to Luppa. Join the skill pool!';
 
   @override
   String get contribute_share_header => 'Share luppa with your friends';
@@ -879,7 +878,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get new_product_title_pictures_details =>
-      'Please take the following photos and the Open Food Facts engine can work out the rest!';
+      'Please take the following photos and the Luppa engine can work out the rest!';
 
   @override
   String get new_product_title_misc => 'And some basic data…';
@@ -2854,7 +2853,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get prices_privacy_warning_main_message =>
-      'Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your Open Food Facts pseudonym to:\n';
+      'Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your Luppa pseudonym to:\n';
 
   @override
   String get prices_privacy_warning_message_bullet_1 =>
@@ -2866,7 +2865,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get prices_privacy_warning_sub_message =>
-      'If you are uneasy with that, please change your pseudonym, or create a new Open Food Facts account and log into the app with it.';
+      'If you are uneasy with that, please change your pseudonym, or create a new Luppa account and log into the app with it.';
 
   @override
   String get i_refuse => 'I refuse';
@@ -3446,7 +3445,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get search_product_filter_visibility_subtitle =>
-      'Select search site: Open Food Facts, Open Beauty Facts, Open Pet Food Facts or Open Products Facts';
+      'Select search site: Luppa, Open Beauty Facts, Open Pet Food Facts or Open Products Facts';
 
   @override
   String get no_internet_connection => 'No internet connection';
@@ -4021,7 +4020,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get faq_title_vision =>
-      'The Open Food Facts Vision, Mission, Values and Programs';
+      'The Luppa Vision, Mission, Values and Programs';
 
   @override
   String get faq_title_install_beauty =>
@@ -4040,8 +4039,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'New calculation of the Nutri-Score: what\'s new?';
 
   @override
-  String get contact_title_pro_page =>
-      'Pro? Import your products in Open Food Facts';
+  String get contact_title_pro_page => 'Pro? Import your products in Luppa';
 
   @override
   String get contact_title_pro_email => 'Producer Contact';

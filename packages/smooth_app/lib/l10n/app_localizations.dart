@@ -728,7 +728,7 @@ abstract class AppLocalizations {
   /// label for a tile that is on the contribute tile
   ///
   /// In en, this message translates to:
-  /// **'Help improve Open Food Facts in your country'**
+  /// **'Help improve Luppa in your country'**
   String get help_improve_country;
 
   /// Button label: For sign out
@@ -1226,7 +1226,7 @@ abstract class AppLocalizations {
   /// No description provided for @contribute_join_skill_pool.
   ///
   /// In en, this message translates to:
-  /// **'Contribute your skills to Open Food Facts. Join the skill pool!'**
+  /// **'Contribute your skills to Luppa. Join the skill pool!'**
   String get contribute_join_skill_pool;
 
   /// No description provided for @contribute_share_header.
@@ -1933,7 +1933,7 @@ abstract class AppLocalizations {
   /// No description provided for @new_product_title_pictures_details.
   ///
   /// In en, this message translates to:
-  /// **'Please take the following photos and the Open Food Facts engine can work out the rest!'**
+  /// **'Please take the following photos and the Luppa engine can work out the rest!'**
   String get new_product_title_pictures_details;
 
   /// No description provided for @new_product_title_misc.
@@ -2476,7 +2476,7 @@ abstract class AppLocalizations {
   /// **'Unknown'**
   String get product_image_details_date_unknown;
 
-  /// Description for accessibility of the Open Food Facts logo on the homepage
+  /// Description for accessibility of the Luppa logo on the homepage
   ///
   /// In en, this message translates to:
   /// **'Welcome to luppa'**
@@ -5083,7 +5083,7 @@ abstract class AppLocalizations {
   /// No description provided for @prices_privacy_warning_main_message.
   ///
   /// In en, this message translates to:
-  /// **'Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your Open Food Facts pseudonym to:\n'**
+  /// **'Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your Luppa pseudonym to:\n'**
   String get prices_privacy_warning_main_message;
 
   /// No description provided for @prices_privacy_warning_message_bullet_1.
@@ -5101,7 +5101,7 @@ abstract class AppLocalizations {
   /// No description provided for @prices_privacy_warning_sub_message.
   ///
   /// In en, this message translates to:
-  /// **'If you are uneasy with that, please change your pseudonym, or create a new Open Food Facts account and log into the app with it.'**
+  /// **'If you are uneasy with that, please change your pseudonym, or create a new Luppa account and log into the app with it.'**
   String get prices_privacy_warning_sub_message;
 
   /// No description provided for @i_refuse.
@@ -6034,7 +6034,7 @@ abstract class AppLocalizations {
   /// Label for showing the product type filter in the search bar
   ///
   /// In en, this message translates to:
-  /// **'Select search site: Open Food Facts, Open Beauty Facts, Open Pet Food Facts or Open Products Facts'**
+  /// **'Select search site: Luppa, Open Beauty Facts, Open Pet Food Facts or Open Products Facts'**
   String get search_product_filter_visibility_subtitle;
 
   /// Message when there is no internet connection
@@ -7030,7 +7030,7 @@ abstract class AppLocalizations {
   /// No description provided for @faq_title_vision.
   ///
   /// In en, this message translates to:
-  /// **'The Open Food Facts Vision, Mission, Values and Programs'**
+  /// **'The Luppa Vision, Mission, Values and Programs'**
   String get faq_title_vision;
 
   /// No description provided for @faq_title_install_beauty.
@@ -7060,7 +7060,7 @@ abstract class AppLocalizations {
   /// No description provided for @contact_title_pro_page.
   ///
   /// In en, this message translates to:
-  /// **'Pro? Import your products in Open Food Facts'**
+  /// **'Pro? Import your products in Luppa'**
   String get contact_title_pro_page;
 
   /// No description provided for @contact_title_pro_email.

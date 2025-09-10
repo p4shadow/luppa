@@ -375,48 +375,48 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
 
     final AppLocalizations localizations = AppLocalizations.of(context);
     final nutrimentsList = <Widget>[];
-    final energy = nutriments.getValue(
-      Nutrient.energyKCal,
-      PerSize.oneHundredGrams,
-    );
-    if (energy != null) {
-      nutrimentsList.add(
-        Text(
-          '${localizations.nutrition_energy}: ${energy.toStringAsFixed(2)} kcal',
-        ),
-      );
-    }
+    // final energy = nutriments.getValue(
+    //   Nutrient.energyKCal,
+    //   PerSize.oneHundredGrams,
+    // );
+    // if (energy != null) {
+    //   nutrimentsList.add(
+    //     Text(
+    //       '${localizations.nutrition_energy}: ${energy.toStringAsFixed(2)} kcal',
+    //     ),
+    //   );
+    // }
 
-    final fat = nutriments.getValue(Nutrient.fat, PerSize.oneHundredGrams);
-    if (fat != null) {
-      nutrimentsList.add(
-        Text('${localizations.nutrition_fat}: ${fat.toStringAsFixed(2)} g'),
-      );
-    }
+    // final fat = nutriments.getValue(Nutrient.fat, PerSize.oneHundredGrams);
+    // if (fat != null) {
+    //   nutrimentsList.add(
+    //     Text('${localizations.nutrition_fat}: ${fat.toStringAsFixed(2)} g'),
+    //   );
+    // }
 
-    final carbohydrates = nutriments.getValue(
-      Nutrient.carbohydrates,
-      PerSize.oneHundredGrams,
-    );
-    if (carbohydrates != null) {
-      nutrimentsList.add(
-        Text(
-          '${localizations.nutrition_carbohydrates}: ${carbohydrates.toStringAsFixed(2)} g',
-        ),
-      );
-    }
+    // final carbohydrates = nutriments.getValue(
+    //   Nutrient.carbohydrates,
+    //   PerSize.oneHundredGrams,
+    // );
+    // if (carbohydrates != null) {
+    //   nutrimentsList.add(
+    //     Text(
+    //       '${localizations.nutrition_carbohydrates}: ${carbohydrates.toStringAsFixed(2)} g',
+    //     ),
+    //   );
+    // }
 
-    final proteins = nutriments.getValue(
-      Nutrient.proteins,
-      PerSize.oneHundredGrams,
-    );
-    if (proteins != null) {
-      nutrimentsList.add(
-        Text(
-          '${localizations.nutrition_proteins}: ${proteins.toStringAsFixed(2)} g',
-        ),
-      );
-    }
+    // final proteins = nutriments.getValue(
+    //   Nutrient.proteins,
+    //   PerSize.oneHundredGrams,
+    // );
+    // if (proteins != null) {
+    //   nutrimentsList.add(
+    //     Text(
+    //       '${localizations.nutrition_proteins}: ${proteins.toStringAsFixed(2)} g',
+    //     ),
+    //   );
+    // }
 
     if (nutrimentsList.isEmpty) {
       return const SizedBox.shrink();
@@ -480,23 +480,36 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     }
 
     if (scoreAttributes.length == 1) {
+      final Attribute attribute = scoreAttributes[0];
       return <Widget>[
-        ScoreCard.attribute(attribute: scoreAttributes[0], isClickable: false),
+        Center(
+          child: ScoreCard.attribute(
+            attribute: attribute,
+            isClickable: false,
+            onTap: () => _openFullKnowledgePanel(attribute: attribute),
+          ),
+        ),
       ];
     }
 
+    final List<Widget> scoreWidgets = <Widget>[];
+    for (int i = 0; i < scoreAttributes.length; i++) {
+      final Attribute attribute = scoreAttributes[i];
+      scoreWidgets.add(
+        ScoreCard.attribute(
+          attribute: attribute,
+          isClickable: widget.isFullVersion,
+          onTap: () => _openFullKnowledgePanel(attribute: attribute),
+        ),
+      );
+      if (i < scoreAttributes.length - 1) {
+        scoreWidgets.add(const SizedBox(width: SMALL_SPACE));
+      }
+    }
+
     return <Widget>[
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          for (final Attribute attribute in scoreAttributes)
-            Flexible(
-              child: ScoreCard.attribute(
-                attribute: attribute,
-                isClickable: widget.isFullVersion,
-              ),
-            ),
-        ],
+      Center(
+        child: Row(mainAxisSize: MainAxisSize.min, children: scoreWidgets),
       ),
     ];
   }

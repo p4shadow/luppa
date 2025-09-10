@@ -39,6 +39,7 @@ class ScoreCard extends StatelessWidget {
     required this.attribute,
     required this.isClickable,
     this.margin,
+    this.onTap,
   }) : type = ScoreCardType.attribute,
        iconUrl = attribute?.iconUrl,
        description =
@@ -51,6 +52,7 @@ class ScoreCard extends StatelessWidget {
     required TitleElement titleElement,
     required this.isClickable,
     this.margin,
+    this.onTap,
   }) : type = ScoreCardType.title,
        attribute = null,
        iconUrl = titleElement.iconUrl,
@@ -66,6 +68,7 @@ class ScoreCard extends StatelessWidget {
   final bool isClickable;
   final EdgeInsetsGeometry? margin;
   final ScoreCardType type;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -86,33 +89,37 @@ class ScoreCard extends StatelessWidget {
       excludeSemantics: true,
       header: type == ScoreCardType.title,
       button: isClickable,
-      child: Padding(
-        padding: margin ?? const EdgeInsets.symmetric(vertical: SMALL_SPACE),
-        child: Ink(
-          padding: const EdgeInsets.all(SMALL_SPACE),
-          decoration: BoxDecoration(
-            color: backgroundColor,
-            borderRadius: ANGULAR_BORDER_RADIUS,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              if (iconChip != null)
-                Padding(
-                  padding: const EdgeInsetsDirectional.only(end: SMALL_SPACE),
-                  child: iconChip,
-                ),
-              //if (attribute?.id == Attribute.ATTRIBUTE_NOVA)
-              // Flexible(
-              //   child: Text(
-              //     'Producto procesado',
-              //     style: themeData.textTheme.headlineMedium!.apply(
-              //       color: cardEvaluation.textColor,
-              //     ),
-              //     textAlign: TextAlign.center,
-              //   ),
-              // ),
-            ],
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: ANGULAR_BORDER_RADIUS,
+        child: Padding(
+          padding: margin ?? const EdgeInsets.symmetric(vertical: SMALL_SPACE),
+          child: Ink(
+            padding: const EdgeInsets.all(SMALL_SPACE),
+            decoration: BoxDecoration(
+              color: backgroundColor,
+              borderRadius: ANGULAR_BORDER_RADIUS,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                if (iconChip != null)
+                  Padding(
+                    padding: const EdgeInsetsDirectional.only(end: SMALL_SPACE),
+                    child: iconChip,
+                  ),
+                //if (attribute?.id == Attribute.ATTRIBUTE_NOVA)
+                // Flexible(
+                //   child: Text(
+                //     'Producto procesado',
+                //     style: themeData.textTheme.headlineMedium!.apply(
+                //       color: cardEvaluation.textColor,
+                //     ),
+                //     textAlign: TextAlign.center,
+                //   ),
+                // ),
+              ],
+            ),
           ),
         ),
       ),

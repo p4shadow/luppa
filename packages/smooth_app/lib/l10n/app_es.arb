@@ -139,7 +139,7 @@
   "@welcomeToOpenFoodFacts": {},
   "whatIsOff": "luppa es una organización global sin ánimo de lucro impulsada por comunidades locales.",
   "@whatIsOff": {
-    "description": "Description of Open Food Facts organization."
+    "description": "Description of Luppa organization."
   },
   "productDataUtility": "Consulta los datos de los alimentos relacionados con tus preferencias.",
   "@productDataUtility": {
@@ -260,9 +260,9 @@
   "sign_up_page_confirm_password_hint": "Confirmar contraseña",
   "sign_up_page_confirm_password_error_empty": "Por favor, confirma la contraseña",
   "sign_up_page_confirm_password_error_invalid": "Las contraseñas no coinciden",
-  "sign_up_page_agree_text": "Estoy de acuerdo con las condiciones de Open Food Facts",
+  "sign_up_page_agree_text": "Estoy de acuerdo con las condiciones de Luppa",
   "@sign_up_page_agree_text": {
-    "description": "I agree to the Open Food Facts is followed by sign_up_page_terms_text"
+    "description": "I agree to the Luppa is followed by sign_up_page_terms_text"
   },
   "sign_up_page_terms_text": "las condiciones de uso y contribución de luppa",
   "@sign_up_page_terms_text": {
@@ -270,7 +270,7 @@
   },
   "sign_up_page_agree_url": "https://world-es.luppa.ar/terms-of-use",
   "@sign_up_page_agree_url": {
-    "description": "Please insert the right url here. Go to the Open Food Facts homepage, switch to your country and then on the bottom left footer is Terms of use from which the url should be taken"
+    "description": "Please insert the right url here. Go to the Luppa homepage, switch to your country and then on the bottom left footer is Terms of use from which the url should be taken"
   },
   "donate_url": "https://world-es.luppa.ar/dar-a-open-food-facts",
   "@donate_url": {
@@ -401,7 +401,7 @@
   "contribute_translate_text_2": "La traducción es una de las tareas clave del proyecto.",
   "@contribute_translate_text_2": {},
   "contribute_join_skill_pool": "Colabora con tus habilidades en luppa. ¡Únete al Grupo de Habilidades!",
-  "contribute_share_header": "Comparte Open Food Facts con tus amigos",
+  "contribute_share_header": "Comparte Luppa con tus amigos",
   "@contribute_share_header": {},
   "contribute_share_content": "Me gustaría enseñaros una aplicación que he estado utilizando, luppa, la cual permite conocer el impacto sobre la salud y el medioambiente de los alimentos que consumimos de una manera personalizada. Funciona escaneado los códigos de barra de los envases de los productos. Además de ser gratuita y de no necesitar registro, podréis colaborar y añadir productos a la base de datos. Aquí os dejo el enlace por si queréis descargarla en vuestro móvil: https://luppa.ar",
   "@contribute_share_content": {
@@ -413,7 +413,7 @@
   },
   "tap_to_answer": "Toca aquí para responder preguntas",
   "@tap_to_answer": {
-    "description": "Button label shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts and gain rewards."
+    "description": "Button label shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Luppa and gain rewards."
   },
   "tap_to_answer_hint": "Toca aquí para responder preguntas sobre el producto",
   "@tap_to_answer_hint": {
@@ -429,9 +429,9 @@
   },
   "contribute_to_get_rewards": "Conviértete en un actor de la transparencia alimentaria",
   "@contribute_to_get_rewards": {
-    "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Open Food Facts."
+    "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Luppa."
   },
-  "question_sign_in_text": "Inicia sesión en tu cuenta de Open Food Facts para obtener reconocimiento por tu colaboración.",
+  "question_sign_in_text": "Inicia sesión en tu cuenta de Luppa para obtener reconocimiento por tu colaboración.",
   "question_yes_button_accessibility_value": "Responde con sí",
   "question_no_button_accessibility_value": "Responde con no",
   "question_skip_button_accessibility_value": "Saltar esta pregunta",
@@ -450,7 +450,7 @@
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Tu perfil",
-  "myPreferences_profile_subtitle": "Administra tu cuenta de colaborador de Open Food Facts.",
+  "myPreferences_profile_subtitle": "Administra tu cuenta de colaborador de Luppa.",
   "myPreferences_settings_title": "Ajustes de la aplicación",
   "myPreferences_settings_subtitle": "Modo oscuro, Idiomas…",
   "myPreferences_food_title": "Preferencias alimentarias",
@@ -588,7 +588,7 @@
   "@packaging_information_photo": {},
   "missing_product": "¡Has encontrado un nuevo producto!",
   "@missing_product": {},
-  "add_product_take_photos": "Haz fotos del envase para añadir este producto a Open Food Facts.",
+  "add_product_take_photos": "Haz fotos del envase para añadir este producto a Luppa.",
   "@add_product_take_photos": {},
   "add_product_take_photos_descriptive": "Por favor, primero haz alguna foto del producto. Más adelante podrás completar la información del producto.",
   "@add_product_take_photos_descriptive": {},
@@ -749,27 +749,27 @@
   "@uploading_image": {
     "description": "Message when a new picture is uploading to the server"
   },
-  "uploading_image_type_front": "Subiendo imagen frontal a Open Food Facts",
+  "uploading_image_type_front": "Subiendo imagen frontal a Luppa",
   "@uploading_image_type_front": {
     "description": "Message when a new front picture is being uploaded to the server"
   },
-  "uploading_image_type_ingredients": "Subiendo imagen de ingredientes a Open Food Facts",
+  "uploading_image_type_ingredients": "Subiendo imagen de ingredientes a Luppa",
   "@uploading_image_type_ingredients": {
     "description": "Message when a new ingredients picture is being uploaded to the server"
   },
-  "uploading_image_type_nutrition": "Subiendo imagen sobre nutrientes a Open Food Facts",
+  "uploading_image_type_nutrition": "Subiendo imagen sobre nutrientes a Luppa",
   "@uploading_image_type_nutrition": {
     "description": "Message when a new nutrition picture is being uploaded to the server"
   },
-  "uploading_image_type_packaging": "Subiendo imagen del envase a Open Food Facts",
+  "uploading_image_type_packaging": "Subiendo imagen del envase a Luppa",
   "@uploading_image_type_packaging": {
     "description": "Message when a new packaging picture is being uploaded to the server"
   },
-  "uploading_image_type_other": "Subiendo otro tipo de imágenes a Open Food Facts",
+  "uploading_image_type_other": "Subiendo otro tipo de imágenes a Luppa",
   "@uploading_image_type_other": {
     "description": "Message when a new other picture is being uploaded to the server"
   },
-  "uploading_image_type_generic": "Subiendo imagen a Open Food Facts",
+  "uploading_image_type_generic": "Subiendo imagen a Luppa",
   "@uploading_image_type_generic": {
     "description": "Message when a new picture is being uploaded to the server"
   },
@@ -1127,7 +1127,7 @@
   "@native_app_settings": {
     "description": "Native App Settings in app settings"
   },
-  "native_app_description": "Abrir configuración del sistema de Open Food Facts",
+  "native_app_description": "Abrir configuración del sistema de Luppa",
   "@native_app_description": {
     "description": "Native App description in app settings"
   },
@@ -1428,8 +1428,8 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Inicia sesión o regístrate para unirte a la comunidad de Open Food Facts",
-  "user_profile_title_id_email": "Inicio de sesión en Open Food Facts: {email}",
+  "user_profile_subtitle_guest": "Inicia sesión o regístrate para unirte a la comunidad de Luppa",
+  "user_profile_title_id_email": "Inicio de sesión en Luppa: {email}",
   "@user_profile_title_id_email": {
     "description": "User login (when it's an email)",
     "placeholders": {
@@ -1451,7 +1451,7 @@
   "@email_subject_account_deletion": {
     "description": "Email subject for an account deletion"
   },
-  "email_body_account_deletion": "Hola, me gustaría eliminar mi cuenta de Open Food Facts: {userId}",
+  "email_body_account_deletion": "Hola, me gustaría eliminar mi cuenta de Luppa: {userId}",
   "@email_body_account_deletion": {
     "description": "Email body for an account deletion",
     "placeholders": {
@@ -1492,7 +1492,7 @@
   "@crash_reporting_toggle_title": {
     "description": "Title for the Crash reporting toggle"
   },
-  "crash_reporting_toggle_subtitle": "Al activarlo, los informes de errores se enviarán automáticamente al sistema de seguimiento de Open Food Facts para que podamos corregirlos y mejorar la aplicación.",
+  "crash_reporting_toggle_subtitle": "Al activarlo, los informes de errores se enviarán automáticamente al sistema de seguimiento de Luppa para que podamos corregirlos y mejorar la aplicación.",
   "@crash_reporting_toggle_subtitle": {
     "description": "SubTitle for the Crash reporting toggle"
   },
@@ -1500,7 +1500,7 @@
   "@send_anonymous_toggle_title": {
     "description": "Title for the Send anonymous data toggle"
   },
-  "send_anonymous_data_toggle_subtitle": "Al activarlo, se enviarán algunos datos sobre el uso de la aplicación a los servidores de Open Food Facts para que podamos entender cómo y cuánto se utiliza cada función y así poder mejorarlas.",
+  "send_anonymous_data_toggle_subtitle": "Al activarlo, se enviarán algunos datos sobre el uso de la aplicación a los servidores de Luppa para que podamos entender cómo y cuánto se utiliza cada función y así poder mejorarlas.",
   "@send_anonymous_toggle_subtitle": {
     "description": "SubTitle for the Send anonymous data toggle"
   },
@@ -1847,7 +1847,7 @@
   "@edit_product_form_item_categories_explanation_info2_title": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
-  "edit_product_form_item_categories_explanation_info2_content": "In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Open Food Facts in your country.",
+  "edit_product_form_item_categories_explanation_info2_content": "In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Luppa in your country.",
   "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
@@ -2765,7 +2765,7 @@
   "@edit_product_action_confirm": {
     "description": "Product edition - FAB actions - confirm"
   },
-  "signup_page_terms_of_use_line1": "Estoy de acuerdo con las condiciones de Open Food Facts ",
+  "signup_page_terms_of_use_line1": "Estoy de acuerdo con las condiciones de Luppa ",
   "@signup_page_terms_of_use_line1": {
     "description": "User consent for terms of use (line 1)"
   },
@@ -3141,7 +3141,7 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Echa un vistazo a este producto en Open Food Facts: {url}",
+  "share_product_text": "Echa un vistazo a este producto en Luppa: {url}",
   "@share_product_text": {
     "description": "The content which is send, when sharing a 'food' product",
     "placeholders": {
@@ -3177,7 +3177,7 @@
       }
     }
   },
-  "share_product_list_text": "Echa un vistazo a mi lista de productos en Open Food Facts: {url}",
+  "share_product_list_text": "Echa un vistazo a mi lista de productos en Luppa: {url}",
   "@share_product_list_text": {
     "description": "The content which is send, when sharing a product list",
     "placeholders": {
@@ -3560,7 +3560,7 @@
   },
   "color_light_brown": "Predeterminado",
   "@color_light_brown": {
-    "description": "Color Light Brown, Default Open Food Facts Color"
+    "description": "Color Light Brown, Default Luppa Color"
   },
   "color_magenta": "Magenta",
   "@color_magenta": {
@@ -3690,7 +3690,7 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Actualiza la base de datos local de productos con los últimos datos de Open Food Facts.",
+  "update_local_database_sub": "Actualiza la base de datos local de productos con los últimos datos de Luppa.",
   "@update_local_database_sub": {
     "description": "Update the local product database with the latest data from server"
   },
@@ -4109,7 +4109,7 @@
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
   "carousel_unsupported_title": "Ooops!",
-  "carousel_unsupported_text": "The barcode scanned is not supported by Open Food Facts!",
+  "carousel_unsupported_text": "The barcode scanned is not supported by Luppa!",
   "carousel_error_header": "Error!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
@@ -4578,7 +4578,7 @@
   "nutriscore_b_message": "Puedes incluirlo regularmente en tu alimentación, solo cuida el resto de tu dieta.",
   "nutriscore_c_message": "No está mal, pero mejor consumirlo de vez en cuando, no todos los días.",
   "nutriscore_d_message": "No es la mejor opción si buscas algo saludable.",
-  "nutriscore_e_message": "Mejor evítalo o consúmelo muy rara vez, porque su impacto en la salud puede ser negativo si lo tomas seguido.",
+  "nutriscore_e_message": "Mejor evítalo o consúmelo muy rara vez, porque su impacto en la salud puede ser negativo si lo consumes seguido.",
   "nutrition_energy": "Energía",
   "nutrition_fat": "Grasas",
   "nutrition_carbohydrates": "Carbohidratos",

@@ -207,8 +207,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get sign_in_mandatory => 'For that feature we need you to sign in.';
 
   @override
-  String get help_improve_country =>
-      'Help improve Open Food Facts in your country';
+  String get help_improve_country => 'Help improve Luppa in your country';
 
   @override
   String get sign_out => 'Sign out';
@@ -2862,7 +2861,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get prices_privacy_warning_main_message =>
-      'Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your Open Food Facts pseudonym to:\n';
+      'Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your Luppa pseudonym to:\n';
 
   @override
   String get prices_privacy_warning_message_bullet_1 =>
@@ -2874,7 +2873,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get prices_privacy_warning_sub_message =>
-      'If you are uneasy with that, please change your pseudonym, or create a new Open Food Facts account and log into the app with it.';
+      'If you are uneasy with that, please change your pseudonym, or create a new Luppa account and log into the app with it.';
 
   @override
   String get i_refuse => 'I refuse';
