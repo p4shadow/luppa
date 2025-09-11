@@ -52,7 +52,7 @@ class WelcomePage extends StatelessWidget {
                         SizedBox(height: screenSize.height * .05),
                         SvgPicture.asset(
                           'assets/onboarding/title.png',
-                          height: screenSize.height * .10,
+                          height: screenSize.height * 1.0,
                           package: AppHelper.APP_PACKAGE,
                         ),
                         SvgPicture.asset(

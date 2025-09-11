@@ -100,14 +100,7 @@ enum ProductFooterActionBar {
 
   /// The "settings" value must not persisted
   static List<ProductFooterActionBar> defaultOrder() =>
-      const <ProductFooterActionBar>[
-        edit,
-        addPrice,
-        compare,
-        addToList,
-        addProperty,
-        share,
-      ];
+      const <ProductFooterActionBar>[addToList, share];
 }
 
 class _ProductFooterButtonsBar extends StatelessWidget {

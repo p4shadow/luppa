@@ -225,46 +225,46 @@ class _SignUpPageState extends State<SignUpPage> with TraceableClientMixin {
                     });
                   },
                 ),
-                const SizedBox(height: space),
-                ListTile(
-                  onTap: () {
-                    setState(() => _foodProducer = !_foodProducer);
-                  },
-                  contentPadding: EdgeInsets.zero,
-                  leading: IgnorePointer(
-                    ignoring: true,
-                    child: Checkbox(
-                      value: _foodProducer,
-                      fillColor: WidgetStateProperty.resolveWith(
-                        getCheckBoxColor,
-                      ),
-                      onChanged: (_) {},
-                    ),
-                  ),
-                  title: Text(
-                    appLocalizations.sign_up_page_producer_checkbox,
-                    style: theme.textTheme.bodyMedium?.copyWith(
-                      color: theme.colorScheme.onSurface,
-                    ),
-                  ),
-                ),
-                if (_foodProducer) ...<Widget>[
-                  const SizedBox(height: space),
-                  SmoothTextFormField(
-                    type: TextFieldTypes.PLAIN_TEXT,
-                    controller: _brandController,
-                    textInputAction: TextInputAction.next,
-                    hintText: appLocalizations.sign_up_page_producer_hint,
-                    prefixIcon: const Icon(Icons.person),
-                    validator: (String? value) {
-                      if (value == null || value.isEmpty) {
-                        return appLocalizations
-                            .sign_up_page_producer_error_empty;
-                      }
-                      return null;
-                    },
-                  ),
-                ],
+                // const SizedBox(height: space),
+                // ListTile(
+                //   onTap: () {
+                //     setState(() => _foodProducer = !_foodProducer);
+                //   },
+                //   contentPadding: EdgeInsets.zero,
+                //   leading: IgnorePointer(
+                //     ignoring: true,
+                //     child: Checkbox(
+                //       value: _foodProducer,
+                //       fillColor: WidgetStateProperty.resolveWith(
+                //         getCheckBoxColor,
+                //       ),
+                //       onChanged: (_) {},
+                //     ),
+                //   ),
+                //   title: Text(
+                //     appLocalizations.sign_up_page_producer_checkbox,
+                //     style: theme.textTheme.bodyMedium?.copyWith(
+                //       color: theme.colorScheme.onSurface,
+                //     ),
+                //   ),
+                // ),
+                // if (_foodProducer) ...<Widget>[
+                //   const SizedBox(height: space),
+                //   SmoothTextFormField(
+                //     type: TextFieldTypes.PLAIN_TEXT,
+                //     controller: _brandController,
+                //     textInputAction: TextInputAction.next,
+                //     hintText: appLocalizations.sign_up_page_producer_hint,
+                //     prefixIcon: const Icon(Icons.person),
+                //     validator: (String? value) {
+                //       if (value == null || value.isEmpty) {
+                //         return appLocalizations
+                //             .sign_up_page_producer_error_empty;
+                //       }
+                //       return null;
+                //     },
+                //   ),
+                // ],
                 const SizedBox(height: space),
                 ListTile(
                   onTap: () {

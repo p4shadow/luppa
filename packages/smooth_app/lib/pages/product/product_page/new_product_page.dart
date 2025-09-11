@@ -175,7 +175,7 @@ class ProductPageState extends State<ProductPage>
                     child: ProductQuestionsWidget(upToDateProduct),
                   ),
           ),
-          const ProductFooter(),
+          const ProductFooter(showSettings: false),
         ],
       ),
     );

@@ -88,45 +88,6 @@ class ProductIncompleteCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AppLocalizations appLocalizations = AppLocalizations.of(context);
-    if (!isProductIncomplete(product)) {
-      // not supposed to happen: you should check `isProductIncomplete == true` first
-      return EMPTY_WIDGET;
-    }
-
-    final ColorScheme colorScheme = Theme.of(context).colorScheme;
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
-      child: ElevatedButton.icon(
-        label: Padding(
-          padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
-          child: Text(
-            (product.productType ?? ProductType.food).getRoadToScoreLabel(
-              appLocalizations,
-            ),
-          ),
-        ),
-        icon: const Icon(Icons.bolt, color: Colors.amber),
-        onPressed: () async =>
-            Navigator.of(context, rootNavigator: true).push<void>(
-              MaterialPageRoute<void>(
-                builder: (BuildContext context) =>
-                    AddNewProductPage.fromProduct(
-                      product,
-                      isLoggedInMandatory: isLoggedInMandatory,
-                    ),
-              ),
-            ),
-        style: ButtonStyle(
-          backgroundColor: WidgetStateProperty.all<Color>(colorScheme.primary),
-          foregroundColor: WidgetStateProperty.all<Color>(
-            colorScheme.onPrimary,
-          ),
-          shape: WidgetStateProperty.all<RoundedRectangleBorder>(
-            const RoundedRectangleBorder(borderRadius: ANGULAR_BORDER_RADIUS),
-          ),
-        ),
-      ),
-    );
+    return EMPTY_WIDGET;
   }
 }
