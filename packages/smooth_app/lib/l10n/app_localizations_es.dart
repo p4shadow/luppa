@@ -510,7 +510,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get contribute_share_content =>
-      'Me gustaría enseñaros una aplicación que he estado utilizando, luppa, la cual permite conocer el impacto sobre la salud y el medioambiente de los alimentos que consumimos de una manera personalizada. Funciona escaneado los códigos de barra de los envases de los productos. Además de ser gratuita y de no necesitar registro, podréis colaborar y añadir productos a la base de datos. Aquí os dejo el enlace por si queréis descargarla en vuestro móvil: https://luppa.ar';
+      'Prueba Luppa, una app muy útil, que te muestra el impacto de los alimentos en tu salud y el ambiente. Escaneás el código de barras y listo. Acá el link: https://luppa.ar';
 
   @override
   String get contribute_prices_gdpr =>

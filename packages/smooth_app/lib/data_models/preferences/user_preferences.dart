@@ -552,12 +552,23 @@ class UserPreferences extends ChangeNotifier {
       _TAG_PRODUCT_PAGE_ACTIONS,
     );
 
+    final List<ProductFooterActionBar> result;
     if (actions == null) {
-      return ProductFooterActionBar.defaultOrder();
+      result = ProductFooterActionBar.defaultOrder();
+    } else {
+      result = actions
+          .map((String action) => ProductFooterActionBar.fromKey(action))
+          .toList(growable: false);
     }
 
-    return actions
-        .map((String action) => ProductFooterActionBar.fromKey(action))
+    return result
+        .where(
+          (action) =>
+              action != ProductFooterActionBar.edit &&
+              action != ProductFooterActionBar.addPrice &&
+              action != ProductFooterActionBar.addProperty &&
+              action != ProductFooterActionBar.share,
+        )
         .toList(growable: false);
   }
 

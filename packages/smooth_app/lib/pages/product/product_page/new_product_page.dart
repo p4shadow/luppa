@@ -64,15 +64,19 @@ class ProductPageState extends State<ProductPage>
     initUpToDate(widget.product, localDatabase);
     DaoProductLastAccess(localDatabase).put(barcode);
 
-    _tabs = ProductPageTabBar.extractTabsFromProduct(
-      context: context,
-      product: upToDateProduct,
-    );
+    final List<ProductPageTab> allTabs =
+        ProductPageTabBar.extractTabsFromProduct(
+          context: context,
+          product: upToDateProduct,
+        );
+    _tabs = allTabs
+        .where((ProductPageTab tab) => tab.id == 'health_card')
+        .toList();
 
     _tabController = TabController(
       length: _tabs.length,
       vsync: this,
-      initialIndex: 1,
+      initialIndex: 0,
     );
 
     onNextFrame(() {
@@ -175,7 +179,7 @@ class ProductPageState extends State<ProductPage>
                     child: ProductQuestionsWidget(upToDateProduct),
                   ),
           ),
-          const ProductFooter(showSettings: false),
+          const ProductFooter(),
         ],
       ),
     );

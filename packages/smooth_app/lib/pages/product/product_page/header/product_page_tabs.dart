@@ -87,61 +87,47 @@ class ProductPageTabBar extends StatelessWidget {
     required Product product,
   }) {
     final List<ProductPageTab> tabs = <ProductPageTab>[];
-
     final List<KnowledgePanelElement> roots =
         KnowledgePanelsBuilder.getRootPanelElements(product);
-    for (final KnowledgePanelElement root in roots) {
-      final String? id = root.panelElement?.panelId;
-      if (id == null) {
-        continue;
-      }
 
-      List<Widget> children = KnowledgePanelsBuilder.getChildren(
+    KnowledgePanelElement? healthCardPanel;
+    try {
+      healthCardPanel = roots.firstWhere(
+        (element) => element.panelElement?.panelId == 'health_card',
+      );
+    } catch (e) {
+      healthCardPanel = null;
+    }
+
+    if (healthCardPanel != null) {
+      final List<Widget> children = KnowledgePanelsBuilder.getChildren(
         context,
-        panelElement: root,
+        panelElement: healthCardPanel,
         product: product,
         onboardingMode: false,
       );
 
-      if (children.isEmpty) {
-        continue;
-      }
+      if (children.isNotEmpty) {
+        final KnowledgePanelTitle knowledgePanelTitle =
+            children.first as KnowledgePanelTitle;
 
-      final KnowledgePanelTitle knowledgePanelTitle =
-          children.first as KnowledgePanelTitle;
+        final List<Widget> panelChildren = children.sublist(1);
 
-      children = children.sublist(1);
-
-      tabs.add(
-        ProductPageTab(
-          id: id,
-          labelBuilder: (_) => knowledgePanelTitle.title,
-          prefix: _extractPrefix(product, knowledgePanelTitle),
-          builder: (_, _) => ListView.builder(
-            padding: EdgeInsetsDirectional.zero,
-            itemCount: children.length - 1,
-            itemBuilder: (BuildContext context, int index) => children[index],
+        tabs.add(
+          ProductPageTab(
+            id: 'health_card', // We know it's health_card
+            labelBuilder: (_) => knowledgePanelTitle.title,
+            prefix: _extractPrefix(product, knowledgePanelTitle),
+            builder: (BuildContext context, Product product) =>
+                ListView.builder(
+                  padding: EdgeInsetsDirectional.zero,
+                  itemCount: panelChildren.length,
+                  itemBuilder: (BuildContext context, int index) =>
+                      panelChildren[index],
+                ),
           ),
-        ),
-      );
-    }
-
-    _addHardCodedTabs(context, product, tabs);
-
-    final List<String> order = context.read<UserPreferences>().productPageTabs;
-
-    if (order.isNotEmpty) {
-      tabs.sort((ProductPageTab a, ProductPageTab b) {
-        final int indexA = order.indexOf(a.id);
-        final int indexB = order.indexOf(b.id);
-        if (indexA < 0) {
-          return 1;
-        }
-        if (indexB < 0) {
-          return -1;
-        }
-        return indexA - indexB;
-      });
+        );
+      }
     }
 
     return tabs;

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
-import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/product/add_new_product/add_new_product_page.dart';
+// import 'package:smooth_app/l10n/app_localizations.dart';
+// import 'package:smooth_app/pages/product/add_new_product/add_new_product_page.dart';
 import 'package:smooth_app/pages/product/product_field_editor.dart';
-import 'package:smooth_app/pages/product/product_type_extensions.dart';
+// import 'package:smooth_app/pages/product/product_type_extensions.dart';
 import 'package:smooth_app/pages/product/simple_input/simple_input_page_helpers.dart';
 
 /// "Incomplete product!" card to be displayed in product summary, if relevant.

@@ -32,32 +32,32 @@ class SmoothColorsThemeExtension
   });
 
   SmoothColorsThemeExtension.defaultValues(bool lightTheme)
-    : primaryUltraBlack = const Color(0xFF201A17),
-      primaryBlack = const Color(0xFF341100),
-      primaryDark = const Color(0xFF483527),
-      primarySemiDark = const Color(0xFF52443D),
-      primaryTone = const Color(0xFF81756C),
-      primaryAccent = const Color(0xFF875737),
-      primaryNormal = const Color(0xFFA08D84),
-      primaryMedium = const Color(0xFFEDE0DB),
-      primaryLight = const Color(0xFFF6F3F0),
-      secondaryNormal = const Color(0xFFF2994A),
-      secondaryVibrant = const Color(0xFFFB8229),
-      secondaryLight = const Color(0xFFEE8858),
-      success = const Color(0xFF219653),
-      successBackground = const Color(0xFFDEEDDB),
-      warning = const Color(0xFFFB8229),
-      warningBackground = const Color(0xFFF2E2D6),
-      error = const Color(0xFFEB5757),
-      errorBackground = const Color(0xFFF6E4E4),
-      greyDark = const Color(0xFF666666),
-      greyNormal = const Color(0xFF6C6C6C),
-      greyMedium = const Color(0xFF8F8F8F),
-      greyLight = const Color(0xFFE0E0E0),
-      cellOdd = lightTheme ? const Color(0xFFFAF8F6) : const Color(0xFF2D251E),
-      cellEven = lightTheme ? const Color(0xFFFFFFFF) : const Color(0xFF201A17),
-      nova = const Color(0xFFFFF0E4),
-      recommendation = const Color(0xFFFFFFE0);
+    : primaryUltraBlack = const Color(0xFF2E7D32), // Verde Yuka oscuro
+      primaryBlack = const Color(0xFF1B5E20), // Verde Yuka profundo
+      primaryDark = const Color(0xFF388E3C), // Verde Yuka intenso
+      primarySemiDark = const Color(0xFF43A047), // Verde Yuka medio
+      primaryTone = const Color(0xFF66BB6A), // Verde Yuka suave
+      primaryAccent = const Color(0xFF81C784), // Verde Yuka claro
+      primaryNormal = const Color(0xFFA5D6A7), // Verde Yuka muy claro
+      primaryMedium = const Color(0xFFC8E6C9), // Verde Yuka pastel
+      primaryLight = const Color(0xE8F5E9), // Verde Yuka extremadamente claro
+      secondaryNormal = const Color(0xFFFF5722), // Naranja Yuka
+      secondaryVibrant = const Color(0xFFFF7043), // Coral Yuka
+      secondaryLight = const Color(0xFFFF8A65), // Coral Yuka suave
+      success = const Color(0xFF43A047), // Verde éxito Yuka
+      successBackground = const Color(0xFFE8F5E9), // Fondo verde Yuka claro
+      warning = const Color(0xFFFF5722), // Naranja advertencia Yuka
+      warningBackground = const Color(0xFFFFF3E0), // Fondo naranja Yuka claro
+      error = const Color(0xFFEF5350), // Rojo error Yuka
+      errorBackground = const Color(0xFFFFEBEE), // Fondo rojo Yuka claro
+      greyDark = const Color(0xFF757575), // Gris oscuro Yuka
+      greyNormal = const Color(0xFF9E9E9E), // Gris medio Yuka
+      greyMedium = const Color(0xFFE0E0E0), // Gris claro Yuka
+      greyLight = const Color(0xFFF5F5F5), // Gris muy claro Yuka
+      cellOdd = lightTheme ? const Color(0xFFE8F5E9) : const Color(0xFF2E7D32),
+      cellEven = lightTheme ? const Color(0xFFFFFFFF) : const Color(0xFF1B5E20),
+      nova = const Color(0xFFFFAB91), // Coral Yuka suave
+      recommendation = const Color(0xFFFFE082); // Amarillo Yuka claro
 
   // Ristreto
   final Color primaryUltraBlack;

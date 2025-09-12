@@ -32,6 +32,7 @@ import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/app_review.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
 import 'package:smooth_app/pages/onboarding/onboarding_flow_navigator.dart';
+import 'package:smooth_app/pages/tmp_loading_page.dart';
 import 'package:smooth_app/query/product_query.dart';
 import 'package:smooth_app/resources/app_animations.dart';
 import 'package:smooth_app/services/smooth_services.dart';
@@ -214,7 +215,7 @@ class _SmoothAppState extends State<SmoothApp> {
         }
         if (snapshot.connectionState != ConnectionState.done) {
           //We don't need a loading indicator since the splash screen is still visible
-          return EMPTY_WIDGET;
+          return const TmpLoadingPage();
         }
 
         if (!_screenshots) {
