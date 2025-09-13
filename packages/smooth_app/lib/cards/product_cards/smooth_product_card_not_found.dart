@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:smooth_app/cards/product_cards/smooth_product_base_card.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/navigator/app_navigator.dart';
 import 'package:smooth_app/pages/scan/carousel/scan_carousel.dart';
 import 'package:smooth_app/resources/app_animations.dart';
 import 'package:smooth_app/themes/smooth_theme.dart';
@@ -11,14 +10,10 @@ import 'package:smooth_app/themes/smooth_theme_colors.dart';
 import 'package:smooth_app/widgets/text/text_highlighter.dart';
 
 class ScanProductCardNotFound extends StatelessWidget {
-  ScanProductCardNotFound({
-    required this.barcode,
-    this.onAddProduct,
-    this.onRemoveProduct,
-  }) : assert(barcode.isNotEmpty);
+  ScanProductCardNotFound({required this.barcode, this.onRemoveProduct})
+    : assert(barcode.isNotEmpty);
 
   final String barcode;
-  final Future<void> Function()? onAddProduct;
   final OnRemoveCallback? onRemoveProduct;
 
   @override
@@ -83,27 +78,16 @@ class ScanProductCardNotFound extends StatelessWidget {
                 padding: const EdgeInsetsDirectional.only(top: MEDIUM_SPACE),
               ),
               spacer,
-              ScanProductBaseCardButton(
-                text: appLocalizations.carousel_unknown_product_button,
-                onTap: !dense ? () => _onTap(context) : null,
-              ),
             ],
           );
 
           if (dense) {
-            return SingleChildScrollView(
-              child: InkWell(onTap: () => _onTap(context), child: child),
-            );
+            return SingleChildScrollView(child: InkWell(child: child));
           } else {
             return child;
           }
         },
       ),
     );
-  }
-
-  Future<void> _onTap(BuildContext context) async {
-    await AppNavigator.of(context).push(AppRoutes.PRODUCT_CREATOR(barcode));
-    await onAddProduct?.call();
   }
 }

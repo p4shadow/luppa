@@ -193,36 +193,36 @@ class ProductListPopupShare extends ProductListPopupItem {
   }
 }
 
-/// Popup menu item for the product list page: open list in web.
-class ProductListPopupOpenInWeb extends ProductListPopupItem {
-  @override
-  String getTitle(final AppLocalizations appLocalizations) =>
-      appLocalizations.label_web;
-
-  @override
-  IconData getIconData() => Icons.public;
-
-  @override
-  ProductListPopupMenuEntry getEntry() =>
-      ProductListPopupMenuEntry.openInBrowser;
-
-  @override
-  Future<ProductList?> doSomething({
-    required final ProductList productList,
-    required final LocalDatabase localDatabase,
-    required final BuildContext context,
-  }) async {
-    final Uri? firstUrl = await _getFirstUrl(
-      productList: productList,
-      localDatabase: localDatabase,
-    );
-    if (firstUrl != null) {
-      AnalyticsHelper.trackEvent(AnalyticsEvent.openListWeb);
-      unawaited(launchUrl(firstUrl));
-    }
-    return null;
-  }
-}
+// /// Popup menu item for the product list page: open list in web.
+// class ProductListPopupOpenInWeb extends ProductListPopupItem {
+//   @override
+//   String getTitle(final AppLocalizations appLocalizations) =>
+//       appLocalizations.label_web;
+//
+//   @override
+//   IconData getIconData() => Icons.public;
+//
+//   @override
+//   ProductListPopupMenuEntry getEntry() =>
+//       ProductListPopupMenuEntry.openInBrowser;
+//
+//   @override
+//   Future<ProductList?> doSomething({
+//     required final ProductList productList,
+//     required final LocalDatabase localDatabase,
+//     required final BuildContext context,
+//   }) async {
+//     final Uri? firstUrl = await _getFirstUrl(
+//       productList: productList,
+//       localDatabase: localDatabase,
+//     );
+//     if (firstUrl != null) {
+//       AnalyticsHelper.trackEvent(AnalyticsEvent.openListWeb);
+//       unawaited(launchUrl(firstUrl));
+//     }
+//     return null;
+//   }
+// }
 
 /// Popup menu item for the product list page: export list.
 class ProductListPopupExport extends ProductListPopupItem {

@@ -1,6 +1,6 @@
 name: smooth_app
-description: The next generation of the Open Food Facts mobile apps.
-version: 0.0.2+734
+description: The next generation of the Luppa mobile apps.
+version: 0.0.3
 publish_to: "none"
 
 environment:

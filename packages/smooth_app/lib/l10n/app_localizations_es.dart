@@ -1231,17 +1231,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get homepage_main_card_subheading =>
-      '**Escanee** un código de barras o\n**busque** un producto';
+      '**Escanea** un código de barras o\n**busca** por nombre';
 
   @override
-  String get homepage_main_card_search_field_hint => 'Buscar un producto';
+  String get homepage_main_card_search_field_hint => 'Buscar por nombre';
 
   @override
   String get homepage_main_card_search_field_tooltip => 'Iniciar búsqueda';
 
   @override
   String scan_tagline_news_item_accessibility(String news_title) {
-    return 'Latest news: $news_title';
+    return 'Últimas Noticias: $news_title';
   }
 
   @override
@@ -1601,7 +1601,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get permissions_page_body1 =>
-      'Para poder escanear los códigos de barras con la cámara de tu móvil, primero tienes que autorizar el acceso.';
+      'Para poder escanear los códigos de barras con la cámara, primero tienes que autorizar el acceso.';
 
   @override
   String get permissions_page_body2 =>
@@ -1660,7 +1660,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get onboarding_home_welcome_text2 =>
-      'The app that helps you choose food that is good for **you** and the **planet**!';
+      '**Luppa** es la app que te ayuda a **conocer** lo que consumes.';
 
   @override
   String get onboarding_continue_button => 'Continuar';
@@ -3547,7 +3547,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get country_picker_label => 'Tu país';
 
   @override
-  String get currency_picker_label => 'Your currency';
+  String get currency_picker_label => 'Tu Moneda';
 
   @override
   String get help_with_openfoodfacts => 'Ayuda con luppa';
@@ -4293,7 +4293,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Click here to send us your feedback about this new feature!';
 
   @override
-  String get menu_button_list_actions => 'Select an action';
+  String get menu_button_list_actions => 'Elija una acción';
 
   @override
   String get error_loading_photo => 'Error loading photo';

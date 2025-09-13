@@ -73,7 +73,7 @@ class _ProductListPageState extends State<ProductListPage>
 
   final ProductListPopupItem _rename = ProductListPopupRename();
   final ProductListPopupItem _clear = ProductListPopupClear();
-  final ProductListPopupItem _openInWeb = ProductListPopupOpenInWeb();
+  //final ProductListPopupItem _openInWeb = ProductListPopupOpenInWeb();
   final ProductListPopupItem _share = ProductListPopupShare();
   final ProductListItemPopupItem _deleteItems = ProductListItemPopupDelete();
   final ProductListItemPopupItem _rankItems = ProductListItemPopupRank();
@@ -181,7 +181,7 @@ class _ProductListPageState extends State<ProductListPage>
             itemBuilder: (_) => <SmoothPopupMenuItem<ProductListPopupItem>>[
               if (enableRename) _rename.getMenuItem(appLocalizations),
               _share.getMenuItem(appLocalizations),
-              _openInWeb.getMenuItem(appLocalizations),
+              //_openInWeb.getMenuItem(appLocalizations),
               if (enableClear) _clear.getMenuItem(appLocalizations),
             ],
           ),

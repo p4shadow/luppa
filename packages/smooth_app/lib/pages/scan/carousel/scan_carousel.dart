@@ -175,10 +175,7 @@ class _ScanPageCarouselState extends State<ScanPageCarousel> {
       case ScannedProductState.FOUND_BUT_CONSIDERED_AS_NOT_FOUND:
         return ScanProductCardNotFound(
           barcode: barcode,
-          onAddProduct: () async {
-            await _model.refresh();
-            setState(() {});
-          },
+
           onRemoveProduct: (_) => _model.removeBarcode(barcode),
         );
       case ScannedProductState.ERROR_INTERNET:

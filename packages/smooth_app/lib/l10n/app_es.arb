@@ -968,16 +968,16 @@
   "@homepage_main_card_logo_description": {
     "description": "Description for accessibility of the luppa logo on the homepage"
   },
-  "homepage_main_card_subheading": "**Escanee** un código de barras o\n**busque** un producto",
+  "homepage_main_card_subheading": "**Escanea** un código de barras o\n**busca** por nombre",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
   },
-  "homepage_main_card_search_field_hint": "Buscar un producto",
+  "homepage_main_card_search_field_hint": "Buscar por nombre",
   "homepage_main_card_search_field_tooltip": "Iniciar búsqueda",
   "@homepage_main_card_search_field_tooltip": {
     "description": "Description for accessibility of the search field on the homepage"
   },
-  "scan_tagline_news_item_accessibility": "Latest news: {news_title}",
+  "scan_tagline_news_item_accessibility": "Últimas Noticias: {news_title}",
   "@scan_tagline_news_item_accessibility": {
     "description": "Accessibility label for the title of a news",
     "placeholders": {
@@ -1261,7 +1261,7 @@
   "@permissions_page_title": {
     "description": "Title for the camera permission's page (onboarding)"
   },
-  "permissions_page_body1": "Para poder escanear los códigos de barras con la cámara de tu móvil, primero tienes que autorizar el acceso.",
+  "permissions_page_body1": "Para poder escanear los códigos de barras con la cámara, primero tienes que autorizar el acceso.",
   "@permissions_page_body1": {
     "description": "first paragraph for the camera permission's page (onboarding)"
   },
@@ -1365,7 +1365,7 @@
     }
   },
   "onboarding_home_welcome_text1": "¡Bienvenido!",
-  "onboarding_home_welcome_text2": "The app that helps you choose food that is good for **you** and the **planet**!",
+  "onboarding_home_welcome_text2": "**Luppa** es la app que te ayuda a **conocer** lo que consumes.",
   "@onboarding_home_welcome_text2": {
     "description": "Onboarding home screen welcome text, text surrounded by * will be bold"
   },
@@ -3267,7 +3267,7 @@
   "@country_picker_label": {
     "description": "Choose Application Country"
   },
-  "currency_picker_label": "Your currency",
+  "currency_picker_label": "Tu Moneda",
   "@currency_picker_label": {
     "description": "Choose Application Country"
   },
@@ -3910,7 +3910,7 @@
   "@prices_feedback_form": {
     "description": "A button to send feedback about the prices feature"
   },
-  "menu_button_list_actions": "Select an action",
+  "menu_button_list_actions": "Elija una acción",
   "@menu_button_list_actions": {
     "description": "Button to select an action in a list (eg: Share, Delete, …)"
   },

@@ -4,13 +4,11 @@ import 'package:smooth_app/data_models/fetched_product.dart';
 import 'package:smooth_app/database/dao_product.dart';
 import 'package:smooth_app/database/local_database.dart';
 import 'package:smooth_app/generic_lib/bottom_sheets/smooth_bottom_sheet.dart';
-import 'package:smooth_app/generic_lib/buttons/smooth_button_with_arrow.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/dialogs/smooth_alert_dialog.dart';
 import 'package:smooth_app/generic_lib/loading_dialog.dart';
 import 'package:smooth_app/helpers/haptic_feedback_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/navigator/app_navigator.dart';
 import 'package:smooth_app/query/barcode_product_query.dart';
 import 'package:smooth_app/resources/app_animations.dart';
 import 'package:smooth_app/themes/smooth_theme.dart';
@@ -133,20 +131,6 @@ class ProductDialogHelper {
                     ),
                   ),
                   const SizedBox(height: MEDIUM_SPACE * 2),
-                  Align(
-                    alignment: AlignmentDirectional.centerEnd,
-                    child: SmoothButtonWithArrow(
-                      text: appLocalizations.new_product_found_button,
-                      onTap: () async {
-                        await AppNavigator.of(
-                          context,
-                        ).push(AppRoutes.PRODUCT_CREATOR(barcode));
-                        if (context.mounted) {
-                          Navigator.of(context).pop();
-                        }
-                      },
-                    ),
-                  ),
                   SizedBox(
                     height:
                         MediaQuery.of(context).viewPadding.bottom + SMALL_SPACE,
