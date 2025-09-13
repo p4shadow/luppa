@@ -137,14 +137,15 @@ class UserPreferences extends ChangeNotifier {
   static const String _TAG_SHOW_BANNER_INPUT_PRODUCT_NAME =
       'bannerInputProductName';
 
-  Future<void> init(final ProductPreferences productPreferences) async {
+  Future<bool> init(final ProductPreferences productPreferences) async {
     await _onMigrate();
 
     if (_sharedPreferences.getBool(_TAG_INIT) != null) {
-      return;
+      return false;
     }
     await productPreferences.resetImportances();
     await _sharedPreferences.setBool(_TAG_INIT, true);
+    return true;
   }
 
   /// Allow to migrate between versions

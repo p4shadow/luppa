@@ -1340,7 +1340,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Imposible obtener información sobre este producto debido a un error de red.';
 
   @override
-  String get cached_results_from => 'Mostrar resultados de:';
+  String get cached_results_from => 'Mostrando resultados de:';
 
   @override
   String get product_search_same_category => 'Encuentra alternativas';

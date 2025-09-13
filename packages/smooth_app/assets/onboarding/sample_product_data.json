@@ -7,7 +7,7 @@
             "attributes" : [
                {
                   "description" : "",
-                  "description_short" : "Very good nutritional quality",
+                  "description_short" : "Muy buena calidad nutricional",
                   "grade" : "a",
                   "icon_url" : "https://static.openfoodfacts.org/images/attributes/dist/nutriscore-a-new-en.svg",
                   "id" : "nutriscore",
@@ -328,7 +328,7 @@
             "name" : "Labels"
          }
       ],
-      "brands" : "Open Food Facts",
+      "brands" : "Luppa",
       "categories_tags_fr" : [
          "en:tinned-potatoes"
       ],
@@ -738,7 +738,7 @@
                         "nutriscore_2023",
                         "nutrient_levels"
                      ],
-                     "title" : "Nutrition",
+                     "title" : "Nutrición",
                      "type" : "subcard"
                   }
                },
@@ -797,7 +797,7 @@
                {
                   "element_type" : "text",
                   "text_element" : {
-                     "html" : "\n                If the information does not match the information on the packaging, you can complete or correct it. Thank you!\n                Open Food Facts is a collaborative database, and every contribution is useful for all.\n                "
+                     "html" : "\n                If the information does not match the information on the packaging, you can complete or correct it. Thank you!\n                Luppa is a collaborative database, and every contribution is useful for all.\n                "
                   }
                },
                {
@@ -1230,7 +1230,7 @@
             "title_element" : {
                "icon_color_from_evaluation" : true,
                "icon_url" : "https://static.openfoodfacts.org/images/icons/dist/nutrition.svg",
-               "title" : "Nutrient levels"
+               "title" : "Valores nutricionales"
             },
             "topics" : [
                "health"
@@ -2051,19 +2051,19 @@
          "sugars_value" : 0.5
       },
       "nutrition_grade_fr" : "a",
-      "product_name" : "A good product for you",
+      "product_name" : "Un producto bueno para ti",
       "product_quantity" : "200",
       "quantity" : "200 g",
       "selected_images" : {
          "front" : {
             "display" : {
-               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.400.jpg"
+               "en" : ""
             },
             "small" : {
-               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.200.jpg"
+               "en" : ""
             },
             "thumb" : {
-               "en" : "https://images.openfoodfacts.org/images/products/932/700/674/81501/front_en.359.100.jpg"
+               "en" : ""
             }
          }
       },

@@ -126,6 +126,21 @@ class _SmoothGoRouter {
             if (!_appLanguageInitialized) {
               _initAppLanguage(context);
             }
+            final UserPreferences userPreferences = context
+                .read<UserPreferences>();
+            final OnboardingPage lastVisitedOnboardingPage =
+                userPreferences.lastVisitedOnboardingPage;
+            if (lastVisitedOnboardingPage == OnboardingPage.NOT_STARTED) {
+              WidgetsBinding.instance.addPostFrameCallback((_) async {
+                await userPreferences.setCrashReports(true);
+                await userPreferences.setUserTracking(true);
+                if (context.mounted) {
+                  OnboardingFlowNavigator(
+                    userPreferences,
+                  ).navigateToPage(context, OnboardingPage.HEALTH_CARD_EXAMPLE);
+                }
+              });
+            }
 
             return _findLastOnboardingPage(context);
           },

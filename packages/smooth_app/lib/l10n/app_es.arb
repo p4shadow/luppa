@@ -1040,7 +1040,7 @@
     }
   },
   "product_internet_error": "Imposible obtener información sobre este producto debido a un error de red.",
-  "cached_results_from": "Mostrar resultados de:",
+  "cached_results_from": "Mostrando resultados de:",
   "@cached_results_from": {
     "description": "Cached results from: x time ago (time ago should not be added to the string)"
   },

@@ -186,13 +186,20 @@ class _SmoothAppState extends State<SmoothApp> {
     await _productPreferences.init(DefaultAssetBundle.of(context));
     await AnalyticsHelper.initMatomo(_screenshots);
     if (!_screenshots) {
-      await _userPreferences.init(_productPreferences);
-    }
-
-    if (_userPreferences.userCountryCode == null) {
-      await ProductQuery.setCountry(_userPreferences, 'AR');
-      if (mounted) {
-        ProductQuery.setLanguage(context, _userPreferences, languageCode: 'es');
+      final bool isFirstLaunch = await _userPreferences.init(
+        _productPreferences,
+      );
+      if (isFirstLaunch) {
+        await ProductQuery.setCountry(_userPreferences, 'AR');
+        await _userPreferences.setUserCurrencyCode('ARS');
+        await _userPreferences.setTheme(THEME_LIGHT);
+        if (mounted) {
+          ProductQuery.setLanguage(
+            context,
+            _userPreferences,
+            languageCode: 'es',
+          );
+        }
       }
     }
 

@@ -5,10 +5,7 @@ import 'package:smooth_app/database/local_database.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
 import 'package:smooth_app/pages/onboarding/permissions_page.dart';
 import 'package:smooth_app/pages/onboarding/preferences_page.dart';
-import 'package:smooth_app/pages/onboarding/reinvention_page.dart';
-import 'package:smooth_app/pages/onboarding/sample_eco_card_page.dart';
 import 'package:smooth_app/pages/onboarding/sample_health_card_page.dart';
-import 'package:smooth_app/pages/onboarding/welcome_page.dart';
 import 'package:smooth_app/pages/page_manager.dart';
 import 'package:smooth_app/pages/scan/carousel/scan_carousel_manager.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
@@ -16,10 +13,7 @@ import 'package:smooth_app/widgets/will_pop_scope.dart';
 
 enum OnboardingPage {
   NOT_STARTED,
-  HOME_PAGE,
-  WELCOME,
   HEALTH_CARD_EXAMPLE,
-  ECO_CARD_EXAMPLE,
   PREFERENCES_PAGE,
   PERMISSIONS_PAGE,
   ONBOARDING_COMPLETE;
@@ -48,14 +42,8 @@ enum OnboardingPage {
   Color getBackgroundColor() {
     switch (this) {
       case OnboardingPage.NOT_STARTED:
-      case OnboardingPage.HOME_PAGE:
-        return const Color(0xFFDFF4FF);
-      case OnboardingPage.WELCOME:
-        return const Color(0xFFFCFCFC);
       case OnboardingPage.HEALTH_CARD_EXAMPLE:
         return const Color(0xFFFFF1D1);
-      case OnboardingPage.ECO_CARD_EXAMPLE:
-        return const Color(0xFFE3F6DE);
       case OnboardingPage.PREFERENCES_PAGE:
         return const Color(0xFFEBF1FF);
       case OnboardingPage.PERMISSIONS_PAGE:
@@ -71,19 +59,11 @@ enum OnboardingPage {
     final Color backgroundColor = getBackgroundColor();
     switch (this) {
       case OnboardingPage.NOT_STARTED:
-      case OnboardingPage.HOME_PAGE:
-        return const OnboardingHomePage();
-      case OnboardingPage.WELCOME:
-        return WelcomePage(backgroundColor);
+        return const SizedBox.shrink();
       case OnboardingPage.HEALTH_CARD_EXAMPLE:
         return _wrapWidgetInCustomBackNavigator(
           context,
           SampleHealthCardPage(localDatabase, backgroundColor),
-        );
-      case OnboardingPage.ECO_CARD_EXAMPLE:
-        return _wrapWidgetInCustomBackNavigator(
-          context,
-          SampleEcoCardPage(localDatabase, backgroundColor),
         );
       case OnboardingPage.PREFERENCES_PAGE:
         return _wrapWidgetInCustomBackNavigator(

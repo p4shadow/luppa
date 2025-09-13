@@ -185,9 +185,6 @@ class _KnowledgePanelPageTemplateState
     if (!_isHintDismissed &&
         !OnboardingFlowNavigator.isOnboardingPagedInHistory(
           OnboardingPage.HEALTH_CARD_EXAMPLE,
-        ) &&
-        !OnboardingFlowNavigator.isOnboardingPagedInHistory(
-          OnboardingPage.ECO_CARD_EXAMPLE,
         )) {
       hitPopup.add(
         Positioned(

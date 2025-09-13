@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_app/data_models/onboarding_data_product.dart';
 import 'package:smooth_app/database/local_database.dart';
-import 'package:smooth_app/generic_lib/loading_dialog.dart';
-import 'package:smooth_app/l10n/app_localizations.dart';
+// import 'package:smooth_app/generic_lib/loading_dialog.dart';
+// import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/onboarding/onboarding_flow_navigator.dart';
 
 /// Helper around data we download, store and reuse at onboarding.
@@ -19,19 +19,8 @@ class OnboardingLoader {
     final BuildContext context,
   ) async {
     switch (page) {
-      case OnboardingPage.WELCOME:
-        await LoadingDialog.run<bool>(
-          context: context,
-          future: _downloadData().timeout(const Duration(seconds: 4)),
-          title: AppLocalizations.of(
-            context,
-          ).onboarding_welcome_loading_dialog_title,
-          dismissible: false,
-        );
       case OnboardingPage.NOT_STARTED:
-      case OnboardingPage.HOME_PAGE:
       case OnboardingPage.HEALTH_CARD_EXAMPLE:
-      case OnboardingPage.ECO_CARD_EXAMPLE:
       case OnboardingPage.PREFERENCES_PAGE:
       case OnboardingPage.PERMISSIONS_PAGE:
         // that was the last page of onboarding: after that, we clean up

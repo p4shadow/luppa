@@ -370,7 +370,8 @@ class _ProductQueryPageState extends State<ProductQueryPage>
     );
     if (pagedProductQuery.hasDifferentCountryWorldData()) {
       if (pagedProductQuery.world) {
-        counting += ' (${appLocalizations.world_results_label})';
+        // counting += ' (${appLocalizations.world_results_label})';
+        counting += '';
       } else {
         final String? countryName = _country?.name;
         if (countryName != null) {
