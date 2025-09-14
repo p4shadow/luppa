@@ -18,7 +18,7 @@ import 'package:smooth_app/pages/product/common/product_list_helper.dart';
 import 'package:smooth_app/pages/product/common/product_query_page_helper.dart';
 import 'package:smooth_app/pages/product_list_user_dialog_helper.dart';
 import 'package:smooth_app/widgets/smooth_menu_button.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 /// Popup menu item entries for the product list page.
 enum ProductListPopupMenuEntry {

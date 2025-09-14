@@ -8,7 +8,7 @@
   "@yes": {},
   "add": "Añadir",
   "@add": {},
-  "account_delete_message": "¿Seguro que quieres eliminar tu cuenta?\nSi hay alguna una razón específica, cuéntanoslo abajo.",
+  "account_delete_message": "¿Seguro que querés eliminar tu cuenta?\nSi hay alguna una razón específica, contánoslo abajo.",
   "@account_delete_message": {},
   "reason": "Razón",
   "@reason": {},
@@ -42,7 +42,7 @@
   },
   "go_back_to_top": "Volver al principio",
   "save": "Guardar",
-  "save_confirmation": "¿Seguro que quieres guardar?",
+  "save_confirmation": "¿Seguro que querés guardar?",
   "skip": "Omitir",
   "cancel": "Cancelar",
   "@cancel": {},
@@ -62,15 +62,15 @@
   "@calculate": {
     "description": "'Calculate' button. Typical use case: the user inputs data then clicks on the 'calculate' button."
   },
-  "reset_food_prefs": "Restablecer preferencias alimentarias",
+  "reset_food_prefs": "Restablecer",
   "@reset": {
     "description": "Button label, clicking on the button will reset user's food preferences."
   },
-  "error": "Algo ha salido mal",
+  "error": "Algo salió mal",
   "@error": {},
-  "error_occurred": "Se ha producido un error",
+  "error_occurred": "Ocurrió un error",
   "@error_occurred": {},
-  "featureInProgress": "Todavía estamos trabajando en esta función, estad atentos",
+  "featureInProgress": "Todavía estamos trabajando en esta función, mantenete atento",
   "@featureInProgress": {},
   "label_web": "Ver en la web",
   "@label_web": {},
@@ -135,30 +135,30 @@
     "description": "Looking for: BARCODE"
   },
   "@Introduction screen": {},
-  "welcomeToOpenFoodFacts": "Te damos la bienvenida a Open Food Facts",
+  "welcomeToOpenFoodFacts": "Te damos la bienvenida a Luppa",
   "@welcomeToOpenFoodFacts": {},
-  "whatIsOff": "luppa es una organización global sin ánimo de lucro impulsada por comunidades locales.",
+  "whatIsOff": "luppa es una organización global sin fines de lucro impulsada por comunidades locales.",
   "@whatIsOff": {
     "description": "Description of Luppa organization."
   },
-  "productDataUtility": "Consulta los datos de los alimentos relacionados con tus preferencias.",
+  "productDataUtility": "Consultá los datos de los alimentos relacionados con tus preferencias.",
   "@productDataUtility": {
     "description": "Description of what a user can use the product data for."
   },
-  "healthCardUtility": "Elige los alimentos que sean buenos para ti.",
+  "healthCardUtility": "Elegí los alimentos que sean buenos para vos.",
   "@healthCardUtility": {
     "description": "Description of what a user can use the health data in a product for."
   },
-  "ecoCardUtility": "Elige alimentos que sean buenos para el planeta.",
+  "ecoCardUtility": "Elegí alimentos que sean buenos para el planeta.",
   "@ecoCardUtility": {
     "description": "Description of what a user can use the Eco data in a product for."
   },
-  "server_error_open_new_issue": "¡No hay respuesta del servidor! Puedes alertar de esta instancia con el siguiente enlace.",
+  "server_error_open_new_issue": "¡No hay respuesta del servidor! Podés alertar de esta instancia con el siguiente enlace.",
   "@user_management": {},
-  "sign_in_text": "Inicia sesión en tu cuenta de luppa para guardar tus contribuciones",
+  "sign_in_text": "Iniciá sesión en tu cuenta de luppa para guardar tus contribuciones",
   "incorrect_credentials": "Nombre de usuario o contraseña incorrecto.",
-  "password_lost_incorrect_credentials": "Este correo electrónico o nombre de usuario no existe. Por favor, comprueba tus credenciales.",
-  "password_lost_server_unavailable": "Estamos sufriendo retrasos en nuestros servidores y nos disculpamos por ello. Por favor, inténtalo de nuevo más tarde.",
+  "password_lost_incorrect_credentials": "Este correo electrónico o nombre de usuario no existe. Por favor, comprobá tus credenciales.",
+  "password_lost_server_unavailable": "Estamos sufriendo retrasos en nuestros servidores y nos disculpamos por ello. Por favor, intentalo de nuevo más tarde.",
   "login": "Iniciar sesión",
   "@login": {
     "description": "Text field hint: unified name for either username or e-mail address"
@@ -167,12 +167,12 @@
   "@login_result_type_server_unreachable": {
     "description": "Error message when trying to log in without network"
   },
-  "login_result_type_server_issue": "Problema en el servidor. Por favor, inténtalo más tarde.",
+  "login_result_type_server_issue": "Problema en el servidor. Por favor, intentalo más tarde.",
   "@login_result_type_server_issue": {
     "description": "Error message when trying to log in and the server does not answer correctly"
   },
-  "login_page_username_or_email": "Por favor, introduce tu nombre de usuario o correo electrónico",
-  "login_page_password_error_empty": "Por favor, introduce una contraseña",
+  "login_page_username_or_email": "Por favor, introducí tu nombre de usuario o correo electrónico",
+  "login_page_password_error_empty": "Por favor, introducí una contraseña",
   "create_account": "Crear cuenta",
   "@create_account": {
     "description": "Button label: Opens a page where a new user can register"
@@ -181,11 +181,11 @@
   "@sign_in": {
     "description": "Button label: For sign in"
   },
-  "sign_in_mandatory": "Para usar esa función necesitas iniciar sesión.",
+  "sign_in_mandatory": "Para usar esa función necesitás iniciar sesión.",
   "@sign_in_mandatory": {
     "description": "Error message: for some features like product edits you need to be signed in"
   },
-  "help_improve_country": "Help improve luppa in your country",
+  "help_improve_country": "Ayudá a mejorar luppa en tu país",
   "@help_improve_country": {
     "description": "label for a tile that is on the contribute tile"
   },
@@ -193,7 +193,7 @@
   "@sign_out": {
     "description": "Button label: For sign out"
   },
-  "sign_out_confirmation": "¿Seguro que quieres cerrar la sesión?",
+  "sign_out_confirmation": "¿Seguro que querés cerrar la sesión?",
   "@sign_out_confirmation": {
     "description": "Pop up title: Reassuring if the user really want to sign out"
   },
@@ -210,25 +210,25 @@
   "@reset_password": {
     "description": "Forgot password page title"
   },
-  "reset_password_explanation_text": "En caso de que hayas olvidado la contraseña, introduce tu nombre de usuario o dirección de correo electrónico para recibir instrucciones de cómo restablecerla. No olvides revisar la carpeta de correo basura.",
+  "reset_password_explanation_text": "En caso de que hayas olvidado la contraseña, introducí tu nombre de usuario o dirección de correo electrónico para recibir instrucciones de cómo restablecerla. No te olvides de revisar la carpeta de correo basura.",
   "username_or_email": "Nombre de usuario o correo electrónico",
   "@username_or_email": {
     "description": "Text field hint for password reset"
   },
-  "reset_password_done": "Hemos enviado un correo electrónico con un enlace a la dirección de correo electrónico vinculada a tu cuenta de usuario para que puedas restablecer tu contraseña. No olvides revisar la carpeta de correo basura.",
+  "reset_password_done": "Hemos enviado un correo electrónico con un enlace a la dirección de correo electrónico vinculada a tu cuenta de usuario para que puedas restablecer tu contraseña. No te olvides de revisar la carpeta de correo basura.",
   "send_reset_password_mail": "Cambiar contraseña",
   "@send_reset_password_mail": {
     "description": "Button label: Submit the password reset e-mail request"
   },
-  "enter_some_text": "Por favor, escribe algo",
+  "enter_some_text": "Por favor, escribí algo",
   "@enter_some_text": {
     "description": "Error when a required text field is empty"
   },
-  "sign_up_page_title": "Regístrate",
+  "sign_up_page_title": "Registrate",
   "@sign_up_page_title": {
     "description": "Header"
   },
-  "sign_up_page_action_button": "Regístrate",
+  "sign_up_page_action_button": "Registrate",
   "@sign_up_page_action_button": {
     "description": "Button for signing up"
   },
@@ -236,15 +236,15 @@
   "@sign_up_page_action_doing_it": {
     "description": "Progress indicator dialog during the actual signing up process"
   },
-  "sign_up_page_action_ok": "¡Felicidades! Tu cuenta acaba de ser creada.",
+  "sign_up_page_action_ok": "¡Felicitaciones! Tu cuenta acaba de ser creada.",
   "sign_up_page_display_name_hint": "Nombre",
-  "sign_up_page_display_name_error_empty": "Por favor, introduce el nombre que deseas mostrar",
+  "sign_up_page_display_name_error_empty": "Por favor, introducí el nombre que querés mostrar",
   "sign_up_page_email_hint": "Correo electrónico",
   "sign_up_page_email_error_empty": "Se requiere un correo electrónico",
   "sign_up_page_email_error_invalid": "Correo electrónico inválido",
   "sign_up_page_username_hint": "Nombre de usuario: visible públicamente",
-  "sign_up_page_username_error_empty": "Por favor, introduce un nombre de usuario",
-  "sign_up_page_username_error_invalid": "Por favor, introduce un nombre de usuario válido",
+  "sign_up_page_username_error_empty": "Por favor, introducí un nombre de usuario",
+  "sign_up_page_username_error_invalid": "Por favor, introducí un nombre de usuario válido",
   "sign_up_page_username_description": "El nombre de usuario no puede contener espacios, mayúsculas o caracteres especiales.",
   "sign_up_page_username_length_invalid": "El nombre de usuario no puede exceder los {value} caracteres",
   "@sign_up_page_username_length_invalid": {
@@ -255,10 +255,10 @@
     }
   },
   "sign_up_page_password_hint": "Contraseña",
-  "sign_up_page_password_error_empty": "Por favor, introduce una contraseña",
-  "sign_up_page_password_error_invalid": "Por favor, introduce una contraseña válida (al menos 6 caracteres)",
+  "sign_up_page_password_error_empty": "Por favor, introducí una contraseña",
+  "sign_up_page_password_error_invalid": "Por favor, introducí una contraseña válida (al menos 6 caracteres)",
   "sign_up_page_confirm_password_hint": "Confirmar contraseña",
-  "sign_up_page_confirm_password_error_empty": "Por favor, confirma la contraseña",
+  "sign_up_page_confirm_password_error_empty": "Por favor, confirmá la contraseña",
   "sign_up_page_confirm_password_error_invalid": "Las contraseñas no coinciden",
   "sign_up_page_agree_text": "Estoy de acuerdo con las condiciones de Luppa",
   "@sign_up_page_agree_text": {
@@ -282,12 +282,12 @@
   },
   "sign_up_page_producer_checkbox": "Soy productor/a de alimentos",
   "sign_up_page_producer_hint": "Productor/marca",
-  "sign_up_page_producer_error_empty": "Por favor, introduce un productor o una marca",
+  "sign_up_page_producer_error_empty": "Por favor, introducí un productor o una marca",
   "sign_up_page_subscribe_checkbox": "Me gustaría suscribirme al boletín de noticias de luppa (podrás darte de baja en cualquier momento).",
-  "sign_up_page_user_name_already_used": "Este nombre de usuario ya existe, por favor, elige uno nuevo.",
-  "sign_up_page_email_already_exists": "ya existe, inicia sesión en la cuenta o prueba con otro correo electrónico.",
-  "sign_up_page_provide_valid_email": "Por favor, proporciona una dirección de correo electrónico válida.",
-  "sign_up_page_server_busy": "Lo sentimos, estamos teniendo algunas dificultades técnicas para crear tu cuenta. Por favor, inténtalo de nuevo más tarde.",
+  "sign_up_page_user_name_already_used": "Este nombre de usuario ya existe, por favor, elegí uno nuevo.",
+  "sign_up_page_email_already_exists": "ya existe, iniciá sesión en la cuenta o probá con otro correo electrónico.",
+  "sign_up_page_provide_valid_email": "Por favor, proporcioná una dirección de correo electrónico válida.",
+  "sign_up_page_server_busy": "Lo sentimos, estamos teniendo algunas dificultades técnicas para crear tu cuenta. Por favor, intentalo de nuevo más tarde.",
   "settingsTitle": "Configuración",
   "@settingsTitle": {
     "description": "The title of the Settings page"
@@ -332,11 +332,11 @@
   "@support": {
     "description": "Button label: Opens a pop up window where all ways to get support are shown"
   },
-  "support_join_slack": "Pide ayuda en nuestro canal de Slack",
-  "support_via_forum": "Pide ayuda en nuestro foro",
-  "support_via_email": "Envíanos un correo electrónico",
+  "support_join_slack": "Pedí ayuda en nuestro canal de Slack",
+  "support_via_forum": "Pedí ayuda en nuestro foro",
+  "support_via_email": "Envianos un correo electrónico",
   "support_via_email_include_logs_dialog_title": "¿Enviar registros de la aplicación?",
-  "support_via_email_include_logs_dialog_body": "¿Quieres enviar los registros internos de la aplicación como adjunto en tu correo?",
+  "support_via_email_include_logs_dialog_body": "¿Querés enviar los registros internos de la aplicación como adjunto en tu correo?",
   "termsOfUse": "Condiciones de uso",
   "@termsOfUse": {},
   "legalNotices": "Información legal",
@@ -360,19 +360,19 @@
   "@contribute_sw_development": {
     "description": "Button label + page title: Ways to help"
   },
-  "contribute_develop_text": "El código de todos los productos de luppa está disponible en GitHub. Si quieres, puedes reutilizarlo (es código abierto) o ayudarnos a mejorarlo. Para todos, en todo el planeta.",
+  "contribute_develop_text": "El código de todos los productos de luppa está disponible en GitHub. Si querés, podés reutilizarlo (es código abierto) o ayudarnos a mejorarlo. Para todos, en todo el planeta.",
   "@contribute_develop_text": {},
-  "contribute_develop_text_2": "Puedes unirte al canal de Slack de luppa, el mejor lugar para resolver tus dudas.",
+  "contribute_develop_text_2": "Podés unirte al canal de Slack de luppa, el mejor lugar para resolver tus dudas.",
   "@contribute_develop_text_2": {},
   "contribute_develop_dev_mode_title": "¿Modo desarrollador?",
-  "contribute_develop_dev_mode_subtitle": "Activa el modo de desarrollador",
+  "contribute_develop_dev_mode_subtitle": "Activá el modo de desarrollador",
   "contribute_donate_title": "Donar",
   "@contribute_donate_title": {},
-  "contribute_donate_header": "Dona a luppa",
+  "contribute_donate_header": "Doná a luppa",
   "@contribute_donate_header": {},
-  "contribute_enroll_alpha": "Inscríbete en la versión alfa interna",
+  "contribute_enroll_alpha": "Inscribite en la versión alfa interna",
   "@contribute_enroll_alpha": {},
-  "contribute_enroll_alpha_warning": "Ten en cuenta que con la versión alfa interna, es posible la pérdida total de datos, y que la aplicación puede resultar inutilizable en cualquier momento.",
+  "contribute_enroll_alpha_warning": "Tené en cuenta que con la versión alfa interna, es posible la pérdida total de datos, y que la aplicación puede resultar inutilizable en cualquier momento.",
   "@contribute_enroll_alpha_warning": {},
   "contribute_improve_ProductsToBeCompleted": "Productos por completar",
   "@contribute_improve_ProductsToBeCompleted": {
@@ -382,9 +382,9 @@
   "@contribute_improve_header": {
     "description": "Button label + page title: Ways to improve the database"
   },
-  "contribute_improve_text": "La base de datos es el núcleo del proyecto. Puedes ayudar de manera fácil y muy rápido. Descarga la aplicación en tu teléfono móvil y empieza a añadir productos o a mejorar los que ya están.\n\nPor otro lado, el sitio web de luppa ofrece muchas maneras de colaborar: ",
+  "contribute_improve_text": "La base de datos es el núcleo del proyecto. Podés ayudar de manera fácil y muy rápido. Descargá la aplicación en tu teléfono móvil y empezá a añadir productos o a mejorar los que ya están.\n\nPor otro lado, el sitio web de luppa ofrece muchas maneras de colaborar: ",
   "@contribute_improve_text": {},
-  "contribute_translate_header": "Traduce",
+  "contribute_translate_header": "Traducí",
   "@contribute_translate_header": {
     "description": "Button label + pop up window title: Shows information about helping by translating"
   },
@@ -392,7 +392,7 @@
   "@contribute_data_quality": {
     "description": "label for a tile that is on the contribute page linking to the Data Quality wiki page"
   },
-  "contribute_translate_link_text": "Empieza a traducir",
+  "contribute_translate_link_text": "Empezá a traducir",
   "@contribute_translate_link_text": {
     "description": "Button label: Opens the Crowdin translation portal"
   },
@@ -400,26 +400,26 @@
   "@contribute_translate_text": {},
   "contribute_translate_text_2": "La traducción es una de las tareas clave del proyecto.",
   "@contribute_translate_text_2": {},
-  "contribute_join_skill_pool": "Colabora con tus habilidades en luppa. ¡Únete al Grupo de Habilidades!",
-  "contribute_share_header": "Comparte Luppa con tus amigos",
+  "contribute_join_skill_pool": "Colaborá con tus habilidades en luppa. ¡Unite al Grupo de Habilidades!",
+  "contribute_share_header": "Compartí Luppa con tus amigos",
   "@contribute_share_header": {},
-  "contribute_share_content": "Prueba Luppa, una app muy útil, que te muestra el impacto de los alimentos en tu salud y el ambiente. Escaneás el código de barras y listo. Acá el link: https://luppa.ar",
+  "contribute_share_content": "Probá Luppa, una app muy útil, que te muestra el impacto de los alimentos en tu salud y el ambiente. Escaneás el código de barras y listo. Acá el link: https://luppa.ar",
   "@contribute_share_content": {
     "description": "Content that will be shared, don't forget to include the URL"
   },
-  "contribute_prices_gdpr": "Contribuya con los precios solicitando una exportación del GDPR de los datos de sus tarjetas de fidelización",
+  "contribute_prices_gdpr": "Contribuí con los precios solicitando una exportación del GDPR de los datos de tus tarjetas de fidelización",
   "@contribute_prices_gdpr": {
     "description": "Label for option to contribute prices using GDPR export from loyalty cards"
   },
-  "tap_to_answer": "Toca aquí para responder preguntas",
+  "tap_to_answer": "Tocá acá para responder preguntas",
   "@tap_to_answer": {
     "description": "Button label shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Luppa and gain rewards."
   },
-  "tap_to_answer_hint": "Toca aquí para responder preguntas sobre el producto",
+  "tap_to_answer_hint": "Tocá acá para responder preguntas sobre el producto",
   "@tap_to_answer_hint": {
     "description": "Hint for accessibility readers to answer Robotoff questions."
   },
-  "robotoff_questions_loading_hint": "Por favor, espera mientras se cargan las preguntas sobre este producto.",
+  "robotoff_questions_loading_hint": "Por favor, esperá mientras se cargan las preguntas sobre este producto.",
   "@robotoff_questions_loading_hint": {
     "description": "Hint for accessibility readers while Robotoff questions are loaded"
   },
@@ -427,36 +427,36 @@
   "@saving_answer": {
     "description": "Dialog shown to users after they have answered a question, while the answer is being saved in the BE."
   },
-  "contribute_to_get_rewards": "Conviértete en un actor de la transparencia alimentaria",
+  "contribute_to_get_rewards": "Convertite en un actor de la transparencia alimentaria",
   "@contribute_to_get_rewards": {
     "description": "Button description shown on a product, clicking the button opens a card with unanswered product questions, users can answer these to contribute to Luppa."
   },
-  "question_sign_in_text": "Inicia sesión en tu cuenta de Luppa para obtener reconocimiento por tu colaboración.",
-  "question_yes_button_accessibility_value": "Responde con sí",
-  "question_no_button_accessibility_value": "Responde con no",
+  "question_sign_in_text": "Iniciá sesión en tu cuenta de Luppa para obtener reconocimiento por tu colaboración.",
+  "question_yes_button_accessibility_value": "Responder con sí",
+  "question_no_button_accessibility_value": "Responder con no",
   "question_skip_button_accessibility_value": "Saltar esta pregunta",
-  "tap_to_edit_search": "Toca para editar la búsqueda",
+  "tap_to_edit_search": "Tocá para editar la búsqueda",
   "@Personal preferences": {},
   "myPreferences": "Mis preferencias",
   "@myPreferences": {
     "description": "Page title: Page where the ranking preferences can be changed"
   },
-  "account_create_message": "¡Crea una cuenta y únete a la comunidad de luppa para ayudar a crear conocimiento sobre los alimentos en todo el mundo!",
+  "account_create_message": "¡Creá una cuenta y unite a la comunidad de luppa para ayudar a crear conocimiento sobre los alimentos en todo el mundo!",
   "@account_create_message": {
     "description": "The Message to be displayed if the user does not have an account and wants to contribute"
   },
-  "join_us": "Únete al equipo",
+  "join_us": "Unite al equipo",
   "@join_us": {
     "description": "Join which is actually Signup"
   },
   "myPreferences_profile_title": "Tu perfil",
-  "myPreferences_profile_subtitle": "Administra tu cuenta de colaborador de Luppa.",
+  "myPreferences_profile_subtitle": "Administrá tu cuenta de colaborador de Luppa.",
   "myPreferences_settings_title": "Ajustes de la aplicación",
   "myPreferences_settings_subtitle": "Modo oscuro, Idiomas…",
   "myPreferences_food_title": "Preferencias alimentarias",
-  "myPreferences_food_subtitle": "Elige qué tipo de información alimentaria es más importante para ti.",
-  "myPreferences_food_comment": "Elige qué información alimentaria es la que más te importan para que la aplicación pueda clasificar los alimentos según tus preferencias. Verás la información más relevante primero y obtendrás un resumen de compatibilidad. Esas preferencias alimentarias permanecen en tu dispositivo.",
-  "confirmResetPreferences": "¿Quieres restablecer tus preferencias alimentarias?",
+  "myPreferences_food_subtitle": "Elegí qué tipo de información alimentaria es más importante para vos.",
+  "myPreferences_food_comment": "Elegí qué información alimentaria es la que más te importa para que la aplicación pueda clasificar los alimentos según tus preferencias. Verás la información más relevante primero y obtendrás un resumen de compatibilidad. Esas preferencias alimentarias permanecen en tu dispositivo.",
+  "confirmResetPreferences": "¿Querés restablecer tus preferencias alimentarias?",
   "@confirmResetPreferences": {
     "description": "Pop up title: Reassuring if the food preferences should really be reset"
   },
@@ -465,10 +465,10 @@
     "description": "When you press this button, all products (in list or category) are sorted according to your preferences."
   },
   "ranking_tab_all": "Todo",
-  "ranking_subtitle_match_yes": "Una buena opción para ti",
+  "ranking_subtitle_match_yes": "Una buena opción para vos",
   "ranking_subtitle_match_no": "Muy poco recomendable",
   "ranking_subtitle_match_maybe": "Sin información suficiente",
-  "refresh_with_new_preferences": "Actualiza la lista con tus nuevas preferencias",
+  "refresh_with_new_preferences": "Actualizá la lista con tus nuevas preferencias",
   "@refresh_with_new_preferences": {
     "description": "Action button label: Refresh the list with your new preferences"
   },
@@ -518,13 +518,13 @@
   "@search": {
     "description": "Hint text of a search text input field"
   },
-  "moderate_consumption": "Moderar a su consumo",
+  "moderate_consumption": "Moderar su consumo",
   "@moderate_consumption": {},
-  "search_store": "Search for a store",
+  "search_store": "Buscar una tienda",
   "@search_store": {
     "description": "Hint text of a search store text input field"
   },
-  "tap_for_more": "Pulsa para ver más información…",
+  "tap_for_more": "Pulsá para ver más información…",
   "@Product": {},
   "product": "Producto",
   "@product": {},
@@ -536,7 +536,7 @@
   "@label_refresh": {
     "description": "Refresh the cached product"
   },
-  "label_reload": "Reload",
+  "label_reload": "Recargar",
   "@label_reload": {
     "description": "Reload a page"
   },
@@ -545,30 +545,30 @@
   "@front_photo": {
     "description": "Button label: For adding a picture of the front of a product"
   },
-  "outdated_image_accessibility_label": "{imageType} (this image may be outdated)",
+  "outdated_image_accessibility_label": "{imageType} (esta imagen puede estar desactualizada)",
   "@outdated_image_accessibility_label": {
     "description": "Accessibility label for images that are outdated (image type may be front/ingredients/nutrition…)",
     "placeholders": {
       "imageType": {}
     }
   },
-  "outdated_image_short_label": "may be outdated",
+  "outdated_image_short_label": "puede estar desactualizada",
   "@outdated_image_short_label": {
     "description": "A label for outdated images"
   },
   "ingredients": "Ingredientes",
   "@ingredients": {},
-  "ingredients_editing_instructions": "Keep the original order. Indicate the percentage when specified. Separate with a comma or hyphen and use parentheses for ingredients of an ingredient.",
+  "ingredients_editing_instructions": "Mantené el orden original. Indicá el porcentaje cuando se especifique. Separá con una coma o un guion y usá paréntesis para los ingredientes de un ingrediente.",
   "ingredients_editing_error": "Error al guardar los ingredientes.",
-  "ingredients_editing_image_error": "No se ha podido obtener una nueva imagen de los ingredientes.",
+  "ingredients_editing_image_error": "No se pudo obtener una nueva imagen de los ingredientes.",
   "ingredients_editing_title": "Editar ingredientes",
   "ingredients_photo": "Foto de los ingredientes",
   "@ingredients_photo": {
     "description": "Button label: For adding a picture of the Ingredients of a product"
   },
-  "packaging_editing_instructions": "Enumera todas las partes del envase separándolas con una coma o un salto de línea, incluyendo la cantidad (1,3,6…), el formato (botella, caja, lata…), el material (plástico, metal, aluminio…), y si están disponibles, el tamaño (por ejemplo, 33 cl) y las instrucciones de reciclaje.\nEjemplo: 1 botella de vidrio para reciclar, 1 corcho de plástico para tirar",
-  "packaging_editing_error": "No se ha podido guardar el envase.",
-  "packaging_editing_image_error": "No se ha podido obtener una nueva imagen del envase.",
+  "packaging_editing_instructions": "Enumerá todas las partes del envase separándolas con una coma o un salto de línea, incluyendo la cantidad (1,3,6…), el formato (botella, caja, lata…), el material (plástico, metal, aluminio…), y si están disponibles, el tamaño (por ejemplo, 33 cl) y las instrucciones de reciclaje.\nEjemplo: 1 botella de vidrio para reciclar, 1 corcho de plástico para tirar",
+  "packaging_editing_error": "No se pudo guardar el envase.",
+  "packaging_editing_image_error": "No se pudo obtener una nueva imagen del envase.",
   "packaging_editing_title": "Editar envase",
   "nutrition": "Nutrición",
   "@nutrition": {},
@@ -586,11 +586,11 @@
   },
   "packaging_information_photo": "Foto de la información del envase",
   "@packaging_information_photo": {},
-  "missing_product": "¡Has encontrado un nuevo producto!",
+  "missing_product": "¡Encontraste un nuevo producto!",
   "@missing_product": {},
-  "add_product_take_photos": "Haz fotos del envase para añadir este producto a Luppa.",
+  "add_product_take_photos": "Sacá fotos del envase para añadir este producto a Luppa.",
   "@add_product_take_photos": {},
-  "add_product_take_photos_descriptive": "Por favor, primero haz alguna foto del producto. Más adelante podrás completar la información del producto.",
+  "add_product_take_photos_descriptive": "Por favor, primero sacá alguna foto del producto. Más adelante podrás completar la información del producto.",
   "@add_product_take_photos_descriptive": {},
   "add_product_information_button_label": "Agregar información del producto",
   "@add_product_information_button_label": {},
@@ -600,20 +600,20 @@
   "@new_product_found_title": {
     "description": "Title of a dialog that informs the user that a barcode doesn't exist in the database"
   },
-  "new_product_found_text": "Our collaborative database contains more than **3 million products**, but this barcode doesn't exist: ",
+  "new_product_found_text": "Nuestra base de datos contiene más de **12.000 productos**, pero este todavia no lo tenemos: ",
   "@new_product_found_text": {
     "description": "Please keep the ** syntax to make the text bold"
   },
   "new_product_found_button": "Añadir este producto",
-  "new_product_leave_title": "¿Desea dejar esta página?",
+  "new_product_leave_title": "¿Deseás dejar esta página?",
   "@new_product_leave_title": {
     "description": "Alert dialog title when a user landed on the 'add new product' page, didn't input anything and tried to leave the page."
   },
-  "new_product_leave_message": "Parece que no has introducido nada. ¿De verdad quieres abandonar esta página?",
+  "new_product_leave_message": "Parece que no introdujiste nada. ¿De verdad querés abandonar esta página?",
   "@new_product_leave_message": {
     "description": "Alert dialog message when a user landed on the 'add new product' page, didn't input anything and tried to leave the page."
   },
-  "new_product_dialog_description": "Haz fotos del envase para añadir este producto a nuestra base de datos",
+  "new_product_dialog_description": "Sacá fotos del envase para añadir este producto a nuestra base de datos",
   "@new_product_dialog_description": {
     "description": "Please keep it short, like less than 100 characters. Explanatory text of the dialog when the user searched for an unknown barcode."
   },
@@ -645,11 +645,11 @@
   "@crop_page_action_local_title": {
     "description": "The save of the picture locally failed - error dialog message"
   },
-  "crop_page_action_local_failed_message": "No podemos procesar la imagen localmente, antes de enviarla a nuestro servidor. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nosotros si el problema persiste.",
+  "crop_page_action_local_failed_message": "No podemos procesar la imagen localmente, antes de enviarla a nuestro servidor. Por favor, intentalo de nuevo más tarde o ponete en contacto con nosotros si el problema persiste.",
   "@crop_page_action_local_message": {
     "description": "The save of the picture locally failed - error dialog message"
   },
-  "crop_page_action_retake": "Retake a photo",
+  "crop_page_action_retake": "Sacar otra foto",
   "@crop_page_action_retake": {
     "description": "Button which allows users to retake a photo."
   },
@@ -683,8 +683,8 @@
   "ingredients_photo_title": "Foto de los ingredientes",
   "nutritional_facts_photo_title": "Foto de la información nutricional",
   "recycling_photo_title": "Foto sobre el reciclaje",
-  "take_photo_title": "Saca una foto",
-  "take_more_photo_title": "Haz más fotos",
+  "take_photo_title": "Sacá una foto",
+  "take_more_photo_title": "Sacá más fotos",
   "front_photo_uploaded": "Foto frontal subida",
   "@front_photo_uploaded": {},
   "ingredients_photo_button_label": "Foto de los ingredientes",
@@ -698,15 +698,15 @@
   "nutritional_facts_added": "Información nutricional añadida",
   "categories_added": "Categorías añadidas",
   "new_product_title_nutriscore": "Calcular Nutri-Score",
-  "new_product_subtitle_nutriscore": "Ayúdanos completando la categoría de alimentos y los valores nutricionales.",
+  "new_product_subtitle_nutriscore": "Ayudanos completando la categoría de alimentos y los valores nutricionales.",
   "new_product_title_environmental_score": "Calcular el Green-Score",
-  "new_product_subtitle_environmental_score": "Consíguelo rellenando al menos una categoría",
-  "new_product_additional_environmental_score": "Haz que el cálculo de Green-Score sea más preciso añadiendo orígenes, envase y más",
-  "new_product_title_nova": "Calcula el nivel de procesado de los alimentos (NOVA)",
-  "new_product_subtitle_nova": "Hazlo rellenando las categorías de alimentos e ingredientes.",
+  "new_product_subtitle_environmental_score": "Conseguilo rellenando al menos una categoría",
+  "new_product_additional_environmental_score": "Hacé que el cálculo de Green-Score sea más preciso añadiendo orígenes, envase y más",
+  "new_product_title_nova": "Calculá el nivel de procesado de los alimentos (NOVA)",
+  "new_product_subtitle_nova": "Hacelo rellenando las categorías de alimentos e ingredientes.",
   "new_product_desc_nova_unknown": "Nivel de procesado de alimentos desconocido",
   "new_product_title_pictures": "Nuevo producto",
-  "new_product_title_pictures_details": "Haz las siguientes fotos y el motor de luppa se ocupará del resto.",
+  "new_product_title_pictures_details": "Sacá las siguientes fotos y el motor de luppa se ocupará del resto.",
   "new_product_title_misc": "Y algunos datos básicos…",
   "new_product_done_msg": "¡Gracias por tu colaboración, {username}!",
   "@new_product_done_msg": {
@@ -719,21 +719,21 @@
     }
   },
   "new_product_done_msg_no_user": "¡Gracias por tu colaboración!",
-  "new_product_done_button_label": "Descubre el producto completo",
+  "new_product_done_button_label": "Descubrí el producto completo",
   "@new_product_done_button_label": {
     "description": "Button at the end of new product page, that takes you to completed product"
   },
-  "hey_incomplete_product_message": "¡Toque para responder 3 preguntas AHORA para calcular Nutri-Score, Green-Score y Ultraprocesado (NOVA)!",
-  "hey_incomplete_product_message_beauty": "Tap now to answer 2 questions to help analyze this cosmetic!",
-  "hey_incomplete_product_message_pet_food": "Tap now to answer 3 questions to help analyze this pet food product!",
-  "hey_incomplete_product_message_product": "Tap now to help complete this product!",
+  "hey_incomplete_product_message": "¡Tocá para responder 3 preguntas AHORA para calcular Nutri-Score, Green-Score y Ultraprocesado (NOVA)!",
+  "hey_incomplete_product_message_beauty": "¡Tocá ahora para responder 2 preguntas y ayudar a analizar este cosmético!",
+  "hey_incomplete_product_message_pet_food": "¡Tocá ahora para responder 3 preguntas y ayudar a analizar este producto para mascotas!",
+  "hey_incomplete_product_message_product": "¡Tocá ahora para ayudar a completar este producto!",
   "nutritional_facts_photo_uploaded": "Imagen sobre información nutricional subida",
   "@nutritional_facts_photo_uploaded": {},
   "recycling_photo_button_label": "Foto de información sobre reciclaje",
   "@recycling_photo_button_label": {},
   "recycling_photo_uploaded": "Imagen sobre reciclaje subida",
   "@recycling_photo_uploaded": {},
-  "take_more_photo_button_label": "Haz más fotos",
+  "take_more_photo_button_label": "Sacá más fotos",
   "@take_more_photo_button_label": {},
   "other_photo_uploaded": "Imagen miscelánea subida",
   "@other_photo_uploaded": {},
@@ -776,52 +776,52 @@
   "score_add_missing_ingredients": "Añadir los ingredientes que faltan",
   "score_add_missing_packaging_image": "Añadir la imagen del envase que falta",
   "score_add_missing_nutrition_facts": "Añadir la información nutricional que falta",
-  "score_add_missing_product_traces": "Add missing product traces",
+  "score_add_missing_product_traces": "Añadir las trazas de producto que faltan",
   "score_add_missing_product_category": "Seleccionar una categoría",
   "score_add_missing_product_countries": "Añadir los países de producto que faltan",
   "score_add_missing_product_emb": "Añadir los códigos de trazabilidad que faltan",
   "score_add_missing_product_labels": "Añadir las etiquetas que faltan",
   "score_add_missing_product_origins": "Añadir los orígenes del producto que faltan",
   "score_add_missing_product_stores": "Añadir las tiendas que faltan",
-  "score_add_missing_product_brands": "Add missing product brands",
+  "score_add_missing_product_brands": "Añadir las marcas de producto que faltan",
   "score_update_nutrition_facts": "Actualizar información nutricional",
   "nutrition_page_title": "Información nutricional",
-  "nutrition_page_nutritional_info_title": "Nutritional information",
-  "nutrition_page_nutritional_info_label": "Values specified on the product:",
+  "nutrition_page_nutritional_info_title": "Información nutricional",
+  "nutrition_page_nutritional_info_label": "Valores especificados en el producto:",
   "nutrition_page_nutritional_info_value_positive": "Sí",
   "nutrition_page_nutritional_info_value_negative": "No",
-  "nutrition_page_nutritional_info_open_photo": "Open photo",
-  "nutrition_page_nutritional_info_explanation_title": "Good practices: Nutritional information",
+  "nutrition_page_nutritional_info_open_photo": "Abrir foto",
+  "nutrition_page_nutritional_info_explanation_title": "Buenas prácticas: Información nutricional",
   "@nutrition_page_nutritional_info_explanation_title": {
     "description": "Title for the help section about Nutritional information"
   },
-  "nutrition_page_nutritional_info_explanation_info1": "Sometimes nutrition facts are **not specified on the packaging** or on a document given with the product. In this case, and only in this case, you can set the value to **NO**.",
+  "nutrition_page_nutritional_info_explanation_info1": "A veces, la información nutricional **no se especifica en el envase** o en un documento que acompaña al producto. En este caso, y solo en este caso, podés establecer el valor en **NO**.",
   "@nutrition_page_nutritional_info_explanation_info1": {
     "description": "Text explaining when to set the nutritional information to NO"
   },
-  "nutrition_page_serving_type_label": "Nutritional values:",
+  "nutrition_page_serving_type_label": "Valores nutricionales:",
   "@nutrition_page_serving_type_label": {
     "description": "Label to let the user choose between per 100g or per serving"
   },
   "nutrition_page_per_100g": "por 100 g",
-  "nutrition_page_per_100g_100ml": "per 100g/ml",
+  "nutrition_page_per_100g_100ml": "por 100g/ml",
   "nutrition_page_per_serving": "por porción",
   "nutrition_page_add_nutrient": "Añadir un nutriente",
   "nutrition_page_serving_size": "Tamaño de la porción",
-  "nutrition_page_serving_size_hint": "Input a serving size (eg: 100g)",
-  "nutrition_page_serving_size_explanation_title": "Good practices: Serving size",
+  "nutrition_page_serving_size_hint": "Ingresá un tamaño de porción (ej: 100g)",
+  "nutrition_page_serving_size_explanation_title": "Buenas prácticas: Tamaño de la porción",
   "@nutrition_page_serving_size_explanation_title": {
     "description": "Title for the help section about Nutritional information"
   },
-  "nutrition_page_serving_size_explanation_info1": "This value helps to **make a proportional calculation of each nutrient per serving size**.",
+  "nutrition_page_serving_size_explanation_info1": "Este valor ayuda a **hacer un cálculo proporcional de cada nutriente por tamaño de porción**.",
   "@nutrition_page_serving_size_explanation_info1": {
     "description": "Text explaining why the serving size is important"
   },
-  "nutrition_page_serving_size_explanation_info2": "**Allowed units** are: kg, g, mg, µg, oz, l, dl, cl, ml, fl.oz, fl oz, г, мг, кг, л, дл, кл, мл, 毫克, 公斤, 毫升, 公升, 吨.",
+  "nutrition_page_serving_size_explanation_info2": "Las **unidades permitidas** son: kg, g, mg, µg, oz, l, dl, cl, ml, fl.oz, fl oz, г, мг, кг, л, дл, кл, мл, 毫克, 公斤, 毫升, 公升, 吨.",
   "@nutrition_page_serving_size_explanation_info2": {
     "description": "Text explaining why the serving size is important"
   },
-  "nutrition_page_serving_size_explanation_good_example1": "**60 g**, **60g** or **60 G** (prefer the first one)",
+  "nutrition_page_serving_size_explanation_good_example1": "**60 g**, **60g** o **60 G** (preferible el primero)",
   "@nutrition_page_serving_size_explanation_good_example1": {
     "description": "Example of a correct serving size"
   },
@@ -841,7 +841,7 @@
   "@nutrition_page_serving_size_explanation_bad_example2_explanation": {
     "description": "Example of an incorrect serving size"
   },
-  "nutrition_page_serving_size_explanation_bad_example2_example": "9 **candies** and 2 **biscuits**",
+  "nutrition_page_serving_size_explanation_bad_example2_example": "9 **caramelos** y 2 **galletitas**",
   "@nutrition_page_serving_size_explanation_bad_example2_example": {
     "description": "Example of an incorrect serving size"
   },
@@ -856,11 +856,11 @@
   "nutrition_page_invalid_number": "Número inválido",
   "nutrition_page_update_running": "Actualizando el producto en el servidor…",
   "nutrition_page_update_done": "¡Producto actualizado!",
-  "nutrition_page_take_serving_size_from_product_quantity": "Use the product quantity as serving size",
+  "nutrition_page_take_serving_size_from_product_quantity": "Usar la cantidad del producto como tamaño de la porción",
   "@nutrition_page_take_serving_size_from_product_quantity": {
     "description": "Button label: Use the product quantity as serving size (nutrition page)"
   },
-  "nutrition_page_photo_error": "Unable to load the photo",
+  "nutrition_page_photo_error": "No se pudo cargar la foto",
   "@nutrition_page_photo_error": {
     "description": "Error message when the nutrition facts photo can't be loaded"
   },
@@ -868,10 +868,10 @@
   "@more_photos": {},
   "view_more_photo_button": "Ver todas las fotos de este producto",
   "@view_more_photo_button": {},
-  "no_product_found": "No se ha encontrado ningún producto",
+  "no_product_found": "No se encontró ningún producto",
   "@no_product_found": {},
-  "no_location_found": "No location found",
-  "not_found": "no se ha encontrado:",
+  "no_location_found": "No se encontró la ubicación",
+  "not_found": "no se encontró:",
   "refreshing_product": "Actualizando producto",
   "@refreshing_product": {
     "description": "Confirmation, that the product data of a cached product is queried again"
@@ -880,7 +880,7 @@
   "@product_refreshed": {
     "description": "Confirmation, that the product data refresh is done"
   },
-  "product_image_accessibility_label": "Image taken on {date}",
+  "product_image_accessibility_label": "Imagen tomada el {date}",
   "@product_image_accessibility_label": {
     "placeholders": {
       "date": {
@@ -889,7 +889,7 @@
       }
     }
   },
-  "product_image_outdated_accessibility_label": "Image taken on {date}. This image may be outdated",
+  "product_image_outdated_accessibility_label": "Imagen tomada el {date}. Esta imagen puede estar desactualizada",
   "@product_image_outdated_accessibility_label": {
     "placeholders": {
       "date": {
@@ -898,13 +898,13 @@
       }
     }
   },
-  "product_image_outdated": "This image may be outdated",
-  "product_image_outdated_explanations_title": "This image may be outdated",
-  "product_image_outdated_explanations_content": "This image was taken more than a year ago.\n**Please check that's it's still up-to-date**.\n\nThis is **just a warning**. If the content is still the same, you can ignore this message.",
+  "product_image_outdated": "Esta imagen puede estar desactualizada",
+  "product_image_outdated_explanations_title": "Esta imagen puede estar desactualizada",
+  "product_image_outdated_explanations_content": "Esta imagen fue tomada hace más de un año.\n**Por favor, verificá que siga vigente**.\n\nEsto es **solo una advertencia**. Si el contenido sigue siendo el mismo, podés ignorar este mensaje.",
   "@product_image_outdated_explanations_content": {
     "description": "Please keep the ** syntax to make the text bold"
   },
-  "product_image_action_replace_photo": "Replace photo ({type})",
+  "product_image_action_replace_photo": "Reemplazar foto ({type})",
   "@product_image_action_replace_photo": {
     "description": "Action on the photo gallery to replace an existing picture",
     "placeholders": {
@@ -914,7 +914,7 @@
       }
     }
   },
-  "product_image_action_add_photo": "Add a photo ({type})",
+  "product_image_action_add_photo": "Añadir una foto ({type})",
   "@product_image_action_add_photo": {
     "description": "Action on the photo gallery to add a photo (eg: ingredients)",
     "placeholders": {
@@ -928,23 +928,23 @@
   "@product_image_action_take_new_picture": {
     "description": "Replace the existing picture with a new one"
   },
-  "product_image_action_take_picture": "Saca una foto",
+  "product_image_action_take_picture": "Sacá una foto",
   "@product_image_action_take_picture": {
     "description": "Take a picture (eg: for ingredients) when there is no one"
   },
-  "product_image_action_from_gallery": "Select from your phone's gallery",
+  "product_image_action_from_gallery": "Seleccionar de la galería de tu teléfono",
   "@product_image_action_from_gallery": {
     "description": "Replace the existing picture with one from the device's gallery"
   },
-  "product_image_action_choose_existing_photo": "Select from the product photos",
+  "product_image_action_choose_existing_photo": "Seleccionar de las fotos del producto",
   "@product_image_action_choose_existing_photo": {
     "description": "Replace the existing picture with one from the product's photos"
   },
-  "product_image_details_label": "Information about the photo",
+  "product_image_details_label": "Información sobre la foto",
   "@product_image_details_label": {
     "description": "Label for the photo details"
   },
-  "product_image_details_from_producer": "From the producer",
+  "product_image_details_from_producer": "Del productor",
   "@product_image_details_from_producer": {
     "description": "Text to indicate that the image was taken by the producer"
   },
@@ -952,7 +952,7 @@
   "@product_image_details_contributor": {
     "description": "The name of the contributor who uploaded the image"
   },
-  "product_image_details_contributor_producer": "Contributor (producer)",
+  "product_image_details_contributor_producer": "Colaborador/a (productor/a)",
   "@product_image_details_contributor_producer": {
     "description": "The name of the contributor (and also the owner field) who uploaded the image"
   },
@@ -968,7 +968,7 @@
   "@homepage_main_card_logo_description": {
     "description": "Description for accessibility of the luppa logo on the homepage"
   },
-  "homepage_main_card_subheading": "**Escanea** un código de barras o\n**busca** por nombre",
+  "homepage_main_card_subheading": "**Escaneá** un código de barras o\n**buscá** por nombre",
   "@homepage_main_card_subheading": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please keep it."
   },
@@ -989,18 +989,18 @@
   "tagline_app_review": "¿Te gusta la aplicación?",
   "tagline_app_review_button_positive": "¡Me encanta! 😍",
   "tagline_app_review_button_negative": "No mucho…",
-  "tagline_app_review_button_later": "Pregúntame más tarde",
+  "tagline_app_review_button_later": "Preguntame más tarde",
   "tagline_feed_news_button": "Más información",
   "app_review_negative_modal_title": "¿No te gusta nuestra aplicación?",
   "app_review_negative_modal_text": "¿Nos podrías explicar por qué?",
   "app_review_negative_modal_positive_button": "¡Sí, por supuesto!",
   "app_review_negative_modal_negative_button": "No",
-  "could_not_refresh": "No se ha podido actualizar el producto",
+  "could_not_refresh": "No se pudo actualizar el producto",
   "@could_not_refresh": {
     "description": "The product data couldn't be refreshed"
   },
-  "product_internet_error_modal_title": "¡Se ha producido un error!",
-  "product_internet_error_modal_message": "We are unable to fetch information about this product due to a network error. Please check your internet connection and try again.\n\nInternal error:\n{error}",
+  "product_internet_error_modal_title": "¡Ocurrió un error!",
+  "product_internet_error_modal_message": "No podemos obtener información sobre este producto debido a un error de red. Por favor, revisá tu conexión a internet e intentalo de nuevo.\n\nError interno:\n{error}",
   "@product_internet_error_modal_message": {
     "placeholders": {
       "error": {
@@ -1009,24 +1009,24 @@
       }
     }
   },
-  "product_tags_title": "Product properties",
+  "product_tags_title": "Propiedades del producto",
   "@product_tags_title": {
     "description": "The title for showing product properties, aka folksonomy data"
   },
-  "no_product_tags_found_message": "No se han encontrado propiedades del producto. Las mismas se pueden utilizar para describir los productos con más detalle, de una manera más flexible.",
+  "no_product_tags_found_message": "No se encontraron propiedades del producto. Las mismas se pueden utilizar para describir los productos con más detalle, de una manera más flexible.",
   "@no_product_tags_found_message": {
     "description": "Message to show if there are no product properties found"
   },
   "add_tag": "Añadir una propiedad",
   "add_tags": "Añadir propiedades",
   "add_edit_tags": "Añadir o modificar propiedades",
-  "edit_tag": "Edit property",
-  "remove_tag": "Remove property",
-  "tag_key": "Property",
+  "edit_tag": "Editar propiedad",
+  "remove_tag": "Eliminar propiedad",
+  "tag_key": "Propiedad",
   "tag_key_uneditable": "Propiedad (no editable)",
-  "tag_key_input_hint": "Ingrese una propiedad",
+  "tag_key_input_hint": "Ingresá una propiedad",
   "tag_value": "Valor",
-  "tag_value_input_hint": "Ingrese un valor",
+  "tag_value_input_hint": "Ingresá un valor",
   "tag_key_item": "Propiedad:",
   "tag_value_item": "Valor:",
   "tag_key_explanations": "La clave debe estar en minúsculas y sin espacios.",
@@ -1045,7 +1045,7 @@
     "description": "Cached results from: x time ago (time ago should not be added to the string)"
   },
   "@Product Addition": {},
-  "product_search_same_category": "Encuentra alternativas",
+  "product_search_same_category": "Encontrá alternativas",
   "@product_search_same_category": {
     "description": "Button looking for the other products within the same category. Less than 30 characters"
   },
@@ -1053,47 +1053,47 @@
   "@product_search_same_category_short": {
     "description": "Button looking for the other products within the same category. Just the verb compare"
   },
-  "product_search_same_category_error": "This feature can only be used for products with a category.\n\nPlease edit the product to add a category.",
+  "product_search_same_category_error": "Esta función solo se puede usar para productos con una categoría.\n\nPor favor, editá el producto para agregar una categoría.",
   "@product_search_same_category_error": {
     "description": "Button looking for the other products within the same category. Just the verb compare"
   },
-  "product_improvement_add_category": "Añade una categoría para calcular la puntuación Nutri-Score.",
+  "product_improvement_add_category": "Añadí una categoría para calcular la puntuación Nutri-Score.",
   "@product_improvement_add_category": {
     "description": "Message for ProductImprovement.ADD_CATEGORY"
   },
-  "product_improvement_add_nutrition_facts": "Añade la información nutricional para calcular la puntuación Nutri-Score.",
+  "product_improvement_add_nutrition_facts": "Añadí la información nutricional para calcular la puntuación Nutri-Score.",
   "@product_improvement_add_nutrition_facts": {
     "description": "Message for ProductImprovement.ADD_NUTRITION_FACTS"
   },
-  "product_improvement_add_nutrition_facts_and_category": "Añade una categoría y la información nutricional para calcular la puntuación de Nutri-Score.",
+  "product_improvement_add_nutrition_facts_and_category": "Añadí una categoría y la información nutricional para calcular la puntuación de Nutri-Score.",
   "@product_improvement_add_nutrition_facts_and_category": {
     "description": "Message for ProductImprovement.ADD_NUTRITION_FACTS_AND_CATEGORY"
   },
-  "product_improvement_categories_but_no_nutriscore": "No se ha podido calcular la puntuación Nutri-Score para este producto. Esto puede deberse a que, por ejemplo, una categoría no es estándar. Si crees que es un error, por favor, ponte en contacto con nosotros.",
+  "product_improvement_categories_but_no_nutriscore": "No se pudo calcular la puntuación Nutri-Score para este producto. Esto puede deberse a que, por ejemplo, una categoría no es estándar. Si creés que es un error, por favor, ponete en contacto con nosotros.",
   "@product_improvement_categories_but_no_nutriscore": {
     "description": "Message for ProductImprovement.CATEGORIES_BUT_NO_NUTRISCORE"
   },
-  "product_improvement_obsolete_nutrition_image": "La imagen nutricional está obsoleta: por favor, actualízala.",
+  "product_improvement_obsolete_nutrition_image": "La imagen nutricional está obsoleta: por favor, actualizala.",
   "@product_improvement_obsolete_nutrition_image": {
     "description": "Message for ProductImprovement.OBSOLETE_NUTRITION_IMAGE"
   },
-  "product_improvement_origins_to_be_completed": "El Green-Score tiene en cuenta el origen de los ingredientes. Haz una foto de los ingredientes o a cualquier indicio geográfico y edita el producto para que se tengan en cuenta estos datos.",
+  "product_improvement_origins_to_be_completed": "El Green-Score tiene en cuenta el origen de los ingredientes. Sacá una foto de los ingredientes o a cualquier indicio geográfico y editá el producto para que se tengan en cuenta estos datos.",
   "@product_improvement_origins_to_be_completed": {
     "description": "Message for ProductImprovement.ORIGINS_TO_BE_COMPLETED"
   },
-  "country_chooser_label": "Elige un país",
+  "country_chooser_label": "Elegí un país",
   "@country_chooser_label": {
     "description": "Label shown above a selector where the user can select their country (in the preferences)"
   },
-  "currency_chooser_label": "Por favor, elija una moneda",
+  "currency_chooser_label": "Por favor, elegí una moneda",
   "@currency_chooser_label": {
     "description": "Label shown above a selector where the user can select their currency (in the preferences)"
   },
-  "country_change_message": "You have just changed countries.",
+  "country_change_message": "Acabás de cambiar de país.",
   "@country_change_message": {
     "description": "Message stating the change of countries"
   },
-  "currency_auto_change_message": "Do you want to change the currency from {previousCurrency} to {possibleCurrency}?",
+  "currency_auto_change_message": "¿Querés cambiar la moneda de {previousCurrency} a {possibleCurrency}?",
   "@currency_auto_change_message": {
     "description": "Message asking to confirm the change of currencies",
     "placeholders": {
@@ -1107,7 +1107,7 @@
       }
     }
   },
-  "onboarding_country_chooser_label": "Por favor, elige un país:",
+  "onboarding_country_chooser_label": "Por favor, elegí un país:",
   "@onboarding_country_chooser_label": {
     "description": "The label shown above a selector where the user can select their country (in the onboarding)"
   },
@@ -1139,7 +1139,7 @@
   "@product_removed_list": {
     "description": "Product got removed from list"
   },
-  "product_could_not_remove": "No se ha podido eliminar el producto",
+  "product_could_not_remove": "No se pudo eliminar el producto",
   "@product_could_not_remove": {
     "description": "Could not remove product from a list"
   },
@@ -1155,7 +1155,7 @@
   "@clear_long": {
     "description": "Clears a product list (long label)"
   },
-  "really_clear": "¿Realmente quieres eliminar esta lista?",
+  "really_clear": "¿Realmente querés eliminar esta lista?",
   "@Plural": {},
   "pct_match": "coincide un {percent} %",
   "@pct_match": {
@@ -1199,33 +1199,33 @@
       "count": {}
     }
   },
-  "plural_compare_x_products": "{count,plural, =1{Comparar un producto} other{Comparar {count} productos}}",
+  "plural_compare_x_products": "{count,plural, =1{Comparar 1 producto} other{Comparar {count} productos}}",
   "@plural_compare_x_products": {
     "description": "Button label to open a page to compare all selected products to each other",
     "placeholders": {
       "count": {}
     }
   },
-  "multiselect_title": "{count,plural, =0{No selected product} =1{One selected product} other{{count} selected products}}",
+  "multiselect_title": "{count,plural, =0{Ningún producto seleccionado} =1{Un producto seleccionado} other{{count} productos seleccionados}}",
   "@multiselect_title": {
     "description": "Page title with the number of selected items",
     "placeholders": {
       "count": {}
     }
   },
-  "compare_products_mode": "Compare selected products",
+  "compare_products_mode": "Comparar productos seleccionados",
   "@compare_products_mode": {
     "description": "Button to switch to 'compare products mode'"
   },
-  "delete_products_mode": "Delete selected products",
+  "delete_products_mode": "Eliminar productos seleccionados",
   "@delete_products_mode": {
     "description": "Button to switch to 'delete products'"
   },
-  "select_all_products_mode": "Select all products",
+  "select_all_products_mode": "Seleccionar todos los productos",
   "@select_all_products_mode": {
     "description": "Button to switch to 'select all products'"
   },
-  "select_none_products_mode": "Select none",
+  "select_none_products_mode": "No seleccionar ninguno",
   "@select_none_products_mode": {
     "description": "Button to switch to 'select no products'"
   },
@@ -1233,27 +1233,27 @@
   "@compare_products_appbar_title": {
     "description": "AppBar title when in comparison mode "
   },
-  "compare_products_appbar_subtitle": "Por favor, selecciona al menos dos productos",
+  "compare_products_appbar_subtitle": "Por favor, seleccioná al menos dos productos",
   "@compare_products_appbar_subtitle": {
     "description": "AppBar subtitle when in comparison mode"
   },
   "retry_button_label": "Reintentar",
-  "connect_with_us": "Contáctanos",
-  "tiktok": "Follow us on TikTok",
+  "connect_with_us": "Contactanos",
+  "tiktok": "Seguinos en TikTok",
   "tiktok_link": "https://www.tiktok.com/@luppa",
-  "instagram": "Síguenos en Instagram",
+  "instagram": "Seguinos en Instagram",
   "instagram_link": "https://instagram.com/open.food.facts",
-  "twitter": "Síguenos en X (anteriormente Twitter)",
+  "twitter": "Seguinos en X (anteriormente Twitter)",
   "twitter_link": "https://www.twitter.com/luppa",
-  "mastodon": "Follow us on Mastodon",
+  "mastodon": "Seguinos en Mastodon",
   "mastodon_link": "https://mastodon.social/@luppa",
-  "bsky": "Follow us on BlueSky",
+  "bsky": "Seguinos en BlueSky",
   "bsky_link": "https://bsky.app/profile/luppa.bsky.social",
   "blog": "Blog",
   "faq": "Preguntas frecuentes",
   "discover": "Descubrir",
   "how_to_contribute": "Cómo colaborar",
-  "hint_knowledge_panel_message": "Puedes tocar en cualquier parte de la tarjeta para obtener más detalles sobre lo que ves. ¡Pruébalo!",
+  "hint_knowledge_panel_message": "Podés tocar en cualquier parte de la tarjeta para obtener más detalles sobre lo que ves. ¡Probalo!",
   "@hint_knowledge_panel_message": {
     "description": "Hint popup indicating the card is clickable during onboarding"
   },
@@ -1261,11 +1261,11 @@
   "@permissions_page_title": {
     "description": "Title for the camera permission's page (onboarding)"
   },
-  "permissions_page_body1": "Para poder escanear los códigos de barras con la cámara, primero tienes que autorizar el acceso.",
+  "permissions_page_body1": "Para poder escanear los códigos de barras con la cámara, primero tenés que autorizar el acceso.",
   "@permissions_page_body1": {
     "description": "first paragraph for the camera permission's page (onboarding)"
   },
-  "permissions_page_body2": "En cualquier caso, recuerda que si cambias de opinión, puedes activar y desactivar esta opción desde la configuración cuando quieras.",
+  "permissions_page_body2": "En cualquier caso, recordá que si cambiás de opinión, podés activar y desactivar esta opción desde la configuración cuando quieras.",
   "@permissions_page_body2": {
     "description": "second paragraph for the camera permission's page (onboarding)"
   },
@@ -1365,7 +1365,7 @@
     }
   },
   "onboarding_home_welcome_text1": "¡Bienvenido!",
-  "onboarding_home_welcome_text2": "**Luppa** es la app que te ayuda a **conocer** lo que consumes.",
+  "onboarding_home_welcome_text2": "**Luppa** es la app que te ayuda a **conocer** lo que consumís.",
   "@onboarding_home_welcome_text2": {
     "description": "Onboarding home screen welcome text, text surrounded by * will be bold"
   },
@@ -1382,7 +1382,7 @@
   "@product_list_icon_desc": {
     "description": "When the history list is empty, icon description (for accessibility) of the message explaining to start scanning"
   },
-  "product_list_empty_title": "Empieza a escanear",
+  "product_list_empty_title": "Empezá a escanear",
   "@product_list_empty_title": {
     "description": "When the history list is empty, title of the message explaining to start scanning"
   },
@@ -1408,7 +1408,7 @@
   "@loading_dialog_default_title": {
     "description": "Default loading dialog title"
   },
-  "loading_dialog_default_error_message": "No se han podido descargar los datos",
+  "loading_dialog_default_error_message": "No se pudieron descargar los datos",
   "@loading_dialog_default_error_message": {
     "description": "Default loading dialog error message"
   },
@@ -1428,7 +1428,7 @@
   "@user_profile_title_guest": {
     "description": "When the user is not connected"
   },
-  "user_profile_subtitle_guest": "Inicia sesión o regístrate para unirte a la comunidad de Luppa",
+  "user_profile_subtitle_guest": "Iniciá sesión o registrate para unirte a la comunidad de Luppa",
   "user_profile_title_id_email": "Inicio de sesión en Luppa: {email}",
   "@user_profile_title_id_email": {
     "description": "User login (when it's an email)",
@@ -1476,7 +1476,7 @@
   "@camera_play_sound_subtitle": {
     "description": "SubTitle for the Camera play sound toggle"
   },
-  "camera_window_accessibility_label": "Escanea un código de barras con la cámara",
+  "camera_window_accessibility_label": "Escaneá un código de barras con la cámara",
   "@camera_window_accessibility_label": {
     "description": "Accessibility label for the camera window"
   },
@@ -1513,7 +1513,7 @@
     "description": "When the camera/photo permission failed to be acquired (!= denied)"
   },
   "permission_photo_denied_title": "Permitir el uso de la cámara para escanear códigos de barras",
-  "permission_photo_denied_message": "Para disfrutar de una mejor experiencia, permite que {appName} acceda a tu cámara. Así podrás escanear los códigos de barras directamente.",
+  "permission_photo_denied_message": "Para disfrutar de una mejor experiencia, permití que {appName} acceda a tu cámara. Así podrás escanear los códigos de barras directamente.",
   "@permission_photo_denied_message": {
     "description": "When the camera/photo permission is denied by user",
     "placeholders": {
@@ -1526,7 +1526,7 @@
   "@permission_photo_denied_button": {
     "description": "When the camera/photo permission is denied by user"
   },
-  "permission_photo_denied_dialog_settings_title": "Permiso dengado",
+  "permission_photo_denied_dialog_settings_title": "Permiso denegado",
   "permission_photo_denied_dialog_settings_message": "Como ya habías denegado el acceso a la cámara, tendrás que permitirlo manualmente desde la Configuración.",
   "permission_photo_denied_dialog_settings_button_open": "Abrir configuración",
   "permission_photo_denied_dialog_settings_button_cancel": "Cancelar",
@@ -1546,11 +1546,11 @@
   "@edit_product_label": {
     "description": "Edit product button label"
   },
-  "edit_product_pending_operations_banner_title": "Uploading your edits…",
+  "edit_product_pending_operations_banner_title": "Subiendo tus ediciones…",
   "@edit_product_pending_operations_banner_title": {
     "description": "When a product has pending edits (being sent to the server), there is a message on the edit page (here is the title of the message)."
   },
-  "edit_product_pending_operations_banner_message": "Tus ediciones están siendo **enviadas a un segundo plano** (o más tarde en caso de error). Puedes continuar editando otros campos del producto.",
+  "edit_product_pending_operations_banner_message": "Tus ediciones están siendo **enviadas a un segundo plano** (o más tarde en caso de error). Podés continuar editando otros campos del producto.",
   "@edit_product_pending_operations_banner_message": {
     "description": "When a product has pending edits (being sent to the server), there is a message on the edit page. Please keep the ** syntax to make the text bold."
   },
@@ -1562,7 +1562,7 @@
   "@edit_product_label_short": {
     "description": "Edit product button short label (only the verb)"
   },
-  "edit_product_form_item_help": "How to enter \"{value}\"?",
+  "edit_product_form_item_help": "¿Cómo ingresar \"{value}\"?",
   "@edit_product_form_item_help": {
     "description": "Help text for the input field. Eg 'How to enter stores?'",
     "placeholders": {
@@ -1571,43 +1571,43 @@
       }
     }
   },
-  "edit_product_form_item_error_empty": "¡Por favor ingrese un valor!",
+  "edit_product_form_item_error_empty": "¡Por favor ingresá un valor!",
   "@edit_product_form_item_error_empty": {
     "description": "Error message when the user tries to submit an empty value"
   },
-  "edit_product_form_item_error_existing": "This value is already there!",
+  "edit_product_form_item_error_existing": "¡Este valor ya existe!",
   "@edit_product_form_item_error_existing": {
     "description": "Error message when the user tries to re-submit an existing value"
   },
-  "edit_product_form_item_add_action_brand": "Add a new brand",
+  "edit_product_form_item_add_action_brand": "Añadir una nueva marca",
   "@edit_product_form_item_add_action_brand": {
     "description": "Tooltip to show when the user long presses the (+) button on a brand"
   },
-  "edit_product_form_item_add_action_label": "Add a new label",
+  "edit_product_form_item_add_action_label": "Añadir una nueva etiqueta",
   "@edit_product_form_item_add_action_label": {
     "description": "Tooltip to show when the user long presses the (+) button on a label"
   },
-  "edit_product_form_item_add_action_store": "Add a new store",
+  "edit_product_form_item_add_action_store": "Añadir una nueva tienda",
   "@edit_product_form_item_add_action_store": {
     "description": "Tooltip to show when the user long presses the (+) button on a store"
   },
-  "edit_product_form_item_add_action_origin": "Add a new origin",
+  "edit_product_form_item_add_action_origin": "Añadir un nuevo origen",
   "@edit_product_form_item_add_action_origin": {
     "description": "Tooltip to show when the user long presses the (+) button on an origin"
   },
-  "edit_product_form_item_add_action_emb_code": "Add a new traceability code",
+  "edit_product_form_item_add_action_emb_code": "Añadir un nuevo código de trazabilidad",
   "@edit_product_form_item_add_action_emb_code": {
     "description": "Tooltip to show when the user long presses the (+) button on a traceability code"
   },
-  "edit_product_form_item_add_action_country": "Add a new country",
+  "edit_product_form_item_add_action_country": "Añadir un nuevo país",
   "@edit_product_form_item_add_action_country": {
     "description": "Tooltip to show when the user long presses the (+) button on a country"
   },
-  "edit_product_form_item_add_action_category": "Add a new category",
+  "edit_product_form_item_add_action_category": "Añadir una nueva categoría",
   "@edit_product_form_item_add_action_category": {
     "description": "Tooltip to show when the user long presses the (+) button on a category"
   },
-  "edit_product_form_item_add_action_trace": "Add a new trace",
+  "edit_product_form_item_add_action_trace": "Añadir una nueva traza",
   "@edit_product_form_item_add_action_trace": {
     "description": "Tooltip to show when the user long presses the (+) button on a trace"
   },
@@ -1651,7 +1651,7 @@
   "@edit_product_form_item_labels_subtitle": {
     "description": "Product edition - Labels - SubTitle"
   },
-  "edit_product_form_item_labels_hint": "Ingrese una etiqueta (por ejemplo: NutriScore)",
+  "edit_product_form_item_labels_hint": "Ingresá una etiqueta (por ejemplo: NutriScore)",
   "@edit_product_form_item_labels_hint": {
     "description": "Product edition - Labels - input textfield hint"
   },
@@ -1659,11 +1659,11 @@
   "@edit_product_form_item_labels_type": {
     "description": "Product edition - Labels - input textfield label"
   },
-  "edit_product_form_item_labels_explanation_title": "Good practices: Labels",
+  "edit_product_form_item_labels_explanation_title": "Buenas prácticas: Etiquetas",
   "@edit_product_form_item_labels_explanation_title": {
     "description": "Product edition - Labels - explanation"
   },
-  "edit_product_form_item_labels_explanation_info1": "Any characteristic of the product **which is factual** and different from the other fields.",
+  "edit_product_form_item_labels_explanation_info1": "Cualquier característica del producto **que sea un hecho** y diferente de los otros campos.",
   "@edit_product_form_item_labels_explanation_info1": {
     "description": "Product edition - Labels - explanation"
   },
@@ -1671,7 +1671,7 @@
   "@edit_product_form_item_labels_explanation_good_examples_1": {
     "description": "Product edition - Labels - explanation"
   },
-  "edit_product_form_item_labels_explanation_good_examples_2": "Made in Belgium, produced in Brittany…",
+  "edit_product_form_item_labels_explanation_good_examples_2": "Hecho en Bélgica, producido en Bretaña…",
   "@edit_product_form_item_labels_explanation_good_examples_2": {
     "description": "Product edition - Labels - explanation"
   },
@@ -1679,11 +1679,11 @@
   "@edit_product_form_item_labels_explanation_good_examples_3": {
     "description": "Product edition - Labels - explanation"
   },
-  "edit_product_form_item_labels_explanation_good_examples_4": "Rich in fiber, source of iron…",
+  "edit_product_form_item_labels_explanation_good_examples_4": "Rico en fibra, fuente de hierro…",
   "@edit_product_form_item_labels_explanation_good_examples_4": {
     "description": "Product edition - Labels - explanation"
   },
-  "edit_product_form_item_labels_explanation_good_examples_5": "Fair trade, Max Havelaar…",
+  "edit_product_form_item_labels_explanation_good_examples_5": "Comercio justo, Max Havelaar…",
   "@edit_product_form_item_labels_explanation_good_examples_5": {
     "description": "Product edition - Labels - explanation"
   },
@@ -1691,7 +1691,7 @@
   "@edit_product_form_item_stores_title": {
     "description": "Product edition - Stores - Title"
   },
-  "edit_product_form_item_stores_hint": "Ingrese una tienda",
+  "edit_product_form_item_stores_hint": "Ingresá una tienda",
   "@edit_product_form_item_stores_hint": {
     "description": "Product edition - Stores - input textfield hint"
   },
@@ -1703,7 +1703,7 @@
   "@edit_product_form_item_stores_explanation_title": {
     "description": "Product edition - Stores - Explanation"
   },
-  "edit_product_form_item_stores_explanation_info1": "Input the store where you bought the product.",
+  "edit_product_form_item_stores_explanation_info1": "Ingresá la tienda donde compraste el producto.",
   "@edit_product_form_item_stores_explanation_info1": {
     "description": "Product edition - Stores - Explanation"
   },
@@ -1723,7 +1723,7 @@
   "@edit_product_form_item_origins_title": {
     "description": "Product edition - Origins - Title"
   },
-  "edit_product_form_item_origins_hint": "Ingrese un origen (por ejemplo: Alemania)",
+  "edit_product_form_item_origins_hint": "Ingresá un origen (por ejemplo: Alemania)",
   "@edit_product_form_item_origins_hint": {
     "description": "Product edition - Origins - input textfield hint"
   },
@@ -1735,7 +1735,7 @@
   "@edit_product_form_item_origins_explanation_title": {
     "description": "Product edition - Origins - input explainer, part 1"
   },
-  "edit_product_form_item_origins_explanation_info1": "Add **any indications of origins you can find on the packaging**.\nYou need not worry about origins indicated directly in the ingredient list.",
+  "edit_product_form_item_origins_explanation_info1": "Añadí **cualquier indicación de origen que encuentres en el envase**.\nNo tenés que preocuparte por los orígenes indicados directamente en la lista de ingredientes.",
   "@edit_product_form_item_origins_explanation_info1": {
     "description": "Product edition - Origins - input explainer, part 1"
   },
@@ -1743,7 +1743,7 @@
   "@edit_product_form_item_origins_explanation_good_examples_1": {
     "description": "Product edition - Origins - input explainer, part 2"
   },
-  "edit_product_form_item_origins_explanation_good_examples_2": "The soy does not come from the European Union",
+  "edit_product_form_item_origins_explanation_good_examples_2": "La soja no proviene de la Unión Europea",
   "@edit_product_form_item_origins_explanation_good_examples_2": {
     "description": "Product edition - Origins - input explainer, part 2"
   },
@@ -1751,7 +1751,7 @@
   "@edit_product_form_item_countries_title": {
     "description": "Product edition - Countries - Title"
   },
-  "edit_product_form_item_countries_hint": "Ingrese un país (por ejemplo: Alemania)",
+  "edit_product_form_item_countries_hint": "Ingresá un país (por ejemplo: Alemania)",
   "@edit_product_form_item_countries_hint": {
     "description": "Product edition - Countries - input textfield hint"
   },
@@ -1763,7 +1763,7 @@
   "@edit_product_form_item_countries_explanations_title": {
     "description": "Product edition - Countries - explanations"
   },
-  "edit_product_form_item_countries_explanations_info1": "**Countries where the product is widely available** (not including stores specialising in foreign products).",
+  "edit_product_form_item_countries_explanations_info1": "**Países donde el producto está ampliamente disponible** (sin incluir tiendas especializadas en productos extranjeros).",
   "@edit_product_form_item_countries_explanations_info1": {
     "description": "Product edition - Countries - explanations"
   },
@@ -1771,7 +1771,7 @@
   "@edit_product_form_item_emb_codes_title": {
     "description": "Product edition - Traceability codes - Title"
   },
-  "edit_product_form_item_emb_codes_hint": "Ingrese un código (por ejemplo EMB 53062, FR 62.448.034 CE, 84 R 20, 33 RECOLTANTE 522...)",
+  "edit_product_form_item_emb_codes_hint": "Ingresá un código (por ejemplo EMB 53062, FR 62.448.034 CE, 84 R 20, 33 RECOLTANTE 522...)",
   "@edit_product_form_item_emb_codes_hint": {
     "description": "Product edition - Traceability Codes - input textfield hint"
   },
@@ -1779,19 +1779,19 @@
   "@edit_product_form_item_emb_codes_type": {
     "description": "Product edition - Traceability Codes - input textfield type"
   },
-  "edit_product_form_item_emb_help_title": "Good practices: Traceability codes",
+  "edit_product_form_item_emb_help_title": "Buenas prácticas: Códigos de trazabilidad",
   "@edit_product_form_item_emb_help_title": {
     "description": "Title for the help section about traceability codes"
   },
-  "edit_product_form_item_emb_help_info1": "In this section, you can input codes related to **packaging marks**, **identification marks** or **health marks**.",
+  "edit_product_form_item_emb_help_info1": "En esta sección, podés ingresar códigos relacionados con **marcas de envasado**, **marcas de identificación** o **marcas sanitarias**.",
   "@edit_product_form_item_emb_help_info1": {
     "description": "Text explaining how to write a traceability code"
   },
-  "edit_product_form_item_emb_help_info2_title": "Examples of traceability codes",
+  "edit_product_form_item_emb_help_info2_title": "Ejemplos de códigos de trazabilidad",
   "@edit_product_form_item_emb_help_info2_title": {
     "description": "Explanation about EMB/EC… codes"
   },
-  "edit_product_form_item_emb_help_info2_item1_text": "**EC codes** used in the European Community to identify food producers or packagers:",
+  "edit_product_form_item_emb_help_info2_item1_text": "**Códigos CE** utilizados en la Comunidad Europea para identificar a los productores o envasadores de alimentos:",
   "@edit_product_form_item_emb_help_info2_item1_text": {
     "description": "Explanation about EC codes"
   },
@@ -1799,7 +1799,7 @@
   "@edit_product_form_item_emb_help_info2_item1_example": {
     "description": "Example of an EC code (you can change with a valid code in another european country)"
   },
-  "edit_product_form_item_emb_help_info2_item1_explanation": "**FR**: country code of **France**\n**72.264.002**: geographic data\n**CE**: European Community",
+  "edit_product_form_item_emb_help_info2_item1_explanation": "**FR**: código de país de **Francia**\n**72.264.002**: datos geográficos\n**CE**: Comunidad Europea",
   "@edit_product_form_item_emb_help_info2_item1_explanation": {
     "description": "Example of an EC code (shouldn't be translated)"
   },
@@ -1819,7 +1819,7 @@
   "@edit_product_form_item_traces_hint": {
     "description": "Product edition - Traces - input textfield hint"
   },
-  "edit_product_form_item_traces_type": "Input a trace (eg: Soy beans)",
+  "edit_product_form_item_traces_type": "Ingresá una traza (ej: Soja)",
   "@edit_product_form_item_traces_type": {
     "description": "Product edition - Traces - input textfield type"
   },
@@ -1831,7 +1831,7 @@
   "@edit_product_form_item_categories_hint": {
     "description": "Product edition - Categories - input textfield hint"
   },
-  "edit_product_form_item_categories_type": "Ingrese una categoría (por ejemplo: jugo de naranja)",
+  "edit_product_form_item_categories_type": "Ingresá una categoría (por ejemplo: jugo de naranja)",
   "@edit_product_form_item_categories_type": {
     "description": "Product edition - Categories - input textfield type"
   },
@@ -1839,54 +1839,54 @@
   "@edit_product_form_item_categories_explanation_title": {
     "description": "Product edition - Categories - input explainer, title"
   },
-  "edit_product_form_item_categories_explanation_info1": "Indicate **only the most specific category**.\nParent categories will be automatically added.",
+  "edit_product_form_item_categories_explanation_info1": "Indicá **solo la categoría más específica**.\nLas categorías superiores se añadirán automáticamente.",
   "@edit_product_form_item_categories_explanation_info1": {
     "description": "Product edition - Categories - input explainer, part 1"
   },
-  "edit_product_form_item_categories_explanation_info2_title": "Missing category?",
+  "edit_product_form_item_categories_explanation_info2_title": "¿Falta una categoría?",
   "@edit_product_form_item_categories_explanation_info2_title": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
-  "edit_product_form_item_categories_explanation_info2_content": "In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Luppa in your country.",
+  "edit_product_form_item_categories_explanation_info2_content": "En caso de que una categoría **no esté disponible en el autocompletado**, sentite libre de añadirla de todos modos.\nEsto nos ayudará a mejorar Luppa en tu país.",
   "@edit_product_form_item_categories_explanation_info2_content": {
     "description": "Product edition - Categories - input explainer, part 2"
   },
-  "edit_product_form_item_categories_explanation_good_examples_1": "Sardines in olive oil",
+  "edit_product_form_item_categories_explanation_good_examples_1": "Sardinas en aceite de oliva",
   "@edit_product_form_item_categories_explanation_good_examples_1": {
     "description": "Product edition - Categories - input explainer, part 3"
   },
-  "edit_product_form_item_categories_explanation_good_examples_2": "Orange juice from concentrate",
+  "edit_product_form_item_categories_explanation_good_examples_2": "Jugo de naranja de concentrado",
   "@edit_product_form_item_categories_explanation_good_examples_2": {
     "description": "Product edition - Categories - input explainer, part 3"
   },
   "edit_product_form_item_exit_title": "¿Salir sin guardar?",
-  "edit_product_form_item_exit_confirmation": "¿Deseas guardar los cambios antes de salir de esta página?",
+  "edit_product_form_item_exit_confirmation": "¿Deseás guardar los cambios antes de salir de esta página?",
   "edit_product_form_item_exit_confirmation_positive_button": "Guardar cambios",
   "edit_product_form_item_exit_confirmation_negative_button": "Descartar cambios",
   "edit_product_form_item_ingredients_title": "Ingredientes",
   "@edit_product_form_item_ingredients_title": {
     "description": "Product edition - Ingredients - Title (note: this section was previously called Ingredients & Origins)"
   },
-  "edit_product_form_item_ingredients_pinch_to_zoom_tooltip": "Zoom in and out by pinching the screen",
+  "edit_product_form_item_ingredients_pinch_to_zoom_tooltip": "Acercá y alejá la imagen pellizcando la pantalla",
   "@edit_product_form_item_ingredients_pinch_to_zoom_tooltip": {
     "description": "Product edition - Ingredients - Pinch to zoom icon explanation"
   },
-  "edit_product_form_item_ingredients_pinch_to_zoom_title": "Zoom in and out the photo",
+  "edit_product_form_item_ingredients_pinch_to_zoom_title": "Acercá y alejá la foto",
   "@edit_product_form_item_ingredients_pinch_to_zoom_title": {
     "description": "Product edition - Ingredients - Pinch to zoom explanation title"
   },
-  "edit_product_form_item_ingredients_pinch_to_zoom_message": "Using the **Pinch-to-zoom gesture**, you can zoom in or out the photo:",
+  "edit_product_form_item_ingredients_pinch_to_zoom_message": "Usando el **gesto de pellizcar para hacer zoom**, podés acercar o alejar la foto:",
   "@edit_product_form_item_ingredients_pinch_to_zoom_message": {
     "description": "Product edition - Ingredients - Pinch to zoom explanation message"
   },
   "edit_product_form_item_add_valid_item_tooltip": "Añadir",
-  "edit_product_form_item_add_invalid_item_tooltip": "Primero escribe algo",
+  "edit_product_form_item_add_invalid_item_tooltip": "Primero escribí algo",
   "edit_product_form_item_remove_item_tooltip": "Eliminar",
-  "edit_product_form_item_save_edit_item_tooltip": "Guarda tu edición",
+  "edit_product_form_item_save_edit_item_tooltip": "Guardá tu edición",
   "@edit_product_form_item_save_edit_item_tooltip": {
     "description": "The user can edit an existing item. This action will save the change."
   },
-  "edit_product_form_item_cancel_edit_item_tooltip": "Cancela tu edición",
+  "edit_product_form_item_cancel_edit_item_tooltip": "Cancelá tu edición",
   "@edit_product_form_item_cancel_edit_item_tooltip": {
     "description": "The user can edit an existing item. This action will cancel the change (and return to the initial value)."
   },
@@ -1902,15 +1902,15 @@
   "@edit_product_form_item_nutrition_facts_subtitle": {
     "description": "Product edition - Nutrition facts - SubTitle"
   },
-  "edit_product_form_item_nutrition_facts_explanation_title": "Good practices: Nutrition facts",
+  "edit_product_form_item_nutrition_facts_explanation_title": "Buenas prácticas: Información nutricional",
   "@edit_product_form_item_nutrition_facts_explanation_title": {
     "description": "Title for the help section about Nutritional facts"
   },
-  "edit_product_form_item_nutrition_facts_explanation_info1_title": "Nutritional values",
+  "edit_product_form_item_nutrition_facts_explanation_info1_title": "Valores nutricionales",
   "@edit_product_form_item_nutrition_facts_explanation_info1_title": {
     "description": "Text explaining the selector of nutritional values."
   },
-  "edit_product_form_item_nutrition_facts_explanation_info1_content": "First, select if the **values are provided**:",
+  "edit_product_form_item_nutrition_facts_explanation_info1_content": "Primero, seleccioná si los **valores están proporcionados**:",
   "@edit_product_form_item_nutrition_facts_explanation_info1_content": {
     "description": "Text explaining the selector of nutritional values."
   },
@@ -1918,19 +1918,19 @@
   "@edit_product_form_item_nutrition_facts_explanation_info2_title": {
     "description": "Text explaining how to input nutritional values."
   },
-  "edit_product_form_item_nutrition_facts_explanation_info2_content": "Then, input the nutritional values **as indicated on the packaging**. If there is no value, you can click on the \"Eye\" icon.",
+  "edit_product_form_item_nutrition_facts_explanation_info2_content": "Luego, ingresá los valores nutricionales **como se indica en el envase**. Si no hay un valor, podés hacer clic en el ícono del \"Ojo\".",
   "@edit_product_form_item_nutrition_facts_explanation_info2_content": {
     "description": "Text explaining how to input nutritional values."
   },
-  "edit_product_form_item_nutrition_facts_explanation_info3_title": "Missing field?",
+  "edit_product_form_item_nutrition_facts_explanation_info3_title": "¿Falta un campo?",
   "@edit_product_form_item_nutrition_facts_explanation_info3_title": {
     "description": "Text explaining what to input when a nutritional value is missing."
   },
-  "edit_product_form_item_nutrition_facts_explanation_info3_content": "If an entry is missing, you can **click on the \"Plus\" icon** to add it (eg: vitamin D, magnesium…).",
+  "edit_product_form_item_nutrition_facts_explanation_info3_content": "Si falta una entrada, podés **hacer clic en el ícono \"Más\"** para añadirla (ej: vitamina D, magnesio…).",
   "@edit_product_form_item_nutrition_facts_explanation_info3_content": {
     "description": "Text explaining what to input when a nutritional value is missing."
   },
-  "edit_product_form_save": "Editar",
+  "edit_product_form_save": "Guardar",
   "@edit_product_form_save": {
     "description": "Product edition - Nutrition facts - Save button"
   },
@@ -1962,10 +1962,10 @@
   "@origins_editing_title": {
     "description": "Title of the button where users can edit the origins of a product"
   },
-  "completed_basic_details_btn_text": "Completa los detalles básicos",
+  "completed_basic_details_btn_text": "Completá los detalles básicos",
   "not_implemented_snackbar_text": "Aún sin implementar",
   "category_picker_page_appbar_text": "Categorías",
-  "edit_ingredients_extract_ingredients_btn_text": "Extract ingredients from the photo",
+  "edit_ingredients_extract_ingredients_btn_text": "Extraer ingredientes de la foto",
   "@edit_ingredients_extract_ingredients_btn_text": {
     "description": "Ingredients edition - Extract ingredients"
   },
@@ -1973,7 +1973,7 @@
   "@edit_ingredients_extract_ingredients_btn_text_short": {
     "description": "Ingredients edition - Extract ingredients (short label)"
   },
-  "edit_ingredients_extracting_ingredients_btn_text": "Extracting ingredients\nfrom the photo",
+  "edit_ingredients_extracting_ingredients_btn_text": "Extrayendo ingredientes\nde la foto",
   "@edit_ingredients_extracting_ingredients_btn_text": {
     "description": "Ingredients edition - Extracting ingredients"
   },
@@ -1985,7 +1985,7 @@
   "@edit_ingredients_loading_photo_help_dialog_title": {
     "description": "Ingredients edition - Dialog explaining why the photo is loading - Title"
   },
-  "edit_ingredients_loading_photo_help_dialog_body": "To use the \"Extract ingredients\" feature, the photo needs to be uploaded first.\n\nPlease wait a few seconds or enter them manually.",
+  "edit_ingredients_loading_photo_help_dialog_body": "Para usar la función \"Extraer ingredientes\", primero se debe subir la foto.\n\nPor favor, esperá unos segundos o ingresalos manualmente.",
   "@edit_ingredients_loading_photo_help_dialog_body": {
     "description": "Ingredients edition - Dialog explaining why the photo is loading - Content"
   },
@@ -1993,7 +1993,7 @@
   "@edit_ingredients_refresh_photo_btn_text": {
     "description": "Ingredients edition - Refresh photo"
   },
-  "edit_packaging_extract_btn_text": "Extract packaging\nfrom the photo",
+  "edit_packaging_extract_btn_text": "Extraer envase\nde la foto",
   "@edit_packaging_extract_btn_text": {
     "description": "Packaging edition - OCR-Extract packaging"
   },
@@ -2001,7 +2001,7 @@
   "@edit_packaging_extract_btn_text_short": {
     "description": "Packaging edition - OCR-Extract packaging (short label)"
   },
-  "edit_packaging_extracting_btn_text": "Extracting packaging from the photo",
+  "edit_packaging_extracting_btn_text": "Extrayendo envase de la foto",
   "@edit_packaging_extracting_btn_text": {
     "description": "Packaging edition - OCR-Extracting packaging"
   },
@@ -2013,7 +2013,7 @@
   "@edit_packaging_loading_photo_help_dialog_title": {
     "description": "Packaging edition - Dialog explaining why the photo is loading - Title"
   },
-  "edit_packaging_loading_photo_help_dialog_body": "To use the \"Extract packaging\" feature, the photo needs to be uploaded first.\n\nPlease wait a few seconds or enter them manually.",
+  "edit_packaging_loading_photo_help_dialog_body": "Para usar la función \"Extraer envase\", primero se debe subir la foto.\n\nPor favor, esperá unos segundos o ingresalos manually.",
   "@edit_packaging_loading_photo_help_dialog_body": {
     "description": "Packaging edition - Dialog explaining why the photo is loading - Content"
   },
@@ -2025,11 +2025,11 @@
   "@edit_ocr_extract_failed": {
     "description": "OCR extraction - message for failed"
   },
-  "edit_ocr_extract_disabled_title": "Sin imagen!",
+  "edit_ocr_extract_disabled_title": "¡Sin imagen!",
   "@edit_ocr_extract_disabled_title": {
     "description": "OCR extraction - title for disabled"
   },
-  "edit_ocr_extract_disabled_message": "Para poder utilizar la función de extracción de texto, primero debe tomar una foto.",
+  "edit_ocr_extract_disabled_message": "Para poder utilizar la función de extracción de texto, primero debés tomar una foto.",
   "@edit_ocr_extract_disabled_message": {
     "description": "OCR extraction - message for disabled"
   },
@@ -2049,7 +2049,7 @@
   "@user_list_title": {
     "description": "Label for the user lists (when the user wants to add a product to a list)"
   },
-  "user_list_add_product": "Añade el producto a tus listas",
+  "user_list_add_product": "Añadí el producto a tus listas",
   "@user_list_add_product": {
     "description": "Label for the dialog to add a product to a list"
   },
@@ -2057,7 +2057,7 @@
   "@user_list_button_new": {
     "description": "Short label of a 'create a new list' button"
   },
-  "user_list_empty_label": "No hay ninguna lista disponible, puedes crear una.",
+  "user_list_empty_label": "No hay ninguna lista disponible, podés crear una.",
   "@user_list_empty_label": {
     "description": "Content displayed when there is no list"
   },
@@ -2093,19 +2093,19 @@
   "@user_list_name_error_same": {
     "description": "Validation error about the renamed name that is the same as the initial list name"
   },
-  "user_list_name_input_hint": "Name of the list",
+  "user_list_name_input_hint": "Nombre de la lista",
   "@user_list_name_input_hint": {
     "description": "A hint to indicate that the user should input a name of a list"
   },
-  "try_again": "Inténtalo de nuevo",
+  "try_again": "Intentalo de nuevo",
   "@try_again": {
     "description": "Label for buttons that try to repeat a failed action"
   },
-  "there_was_an_error": "Ha ocurrido un error",
+  "there_was_an_error": "Ocurrió un error",
   "@there_was_an_error": {
     "description": "Label that presents a error"
   },
-  "category_picker_no_category_found_message": "No se ha encontrado ninguna categoría para {items}",
+  "category_picker_no_category_found_message": "No se encontró ninguna categoría para {items}",
   "@category_picker_no_category_found_message": {
     "description": "Label when no category is available",
     "placeholders": {
@@ -2114,11 +2114,11 @@
       }
     }
   },
-  "camera_toggle_camera": "Cambia entre la cámara frontal y la trasera",
+  "camera_toggle_camera": "Cambiá entre la cámara frontal y la trasera",
   "@camera_toggle_camera": {
     "description": "Explanation for the icon to switch between cameras"
   },
-  "camera_toggle_flash": "Activa o desactiva el flash de la cámara",
+  "camera_toggle_flash": "Activá o desactivá el flash de la cámara",
   "@camera_toggle_flash": {
     "description": "Explanation for the icon to turn on/off the flash"
   },
@@ -2130,11 +2130,11 @@
   "@camera_disable_flash": {
     "description": "Disable flash (tooltip)"
   },
-  "camera_flash_error_dialog_title": "¡Ha ocurrido un error!",
+  "camera_flash_error_dialog_title": "¡Ocurrió un error!",
   "@camera_flash_error_dialog_title": {
     "description": "Title of the dialog explaining that an error happened while enabling/disabling the flash of the camera"
   },
-  "camera_flash_error_dialog_message": "Ha ocurrido un error al cambiar el estado del flash. Asegúrate que tu móvil no tenga la linterna encendida.",
+  "camera_flash_error_dialog_message": "Ocurrió un error al cambiar el estado del flash. Asegurate que tu móvil no tenga la linterna encendida.",
   "@camera_flash_error_dialog_message": {
     "description": "Content of the dialog explaining that an error happened while enabling/disabling the flash of the camera"
   },
@@ -2142,7 +2142,7 @@
   "@category_picker_no_category_found_button": {
     "description": "Button label when no category is available"
   },
-  "user_preferences_item_accessibility_hint": "Haz clic para abrir en el navegador o en la aplicación (si está instalada)",
+  "user_preferences_item_accessibility_hint": "Hacé clic para abrir en el navegador o en la aplicación (si está instalada)",
   "@user_preferences_item_accessibility_hint": {
     "description": "A hint for screen readers to explain how external links work"
   },
@@ -2246,11 +2246,11 @@
   "@dev_preferences_news_custom_url_title": {
     "description": "News dev preferences - Custom URL for news - Title"
   },
-  "dev_preferences_news_custom_url_subtitle": "URL of the JSON file:",
+  "dev_preferences_news_custom_url_subtitle": "URL del archivo JSON:",
   "@dev_preferences_news_custom_url_subtitle": {
     "description": "News dev preferences - Custom URL for news - Title"
   },
-  "dev_preferences_news_custom_url_empty_value": "Not set",
+  "dev_preferences_news_custom_url_empty_value": "No establecido",
   "@dev_preferences_news_custom_url_empty_value": {
     "description": "Message to show when the custom news URL is not set"
   },
@@ -2268,16 +2268,16 @@
     }
   },
   "product_type_label_food": "Alimento",
-  "product_type_label_beauty": "Personal care",
+  "product_type_label_beauty": "Cuidado personal",
   "product_type_label_pet_food": "Alimento para mascotas",
   "product_type_label_product": "Otro",
-  "product_type_selection_title": "Product type",
-  "product_type_selection_subtitle": "Select the type of this product",
-  "product_type_selection_empty": "You need to select a product type first!",
+  "product_type_selection_title": "Tipo de producto",
+  "product_type_selection_subtitle": "Seleccioná el tipo de este producto",
+  "product_type_selection_empty": "¡Primero tenés que seleccionar un tipo de producto!",
   "@product_type_selection_empty": {
     "description": "Error message about product type that needs to be set"
   },
-  "product_type_selection_already": "You cannot change the product type ({productType})!",
+  "product_type_selection_already": "¡No podés cambiar el tipo de producto ({productType})!",
   "@product_type_selection_already": {
     "description": "Error message about product type that cannot be set again",
     "placeholders": {
@@ -2288,12 +2288,12 @@
   },
   "prices_app_dev_mode_flag": "Acceso directo a la aplicación Prices en la página del producto",
   "prices_app_button": "Ir a la aplicación Prices",
-  "prices_bulk_proof_upload_select": "Add price tags directly from gallery",
-  "prices_bulk_proof_upload_warning": "Once you've selected images, you won't be able to edit them!",
-  "prices_bulk_proof_upload_warning_ai": "AI will run on your proofs to extract prices.",
+  "prices_bulk_proof_upload_select": "Añadir etiquetas de precios directamente desde la galería",
+  "prices_bulk_proof_upload_warning": "Una vez que hayas seleccionado las imágenes, ¡no podrás editarlas!",
+  "prices_bulk_proof_upload_warning_ai": "La IA se ejecutará en tus pruebas para extraer los precios.",
   "prices_bulk_proof_upload_community_switch": "Permitir que la comunidad valide los precios extraídos por IA.",
-  "prices_bulk_proof_upload_subtitle": "Multiple Price Tags",
-  "prices_bulk_proof_upload_title": "Bulk Proof Upload",
+  "prices_bulk_proof_upload_subtitle": "Múltiples etiquetas de precios",
+  "prices_bulk_proof_upload_title": "Carga masiva de pruebas",
   "prices_bulk_proof_upload_step_selecting": "Seleccionar archivos",
   "prices_bulk_proof_upload_step_starting": "Iniciando la carga",
   "prices_bulk_proof_upload_step_copying": "Copiando localmente el archivo #{index}/{count}",
@@ -2333,13 +2333,13 @@
     }
   },
   "prices_generic_title": "Precios",
-  "prices_add_n_prices": "{count,plural, =1{Add a price} other{Add {count} prices}}",
-  "prices_send_n_prices": "{count,plural, =1{Send the price} other{Send {count} prices}}",
-  "prices_add_an_item": "Add an item",
+  "prices_add_n_prices": "{count,plural, =1{Añadir un precio} other{Añadir {count} precios}}",
+  "prices_send_n_prices": "{count,plural, =1{Enviar el precio} other{Enviar {count} precios}}",
+  "prices_add_an_item": "Añadir un artículo",
   "prices_add_a_price": "Añadir un precio",
-  "prices_add_a_receipt": "Add a receipt",
-  "prices_add_price_tags": "Add price tags",
-  "prices_barcode_already": "This barcode ({barcode}) is already in the list!",
+  "prices_add_a_receipt": "Añadir un ticket",
+  "prices_add_price_tags": "Añadir etiquetas de precio",
+  "prices_barcode_already": "¡Este código de barras ({barcode}) ya está en la lista!",
   "@prices_barcode_already": {
     "description": "Error message about barcode being already there",
     "placeholders": {
@@ -2349,7 +2349,7 @@
     }
   },
   "prices_barcode_search_not_found": "Producto no encontrado",
-  "prices_barcode_search_none_yet": "No product yet",
+  "prices_barcode_search_none_yet": "Todavía no hay productos",
   "prices_barcode_search_running": "Buscando {barcode}",
   "@prices_barcode_search_running": {
     "description": "Dialog title about barcode look-up",
@@ -2359,7 +2359,7 @@
       }
     }
   },
-  "prices_barcode_enter": "Enter the Barcode",
+  "prices_barcode_enter": "Ingresá el código de barras",
   "prices_category_enter": "Artículo sin código de barras",
   "prices_per_kilogram": "Precio por kilogramo",
   "@prices_per_kilogram": {
@@ -2387,7 +2387,7 @@
   "@prices_list_count": {
     "description": "Label for the number of prices in the list (please inject the line break at the middle)"
   },
-  "prices_list_add_new_price": "Añade un nuevo precio de\n",
+  "prices_list_add_new_price": "Añadí un nuevo precio de\n",
   "@prices_list_add_new_price": {
     "description": "Button to add a new price in the list (please inject the line break at the middle)"
   },
@@ -2406,7 +2406,7 @@
   "prices_entry_menu_my_prices": "Ver mis otros precios",
   "prices_entry_menu_author_prices": "Ver otros precios del autor",
   "prices_entry_menu_shop_prices": "Ver otros precios en la tienda",
-  "prices_product_accessibility_summary": "{count,plural, =1{1 price} other{{count} prices}} for {product}",
+  "prices_product_accessibility_summary": "{count,plural, =1{1 precio} other{{count} precios}} para {product}",
   "@prices_product_accessibility_summary": {
     "description": "A card summarizing the number of prices for a product",
     "placeholders": {
@@ -2418,7 +2418,7 @@
       }
     }
   },
-  "prices_list_length_one_page": "{count,plural, =0{No price yet} =1{Only one price} other{All {count} prices}}",
+  "prices_list_length_one_page": "{count,plural, =0{Aún no hay precios} =1{Solo un precio} other{Todos los {count} precios}}",
   "@prices_list_length_one_page": {
     "description": "Number of prices for one-page result",
     "placeholders": {
@@ -2427,7 +2427,7 @@
       }
     }
   },
-  "prices_list_length_many_pages": "Latest {pageSize} prices (total: {total})",
+  "prices_list_length_many_pages": "Últimos {pageSize} precios (total: {total})",
   "@prices_list_length_many_pages": {
     "description": "Number of prices for one-page result",
     "placeholders": {
@@ -2439,7 +2439,7 @@
       }
     }
   },
-  "prices_entry_accessibility_label": "Price: {price} / Store: \"{location}\" / Published on {date} by \"{user}\"",
+  "prices_entry_accessibility_label": "Precio: {price} / Tienda: \"{location}\" / Publicado el {date} por \"{user}\"",
   "@prices_entry_accessibility_label": {
     "description": "Accessibility label for a price entry",
     "placeholders": {
@@ -2457,7 +2457,7 @@
       }
     }
   },
-  "prices_open_user_proofs": "Open proofs of \"{user}\"",
+  "prices_open_user_proofs": "Abrir pruebas de \"{user}\"",
   "@prices_open_user_proofs": {
     "description": "Button to open the proofs of a user",
     "placeholders": {
@@ -2466,11 +2466,11 @@
       }
     }
   },
-  "prices_open_proof": "Open price proof",
+  "prices_open_proof": "Abrir prueba de precio",
   "@prices_open_proof": {
     "description": "Button to open a proof"
   },
-  "prices_proofs_list_length_one_page": "{count,plural, =0{No proof yet} =1{Only one proof} other{All {count} proofs}}",
+  "prices_proofs_list_length_one_page": "{count,plural, =0{Aún no hay pruebas} =1{Solo una prueba} other{Todas las {count} pruebas}}",
   "@prices_proofs_list_length_one_page": {
     "description": "Number of proofs for one-page result",
     "placeholders": {
@@ -2479,7 +2479,7 @@
       }
     }
   },
-  "prices_proofs_list_length_many_pages": "Latest {pageSize} proofs (total: {total})",
+  "prices_proofs_list_length_many_pages": "Últimas {pageSize} pruebas (total: {total})",
   "@prices_proofs_list_length_many_pages": {
     "description": "Number of proofs for one-page result",
     "placeholders": {
@@ -2491,7 +2491,7 @@
       }
     }
   },
-  "prices_users_list_length_many_pages": "Top {pageSize} contributors (total: {total})",
+  "prices_users_list_length_many_pages": "Top {pageSize} colaboradores (total: {total})",
   "@prices_users_list_length_many_pages": {
     "description": "Number of users for one-page result",
     "placeholders": {
@@ -2503,7 +2503,7 @@
       }
     }
   },
-  "prices_locations_list_length_many_pages": "Top {pageSize} locations (total: {total})",
+  "prices_locations_list_length_many_pages": "Top {pageSize} ubicaciones (total: {total})",
   "@prices_locations_list_length_many_pages": {
     "description": "Number of locations for one-page result",
     "placeholders": {
@@ -2515,7 +2515,7 @@
       }
     }
   },
-  "prices_button_count_proof": "{count,plural, =0{No proof} =1{One proof} other{{count} proofs}}",
+  "prices_button_count_proof": "{count,plural, =0{Sin pruebas} =1{Una prueba} other{{count} pruebas}}",
   "@prices_button_count_proof": {
     "description": "Number of proofs, for a button",
     "placeholders": {
@@ -2524,7 +2524,7 @@
       }
     }
   },
-  "prices_button_count_product": "{count,plural, =0{No product} =1{One product} other{{count} products}}",
+  "prices_button_count_product": "{count,plural, =0{Sin productos} =1{Un producto} other{{count} productos}}",
   "@prices_button_count_product": {
     "description": "Number of products, for a button",
     "placeholders": {
@@ -2533,7 +2533,7 @@
       }
     }
   },
-  "prices_button_count_user": "{count,plural, =0{No user} =1{One user} other{{count} users}}",
+  "prices_button_count_user": "{count,plural, =0{Sin usuarios} =1{Un usuario} other{{count} usuarios}}",
   "@prices_button_count_user": {
     "description": "Number of users, for a button",
     "placeholders": {
@@ -2542,7 +2542,7 @@
       }
     }
   },
-  "prices_button_count_price": "{count,plural, =0{No price} =1{One price} other{{count} prices}}",
+  "prices_button_count_price": "{count,plural, =0{Sin precios} =1{Un precio} other{{count} precios}}",
   "@prices_button_count_price": {
     "description": "Number of prices, for a button",
     "placeholders": {
@@ -2552,36 +2552,36 @@
     }
   },
   "prices_amount_existing_subtitle": "Precio previamente añadido",
-  "prices_amount_subtitle": "Amount",
+  "prices_amount_subtitle": "Importe",
   "prices_amount_is_discounted": "¿Está rebajado?",
   "prices_amount_price_normal": "Precio",
   "prices_amount_price_discounted": "Precio con descuento",
   "prices_amount_price_not_discounted": "Precio original",
-  "prices_amount_no_product": "One product is missing!",
-  "prices_amount_price_incorrect": "Incorrect value",
-  "prices_amount_price_mandatory": "Mandatory value",
+  "prices_amount_no_product": "¡Falta un producto!",
+  "prices_amount_price_incorrect": "Valor incorrecto",
+  "prices_amount_price_mandatory": "Valor obligatorio",
   "prices_currency_subtitle": "Moneda",
   "prices_date_subtitle": "Fecha",
-  "prices_location_subtitle": "Shop",
-  "prices_location_find": "Find a shop",
-  "prices_location_mandatory": "You need to select a shop!",
-  "prices_location_search_broader": "Couldn't find what you were looking for? Let's try a broader search!",
+  "prices_location_subtitle": "Tienda",
+  "prices_location_find": "Encontrar una tienda",
+  "prices_location_mandatory": "¡Tenés que seleccionar una tienda!",
+  "prices_location_search_broader": "¿No encontraste lo que buscabas? ¡Probemos una búsqueda más amplia!",
   "prices_proof_subtitle": "Comprobante",
-  "prices_proof_find": "Select a proof",
+  "prices_proof_find": "Seleccioná una prueba",
   "prices_proof_receipt": "Ticket",
   "prices_proof_price_tag": "Etiqueta de precio",
-  "prices_proof_mandatory": "You need to select a proof!",
-  "prices_add_validation_error": "Validation error",
-  "prices_privacy_warning_title": "Privacy warning",
+  "prices_proof_mandatory": "¡Tenés que seleccionar una prueba!",
+  "prices_add_validation_error": "Error de validación",
+  "prices_privacy_warning_title": "Advertencia de privacidad",
   "prices_unknown_product": "Producto desconocido",
-  "prices_privacy_warning_main_message": "Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your luppa pseudonym to:\n",
-  "prices_privacy_warning_message_bullet_1": "Infer in which area you live",
-  "prices_privacy_warning_message_bullet_2": "Know what you are buying",
-  "prices_privacy_warning_sub_message": "If you are uneasy with that, please change your pseudonym, or create a new luppa account and log into the app with it.",
-  "i_refuse": "I refuse",
-  "i_accept": "I accept",
-  "prices_currency_change_proposal_title": "Change the currency?",
-  "prices_currency_change_proposal_message": "Your current currency is **{currency}**. Would you like to change it to **{newCurrency}**?",
+  "prices_privacy_warning_main_message": "Los precios **serán públicos**, junto con la tienda a la que se refieren.\n\nEso podría permitir que las personas que conocen tu seudónimo de luppa:\n",
+  "prices_privacy_warning_message_bullet_1": "Deduzcan en qué zona vivís",
+  "prices_privacy_warning_message_bullet_2": "Sepan lo que estás comprando",
+  "prices_privacy_warning_sub_message": "Si no te sentís cómodo con esto, por favor cambiá tu seudónimo, o creá una nueva cuenta de luppa e iniciá sesión en la app con ella.",
+  "i_refuse": "Me niego",
+  "i_accept": "Acepto",
+  "prices_currency_change_proposal_title": "¿Cambiar la moneda?",
+  "prices_currency_change_proposal_message": "Tu moneda actual es **{currency}**. ¿Te gustaría cambiarla a **{newCurrency}**?",
   "@prices_currency_change_proposal_message": {
     "description": "Message to ask the user if they want to change the currency",
     "placeholders": {
@@ -2593,7 +2593,7 @@
       }
     }
   },
-  "prices_currency_change_proposal_action_approve": "Yes, use {newCurrency}",
+  "prices_currency_change_proposal_action_approve": "Sí, usar {newCurrency}",
   "@prices_currency_change_proposal_action_approve": {
     "description": "Button to approve the currency change",
     "placeholders": {
@@ -2602,7 +2602,7 @@
       }
     }
   },
-  "prices_currency_change_proposal_action_cancel": "No, keep {currency}",
+  "prices_currency_change_proposal_action_cancel": "No, mantener {currency}",
   "@prices_currency_change_proposal_action_cancel": {
     "description": "Button to cancel the currency change",
     "placeholders": {
@@ -2619,12 +2619,12 @@
     "description": "User dev preferences - Import history - Result successful"
   },
   "dev_mode_section_server": "Configuración del servidor",
-  "dev_mode_section_news": "News provider configuration",
+  "dev_mode_section_news": "Configuración del proveedor de noticias",
   "dev_mode_section_product_page": "Página del producto",
   "dev_mode_section_ui": "Interfaz de usuario",
   "dev_mode_section_data": "Datos",
   "dev_mode_section_experimental_features": "Funciones experimentales",
-  "dev_preferences_show_folksonomy_title": "Exclude Folksonomy",
+  "dev_preferences_show_folksonomy_title": "Excluir Folksonomy",
   "@dev_preferences_show_folksonomy_title": {
     "description": "Title for switch toggle to show or hide folksonomy, product tags on product details page"
   },
@@ -2632,7 +2632,7 @@
   "@dev_mode_hide_environmental_score_title": {
     "description": "User dev preferences - Disable Green Score - Title"
   },
-  "dev_mode_spellchecker_for_ocr_title": "Use a spellchecker for OCR screens",
+  "dev_mode_spellchecker_for_ocr_title": "Usar un corrector ortográfico para las pantallas de OCR",
   "@dev_mode_spellchecker_for_ocr_title": {
     "description": "User dev preferences - Enable Spellchecker on OCR screens - Title"
   },
@@ -2644,7 +2644,7 @@
   "@search_history_item_edit_tooltip": {
     "description": "A tooltip to explain the Pen button near a search term -> it allows to reuse the item"
   },
-  "product_search_no_more_results": "Has descargado todos los {totalSize} productos.",
+  "product_search_no_more_results": "Descargaste todos los {totalSize} productos.",
   "@product_search_no_more_results": {
     "description": "Product search list - No more results available",
     "placeholders": {
@@ -2668,22 +2668,22 @@
       }
     }
   },
-  "product_search_loading_message": "Tu búsqueda de {search} está en progreso.\n\nEspera unos segundos…",
+  "product_search_loading_message": "Tu búsqueda de {search} está en progreso.\n\nEsperá unos segundos…",
   "@product_search_loading_message": {
     "description": "This message will be displayed when a search is in progress.",
     "search": {
       "type": "String"
     }
   },
-  "user_search_contributor_title": "Productos que he añadido",
+  "user_search_contributor_title": "Productos que añadí",
   "@user_search_contributor_title": {
     "description": "User search (contributor): list tile title"
   },
-  "user_search_informer_title": "Productos que he editado",
+  "user_search_informer_title": "Productos que edité",
   "@user_search_informer_title": {
     "description": "User search (informer): list tile title"
   },
-  "user_search_photographer_title": "Productos que he fotografiado",
+  "user_search_photographer_title": "Productos que fotografié",
   "@user_search_photographer_title": {
     "description": "User search (photographer): list tile title"
   },
@@ -2699,7 +2699,7 @@
   "@user_search_proofs_title": {
     "description": "User proofs: list tile title"
   },
-  "user_search_proof_title": "My proof",
+  "user_search_proof_title": "Mi prueba",
   "@user_search_proof_title": {
     "description": "User proof: page title"
   },
@@ -2712,20 +2712,20 @@
       }
     }
   },
-  "all_search_prices_latest_title": "Latest Prices added",
+  "all_search_prices_latest_title": "Últimos precios añadidos",
   "@all_search_prices_latest_title": {
     "description": "Latest prices: list tile title"
   },
-  "all_search_prices_top_user_title": "Top price contributors",
+  "all_search_prices_top_user_title": "Principales colaboradores de precios",
   "@all_search_prices_top_user_title": {
     "description": "Top price users: list tile title"
   },
-  "all_search_prices_top_location_title": "Stores with the most prices",
+  "all_search_prices_top_location_title": "Tiendas con más precios",
   "@all_search_prices_top_location_title": {
     "description": "Top price locations: list tile title"
   },
   "prices_contribution_assistant": "Asistente de contribución de precios",
-  "prices_validation_assistant": "Price Validation Assistant",
+  "prices_validation_assistant": "Asistente de validación de precios",
   "@prices_validation_assistant": {
     "description": "List of prices to validate"
   },
@@ -2733,15 +2733,15 @@
   "@prices_challenges_page": {
     "description": "Community challenges of open prices"
   },
-  "prices_multiple_proof_addition_system": "Add Multiple Proofs",
+  "prices_multiple_proof_addition_system": "Añadir múltiples pruebas",
   "@prices_multiple_proof_addition_system": {
     "description": "Upload multiple proofs"
   },
-  "all_search_prices_top_location_single_title": "Prices in a store",
+  "all_search_prices_top_location_single_title": "Precios en una tienda",
   "@all_search_prices_top_location_single_title": {
     "description": "Top price locations: list tile title"
   },
-  "all_search_prices_top_product_title": "Products with the most prices",
+  "all_search_prices_top_product_title": "Productos con más precios",
   "@all_search_prices_top_product_title": {
     "description": "Top price products: list tile title"
   },
@@ -2749,7 +2749,7 @@
   "@all_search_to_be_completed_title": {
     "description": "All products to be completed: list tile title"
   },
-  "categorize_products_country_title": "Ayuda a categorizar productos en tu país",
+  "categorize_products_country_title": "Ayudá a categorizar productos en tu país",
   "@categorize_products_country_title": {
     "description": "Help categorize products in your country: list tile title"
   },
@@ -2795,7 +2795,7 @@
       }
     }
   },
-  "summary_card_button_add_basic_details": "Completa los detalles básicos",
+  "summary_card_button_add_basic_details": "Completá los detalles básicos",
   "@summary_card_button_add_basic_details": {
     "description": "Summary card - Button to add details about the product"
   },
@@ -2811,11 +2811,11 @@
   "@edit_photo_select_existing_button_label": {
     "description": "Edit 'select existing image' button label"
   },
-  "edit_photo_select_existing_all_label": "Existing images for this product",
+  "edit_photo_select_existing_all_label": "Imágenes existentes para este producto",
   "@edit_photo_select_existing_all_label": {
     "description": "Page title"
   },
-  "edit_photo_select_existing_all_subtitle": "Select an image by clicking on it",
+  "edit_photo_select_existing_all_subtitle": "Seleccioná una imagen haciendo clic en ella",
   "@edit_photo_select_existing_all_subtitle": {
     "description": "Page title"
   },
@@ -2841,27 +2841,27 @@
   },
   "basic_details": "Detalles básicos",
   "product_name": "Nombre del producto",
-  "product_names": "Product Names",
+  "product_names": "Nombres del producto",
   "@product_names": {
     "description": "Title for the section to edit the product name (in multiple languages)"
   },
-  "add_basic_details_product_name_add_translation": "Add a new translation",
+  "add_basic_details_product_name_add_translation": "Añadir una nueva traducción",
   "@add_basic_details_product_name_add_translation": {
     "description": "Button to add a new translation for the product name"
   },
-  "add_basic_details_product_name_warning_translations": "Before validating, please ensure you only add a translation **if the language is present on the packaging**",
+  "add_basic_details_product_name_warning_translations": "Antes de validar, asegurate de añadir solo una traducción **si el idioma está presente en el envase**",
   "@add_basic_details_product_name_warning_translations": {
     "description": "Warning message displayed on top of new translations for the product name"
   },
-  "add_basic_details_product_name_open_photo": "View front photo",
+  "add_basic_details_product_name_open_photo": "Ver foto frontal",
   "@add_basic_details_product_name_open_photo": {
     "description": "Button to view the front photo of the product (on top of the screen)"
   },
-  "add_basic_details_product_name_take_photo": "Take front photo",
+  "add_basic_details_product_name_take_photo": "Sacar foto frontal",
   "@add_basic_details_product_name_take_photo": {
     "description": "Button to take a photo of the front of the product (when there is no photo yet)"
   },
-  "add_basic_details_product_name_hint": "Ingrese el nombre del producto (por ejemplo: Nutella)",
+  "add_basic_details_product_name_hint": "Ingresá el nombre del producto (por ejemplo: Nutella)",
   "@add_basic_details_product_name_hint": {
     "description": "Placeholder when the product name text-field is empty"
   },
@@ -2869,7 +2869,7 @@
   "@add_basic_details_product_name_change_main_language_title": {
     "description": "Title of the dialog to change the main language of the product name"
   },
-  "add_basic_details_product_name_change_main_language_text": "¿Quieres que el idioma predeterminado del producto se establezca en '{language}'?",
+  "add_basic_details_product_name_change_main_language_text": "¿Querés que el idioma predeterminado del producto se establezca en '{language}'?",
   "@add_basic_details_product_name_change_main_language_text": {
     "description": "Content of the dialog to change the main language of the product name. Please keep the language surrounded by ** and \"",
     "placeholders": {
@@ -2878,23 +2878,23 @@
       }
     }
   },
-  "explanation_section_good_examples": "Good examples",
+  "explanation_section_good_examples": "Buenos ejemplos",
   "@explanation_section_good_examples": {
     "description": "Title for the section with good examples"
   },
-  "explanation_section_bad_examples": "Bad examples",
+  "explanation_section_bad_examples": "Malos ejemplos",
   "@explanation_section_bad_examples": {
     "description": "Title for the section with bad examples"
   },
-  "add_basic_details_product_name_help_title": "Good practices: Product name",
+  "add_basic_details_product_name_help_title": "Buenas prácticas: Nombre del producto",
   "@add_basic_details_product_name_help_title": {
     "description": "Title for the help section about the product name"
   },
-  "add_basic_details_product_name_help_info1": "The product name is the **main name printed on the packaging**. It can be a registered trademark.",
+  "add_basic_details_product_name_help_info1": "El nombre del producto es el **nombre principal impreso en el envase**. Puede ser una marca registrada.",
   "@add_basic_details_product_name_help_info1": {
     "description": "Text explaining how to write the product name"
   },
-  "add_basic_details_product_name_help_info2": "**Note:** Please don't add a translation **if the language is not present on the packaging**.",
+  "add_basic_details_product_name_help_info2": "**Nota:** Por favor, no agregues una traducción **si el idioma no está presente en el envase**.",
   "@add_basic_details_product_name_help_info2": {
     "description": "Text explaining how to write the product name"
   },
@@ -2906,15 +2906,15 @@
   "@add_basic_details_product_name_help_good_examples_2": {
     "description": "A 2nd good example for the product name (you can change it if necessary)"
   },
-  "add_basic_details_product_name_help_bad_examples_1_explanation": "Don't include the brand in the name",
+  "add_basic_details_product_name_help_bad_examples_1_explanation": "No incluyas la marca en el nombre",
   "@add_basic_details_product_name_help_bad_examples_1_explanation": {
     "description": "Explanation for the first bad example"
   },
-  "add_basic_details_product_name_help_bad_examples_1_example": "Tomato Ketchup **by Heinz**",
+  "add_basic_details_product_name_help_bad_examples_1_example": "Tomato Ketchup **de Heinz**",
   "@add_basic_details_product_name_help_bad_examples_1_example": {
     "description": "First bad example for the product name"
   },
-  "add_basic_details_product_name_help_bad_examples_2_explanation": "Don't use symbols ®, ™, © or similar",
+  "add_basic_details_product_name_help_bad_examples_2_explanation": "No uses símbolos ®, ™, © o similares",
   "@add_basic_details_product_name_help_bad_examples_2_explanation": {
     "description": "Explanation for the second bad example"
   },
@@ -2922,7 +2922,7 @@
   "@add_basic_details_product_name_help_bad_examples_2_example": {
     "description": "Second bad example for the product name"
   },
-  "add_basic_details_product_name_other_translations": "{count,plural, one{{count} other translation} other{{count} other translations}}",
+  "add_basic_details_product_name_other_translations": "{count,plural, one{{count} otra traducción} other{{count} otras traducciones}}",
   "@add_basic_details_product_name_other_translations": {
     "description": "The number of other translations for a product name (count is always >= 1)",
     "placeholders": {
@@ -2933,13 +2933,13 @@
   },
   "brand_name": "Nombre de la marca",
   "brand_names": "Nombres de la marca",
-  "add_basic_details_brand_name_error": "Por favor, introduce el nombre de la marca",
-  "add_basic_details_brand_names_hint": "Ingrese las marcas (por ejemplo Ferrero)",
-  "add_basic_details_product_brand_help_title": "Good practices: Brands",
+  "add_basic_details_brand_name_error": "Por favor, introducí el nombre de la marca",
+  "add_basic_details_brand_names_hint": "Ingresá las marcas (por ejemplo Ferrero)",
+  "add_basic_details_product_brand_help_title": "Buenas prácticas: Marcas",
   "@add_basic_details_product_brand_help_title": {
     "description": "Title for the help section about the product brands"
   },
-  "add_basic_details_product_brand_help_info1": "Input **all the brands of the product**.",
+  "add_basic_details_product_brand_help_info1": "Ingresá **todas las marcas del producto**.",
   "@add_basic_details_product_brand_help_info1": {
     "description": "Text explaining how to write brands"
   },
@@ -2947,7 +2947,7 @@
   "@add_basic_details_product_brand_help_info2_title": {
     "description": "Text explaining how to write brands"
   },
-  "add_basic_details_product_brand_help_info2_content": "The **main brand**, generally clearly displayed on the front pack, should be **entered first**.",
+  "add_basic_details_product_brand_help_info2_content": "La **marca principal**, generalmente mostrada de forma clara en el frente del paquete, debe **ingresarse primero**.",
   "@add_basic_details_product_brand_help_info2_content": {
     "description": "Text explaining how to write brands"
   },
@@ -2955,19 +2955,19 @@
   "@add_basic_details_product_brand_help_info3_title": {
     "description": "Text explaining how to write brands"
   },
-  "add_basic_details_product_brand_help_info3_item1_text": "When sold **by a big company**:",
+  "add_basic_details_product_brand_help_info3_item1_text": "Cuando es vendido **por una gran empresa**:",
   "@add_basic_details_product_brand_help_info3_item1_text": {
     "description": "Text explaining how to write brands"
   },
-  "add_basic_details_product_brand_help_info3_item1_explanation": "**Actimel** is sold by **Danone**",
+  "add_basic_details_product_brand_help_info3_item1_explanation": "**Actimel** es vendido por **Danone**",
   "@add_basic_details_product_brand_help_info3_item1_explanation": {
     "description": "Text explaining how to write brands"
   },
-  "add_basic_details_product_brand_help_info3_item2_text": "When sold with its brand **translated in multiple languages**:",
+  "add_basic_details_product_brand_help_info3_item2_text": "Cuando se vende con su marca **traducida a varios idiomas**:",
   "@add_basic_details_product_brand_help_info3_item2_text": {
     "description": "Text explaining how to write brands"
   },
-  "add_basic_details_product_brand_help_info3_item2_explanation": "**Nature Valley** is sometimes written **Val Nature**",
+  "add_basic_details_product_brand_help_info3_item2_explanation": "**Nature Valley** a veces se escribe **Val Nature**",
   "@add_basic_details_product_brand_help_info3_item2_explanation": {
     "description": "Text explaining how to write brands"
   },
@@ -2980,12 +2980,12 @@
     "description": "A 2nd good example for the brand name (you can change it if necessary)"
   },
   "quantity": "Cantidad y peso",
-  "add_basic_details_quantity_hint": "Ingrese el peso y si es necesario la cantidad (por ejemplo: 4x100g)",
+  "add_basic_details_quantity_hint": "Ingresá el peso y si es necesario la cantidad (por ejemplo: 4x100g)",
   "add_basic_details_product_quantity_help_title": "Buenas prácticas: Cantidad",
   "@add_basic_details_product_quantity_help_title": {
     "description": "Title for the help section about the product quantity"
   },
-  "add_basic_details_product_quantity_help_info1": "Copy the value indicated on the product and **don't forget the units**.",
+  "add_basic_details_product_quantity_help_info1": "Copiá el valor indicado en el producto y **no te olvides de las unidades**.",
   "@add_basic_details_product_quantity_help_info1": {
     "description": "Text explaining how to write quantity"
   },
@@ -2997,7 +2997,7 @@
   "@add_basic_details_product_quantity_help_good_examples_2": {
     "description": "A 2nd good example for the quantity (you can change it if necessary)"
   },
-  "add_basic_details_product_quantity_help_good_examples_3": "**3 x 150g**\n(for a product with 3 boxes, each of 150g)",
+  "add_basic_details_product_quantity_help_good_examples_3": "**3 x 150g**\n(para un producto con 3 cajas, cada una de 150g)",
   "@add_basic_details_product_quantity_help_good_examples_3": {
     "description": "A 2nd good example for the quantity (you can change it if necessary)"
   },
@@ -3013,7 +3013,7 @@
   },
   "barcode_invalid_error": "Código de barras no válido",
   "basic_details_add_success": "Detalles básicos añadidos con éxito",
-  "basic_details_add_error": "No se han podido añadir los aspectos básicos. Vuelve a intentarlo en un rato.",
+  "basic_details_add_error": "No se pudieron añadir los aspectos básicos. Volvé a intentarlo en un rato.",
   "@basic_details_add_error": {
     "description": "Error message when error occurs while submitting basic details"
   },
@@ -3021,14 +3021,14 @@
   "@confirm_clearclear_search": {
     "description": "Tooltip to explain that the X button clears the content of the search"
   },
-  "confirm_clear": "Estás a punto de eliminar todo tu historial, ¿seguro que deseas continuar?",
+  "confirm_clear": "Estás a punto de eliminar todo tu historial, ¿seguro que deseás continuar?",
   "@confirm_clear": {
     "description": "Asking about whether to clear the history list or not"
   },
   "alert_clear_selected_user_list": "Estás a punto de eliminar los ítems seleccionados de tu historial.",
-  "confirm_clear_selected_user_list": "¿Seguro que deseas continuar?",
-  "alert_select_items_to_clear": "Selecciona uno o más ítems para eliminar.",
-  "confirm_clear_user_list": "Estás a punto de eliminar esta lista ({name}), ¿seguro que deseas continuar?",
+  "confirm_clear_selected_user_list": "¿Seguro que deseás continuar?",
+  "alert_select_items_to_clear": "Seleccioná uno o más ítems para eliminar.",
+  "confirm_clear_user_list": "Estás a punto de eliminar esta lista ({name}), ¿seguro que deseás continuar?",
   "@confirm_clear_user_list": {
     "description": "Asking about whether to clear the list or not",
     "placeholders": {
@@ -3041,7 +3041,7 @@
   "@confirm_delete_user_list_title": {
     "description": "Title when asking about whether to delete the list or not"
   },
-  "confirm_delete_user_list_message": "Estás a punto de eliminar la lista «{name}», ¿seguro que deseas continuar?",
+  "confirm_delete_user_list_message": "Estás a punto de eliminar la lista «{name}», ¿seguro que deseás continuar?",
   "@confirm_delete_user_list_message": {
     "description": "Message when asking about whether to delete the list or not",
     "placeholders": {
@@ -3070,11 +3070,11 @@
   "@user_list_all_title": {
     "description": "Title about the user lists in the user preferences"
   },
-  "user_list_all_empty": "Crea tu primera lista",
+  "user_list_all_empty": "Creá tu primera lista",
   "@user_list_all_empty": {
     "description": "Small message when there are no user lists"
   },
-  "product_list_select": "Selecciona una lista",
+  "product_list_select": "Seleccioná una lista",
   "@product_list_select": {
     "description": "Top title for the selection of a list"
   },
@@ -3089,7 +3089,7 @@
   "@add_list_label": {
     "description": "Label for the add list button"
   },
-  "open_food_preferences_tooltip": "Edita tus preferencias alimentarias",
+  "open_food_preferences_tooltip": "Editá tus preferencias alimentarias",
   "@open_food_preferences_tooltip": {
     "description": "Tooltip (message displayed on long press) to open the user food preferences"
   },
@@ -3097,19 +3097,19 @@
   "@add_photo_button_label": {
     "description": "Label for the add photo button"
   },
-  "add_packaging_photo_button_label": "Saca fotos de cualquier información del envase/reciclaje",
+  "add_packaging_photo_button_label": "Sacá fotos de cualquier información del envase/reciclaje",
   "@add_packaging_photo_button_label": {
     "description": "Label for the add PACKAGING photo button"
   },
-  "add_origin_photo_button_label": "Toma fotos de cualquier información del envase",
+  "add_origin_photo_button_label": "Tomá fotos de cualquier información del envase",
   "@add_origin_photo_button_label": {
     "description": "Label for the add ORIGIN photo button"
   },
-  "add_emb_photo_button_label": "Toma fotos de cualquier información del código de trazabilidad",
+  "add_emb_photo_button_label": "Tomá fotos de cualquier información del código de trazabilidad",
   "@add_emb_photo_button_label": {
     "description": "Label for the add EMB photo button"
   },
-  "add_label_photo_button_label": "Tomar fotos de cualquier etiqueta e información de certificaciones",
+  "add_label_photo_button_label": "Tomá fotos de cualquier etiqueta e información de certificaciones",
   "@add_label_photo_button_label": {
     "description": "Label for the add LABELS photo button"
   },
@@ -3117,7 +3117,7 @@
   "@choose_image_source_title": {
     "description": "Title for the image source chooser"
   },
-  "choose_image_source_body": "Por favor, elige la fuente de la imagen",
+  "choose_image_source_body": "Por favor, elegí la fuente de la imagen",
   "@choose_image_source_body": {
     "description": "Body for the image source chooser"
   },
@@ -3129,7 +3129,7 @@
   "@gallery_source_access_denied_dialog_title": {
     "description": "On iOS, the user has refused to give the permission (title of the dialog)"
   },
-  "gallery_source_access_denied_dialog_message_ios": "Lamentablemente, la aplicación no puede acceder a tu galería porque previamente le has denegado el permiso.\n\nVe a la configuración de la aplicación en tu teléfono móvil en Ajustes → Fotos",
+  "gallery_source_access_denied_dialog_message_ios": "Lamentablemente, la aplicación no puede acceder a tu galería porque previamente le denegaste el permiso.\n\nAndá a la configuración de la aplicación en tu teléfono móvil en Ajustes → Fotos",
   "@gallery_source_access_denied_dialog_message_ios": {
     "description": "On iOS, the user has refused to give the permission"
   },
@@ -3141,7 +3141,7 @@
   "@share": {
     "description": "Button label for sharing something on another app. For example sharing the link to a product via Email"
   },
-  "share_product_text": "Echa un vistazo a este producto en Luppa: {url}",
+  "share_product_text": "Mirá este producto en Luppa: {url}",
   "@share_product_text": {
     "description": "The content which is send, when sharing a 'food' product",
     "placeholders": {
@@ -3150,7 +3150,7 @@
       }
     }
   },
-  "share_product_text_beauty": "Have a look at this product on Open Beauty Facts: {url}",
+  "share_product_text_beauty": "Mirá este producto en Open Beauty Facts: {url}",
   "@share_product_text_beauty": {
     "description": "The content which is send, when sharing a 'beauty' product",
     "placeholders": {
@@ -3159,7 +3159,7 @@
       }
     }
   },
-  "share_product_text_pet_food": "Have a look at this product on Open PetFood Facts: {url}",
+  "share_product_text_pet_food": "Mirá este producto en Open PetFood Facts: {url}",
   "@share_product_text_pet_food": {
     "description": "The content which is send, when sharing a 'pet food' product",
     "placeholders": {
@@ -3168,7 +3168,7 @@
       }
     }
   },
-  "share_product_text_product": "Have a look at this product on Open Products Facts: {url}",
+  "share_product_text_product": "Mirá este producto en Open Products Facts: {url}",
   "@share_product_text_product": {
     "description": "The content which is send, when sharing a 'products' product",
     "placeholders": {
@@ -3177,7 +3177,7 @@
       }
     }
   },
-  "share_product_list_text": "Echa un vistazo a mi lista de productos en Luppa: {url}",
+  "share_product_list_text": "Mirá mi lista de productos en Luppa: {url}",
   "@share_product_list_text": {
     "description": "The content which is send, when sharing a product list",
     "placeholders": {
@@ -3190,7 +3190,7 @@
   "@capture": {
     "description": "Button label for taking a new photo (= there's already one)"
   },
-  "capture_new_picture": "Saca una foto",
+  "capture_new_picture": "Sacá una foto",
   "@capture_new_picture": {
     "description": "Button label for taking a new photo (= the first one)"
   },
@@ -3202,7 +3202,7 @@
   "@image_upload_queued": {
     "description": "Message when a photo is queued for upload"
   },
-  "add_price_queued": "The price will be sent to the server as soon as possible.",
+  "add_price_queued": "El precio se enviará al servidor tan pronto como sea posible.",
   "@add_price_queued": {
     "description": "Message when an added price is queued for the server"
   },
@@ -3224,8 +3224,8 @@
     "description": "Label for expanding nutrition facts table in application setting"
   },
   "expand_ingredients_body": "Mantener expandido el panel de ingredientes",
-  "search_product_filter_visibility_title": "Show a filter in the search",
-  "search_product_filter_visibility_subtitle": "Select search site: luppa, Open Beauty Facts, Open Pet Food Facts or Open Products Facts",
+  "search_product_filter_visibility_title": "Mostrar un filtro en la búsqueda",
+  "search_product_filter_visibility_subtitle": "Seleccionar sitio de búsqueda: luppa, Open Beauty Facts, Open Pet Food Facts u Open Products Facts",
   "@search_product_filter_visibility_subtitle": {
     "description": "Label for showing the product type filter in the search bar"
   },
@@ -3249,7 +3249,7 @@
   "@paste_from_clipboard": {
     "description": "Paste the content of the clipboard"
   },
-  "no_data_available_in_clipboard": "No data available in your clipboard",
+  "no_data_available_in_clipboard": "No hay datos disponibles en tu portapapeles",
   "@no_data_available_in_clipboard": {
     "description": "No data available in your clipboard"
   },
@@ -3258,7 +3258,7 @@
     "description": "Snackbar label after clipboard copy"
   },
   "clipboard_barcode_copied": "¡Código de barras {barcode} copiado al portapapeles!",
-  "open_product_website": "Open this product on the website",
+  "open_product_website": "Abrir este producto en el sitio web",
   "language_picker_label": "Tu idioma",
   "@language_picker_label": {
     "description": "Choose Application Language"
@@ -3279,11 +3279,11 @@
   "@product_task_background_schedule": {
     "description": "Message when a product is scheduled for background update"
   },
-  "no_email_client_available_dialog_title": "¡No hay aplicaciones de correo elecrtrónico!",
+  "no_email_client_available_dialog_title": "¡No hay aplicaciones de correo electrónico!",
   "@no_email_client_available_dialog_title": {
     "description": "Title for the dialog when no email client is installed on the device"
   },
-  "no_email_client_available_dialog_content": "Por favor envíanos un correo electrónico a mobile@luppa.ar",
+  "no_email_client_available_dialog_content": "Por favor envianos un correo electrónico a mobile@luppa.ar",
   "@no_email_client_available_dialog_content": {
     "description": "Content for the dialog when no email client is installed on the device"
   },
@@ -3307,19 +3307,19 @@
   "@scan_header_clear_button_tooltip": {
     "description": "Tooltip (message visible with a long-press) on the Clear button on top of the scanner"
   },
-  "scan_header_compare_button_invalid_state_tooltip": "Escanea por lo menos dos productos para poder compararlos.",
+  "scan_header_compare_button_invalid_state_tooltip": "Escaneá por lo menos dos productos para poder compararlos.",
   "@scan_header_compare_button_invalid_state_tooltip": {
     "description": "Tooltip (message visible with a long-press) on the Compare button on top of the scanner, when there is just one product scanned"
   },
-  "scan_header_compare_button_valid_state_tooltip": "Haz clic para comparar los productos que has escaneado.",
+  "scan_header_compare_button_valid_state_tooltip": "Hacé clic para comparar los productos que escaneaste.",
   "@scan_header_compare_button_valid_state_tooltip": {
     "description": "Tooltip (message visible with a long-press) on the Compare button on top of the scanner, when there is at least two products"
   },
-  "scan_product_loading": "Has escaneado\nel código de barras:",
+  "scan_product_loading": "Escaneaste\nel código de barras:",
   "@scan_product_loading": {
     "description": "Title when a product is loading (carousel card). Please ensure to keep the line break."
   },
-  "scan_product_loading_initial": "¡Estamos buscando este producto!\nPor favor, espera unos segundos…",
+  "scan_product_loading_initial": "¡Estamos buscando este producto!\nPor favor, esperá unos segundos…",
   "@scan_product_loading_initial": {
     "description": "Message when a product is loading (carousel card). Please ensure to keep the line break."
   },
@@ -3335,7 +3335,7 @@
   "@scan_product_loading_restart_button": {
     "description": "Button to force restart a product search"
   },
-  "portion_calculator_description": "Calcula información nutricional para una cantidad específica",
+  "portion_calculator_description": "Calculá información nutricional para una cantidad específica",
   "@portion_calculator_description": {
     "description": "Sort of title that describes the portion calculator."
   },
@@ -3343,11 +3343,11 @@
   "@portion_calculator_hint": {
     "description": "Hint to show when a quantity is empty in the portion calculator."
   },
-  "portion_calculator_accessibility": "Introduce una cantidad para calcular la información nutricional",
+  "portion_calculator_accessibility": "Introducí una cantidad para calcular la información nutricional",
   "@portion_calculator_accessibility": {
     "description": "Hint for the acessibility to explain to enter a quantity."
   },
-  "portion_calculator_error": "Por favor, introduce una cantidad entre {min} y {max} g",
+  "portion_calculator_error": "Por favor, introducí una cantidad entre {min} y {max} g",
   "@portion_calculator_error": {
     "description": "Error message to explain that the quantity is invalid.",
     "placeholders": {
@@ -3359,7 +3359,7 @@
       }
     }
   },
-  "portion_calculator_computation_error": "Missing data. Calculation could not be performed.",
+  "portion_calculator_computation_error": "Faltan datos. No se pudo realizar el cálculo.",
   "@portion_calculator_computation_error": {
     "description": "Error message to explain that the computation of the portion calculator failed."
   },
@@ -3376,7 +3376,7 @@
   "@offline_data": {
     "description": "App bar title for the offline data page"
   },
-  "ocr_image_upload_instruction": "Sube una imagen para extraer automáticamente la información que contiene.",
+  "ocr_image_upload_instruction": "Subí una imagen para extraer automáticamente la información que contiene.",
   "@ocr_image_upload_instruction": {
     "description": "Message shown when there is no image on the OCR extraction page for ingredients or recycling instructions"
   },
@@ -3396,7 +3396,7 @@
   "@image_download_error": {
     "description": "Error message, when image download fails"
   },
-  "image_edit_url_error": "No se ha podido editar la imagen porque la URL de la imagen no está configurada.",
+  "image_edit_url_error": "No se pudo editar la imagen porque la URL de la imagen no está configurada.",
   "@image_edit_url_error": {
     "description": "Error message, when editing image fails, due to missing url."
   },
@@ -3404,7 +3404,7 @@
   "@user_picture_source_remember": {
     "description": "Checkbox label when select a picture source"
   },
-  "user_picture_source_ask": "Ask each time",
+  "user_picture_source_ask": "Preguntar cada vez",
   "@user_picture_source_ask": {
     "description": "Choice of asking the picture source every time"
   },
@@ -3423,19 +3423,19 @@
   "@show_password": {
     "description": "Show hidden password in password field"
   },
-  "owner_field_info_title": "Producer provided values",
+  "owner_field_info_title": "Valores proporcionados por el productor",
   "@owner_field_info_title": {
     "description": "Title of the 'producer provided' info list-tile"
   },
-  "owner_field_info_message": "With that logo we highlight data provided by the producer, and that may not be editable.",
+  "owner_field_info_message": "Con ese logo destacamos los datos proporcionados por el productor, y que pueden no ser editables.",
   "@owner_field_info_message": {
     "description": "Title of the 'producer provided' info list-tile"
   },
-  "owner_field_info_close_button": "Close this info",
+  "owner_field_info_close_button": "Cerrar esta información",
   "@owner_field_info_close_button": {
     "description": "The owner info may be shown in a closeable dialog. This is the label of the button (used on a long press event and for the accessibility label)."
   },
-  "owner_field_image": "This image is provided by the producer. It may not be editable.",
+  "owner_field_image": "Esta imagen es proporcionada por el productor. Puede que no sea editable.",
   "@owner_field_image": {
     "description": "An image is directly provided by the producer. It may be locked and not be editable."
   },
@@ -3461,7 +3461,7 @@
   "@edit_packagings_element_field_units": {
     "description": "Field label"
   },
-  "edit_packagings_element_hint_units": "Introduce el número de unidades de envases con el mismo formato y material.",
+  "edit_packagings_element_hint_units": "Introducí el número de unidades de envases con el mismo formato y material.",
   "@edit_packagings_element_hint_units": {
     "description": "Field verbose hint, more like an info than a text field hint"
   },
@@ -3469,7 +3469,7 @@
   "@edit_packagings_element_field_shape": {
     "description": "Field label"
   },
-  "edit_packagings_element_hint_shape": "Introduce los formatos indicados en las instrucciones de reciclaje, si están disponibles, o selecciona un formato.",
+  "edit_packagings_element_hint_shape": "Introducí los formatos indicados en las instrucciones de reciclaje, si están disponibles, o seleccioná un formato.",
   "@edit_packagings_element_hint_shape": {
     "description": "Field verbose hint, more like an info than a text field hint"
   },
@@ -3481,7 +3481,7 @@
   "@edit_packagings_element_field_material": {
     "description": "Field label"
   },
-  "edit_packagings_element_hint_material": "Si es posible, introduce el material específico, muchas veces, el código del material viene indicado dentro de un triángulo en el envase. Si tienes dudas, puedes introducir un material genérico (por ejemplo, plástico o metal).",
+  "edit_packagings_element_hint_material": "Si es posible, introducí el material específico, muchas veces, el código del material viene indicado dentro de un triángulo en el envase. Si tenés dudas, podés introducir un material genérico (por ejemplo, plástico o metal).",
   "@edit_packagings_element_hint_material": {
     "description": "Field verbose hint, more like an info than a text field hint"
   },
@@ -3493,7 +3493,7 @@
   "@edit_packagings_element_field_recycling": {
     "description": "Field label"
   },
-  "edit_packagings_element_hint_recycling": "Introduce las instrucciones de reciclaje solo si aparecen en el producto.",
+  "edit_packagings_element_hint_recycling": "Introducí las instrucciones de reciclaje solo si aparecen en el producto.",
   "@edit_packagings_element_hint_recycling": {
     "description": "Field verbose hint, more like an info than a text field hint"
   },
@@ -3505,7 +3505,7 @@
   "@edit_packagings_element_field_quantity": {
     "description": "Field label"
   },
-  "edit_packagings_element_hint_quantity": "Introduce el peso neto o el volumen neto y el tipo de unidad (por ejemplo, g o ml).",
+  "edit_packagings_element_hint_quantity": "Introducí el peso neto o el volumen neto y el tipo de unidad (por ejemplo, g o ml).",
   "@edit_packagings_element_hint_quantity": {
     "description": "Field verbose hint, more like an info than a text field hint"
   },
@@ -3513,7 +3513,7 @@
   "@edit_packagings_element_field_weight": {
     "description": "Field label"
   },
-  "edit_packagings_element_hint_weight": "Elimina cualquier resto de alimento y lava y seca el envase antes de pesarlo. Si es posible, usa una báscula con 0,1 g o 0,01 g de precisión.",
+  "edit_packagings_element_hint_weight": "Eliminá cualquier resto de alimento y lavá y secá el envase antes de pesarlo. Si es posible, usá una báscula con 0,1 g o 0,01 g de precisión.",
   "@edit_packagings_element_hint_weight": {
     "description": "Field verbose hint, more like an info than a text field hint"
   },
@@ -3521,7 +3521,7 @@
   "background_task_subtitle": "Tus contribuciones se guardan automáticamente en nuestro servidor, pero no siempre se hace en tiempo real.",
   "background_task_list_empty": "No hay tareas pendientes en segundo plano",
   "background_task_error_server_time_out": "Tiempo de espera del servidor",
-  "background_task_error_no_internet": "Error de conexión a Internet. Inténtalo más tarde.",
+  "background_task_error_no_internet": "Error de conexión a Internet. Intentalo más tarde.",
   "background_task_operation_unknown": "tipo de operación desconocida",
   "background_task_operation_details": "cambios detallados",
   "background_task_operation_image": "subir foto",
@@ -3529,16 +3529,16 @@
   "background_task_run_started": "iniciado",
   "background_task_run_not_started": "todavía no se ha iniciado",
   "background_task_run_to_be_deleted": "para ser eliminado",
-  "background_task_question_stop": "¿Quieres detener esa tarea lo antes posible?",
+  "background_task_question_stop": "¿Querés detener esa tarea lo antes posible?",
   "feed_back": "Sugerencias",
   "undo": "Deshacer",
   "copy_email_to_clip_board": "Copiar el correo electrónico al portapapeles",
   "@copy_email_to_clip_board": {
     "description": "Button: Copy the email adress to the clipboard. Shown when an automatic opening of an email application is not possible"
   },
-  "please_send_us_an_email_to": "Por favor, envíanos un correo electrónico a",
+  "please_send_us_an_email_to": "Por favor, envianos un correo electrónico a",
   "email_copied_to_clip_board": "¡Correo electrónico copiado al portapapeles!",
-  "select_accent_color": "Selecciona el color de énfasis",
+  "select_accent_color": "Seleccioná el color de énfasis",
   "@select_accent_color": {
     "description": "Accent Color for the application in AMOLED mode."
   },
@@ -3602,7 +3602,7 @@
   "@contrast_low": {
     "description": "Low Contrast Text Color"
   },
-  "product_refresher_internet_not_found": "¡No se ha encontrado el producto!",
+  "product_refresher_internet_not_found": "¡No se encontró el producto!",
   "@product_refresher_internet_not_found": {
     "description": "When refreshing a product that does not exist on the server. Label is the body of a dialog."
   },
@@ -3628,7 +3628,7 @@
       }
     }
   },
-  "product_loader_not_found_title": "¡No se ha encontrado el producto!",
+  "product_loader_not_found_title": "¡No se encontró el producto!",
   "@product_loader_not_found_title": {
     "description": "When fetching a product opened via a link and it doesn't exist"
   },
@@ -3645,11 +3645,11 @@
   "@product_loader_network_error_title": {
     "description": "When fetching a product opened via a link and there is no connection"
   },
-  "product_loader_network_error_message": "Comprueba que tu teléfono móvil está conectado a una red wifi o tiene los datos móviles habilitados.",
+  "product_loader_network_error_message": "Comprobá que tu teléfono móvil está conectado a una red wifi o tiene los datos móviles habilitados.",
   "@product_loader_network_error_message": {
     "description": "When fetching a product opened via a link and there is no connection"
   },
-  "page_not_found_title": "¡No se ha encontrado la página!",
+  "page_not_found_title": "¡No se encontró la página!",
   "@page_not_found_title": {
     "description": "Title for a page not found (when an URL is not recognized)"
   },
@@ -3661,11 +3661,11 @@
   "@download_data": {
     "description": "App bar title for the download data page"
   },
-  "download_top_products": "Descarga los 1000 productos mejor valorados de tu país para escanearlos al instante.",
+  "download_top_products": "Descargá los 1000 productos mejor valorados de tu país para escanearlos al instante.",
   "@download_top_products": {
     "description": "Download the top 1000 products in your country for instant scanning"
   },
-  "download_top_n_products": "Descarga {count,plural, one {el producto mejor valorado}other{los {count} productos mejor valorados}} de tu país para escanear al instante.",
+  "download_top_n_products": "Descargá {count,plural, one {el producto mejor valorado}other{los {count} productos mejor valorados}} de tu país para escanear al instante.",
   "@download_top_n_products": {
     "placeholders": {
       "count": {
@@ -3690,7 +3690,7 @@
   "@update_offline_data": {
     "description": "List tile title for the update offline data page"
   },
-  "update_local_database_sub": "Actualiza la base de datos local de productos con los últimos datos de Luppa.",
+  "update_local_database_sub": "Actualizá la base de datos local de productos con los últimos datos de Luppa.",
   "@update_local_database_sub": {
     "description": "Update the local product database with the latest data from server"
   },
@@ -3698,7 +3698,7 @@
   "@clear_local_database": {
     "description": "List tile title for the clear local database page"
   },
-  "clear_local_database_sub": "Elimina todos los datos de productos locales de tu aplicación para liberar espacio.",
+  "clear_local_database_sub": "Eliminá todos los datos de productos locales de tu aplicación para liberar espacio.",
   "@clear_local_database_sub": {
     "description": "Clear all local product data from your app to free up space"
   },
@@ -3719,7 +3719,7 @@
   "@know_more": {
     "description": "Know More"
   },
-  "offline_data_desc": "Haz clic para obtener más información sobre los datos sin conexión.",
+  "offline_data_desc": "Hacé clic para obtener más información sobre los datos sin conexión.",
   "@offline_data_desc": {
     "description": "Click to know more about offline data"
   },
@@ -3736,23 +3736,23 @@
       }
     }
   },
-  "country_selector_title": "Selecciona tu país:",
+  "country_selector_title": "Seleccioná tu país:",
   "@country_selector_title": {
     "description": "Label written as the title of the dialog to select the user country"
   },
-  "currency_selector_title": "Seleccione su moneda:",
+  "currency_selector_title": "Seleccioná tu moneda:",
   "@currency_selector_title": {
     "description": "Label written as the title of the dialog to select the user currency"
   },
-  "language_selector_title": "Selecciona tu idioma:",
+  "language_selector_title": "Seleccioná tu idioma:",
   "@language_selector_title": {
     "description": "Label written as the title of the dialog to select the user language"
   },
-  "language_selector_section_selected": "Selected languages",
+  "language_selector_section_selected": "Idiomas seleccionados",
   "@language_selector_section_selected": {
     "description": "Label to highlight the selected languages"
   },
-  "language_selector_section_frequently_used": "Frequently used",
+  "language_selector_section_frequently_used": "Usados frecuentemente",
   "@language_selector_section_frequently_used": {
     "description": "Label to highlight the frequently used languages"
   },
@@ -3760,7 +3760,7 @@
   "@action_delete_list": {
     "description": "Delete a list action in a menu"
   },
-  "action_change_list": "Cambiar la lista acual",
+  "action_change_list": "Cambiar la lista actual",
   "@action_change_list": {
     "description": "Action to change the current visible list"
   },
@@ -3778,7 +3778,7 @@
   "nutriscore_c": "Nutri-Score C",
   "nutriscore_d": "Nutri-Score D",
   "nutriscore_e": "Nutri-Score E",
-  "nutriscore_new_formula": "Nutri-Score {letter} (New calculation)",
+  "nutriscore_new_formula": "Nutri-Score {letter} (Nuevo cálculo)",
   "@nutriscore_new_formula": {
     "description": "A generic string to define a Nutri-Score V2 with a letter [eg: \"Nutri-Score A (New calculation)\"]",
     "placeholders": {
@@ -3787,11 +3787,11 @@
       }
     }
   },
-  "nutriscore_new_formula_title": "Nutri-Score (New calculation)",
+  "nutriscore_new_formula_title": "Nutri-Score (Nuevo cálculo)",
   "nutriscore_unknown": "Nutri-Score desconocido",
-  "nutriscore_unknown_new_formula": "Unknown Nutri-Score (New calculation)",
+  "nutriscore_unknown_new_formula": "Nutri-Score desconocido (Nuevo cálculo)",
   "nutriscore_not_applicable": "No es posible aplicar el Nutri-Score",
-  "nutriscore_not_applicable_new_formula": "Nutri-Score is not applicable (New calculation)",
+  "nutriscore_not_applicable_new_formula": "No es posible aplicar el Nutri-Score (Nuevo cálculo)",
   "environmental_score_generic": "Green-Score",
   "environmental_score_a": "Green-Score A",
   "environmental_score_b": "Green-Score B",
@@ -3799,8 +3799,8 @@
   "environmental_score_d": "Green-Score D",
   "environmental_score_e": "Green-Score E",
   "environmental_score_unknown": "Green-Score desconocido",
-  "environmental_score_not_applicable": "No es posiible aplicar el Green-Score",
-  "nova_group_generic": "Ultraprocesados: gurpos NOVA",
+  "environmental_score_not_applicable": "No es posible aplicar el Green-Score",
+  "nova_group_generic": "Ultraprocesados: grupos NOVA",
   "nova_group_1": "Grupo NOVA 1",
   "nova_group_2": "Grupo NOVA 2",
   "nova_group_3": "Grupo NOVA 3",
@@ -3809,29 +3809,29 @@
   "nutrition_facts": "Niveles de nutrientes",
   "faq_title_partners": "Socios y patrocinadores de la ONG",
   "faq_title_vision": "Visión, misión, valores y programas de luppa",
-  "faq_title_install_beauty": "Instala Open Beauty Facts para crear una base de datos sobre cosmética",
-  "faq_title_install_pet": "Instala Open Pet Food Facts para crear una base de datos sobre alimentación para mascotas",
-  "faq_title_install_product": "Instala Open Products Facts para crear una base de datos sobre productos del día a día",
-  "faq_nutriscore_nutriscore": "New calculation of the Nutri-Score: what's new?",
-  "contact_title_pro_page": "¿Eres profesional? Importa tus productos a luppa",
+  "faq_title_install_beauty": "Instalá Open Beauty Facts para crear una base de datos sobre cosmética",
+  "faq_title_install_pet": "Instalá Open Pet Food Facts para crear una base de datos sobre alimentación para mascotas",
+  "faq_title_install_product": "Instalá Open Products Facts para crear una base de datos sobre productos del día a día",
+  "faq_nutriscore_nutriscore": "Nuevo cálculo del Nutri-Score: ¿qué hay de nuevo?",
+  "contact_title_pro_page": "¿Sos profesional? Importá tus productos a luppa",
   "contact_title_pro_email": "Contacto para productores",
   "contact_title_press_page": "Página de prensa",
   "contact_title_press_email": "Contacto para prensa",
-  "contact_title_newsletter": "Suscríbete a nuestro boletín",
-  "contact_title_calendar": "Subscribe to our community calendar",
-  "hunger_games_loading_line1": "Please give us a few seconds…",
+  "contact_title_newsletter": "Suscribite a nuestro boletín",
+  "contact_title_calendar": "Suscribite a nuestro calendario comunitario",
+  "hunger_games_loading_line1": "Por favor, danos unos segundos…",
   "hunger_games_loading_line2": "¡Estamos descargando las preguntas!",
-  "hunger_games_error_label": "¡Vaya! Algo ha salido mal… No hemos podido cargar las preguntas.",
+  "hunger_games_error_label": "¡Vaya! Algo salió mal… No pudimos cargar las preguntas.",
   "hunger_games_error_retry_button": "¡Vamos a intentarlo de nuevo!",
   "reorder_attribute_action": "Reorganizar los atributos",
   "@reorder_attribute_action": {
     "description": "An action button or a page title about reordering the attributes (e.g. 'is vegan?', 'nutrition facts', ...)"
   },
-  "link_cant_be_opened": "Este enlace no se puede abrir en tu dispositivo. Comprueba que tienes un navegador instalado.",
+  "link_cant_be_opened": "Este enlace no se puede abrir en tu dispositivo. Comprobá que tenés un navegador instalado.",
   "@link_cant_be_opened": {
     "description": "An error may happen if the device doesn't have a browser installed."
   },
-  "knowledge_panel_page_title_no_title": "Details for {productName}",
+  "knowledge_panel_page_title_no_title": "Detalles de {productName}",
   "@knowledge_panel_page_title_no_title": {
     "description": "The title of the page when we click on an item in the product page and this page is unnamed",
     "placeholders": {
@@ -3840,7 +3840,7 @@
       }
     }
   },
-  "knowledge_panel_page_title": "Details for {pageName} with {productName}",
+  "knowledge_panel_page_title": "Detalles de {pageName} con {productName}",
   "@knowledge_panel_page_title": {
     "description": "The title of the page when we click on an item in the product page",
     "placeholders": {
@@ -3852,7 +3852,7 @@
       }
     }
   },
-  "guide_title": "Guide",
+  "guide_title": "Guía",
   "@guide_title": {
     "description": "A title for a guide"
   },
@@ -3861,72 +3861,72 @@
   "@guide_nutriscore_v2_enabled": {
     "description": "Please NEVER touch this value and let the OFF team change it!"
   },
-  "guide_nutriscore_v2_title": "The Nutri-Score is evolving: explanations!",
+  "guide_nutriscore_v2_title": "El Nutri-Score está evolucionando: ¡te lo explicamos!",
   "@guide_nutriscore_v2_title": {
     "description": "The title of the guide (please don't forget the use of non-breaking spaces)"
   },
   "guide_nutriscore_v2_what_is_nutriscore_title": "¿Qué es el Nutri-Score?",
-  "guide_nutriscore_v2_what_is_nutriscore_paragraph1": "The Nutri-Score is a logo which aims to inform you about the **nutritional quality of foods**.",
+  "guide_nutriscore_v2_what_is_nutriscore_paragraph1": "El Nutri-Score es un logo que tiene como objetivo informarte sobre la **calidad nutricional de los alimentos**.",
   "@guide_nutriscore_v2_what_is_nutriscore_paragraph1": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please try to keep it."
   },
-  "guide_nutriscore_v2_what_is_nutriscore_paragraph2": "The color code varies from dark green (**A**) for the **healthiest** products to dark red (**E**) for the **less healthy** ones.",
+  "guide_nutriscore_v2_what_is_nutriscore_paragraph2": "El código de colores varía desde el verde oscuro (**A**) para los productos **más saludables** hasta el rojo oscuro (**E**) para los **menos saludables**.",
   "@guide_nutriscore_v2_what_is_nutriscore_paragraph2": {
     "description": "Text between asterisks (eg: **My Text**) means text in bold. Please try to keep it."
   },
-  "guide_nutriscore_v2_nutriscore_a_caption": "The Nutri-Score A logo",
-  "guide_nutriscore_v2_why_v2_title": "Why is Nutri-Score evolving?",
-  "guide_nutriscore_v2_why_v2_intro": "The Nutri-Score formula **is evolving** to provide better recommendations:",
-  "guide_nutriscore_v2_why_v2_arg1_title": "Better evaluate all drinks",
-  "guide_nutriscore_v2_why_v2_arg1_text": "The comparative notes of **milk**, **dairy drinks** with added sugar and **vegetable** drinks were better differentiated in the new algorithm.",
-  "guide_nutriscore_v2_why_v2_arg2_title": "Better ranking of drinks",
-  "guide_nutriscore_v2_why_v2_arg2_text": "The **sugar content** is better taken into account and favors **lowly sweetened** drinks.\\n**Sweeteners will also be penalized**: diet sodas will be downgraded from a B rating to between C and E. Water remains the recommended drink.",
-  "guide_nutriscore_v2_why_v2_arg3_title": "Salt and sugar penalized",
-  "guide_nutriscore_v2_why_v2_arg3_text": "Products **too sweet** or **too salty** will see their **rating further downgraded**.",
-  "guide_nutriscore_v2_why_v2_arg4_title": "Hierarchy within oils and fishes",
-  "guide_nutriscore_v2_why_v2_arg4_text": "The rating of certain **fatty fish** and **oils rich in good fats** will improve.",
-  "guide_nutriscore_v2_why_v2_arg5_title": "Limit red meat",
-  "guide_nutriscore_v2_why_v2_arg5_text": "Consumption of **red meat should be limited**. This is why **poultry will be comparatively better ranked**.",
-  "guide_nutriscore_v2_new_logo_title": "How to differentiate old Nutri-Score and new calculation?",
-  "guide_nutriscore_v2_new_logo_text": "From now on, the logo can display a mention \"**New calculation**\" to clarify that this is indeed the new calculation.",
-  "guide_nutriscore_v2_new_logo_image_caption": "The logo of the new Nutri-Score",
+  "guide_nutriscore_v2_nutriscore_a_caption": "El logo del Nutri-Score A",
+  "guide_nutriscore_v2_why_v2_title": "¿Por qué está evolucionando el Nutri-Score?",
+  "guide_nutriscore_v2_why_v2_intro": "La fórmula del Nutri-Score **está evolucionando** para ofrecer mejores recomendaciones:",
+  "guide_nutriscore_v2_why_v2_arg1_title": "Evaluar mejor todas las bebidas",
+  "guide_nutriscore_v2_why_v2_arg1_text": "Las notas comparativas de la **leche**, las **bebidas lácteas** con azúcar añadido y las bebidas **vegetales** se diferenciaron mejor en el nuevo algoritmo.",
+  "guide_nutriscore_v2_why_v2_arg2_title": "Mejor clasificación de las bebidas",
+  "guide_nutriscore_v2_why_v2_arg2_text": "El **contenido de azúcar** se tiene más en cuenta y favorece a las bebidas **poco endulzadas**.\\nLos **edulcorantes también serán penalizados**: las gaseosas dietéticas pasarán de una calificación B a una entre C y E. El agua sigue siendo la bebida recomendada.",
+  "guide_nutriscore_v2_why_v2_arg3_title": "Sal y azúcar penalizados",
+  "guide_nutriscore_v2_why_v2_arg3_text": "Los productos **demasiado dulces** o **demasiado salados** verán su **calificación aún más rebajada**.",
+  "guide_nutriscore_v2_why_v2_arg4_title": "Jerarquía dentro de aceites y pescados",
+  "guide_nutriscore_v2_why_v2_arg4_text": "Mejorará la calificación de ciertos **pescados grasos** y **aceites ricos en grasas buenas**.",
+  "guide_nutriscore_v2_why_v2_arg5_title": "Limitar la carne roja",
+  "guide_nutriscore_v2_why_v2_arg5_text": "El consumo de **carne roja debe ser limitado**. Por eso, la **carne de ave tendrá una clasificación comparativamente mejor**.",
+  "guide_nutriscore_v2_new_logo_title": "¿Cómo diferenciar el Nutri-Score antiguo del nuevo cálculo?",
+  "guide_nutriscore_v2_new_logo_text": "A partir de ahora, el logo puede mostrar la mención \"**Nuevo cálculo**\" para aclarar que se trata efectivamente del nuevo cálculo.",
+  "guide_nutriscore_v2_new_logo_image_caption": "El logo del nuevo Nutri-Score",
   "guide_nutriscore_v2_where_title": "¿Dónde encontrar el nuevo cálculo Nutri-Score?",
-  "guide_nutriscore_v2_where_paragraph1": "The Nutri-Score is applied in 7 countries: France, Germany, Belgium, Spain, Luxembourg, the Netherlands and Switzerland.",
-  "guide_nutriscore_v2_where_paragraph2": "Manufacturers have at most **2 years** at the latest after the signature of the decree **to replace** the old calculation with the new one.",
-  "guide_nutriscore_v2_where_paragraph3": "Without waiting, you **will already find in the luppa application**, the new calculation, including if the manufacturers have not updated the score.",
-  "guide_nutriscore_v2_unchanged_title": "What doesn't change",
-  "guide_nutriscore_v2_unchanged_paragraph1": "The Nutri-Score is a score designed to **measure nutritional quality**. It is **complementary to the NOVA group** on **ultra-processed foods** (also present in the application).",
-  "guide_nutriscore_v2_unchanged_paragraph2": "For manufacturers, the display of the Nutri-Score **remains optional**.",
+  "guide_nutriscore_v2_where_paragraph1": "El Nutri-Score se aplica en 7 países: Francia, Alemania, Bélgica, España, Luxemburgo, Países Bajos y Suiza.",
+  "guide_nutriscore_v2_where_paragraph2": "Los fabricantes tienen como máximo **2 años** a más tardar después de la firma del decreto para **reemplazar** el cálculo antiguo por el nuevo.",
+  "guide_nutriscore_v2_where_paragraph3": "Sin esperar, **ya encontrarás en la aplicación luppa**, el nuevo cálculo, incluso si los fabricantes no han actualizado la puntuación.",
+  "guide_nutriscore_v2_unchanged_title": "Lo que no cambia",
+  "guide_nutriscore_v2_unchanged_paragraph1": "El Nutri-Score es una puntuación diseñada para **medir la calidad nutricional**. Es **complementaria al grupo NOVA** sobre **alimentos ultraprocesados** (también presente en la aplicación).",
+  "guide_nutriscore_v2_unchanged_paragraph2": "Para los fabricantes, la exhibición del Nutri-Score **sigue siendo opcional**.",
   "guide_nutriscore_v2_share_link": "https://world.luppa.org/guide/nutriscore-v2",
   "guide_nutriscore_v2_share_message": "",
   "@guide_nutriscore_v2_share_message": {
     "description": "Please let empty for now (maybe use in the future)"
   },
-  "preview_badge": "Preview",
+  "preview_badge": "Vista previa",
   "@preview_badge": {
     "description": "Badge to indicate that the product is in preview mode (Be careful with this translation)"
   },
-  "prices_feedback_form": "Click here to send us your feedback about this new feature!",
+  "prices_feedback_form": "¡Hacé clic acá para enviarnos tus comentarios sobre esta nueva función!",
   "@prices_feedback_form": {
     "description": "A button to send feedback about the prices feature"
   },
-  "menu_button_list_actions": "Elija una acción",
+  "menu_button_list_actions": "Elegí una acción",
   "@menu_button_list_actions": {
     "description": "Button to select an action in a list (eg: Share, Delete, …)"
   },
-  "error_loading_photo": "Error loading photo",
+  "error_loading_photo": "Error al cargar la foto",
   "@error_loading_photo": {
     "description": "Error message when loading a photo fails to load"
   },
-  "photo_viewer_action_use_picture_as": "Use as…",
+  "photo_viewer_action_use_picture_as": "Usar como…",
   "@photo_viewer_action_use_picture_as": {
     "description": "An action to use the current picture to be used as front/ingredients…"
   },
-  "photo_viewer_use_picture_as_tooltip": "Use this picture as…",
+  "photo_viewer_use_picture_as_tooltip": "Usar esta imagen como…",
   "@photo_viewer_use_picture_as_tooltip": {
     "description": "Message explaining what the three dots (…) button on \"More interesting photos\" does"
   },
-  "photo_viewer_use_picture_as_title": "Use this picture as… ({language})",
+  "photo_viewer_use_picture_as_title": "Usar esta imagen como… ({language})",
   "@photo_viewer_use_picture_as_title": {
     "description": "The title of a dialog to use the current picture as front/ingredients…",
     "placeholders": {
@@ -3939,11 +3939,11 @@
   "@photo_viewer_details_button": {
     "description": "Button to show details of the photo"
   },
-  "photo_viewer_details_button_accessibility_label": "Details of this photo",
+  "photo_viewer_details_button_accessibility_label": "Detalles de esta foto",
   "@photo_viewer_details_button_accessibility_label": {
     "description": "Accessibility label for the Details button on a photo"
   },
-  "photo_viewer_details_title": "Details of the photo",
+  "photo_viewer_details_title": "Detalles de la foto",
   "@photo_viewer_details_title": {
     "description": "Title of the photo details dialog"
   },
@@ -3951,11 +3951,11 @@
   "@photo_viewer_details_contributor_title": {
     "description": "Label for the author of a photo"
   },
-  "photo_viewer_details_size_title": "Size",
+  "photo_viewer_details_size_title": "Tamaño",
   "@photo_viewer_details_size_title": {
     "description": "Label for the size of a photo"
   },
-  "photo_viewer_details_size_value": "{width} x {height} pixels",
+  "photo_viewer_details_size_value": "{width} x {height} píxeles",
   "@photo_viewer_details_size_value": {
     "description": "Value for the size of a photo",
     "placeholders": {
@@ -3979,11 +3979,11 @@
   "@product_page_compatibility_score": {
     "description": "Compatibility score on top of the product page. The sentence is \"100%\" Compatible"
   },
-  "user_lists_action_multi_select": "Multi-select",
+  "user_lists_action_multi_select": "Selección múltiple",
   "@user_lists_action_multi_select": {
     "description": "The button label for multi-selecting products in a user list"
   },
-  "product_page_compatibility_score_tooltip": "Your compatibility score: {score}%",
+  "product_page_compatibility_score_tooltip": "Tu puntuación de compatibilidad: {score}%",
   "@product_page_compatibility_score_tooltip": {
     "description": "Message explaining that the score is the compatibility score",
     "placeholders": {
@@ -4000,23 +4000,23 @@
   "@product_image_ingredients_accessibility_label": {
     "description": "Accessibility label for the image of ingredients"
   },
-  "product_image_nutrition_accessibility_label": "Nutrition picture",
+  "product_image_nutrition_accessibility_label": "Imagen de información nutricional",
   "@product_image_nutrition_accessibility_label": {
     "description": "Accessibility label for the image of the nutrition"
   },
-  "product_image_packaging_accessibility_label": "Packaging picture",
+  "product_image_packaging_accessibility_label": "Imagen del envase",
   "@product_image_packaging_accessibility_label": {
     "description": "Accessibility label for the image of the packaging"
   },
-  "product_image_other_accessibility_label": "Other picture",
+  "product_image_other_accessibility_label": "Otra imagen",
   "@product_image_other_accessibility_label": {
     "description": "Accessibility label for an image"
   },
-  "product_image_outdated_message": "This picture may be outdated",
+  "product_image_outdated_message": "Esta imagen puede estar desactualizada",
   "@product_image_outdated_message": {
     "description": "Small message to indicate that the image may be outdated"
   },
-  "product_image_outdated_message_accessibility_label": "{type} (this image may be outdated)",
+  "product_image_outdated_message_accessibility_label": "{type} (esta imagen puede estar desactualizada)",
   "@product_image_outdated_message_accessibility_label": {
     "description": "Accessibility label for the image on the product page when it may be outdated",
     "placeholders": {
@@ -4025,7 +4025,7 @@
       }
     }
   },
-  "product_image_locked_message_accessibility_label": "{type} (this image may be locked by the producer)",
+  "product_image_locked_message_accessibility_label": "{type} (esta imagen puede estar bloqueada por el productor)",
   "@product_image_locked_message_accessibility_label": {
     "description": "Accessibility label for the image on the product page when it may be locked (producer provided)",
     "placeholders": {
@@ -4034,11 +4034,11 @@
       }
     }
   },
-  "product_image_error": "Unable to load the image!",
+  "product_image_error": "¡No se pudo cargar la imagen!",
   "@product_image_error": {
     "description": "Small message that will be displayed above the picture (please keep it short)"
   },
-  "product_image_error_accessibility_label": "Unable to load the {type} (network error?)",
+  "product_image_error_accessibility_label": "No se pudo cargar la {type} (¿error de red?)",
   "@product_image_error_accessibility_label": {
     "description": "Accessibility label for the image on the product page when it fails to load",
     "placeholders": {
@@ -4047,51 +4047,51 @@
       }
     }
   },
-  "product_page_image_no_image_available": "No\nimage!",
+  "product_page_image_no_image_available": "¡No hay\nimagen!",
   "@product_page_image_no_image_available": {
     "description": "Small message that will be displayed above the picture (please keep it short) when there is no image available on the database. A line break is not mandatory."
   },
-  "product_page_image_no_image_available_accessibility_label": "No picture available for this product",
+  "product_page_image_no_image_available_accessibility_label": "No hay imagen disponible para este producto",
   "@product_page_image_no_image_available_accessibility_label": {
     "description": "Accessibility label for the image on the product page when there is no image available on the database"
   },
-  "product_page_action_bar_settings_accessibility_label": "Reorder or hide actions",
+  "product_page_action_bar_settings_accessibility_label": "Reordenar u ocultar acciones",
   "@product_page_action_bar_settings_accessibility_label": {
     "description": "Accessibility label for the Settings icon in the action bar (= bottom bar) on the product page"
   },
-  "product_page_action_bar_setting_modal_title": "Edit actions",
+  "product_page_action_bar_setting_modal_title": "Editar acciones",
   "@product_page_action_bar_setting_modal_title": {
     "description": "Title for the modal allowing to show and reorder actions"
   },
-  "product_page_action_bar_item_move_up": "Move up",
+  "product_page_action_bar_item_move_up": "Mover hacia arriba",
   "@product_page_action_bar_item_move_up": {
     "description": "Accessibility label to move up an action"
   },
-  "product_page_action_bar_item_move_down": "Move down",
+  "product_page_action_bar_item_move_down": "Mover hacia abajo",
   "@product_page_action_bar_item_move_down": {
     "description": "Accessibility label to move down an action"
   },
-  "product_page_action_bar_item_enable": "Enable action",
+  "product_page_action_bar_item_enable": "Activar acción",
   "@product_page_action_bar_item_enable": {
     "description": "Accessibility label to enable action (= make it visible)"
   },
-  "product_page_action_bar_item_disable": "Disable action",
+  "product_page_action_bar_item_disable": "Desactivar acción",
   "@product_page_action_bar_item_disable": {
     "description": "Accessibility label to disable action (= make it invisible)"
   },
-  "product_page_pending_operations_banner_title": "Uploading your edits…",
+  "product_page_pending_operations_banner_title": "Subiendo tus ediciones…",
   "@product_page_pending_operations_banner_title": {
     "description": "When a product has pending edits (being sent to the server), there is a message on the product page (here is the title of the message)."
   },
-  "product_page_pending_operations_banner_message": "The data displayed on this page **does not yet reflect your modifications**.\nPlease wait a few seconds…",
+  "product_page_pending_operations_banner_message": "Los datos que se muestran en esta página **aún no reflejan tus modificaciones**.\nPor favor, esperá unos segundos…",
   "@product_page_pending_operations_banner_message": {
     "description": "When a product has pending edits (being sent to the server), there is a message on the product page. Please keep the ** syntax to make the text bold."
   },
-  "product_add_a_language": "Add a language",
+  "product_add_a_language": "Añadir un idioma",
   "@product_add_a_language": {
     "description": "Button to add a language (eg: for photos) to a product"
   },
-  "barcode_accessibility_label": "Barcode {barcode}",
+  "barcode_accessibility_label": "Código de barras {barcode}",
   "@barcode_accessibility_label": {
     "description": "Accessibility label for a barcode image",
     "placeholders": {
@@ -4100,23 +4100,23 @@
       }
     }
   },
-  "carousel_close_tooltip": "Remove this product from the carousel",
+  "carousel_close_tooltip": "Eliminar este producto del carrusel",
   "@carousel_close_tooltip": {
     "description": "A message explaining the goal of the Close button on a card of the carousel"
   },
-  "carousel_unsupported_header": "Unsupported barcode!",
+  "carousel_unsupported_header": "¡Código de barras no compatible!",
   "@carousel_unsupported_header": {
     "description": "A label on top of the carousel card when the barcode is not supported by the app"
   },
-  "carousel_unsupported_title": "Ooops!",
-  "carousel_unsupported_text": "The barcode scanned is not supported by Luppa!",
-  "carousel_error_header": "Error!",
+  "carousel_unsupported_title": "¡Ups!",
+  "carousel_unsupported_text": "¡El código de barras escaneado no es compatible con Luppa!",
+  "carousel_error_header": "¡Error!",
   "@carousel_error_header": {
     "description": "A label on top of the carousel card when there is an error (mainly network issues)"
   },
-  "carousel_error_title": "It's a bummer!",
-  "carousel_error_text_1": "We couldn't download information on this barcode:",
-  "carousel_error_text_2": "Please check your Internet connection or click this button:",
+  "carousel_error_title": "¡Qué lástima!",
+  "carousel_error_text_1": "No pudimos descargar información sobre este código de barras:",
+  "carousel_error_text_2": "Por favor, revisá tu conexión a Internet o hacé clic en este botón:",
   "@carousel_error_text_2": {
     "description": "Please keep the ** syntax to make the text bold"
   },
@@ -4125,46 +4125,46 @@
   "@carousel_unknown_product_header": {
     "description": "A label on top of the carousel card when the product is not in the database (= it needs to be created)"
   },
-  "carousel_unknown_product_title": "Congratulations!\nYou've found __the rare gem!__",
+  "carousel_unknown_product_title": "¡Felicitaciones!\n¡Encontraste __una joya rara!__",
   "@carousel_unknown_product_title": {
     "description": "Please keep the __ syntax to underline the text"
   },
-  "carousel_unknown_product_text": "Our collaborative database contains more than **3 million products**, but this barcode doesn't exist: ",
+  "carousel_unknown_product_text": "Nuestra base de datos contiene más de **12.000 productos**, pero este código de barras no existe: ",
   "@carousel_unknown_product_text": {
     "description": "Please keep the ** syntax to make the text bold"
   },
   "carousel_unknown_product_button": "Añadir este producto",
-  "carousel_loading_header": "Loading information...",
+  "carousel_loading_header": "Cargando información...",
   "@carousel_loading_header": {
     "description": "A label on top of the carousel card when data about the product is loading"
   },
-  "carousel_loading_title": "You've just scanned a product with the following barcode:",
-  "carousel_loading_text": "We are searching for it in our database of more than **3 million products!**",
+  "carousel_loading_title": "Acabás de escanear un producto con el siguiente código de barras:",
+  "carousel_loading_text": "¡Lo estamos buscando en nuestra base de datos de más de **3 millones de productos!**",
   "@carousel_loading_text": {
     "description": "Please keep the ** syntax to make the text bold"
   },
-  "product_type_subtitle_food": "Vegetables, fruits, frozen food…",
+  "product_type_subtitle_food": "Verduras, frutas, congelados…",
   "@product_type_subtitle_food": {
     "description": "Example of products for food category"
   },
-  "product_type_subtitle_beauty": "Makeup, soaps, toothpastes…",
+  "product_type_subtitle_beauty": "Maquillaje, jabones, dentífricos…",
   "@product_type_subtitle_beauty": {
     "description": "Example of products for beauty category"
   },
-  "product_type_subtitle_pet_food": "Food for dogs, cats…",
+  "product_type_subtitle_pet_food": "Comida para perros, gatos…",
   "@product_type_subtitle_pet_food": {
     "description": "Example of products for pet food category"
   },
-  "product_type_subtitle_product": "Smartphones, furniture…",
+  "product_type_subtitle_product": "Smartphones, muebles…",
   "@product_type_subtitle_product": {
     "description": "Example of products for other categories"
   },
-  "photo_field_front": "Product photo",
+  "photo_field_front": "Foto del producto",
   "photo_field_ingredients": "Foto de los ingredientes",
-  "photo_field_nutrition": "Nutrition photo",
+  "photo_field_nutrition": "Foto de información nutricional",
   "photo_field_packaging": "Foto de la información del envase",
-  "photo_already_exists": "This photo already exists",
-  "photo_missing": "This photo is missing",
+  "photo_already_exists": "Esta foto ya existe",
+  "photo_missing": "Falta esta foto",
   "date": "Fecha",
   "photo_rotate_left": "Girar a la izquierda",
   "@photo_rotate_left": {
@@ -4199,10 +4199,10 @@
   "@knowledge_panel_warning_text": {
     "description": "Warning text at the beginning of a sentence in the knowledge panel (you can find this word on the NutriScore KP of 3033491279300)"
   },
-  "knowledge_panel_nutriscore_banner_incorrect_score_title": "Why is this Nutri-Score different from the one on the package?",
-  "knowledge_panel_nutriscore_banner_incorrect_score_message": "There are two possible explanations:\nThe list of ingredients and/or nutrition facts are not up-to-date.\n\nWe provide the \"New calculation\" of the Nutri-Score (or V2). Please check that you have the banner \"New calculation\" on the package.",
-  "knowledge_panel_nutriscore_banner_incorrect_score_button1": "Check ingredients",
-  "knowledge_panel_nutriscore_banner_incorrect_score_button2": "Check nutrition facts",
+  "knowledge_panel_nutriscore_banner_incorrect_score_title": "¿Por qué este Nutri-Score es diferente al del paquete?",
+  "knowledge_panel_nutriscore_banner_incorrect_score_message": "Hay dos explicaciones posibles:\nLa lista de ingredientes y/o la información nutricional no están actualizadas.\n\nProporcionamos el \"Nuevo cálculo\" del Nutri-Score (o V2). Por favor, verificá que tengas el banner \"Nuevo cálculo\" en el paquete.",
+  "knowledge_panel_nutriscore_banner_incorrect_score_button1": "Verificar ingredientes",
+  "knowledge_panel_nutriscore_banner_incorrect_score_button2": "Verificar información nutricional",
   "url_not_supported": "Lamentablemente, no podemos abrir la dirección URL:\n{url}",
   "@url_not_supported": {
     "description": "Error message when the app can't open a URL",
@@ -4220,7 +4220,7 @@
   "@product_list_import": {
     "description": "Product list popup menu item to import a list"
   },
-  "product_footer_action_barcode": "View barcode",
+  "product_footer_action_barcode": "Ver código de barras",
   "@product_footer_action_barcode": {
     "description": "Action to see the barcode of a product"
   },
@@ -4228,11 +4228,11 @@
   "@product_footer_action_barcode_short": {
     "description": "Action to see the barcode of a product (short text)"
   },
-  "product_footer_action_open_website": "Open website",
+  "product_footer_action_open_website": "Abrir sitio web",
   "@product_footer_action_open_website": {
     "description": "Action to see to open the OxF website of the given product"
   },
-  "product_footer_action_report": "Report",
+  "product_footer_action_report": "Reportar",
   "@product_footer_action_report": {
     "description": "Action to see to report a product"
   },
@@ -4240,7 +4240,7 @@
   "@product_footer_action_contributor_guide": {
     "description": "Action to open the contributor's guide. If you are in a non-English language, please translate this sentence instead: \"Help (EN)\""
   },
-  "product_footer_action_data_quality_tags": "Data quality",
+  "product_footer_action_data_quality_tags": "Calidad de los datos",
   "@product_footer_action_data_quality_tags": {
     "description": "Action to view data quality warnings"
   },
@@ -4256,11 +4256,11 @@
   "@product_page_tab_prices": {
     "description": "Label of the prices tab on the product page"
   },
-  "product_page_tab_folksonomy": "Folksonomy",
+  "product_page_tab_folksonomy": "Folksonomía",
   "@product_page_tab_folksonomy": {
     "description": "Label of the folksonomy tab on the product page"
   },
-  "prices_products_list_length_many_pages": "Top {pageSize} products (total: {total})",
+  "prices_products_list_length_many_pages": "Top {pageSize} productos (total: {total})",
   "@prices_products_list_length_many_pages": {
     "description": "Number of products for one-page result",
     "placeholders": {
@@ -4272,51 +4272,51 @@
       }
     }
   },
-  "app_review_title": "Are you enjoying this app?",
+  "app_review_title": "¿Te está gustando esta aplicación?",
   "@app_review_title": {
     "description": "Title for the app review card in the tagline"
   },
-  "app_review_low": "Could do better",
+  "app_review_low": "Podría mejorar",
   "@app_review_low": {
     "description": "Item in the app review card with the lowest rating"
   },
-  "app_review_medium": "Not bad",
+  "app_review_medium": "No está mal",
   "@app_review_medium": {
     "description": "Item in the app review card with an average rating"
   },
-  "app_review_high": "I love it!",
+  "app_review_high": "¡Me encanta!",
   "@app_review_high": {
     "description": "Item in the app review card with the highest rating"
   },
-  "app_review_feedback_modal_title": "Help us improve our application",
+  "app_review_feedback_modal_title": "Ayudanos a mejorar nuestra aplicación",
   "@app_review_feedback_modal_title": {
     "description": "Title of the modal sheet displayed when the user has not selected the highest value"
   },
-  "app_review_feedback_modal_content": "If you have a few minutes, could you answer this form so that **we can improve in future updates**:",
+  "app_review_feedback_modal_content": "Si tenés unos minutos, ¿podrías responder este formulario para que **podamos mejorar en futuras actualizaciones**?:",
   "@app_review_feedback_modal_content": {
     "description": "Content of the modal sheet displayed when the user has not selected the highest value"
   },
-  "app_review_feedback_modal_open_form": "Answer the form",
+  "app_review_feedback_modal_open_form": "Responder el formulario",
   "@app_review_feedback_modal_open_form": {
     "description": "Answer the form button"
   },
-  "app_review_feedback_modal_later": "Pregúntame más tarde",
+  "app_review_feedback_modal_later": "Preguntame más tarde",
   "@app_review_feedback_modal_later": {
     "description": "Ask me later button"
   },
-  "nutrition_facts_extract_new": "NEW: You can automatically extract the nutrients from the picture!",
+  "nutrition_facts_extract_new": "NUEVO: ¡Podés extraer automáticamente los nutrientes de la imagen!",
   "@nutrition_facts_extract_new": {
     "description": "Message to indicate that user can now extract of nutrients from a picture"
   },
-  "nutrition_facts_extract_button_text": "Extract now",
+  "nutrition_facts_extract_button_text": "Extraer ahora",
   "@nutrition_facts_extract_button_text": {
     "description": "Button to extraction of nutrients from a picture"
   },
-  "nutrition_facts_extract_succesful": "Extraction succesful",
+  "nutrition_facts_extract_succesful": "Extracción exitosa",
   "@nutrition_facts_extract_succesful": {
     "description": "Message to indicate that the extraction of nutrients from a picture was succesful"
   },
-  "nutrition_facts_extract_failed": "Failed to extract nutrients from picture",
+  "nutrition_facts_extract_failed": "Falló la extracción de nutrientes de la imagen",
   "@nutrition_facts_extract_failed": {
     "description": "Message to indicate that the extraction of nutrients from a picture failed"
   },
@@ -4344,7 +4344,7 @@
   "@prices_stats_locations_section": {
     "description": "Title for the locations section"
   },
-  "prices_stats_proofs_section": "Proofs",
+  "prices_stats_proofs_section": "Pruebas",
   "@prices_stats_proofs_section": {
     "description": "Title for the proofs section"
   },
@@ -4352,7 +4352,7 @@
   "@prices_stats_contributors_section": {
     "description": "Title for the contributors section"
   },
-  "prices_stats_experiments_section": "Experiments",
+  "prices_stats_experiments_section": "Experimentos",
   "@prices_stats_experiments_section": {
     "description": "Title for the experiments section"
   },
@@ -4364,11 +4364,11 @@
   "@prices_stats_total": {
     "description": "Label for total count"
   },
-  "prices_stats_with_barcode": "With a barcode",
+  "prices_stats_with_barcode": "Con código de barras",
   "@prices_stats_with_barcode": {
     "description": "Label for count with barcode"
   },
-  "prices_stats_with_category": "With a category",
+  "prices_stats_with_category": "Con categoría",
   "@prices_stats_with_category": {
     "description": "Label for count with category"
   },
@@ -4376,7 +4376,7 @@
   "@prices_stats_with_discount": {
     "description": "Label for count with discount"
   },
-  "prices_stats_community": "Community",
+  "prices_stats_community": "Comunidad",
   "@prices_stats_community": {
     "description": "Label for community count"
   },
@@ -4408,7 +4408,7 @@
   "@prices_stats_osm": {
     "description": "Label for OpenStreetMap count"
   },
-  "prices_stats_online": "Online",
+  "prices_stats_online": "En línea",
   "@prices_stats_online": {
     "description": "Label for online count"
   },
@@ -4428,7 +4428,7 @@
   "@prices_stats_gdpr_request": {
     "description": "Label for GDPR request count"
   },
-  "prices_stats_shop_import": "Shop import",
+  "prices_stats_shop_import": "Importación de tienda",
   "@prices_stats_shop_import": {
     "description": "Label for shop import count"
   },
@@ -4436,19 +4436,19 @@
   "@prices_stats_challenges": {
     "description": "Label for challenges count"
   },
-  "prices_stats_linked_to_price_tag": "Prices linked to a price tag",
+  "prices_stats_linked_to_price_tag": "Precios vinculados a una etiqueta de precio",
   "@prices_stats_linked_to_price_tag": {
     "description": "Label for prices linked to a price tag count"
   },
-  "prices_stats_currencies": "Currencies",
+  "prices_stats_currencies": "Monedas",
   "@prices_stats_currencies": {
     "description": "Label for currencies count"
   },
-  "prices_stats_years": "Years",
+  "prices_stats_years": "Años",
   "@prices_stats_years": {
     "description": "Label for years count"
   },
-  "prices_stats_by_source_title": "Prices and proofs per source",
+  "prices_stats_by_source_title": "Precios y pruebas por fuente",
   "@prices_stats_by_source_title": {
     "description": "Title for prices and proofs per source section"
   },
@@ -4456,7 +4456,7 @@
   "@prices_stats_website": {
     "description": "Label for website source"
   },
-  "prices_stats_mobile_app": "Mobile app",
+  "prices_stats_mobile_app": "Aplicación móvil",
   "@prices_stats_mobile_app": {
     "description": "Label for mobile app source"
   },
@@ -4476,7 +4476,7 @@
   "@prices_stats_error": {
     "description": "Error message shown when price statistics fail to load"
   },
-  "product_edit_robotoff_question_answered": "Question answered!",
+  "product_edit_robotoff_question_answered": "¡Pregunta respondida!",
   "@product_edit_robotoff_question_answered": {
     "description": "Message displayed when a question from the Robotoff is answered"
   },
@@ -4574,11 +4574,11 @@
   "nova_group_4_text": "Productos alimenticios y bebidas ultraprocesados",
   "positive_attributes": "Algunas características positivas",
   "negative_attributes": "Características no tan buenas",
-  "nutriscore_a_message": "Puedes consumirlo con tranquilidad, incluso a diario.",
-  "nutriscore_b_message": "Puedes incluirlo regularmente en tu alimentación, solo cuida el resto de tu dieta.",
+  "nutriscore_a_message": "Podés consumirlo con tranquilidad, incluso a diario.",
+  "nutriscore_b_message": "Podés incluirlo regularmente en tu alimentación, solo cuidá el resto de tu dieta.",
   "nutriscore_c_message": "No está mal, pero mejor consumirlo de vez en cuando, no todos los días.",
-  "nutriscore_d_message": "No es la mejor opción si buscas algo saludable.",
-  "nutriscore_e_message": "Mejor evítalo o consúmelo muy rara vez, porque su impacto en la salud puede ser negativo si lo consumes seguido.",
+  "nutriscore_d_message": "No es la mejor opción si buscás algo saludable.",
+  "nutriscore_e_message": "Mejor evitalo o consumilo muy rara vez, porque su impacto en la salud puede ser negativo si lo consumís seguido.",
   "nutrition_energy": "Energía",
   "nutrition_fat": "Grasas",
   "nutrition_carbohydrates": "Carbohidratos",

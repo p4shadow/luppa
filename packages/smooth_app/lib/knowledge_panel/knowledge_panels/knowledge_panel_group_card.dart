@@ -93,6 +93,7 @@ class KnowledgePanelGroupCard extends StatelessWidget {
                 panelId: panelId,
                 product: product,
                 isClickable: isClickable,
+                showSummary: panelId != 'nutriscore_2023',
               ),
             ),
         ],

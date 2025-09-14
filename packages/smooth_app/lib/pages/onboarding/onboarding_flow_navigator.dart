@@ -59,7 +59,12 @@ enum OnboardingPage {
     final Color backgroundColor = getBackgroundColor();
     switch (this) {
       case OnboardingPage.NOT_STARTED:
-        return const SizedBox.shrink();
+        return SmoothScaffold(
+          backgroundColor: backgroundColor,
+          body: Center(
+            child: Image.asset('assets/onboarding/home.png', fit: BoxFit.cover),
+          ),
+        );
       case OnboardingPage.HEALTH_CARD_EXAMPLE:
         return _wrapWidgetInCustomBackNavigator(
           context,

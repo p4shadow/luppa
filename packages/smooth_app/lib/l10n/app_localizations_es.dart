@@ -19,7 +19,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get account_delete_message =>
-      '¿Seguro que quieres eliminar tu cuenta?\nSi hay alguna una razón específica, cuéntanoslo abajo.';
+      '¿Seguro que querés eliminar tu cuenta?\nSi hay alguna una razón específica, contánoslo abajo.';
 
   @override
   String get reason => 'Razón';
@@ -55,7 +55,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get save => 'Guardar';
 
   @override
-  String get save_confirmation => '¿Seguro que quieres guardar?';
+  String get save_confirmation => '¿Seguro que querés guardar?';
 
   @override
   String get skip => 'Omitir';
@@ -82,17 +82,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String get calculate => 'Calcular';
 
   @override
-  String get reset_food_prefs => 'Restablecer preferencias alimentarias';
+  String get reset_food_prefs => 'Restablecer';
 
   @override
-  String get error => 'Algo ha salido mal';
+  String get error => 'Algo salió mal';
 
   @override
-  String get error_occurred => 'Se ha producido un error';
+  String get error_occurred => 'Ocurrió un error';
 
   @override
   String get featureInProgress =>
-      'Todavía estamos trabajando en esta función, estad atentos';
+      'Todavía estamos trabajando en esta función, mantenete atento';
 
   @override
   String get label_web => 'Ver en la web';
@@ -146,32 +146,31 @@ class AppLocalizationsEs extends AppLocalizations {
   String get looking_for => 'Buscando';
 
   @override
-  String get welcomeToOpenFoodFacts =>
-      'Te damos la bienvenida a Open Food Facts';
+  String get welcomeToOpenFoodFacts => 'Te damos la bienvenida a Luppa';
 
   @override
   String get whatIsOff =>
-      'luppa es una organización global sin ánimo de lucro impulsada por comunidades locales.';
+      'luppa es una organización global sin fines de lucro impulsada por comunidades locales.';
 
   @override
   String get productDataUtility =>
-      'Consulta los datos de los alimentos relacionados con tus preferencias.';
+      'Consultá los datos de los alimentos relacionados con tus preferencias.';
 
   @override
   String get healthCardUtility =>
-      'Elige los alimentos que sean buenos para ti.';
+      'Elegí los alimentos que sean buenos para vos.';
 
   @override
   String get ecoCardUtility =>
-      'Elige alimentos que sean buenos para el planeta.';
+      'Elegí alimentos que sean buenos para el planeta.';
 
   @override
   String get server_error_open_new_issue =>
-      '¡No hay respuesta del servidor! Puedes alertar de esta instancia con el siguiente enlace.';
+      '¡No hay respuesta del servidor! Podés alertar de esta instancia con el siguiente enlace.';
 
   @override
   String get sign_in_text =>
-      'Inicia sesión en tu cuenta de luppa para guardar tus contribuciones';
+      'Iniciá sesión en tu cuenta de luppa para guardar tus contribuciones';
 
   @override
   String get incorrect_credentials =>
@@ -179,11 +178,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get password_lost_incorrect_credentials =>
-      'Este correo electrónico o nombre de usuario no existe. Por favor, comprueba tus credenciales.';
+      'Este correo electrónico o nombre de usuario no existe. Por favor, comprobá tus credenciales.';
 
   @override
   String get password_lost_server_unavailable =>
-      'Estamos sufriendo retrasos en nuestros servidores y nos disculpamos por ello. Por favor, inténtalo de nuevo más tarde.';
+      'Estamos sufriendo retrasos en nuestros servidores y nos disculpamos por ello. Por favor, intentalo de nuevo más tarde.';
 
   @override
   String get login => 'Iniciar sesión';
@@ -194,15 +193,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get login_result_type_server_issue =>
-      'Problema en el servidor. Por favor, inténtalo más tarde.';
+      'Problema en el servidor. Por favor, intentalo más tarde.';
 
   @override
   String get login_page_username_or_email =>
-      'Por favor, introduce tu nombre de usuario o correo electrónico';
+      'Por favor, introducí tu nombre de usuario o correo electrónico';
 
   @override
   String get login_page_password_error_empty =>
-      'Por favor, introduce una contraseña';
+      'Por favor, introducí una contraseña';
 
   @override
   String get create_account => 'Crear cuenta';
@@ -212,16 +211,16 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sign_in_mandatory =>
-      'Para usar esa función necesitas iniciar sesión.';
+      'Para usar esa función necesitás iniciar sesión.';
 
   @override
-  String get help_improve_country => 'Help improve luppa in your country';
+  String get help_improve_country => 'Ayudá a mejorar luppa en tu país';
 
   @override
   String get sign_out => 'Cerrar sesión';
 
   @override
-  String get sign_out_confirmation => '¿Seguro que quieres cerrar la sesión?';
+  String get sign_out_confirmation => '¿Seguro que querés cerrar la sesión?';
 
   @override
   String get password => 'Contraseña';
@@ -237,40 +236,40 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get reset_password_explanation_text =>
-      'En caso de que hayas olvidado la contraseña, introduce tu nombre de usuario o dirección de correo electrónico para recibir instrucciones de cómo restablecerla. No olvides revisar la carpeta de correo basura.';
+      'En caso de que hayas olvidado la contraseña, introducí tu nombre de usuario o dirección de correo electrónico para recibir instrucciones de cómo restablecerla. No te olvides de revisar la carpeta de correo basura.';
 
   @override
   String get username_or_email => 'Nombre de usuario o correo electrónico';
 
   @override
   String get reset_password_done =>
-      'Hemos enviado un correo electrónico con un enlace a la dirección de correo electrónico vinculada a tu cuenta de usuario para que puedas restablecer tu contraseña. No olvides revisar la carpeta de correo basura.';
+      'Hemos enviado un correo electrónico con un enlace a la dirección de correo electrónico vinculada a tu cuenta de usuario para que puedas restablecer tu contraseña. No te olvides de revisar la carpeta de correo basura.';
 
   @override
   String get send_reset_password_mail => 'Cambiar contraseña';
 
   @override
-  String get enter_some_text => 'Por favor, escribe algo';
+  String get enter_some_text => 'Por favor, escribí algo';
 
   @override
-  String get sign_up_page_title => 'Regístrate';
+  String get sign_up_page_title => 'Registrate';
 
   @override
-  String get sign_up_page_action_button => 'Regístrate';
+  String get sign_up_page_action_button => 'Registrate';
 
   @override
   String get sign_up_page_action_doing_it => 'Registrando…';
 
   @override
   String get sign_up_page_action_ok =>
-      '¡Felicidades! Tu cuenta acaba de ser creada.';
+      '¡Felicitaciones! Tu cuenta acaba de ser creada.';
 
   @override
   String get sign_up_page_display_name_hint => 'Nombre';
 
   @override
   String get sign_up_page_display_name_error_empty =>
-      'Por favor, introduce el nombre que deseas mostrar';
+      'Por favor, introducí el nombre que querés mostrar';
 
   @override
   String get sign_up_page_email_hint => 'Correo electrónico';
@@ -288,11 +287,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sign_up_page_username_error_empty =>
-      'Por favor, introduce un nombre de usuario';
+      'Por favor, introducí un nombre de usuario';
 
   @override
   String get sign_up_page_username_error_invalid =>
-      'Por favor, introduce un nombre de usuario válido';
+      'Por favor, introducí un nombre de usuario válido';
 
   @override
   String get sign_up_page_username_description =>
@@ -308,18 +307,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sign_up_page_password_error_empty =>
-      'Por favor, introduce una contraseña';
+      'Por favor, introducí una contraseña';
 
   @override
   String get sign_up_page_password_error_invalid =>
-      'Por favor, introduce una contraseña válida (al menos 6 caracteres)';
+      'Por favor, introducí una contraseña válida (al menos 6 caracteres)';
 
   @override
   String get sign_up_page_confirm_password_hint => 'Confirmar contraseña';
 
   @override
   String get sign_up_page_confirm_password_error_empty =>
-      'Por favor, confirma la contraseña';
+      'Por favor, confirmá la contraseña';
 
   @override
   String get sign_up_page_confirm_password_error_invalid =>
@@ -351,7 +350,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sign_up_page_producer_error_empty =>
-      'Por favor, introduce un productor o una marca';
+      'Por favor, introducí un productor o una marca';
 
   @override
   String get sign_up_page_subscribe_checkbox =>
@@ -359,19 +358,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sign_up_page_user_name_already_used =>
-      'Este nombre de usuario ya existe, por favor, elige uno nuevo.';
+      'Este nombre de usuario ya existe, por favor, elegí uno nuevo.';
 
   @override
   String get sign_up_page_email_already_exists =>
-      'ya existe, inicia sesión en la cuenta o prueba con otro correo electrónico.';
+      'ya existe, iniciá sesión en la cuenta o probá con otro correo electrónico.';
 
   @override
   String get sign_up_page_provide_valid_email =>
-      'Por favor, proporciona una dirección de correo electrónico válida.';
+      'Por favor, proporcioná una dirección de correo electrónico válida.';
 
   @override
   String get sign_up_page_server_busy =>
-      'Lo sentimos, estamos teniendo algunas dificultades técnicas para crear tu cuenta. Por favor, inténtalo de nuevo más tarde.';
+      'Lo sentimos, estamos teniendo algunas dificultades técnicas para crear tu cuenta. Por favor, intentalo de nuevo más tarde.';
 
   @override
   String get settingsTitle => 'Configuración';
@@ -411,13 +410,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get support => 'Soporte';
 
   @override
-  String get support_join_slack => 'Pide ayuda en nuestro canal de Slack';
+  String get support_join_slack => 'Pedí ayuda en nuestro canal de Slack';
 
   @override
-  String get support_via_forum => 'Pide ayuda en nuestro foro';
+  String get support_via_forum => 'Pedí ayuda en nuestro foro';
 
   @override
-  String get support_via_email => 'Envíanos un correo electrónico';
+  String get support_via_email => 'Envianos un correo electrónico';
 
   @override
   String get support_via_email_include_logs_dialog_title =>
@@ -425,7 +424,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get support_via_email_include_logs_dialog_body =>
-      '¿Quieres enviar los registros internos de la aplicación como adjunto en tu correo?';
+      '¿Querés enviar los registros internos de la aplicación como adjunto en tu correo?';
 
   @override
   String get termsOfUse => 'Condiciones de uso';
@@ -447,31 +446,31 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get contribute_develop_text =>
-      'El código de todos los productos de luppa está disponible en GitHub. Si quieres, puedes reutilizarlo (es código abierto) o ayudarnos a mejorarlo. Para todos, en todo el planeta.';
+      'El código de todos los productos de luppa está disponible en GitHub. Si querés, podés reutilizarlo (es código abierto) o ayudarnos a mejorarlo. Para todos, en todo el planeta.';
 
   @override
   String get contribute_develop_text_2 =>
-      'Puedes unirte al canal de Slack de luppa, el mejor lugar para resolver tus dudas.';
+      'Podés unirte al canal de Slack de luppa, el mejor lugar para resolver tus dudas.';
 
   @override
   String get contribute_develop_dev_mode_title => '¿Modo desarrollador?';
 
   @override
   String get contribute_develop_dev_mode_subtitle =>
-      'Activa el modo de desarrollador';
+      'Activá el modo de desarrollador';
 
   @override
   String get contribute_donate_title => 'Donar';
 
   @override
-  String get contribute_donate_header => 'Dona a luppa';
+  String get contribute_donate_header => 'Doná a luppa';
 
   @override
-  String get contribute_enroll_alpha => 'Inscríbete en la versión alfa interna';
+  String get contribute_enroll_alpha => 'Inscribite en la versión alfa interna';
 
   @override
   String get contribute_enroll_alpha_warning =>
-      'Ten en cuenta que con la versión alfa interna, es posible la pérdida total de datos, y que la aplicación puede resultar inutilizable en cualquier momento.';
+      'Tené en cuenta que con la versión alfa interna, es posible la pérdida total de datos, y que la aplicación puede resultar inutilizable en cualquier momento.';
 
   @override
   String get contribute_improve_ProductsToBeCompleted =>
@@ -482,16 +481,16 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get contribute_improve_text =>
-      'La base de datos es el núcleo del proyecto. Puedes ayudar de manera fácil y muy rápido. Descarga la aplicación en tu teléfono móvil y empieza a añadir productos o a mejorar los que ya están.\n\nPor otro lado, el sitio web de luppa ofrece muchas maneras de colaborar: ';
+      'La base de datos es el núcleo del proyecto. Podés ayudar de manera fácil y muy rápido. Descargá la aplicación en tu teléfono móvil y empezá a añadir productos o a mejorar los que ya están.\n\nPor otro lado, el sitio web de luppa ofrece muchas maneras de colaborar: ';
 
   @override
-  String get contribute_translate_header => 'Traduce';
+  String get contribute_translate_header => 'Traducí';
 
   @override
   String get contribute_data_quality => 'Calidad de datos';
 
   @override
-  String get contribute_translate_link_text => 'Empieza a traducir';
+  String get contribute_translate_link_text => 'Empezá a traducir';
 
   @override
   String get contribute_translate_text =>
@@ -503,69 +502,69 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get contribute_join_skill_pool =>
-      'Colabora con tus habilidades en luppa. ¡Únete al Grupo de Habilidades!';
+      'Colaborá con tus habilidades en luppa. ¡Unite al Grupo de Habilidades!';
 
   @override
-  String get contribute_share_header => 'Comparte Luppa con tus amigos';
+  String get contribute_share_header => 'Compartí Luppa con tus amigos';
 
   @override
   String get contribute_share_content =>
-      'Prueba Luppa, una app muy útil, que te muestra el impacto de los alimentos en tu salud y el ambiente. Escaneás el código de barras y listo. Acá el link: https://luppa.ar';
+      'Probá Luppa, una app muy útil, que te muestra el impacto de los alimentos en tu salud y el ambiente. Escaneás el código de barras y listo. Acá el link: https://luppa.ar';
 
   @override
   String get contribute_prices_gdpr =>
-      'Contribuya con los precios solicitando una exportación del GDPR de los datos de sus tarjetas de fidelización';
+      'Contribuí con los precios solicitando una exportación del GDPR de los datos de tus tarjetas de fidelización';
 
   @override
-  String get tap_to_answer => 'Toca aquí para responder preguntas';
+  String get tap_to_answer => 'Tocá acá para responder preguntas';
 
   @override
   String get tap_to_answer_hint =>
-      'Toca aquí para responder preguntas sobre el producto';
+      'Tocá acá para responder preguntas sobre el producto';
 
   @override
   String get robotoff_questions_loading_hint =>
-      'Por favor, espera mientras se cargan las preguntas sobre este producto.';
+      'Por favor, esperá mientras se cargan las preguntas sobre este producto.';
 
   @override
   String get saving_answer => 'Guardando tu respuesta';
 
   @override
   String get contribute_to_get_rewards =>
-      'Conviértete en un actor de la transparencia alimentaria';
+      'Convertite en un actor de la transparencia alimentaria';
 
   @override
   String get question_sign_in_text =>
-      'Inicia sesión en tu cuenta de Luppa para obtener reconocimiento por tu colaboración.';
+      'Iniciá sesión en tu cuenta de Luppa para obtener reconocimiento por tu colaboración.';
 
   @override
-  String get question_yes_button_accessibility_value => 'Responde con sí';
+  String get question_yes_button_accessibility_value => 'Responder con sí';
 
   @override
-  String get question_no_button_accessibility_value => 'Responde con no';
+  String get question_no_button_accessibility_value => 'Responder con no';
 
   @override
   String get question_skip_button_accessibility_value => 'Saltar esta pregunta';
 
   @override
-  String get tap_to_edit_search => 'Toca para editar la búsqueda';
+  String get tap_to_edit_search => 'Tocá para editar la búsqueda';
 
   @override
   String get myPreferences => 'Mis preferencias';
 
   @override
   String get account_create_message =>
-      '¡Crea una cuenta y únete a la comunidad de luppa para ayudar a crear conocimiento sobre los alimentos en todo el mundo!';
+      '¡Creá una cuenta y unite a la comunidad de luppa para ayudar a crear conocimiento sobre los alimentos en todo el mundo!';
 
   @override
-  String get join_us => 'Únete al equipo';
+  String get join_us => 'Unite al equipo';
 
   @override
   String get myPreferences_profile_title => 'Tu perfil';
 
   @override
   String get myPreferences_profile_subtitle =>
-      'Administra tu cuenta de colaborador de Luppa.';
+      'Administrá tu cuenta de colaborador de Luppa.';
 
   @override
   String get myPreferences_settings_title => 'Ajustes de la aplicación';
@@ -578,15 +577,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get myPreferences_food_subtitle =>
-      'Elige qué tipo de información alimentaria es más importante para ti.';
+      'Elegí qué tipo de información alimentaria es más importante para vos.';
 
   @override
   String get myPreferences_food_comment =>
-      'Elige qué información alimentaria es la que más te importan para que la aplicación pueda clasificar los alimentos según tus preferencias. Verás la información más relevante primero y obtendrás un resumen de compatibilidad. Esas preferencias alimentarias permanecen en tu dispositivo.';
+      'Elegí qué información alimentaria es la que más te importa para que la aplicación pueda clasificar los alimentos según tus preferencias. Verás la información más relevante primero y obtendrás un resumen de compatibilidad. Esas preferencias alimentarias permanecen en tu dispositivo.';
 
   @override
   String get confirmResetPreferences =>
-      '¿Quieres restablecer tus preferencias alimentarias?';
+      '¿Querés restablecer tus preferencias alimentarias?';
 
   @override
   String get myPersonalizedRanking => 'Mi clasificación personalizada';
@@ -595,7 +594,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get ranking_tab_all => 'Todo';
 
   @override
-  String get ranking_subtitle_match_yes => 'Una buena opción para ti';
+  String get ranking_subtitle_match_yes => 'Una buena opción para vos';
 
   @override
   String get ranking_subtitle_match_no => 'Muy poco recomendable';
@@ -605,7 +604,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get refresh_with_new_preferences =>
-      'Actualiza la lista con tus nuevas preferencias';
+      'Actualizá la lista con tus nuevas preferencias';
 
   @override
   String get reloaded_with_new_preferences =>
@@ -645,10 +644,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get search => 'Buscar';
 
   @override
-  String get search_store => 'Search for a store';
+  String get search_store => 'Buscar una tienda';
 
   @override
-  String get tap_for_more => 'Pulsa para ver más información…';
+  String get tap_for_more => 'Pulsá para ver más información…';
 
   @override
   String get product => 'Producto';
@@ -663,7 +662,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get label_refresh => 'Actualizar';
 
   @override
-  String get label_reload => 'Reload';
+  String get label_reload => 'Recargar';
 
   @override
   String get image => 'Imagen';
@@ -673,25 +672,25 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String outdated_image_accessibility_label(Object imageType) {
-    return '$imageType (this image may be outdated)';
+    return '$imageType (esta imagen puede estar desactualizada)';
   }
 
   @override
-  String get outdated_image_short_label => 'may be outdated';
+  String get outdated_image_short_label => 'puede estar desactualizada';
 
   @override
   String get ingredients => 'Ingredientes';
 
   @override
   String get ingredients_editing_instructions =>
-      'Keep the original order. Indicate the percentage when specified. Separate with a comma or hyphen and use parentheses for ingredients of an ingredient.';
+      'Mantené el orden original. Indicá el porcentaje cuando se especifique. Separá con una coma o un guion y usá paréntesis para los ingredientes de un ingrediente.';
 
   @override
   String get ingredients_editing_error => 'Error al guardar los ingredientes.';
 
   @override
   String get ingredients_editing_image_error =>
-      'No se ha podido obtener una nueva imagen de los ingredientes.';
+      'No se pudo obtener una nueva imagen de los ingredientes.';
 
   @override
   String get ingredients_editing_title => 'Editar ingredientes';
@@ -701,14 +700,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get packaging_editing_instructions =>
-      'Enumera todas las partes del envase separándolas con una coma o un salto de línea, incluyendo la cantidad (1,3,6…), el formato (botella, caja, lata…), el material (plástico, metal, aluminio…), y si están disponibles, el tamaño (por ejemplo, 33 cl) y las instrucciones de reciclaje.\nEjemplo: 1 botella de vidrio para reciclar, 1 corcho de plástico para tirar';
+      'Enumerá todas las partes del envase separándolas con una coma o un salto de línea, incluyendo la cantidad (1,3,6…), el formato (botella, caja, lata…), el material (plástico, metal, aluminio…), y si están disponibles, el tamaño (por ejemplo, 33 cl) y las instrucciones de reciclaje.\nEjemplo: 1 botella de vidrio para reciclar, 1 corcho de plástico para tirar';
 
   @override
-  String get packaging_editing_error => 'No se ha podido guardar el envase.';
+  String get packaging_editing_error => 'No se pudo guardar el envase.';
 
   @override
   String get packaging_editing_image_error =>
-      'No se ha podido obtener una nueva imagen del envase.';
+      'No se pudo obtener una nueva imagen del envase.';
 
   @override
   String get packaging_editing_title => 'Editar envase';
@@ -729,15 +728,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get packaging_information_photo => 'Foto de la información del envase';
 
   @override
-  String get missing_product => '¡Has encontrado un nuevo producto!';
+  String get missing_product => '¡Encontraste un nuevo producto!';
 
   @override
   String get add_product_take_photos =>
-      'Haz fotos del envase para añadir este producto a Luppa.';
+      'Sacá fotos del envase para añadir este producto a Luppa.';
 
   @override
   String get add_product_take_photos_descriptive =>
-      'Por favor, primero haz alguna foto del producto. Más adelante podrás completar la información del producto.';
+      'Por favor, primero sacá alguna foto del producto. Más adelante podrás completar la información del producto.';
 
   @override
   String get add_product_information_button_label =>
@@ -751,21 +750,21 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get new_product_found_text =>
-      'Our collaborative database contains more than **3 million products**, but this barcode doesn\'t exist: ';
+      'Nuestra base de datos contiene más de **12.000 productos**, pero este todavia no lo tenemos: ';
 
   @override
   String get new_product_found_button => 'Añadir este producto';
 
   @override
-  String get new_product_leave_title => '¿Desea dejar esta página?';
+  String get new_product_leave_title => '¿Deseás dejar esta página?';
 
   @override
   String get new_product_leave_message =>
-      'Parece que no has introducido nada. ¿De verdad quieres abandonar esta página?';
+      'Parece que no introdujiste nada. ¿De verdad querés abandonar esta página?';
 
   @override
   String get new_product_dialog_description =>
-      'Haz fotos del envase para añadir este producto a nuestra base de datos';
+      'Sacá fotos del envase para añadir este producto a nuestra base de datos';
 
   @override
   String get new_product_dialog_illustration_description =>
@@ -799,10 +798,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get crop_page_action_local_failed_message =>
-      'No podemos procesar la imagen localmente, antes de enviarla a nuestro servidor. Por favor, inténtalo de nuevo más tarde o ponte en contacto con nosotros si el problema persiste.';
+      'No podemos procesar la imagen localmente, antes de enviarla a nuestro servidor. Por favor, intentalo de nuevo más tarde o ponete en contacto con nosotros si el problema persiste.';
 
   @override
-  String get crop_page_action_retake => 'Retake a photo';
+  String get crop_page_action_retake => 'Sacar otra foto';
 
   @override
   String get crop_page_too_small_image_title =>
@@ -835,10 +834,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get recycling_photo_title => 'Foto sobre el reciclaje';
 
   @override
-  String get take_photo_title => 'Saca una foto';
+  String get take_photo_title => 'Sacá una foto';
 
   @override
-  String get take_more_photo_title => 'Haz más fotos';
+  String get take_more_photo_title => 'Sacá más fotos';
 
   @override
   String get front_photo_uploaded => 'Foto frontal subida';
@@ -872,26 +871,26 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get new_product_subtitle_nutriscore =>
-      'Ayúdanos completando la categoría de alimentos y los valores nutricionales.';
+      'Ayudanos completando la categoría de alimentos y los valores nutricionales.';
 
   @override
   String get new_product_title_environmental_score => 'Calcular el Green-Score';
 
   @override
   String get new_product_subtitle_environmental_score =>
-      'Consíguelo rellenando al menos una categoría';
+      'Conseguilo rellenando al menos una categoría';
 
   @override
   String get new_product_additional_environmental_score =>
-      'Haz que el cálculo de Green-Score sea más preciso añadiendo orígenes, envase y más';
+      'Hacé que el cálculo de Green-Score sea más preciso añadiendo orígenes, envase y más';
 
   @override
   String get new_product_title_nova =>
-      'Calcula el nivel de procesado de los alimentos (NOVA)';
+      'Calculá el nivel de procesado de los alimentos (NOVA)';
 
   @override
   String get new_product_subtitle_nova =>
-      'Hazlo rellenando las categorías de alimentos e ingredientes.';
+      'Hacelo rellenando las categorías de alimentos e ingredientes.';
 
   @override
   String get new_product_desc_nova_unknown =>
@@ -902,7 +901,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get new_product_title_pictures_details =>
-      'Haz las siguientes fotos y el motor de luppa se ocupará del resto.';
+      'Sacá las siguientes fotos y el motor de luppa se ocupará del resto.';
 
   @override
   String get new_product_title_misc => 'Y algunos datos básicos…';
@@ -916,23 +915,23 @@ class AppLocalizationsEs extends AppLocalizations {
   String get new_product_done_msg_no_user => '¡Gracias por tu colaboración!';
 
   @override
-  String get new_product_done_button_label => 'Descubre el producto completo';
+  String get new_product_done_button_label => 'Descubrí el producto completo';
 
   @override
   String get hey_incomplete_product_message =>
-      '¡Toque para responder 3 preguntas AHORA para calcular Nutri-Score, Green-Score y Ultraprocesado (NOVA)!';
+      '¡Tocá para responder 3 preguntas AHORA para calcular Nutri-Score, Green-Score y Ultraprocesado (NOVA)!';
 
   @override
   String get hey_incomplete_product_message_beauty =>
-      'Tap now to answer 2 questions to help analyze this cosmetic!';
+      '¡Tocá ahora para responder 2 preguntas y ayudar a analizar este cosmético!';
 
   @override
   String get hey_incomplete_product_message_pet_food =>
-      'Tap now to answer 3 questions to help analyze this pet food product!';
+      '¡Tocá ahora para responder 3 preguntas y ayudar a analizar este producto para mascotas!';
 
   @override
   String get hey_incomplete_product_message_product =>
-      'Tap now to help complete this product!';
+      '¡Tocá ahora para ayudar a completar este producto!';
 
   @override
   String get nutritional_facts_photo_uploaded =>
@@ -946,7 +945,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get recycling_photo_uploaded => 'Imagen sobre reciclaje subida';
 
   @override
-  String get take_more_photo_button_label => 'Haz más fotos';
+  String get take_more_photo_button_label => 'Sacá más fotos';
 
   @override
   String get other_photo_uploaded => 'Imagen miscelánea subida';
@@ -995,7 +994,8 @@ class AppLocalizationsEs extends AppLocalizations {
       'Añadir la información nutricional que falta';
 
   @override
-  String get score_add_missing_product_traces => 'Add missing product traces';
+  String get score_add_missing_product_traces =>
+      'Añadir las trazas de producto que faltan';
 
   @override
   String get score_add_missing_product_category => 'Seleccionar una categoría';
@@ -1025,7 +1025,8 @@ class AppLocalizationsEs extends AppLocalizations {
       'Añadir las tiendas que faltan';
 
   @override
-  String get score_add_missing_product_brands => 'Add missing product brands';
+  String get score_add_missing_product_brands =>
+      'Añadir las marcas de producto que faltan';
 
   @override
   String get score_update_nutrition_facts =>
@@ -1035,11 +1036,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get nutrition_page_title => 'Información nutricional';
 
   @override
-  String get nutrition_page_nutritional_info_title => 'Nutritional information';
+  String get nutrition_page_nutritional_info_title => 'Información nutricional';
 
   @override
   String get nutrition_page_nutritional_info_label =>
-      'Values specified on the product:';
+      'Valores especificados en el producto:';
 
   @override
   String get nutrition_page_nutritional_info_value_positive => 'Sí';
@@ -1048,24 +1049,24 @@ class AppLocalizationsEs extends AppLocalizations {
   String get nutrition_page_nutritional_info_value_negative => 'No';
 
   @override
-  String get nutrition_page_nutritional_info_open_photo => 'Open photo';
+  String get nutrition_page_nutritional_info_open_photo => 'Abrir foto';
 
   @override
   String get nutrition_page_nutritional_info_explanation_title =>
-      'Good practices: Nutritional information';
+      'Buenas prácticas: Información nutricional';
 
   @override
   String get nutrition_page_nutritional_info_explanation_info1 =>
-      'Sometimes nutrition facts are **not specified on the packaging** or on a document given with the product. In this case, and only in this case, you can set the value to **NO**.';
+      'A veces, la información nutricional **no se especifica en el envase** o en un documento que acompaña al producto. En este caso, y solo en este caso, podés establecer el valor en **NO**.';
 
   @override
-  String get nutrition_page_serving_type_label => 'Nutritional values:';
+  String get nutrition_page_serving_type_label => 'Valores nutricionales:';
 
   @override
   String get nutrition_page_per_100g => 'por 100 g';
 
   @override
-  String get nutrition_page_per_100g_100ml => 'per 100g/ml';
+  String get nutrition_page_per_100g_100ml => 'por 100g/ml';
 
   @override
   String get nutrition_page_per_serving => 'por porción';
@@ -1078,23 +1079,23 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nutrition_page_serving_size_hint =>
-      'Input a serving size (eg: 100g)';
+      'Ingresá un tamaño de porción (ej: 100g)';
 
   @override
   String get nutrition_page_serving_size_explanation_title =>
-      'Good practices: Serving size';
+      'Buenas prácticas: Tamaño de la porción';
 
   @override
   String get nutrition_page_serving_size_explanation_info1 =>
-      'This value helps to **make a proportional calculation of each nutrient per serving size**.';
+      'Este valor ayuda a **hacer un cálculo proporcional de cada nutriente por tamaño de porción**.';
 
   @override
   String get nutrition_page_serving_size_explanation_info2 =>
-      '**Allowed units** are: kg, g, mg, µg, oz, l, dl, cl, ml, fl.oz, fl oz, г, мг, кг, л, дл, кл, мл, 毫克, 公斤, 毫升, 公升, 吨.';
+      'Las **unidades permitidas** son: kg, g, mg, µg, oz, l, dl, cl, ml, fl.oz, fl oz, г, мг, кг, л, дл, кл, мл, 毫克, 公斤, 毫升, 公升, 吨.';
 
   @override
   String get nutrition_page_serving_size_explanation_good_example1 =>
-      '**60 g**, **60g** or **60 G** (prefer the first one)';
+      '**60 g**, **60g** o **60 G** (preferible el primero)';
 
   @override
   String get nutrition_page_serving_size_explanation_good_example2 =>
@@ -1114,7 +1115,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nutrition_page_serving_size_explanation_bad_example2_example =>
-      '9 **candies** and 2 **biscuits**';
+      '9 **caramelos** y 2 **galletitas**';
 
   @override
   String get nutrition_page_serving_size_explanation_bad_example3_explanation =>
@@ -1136,10 +1137,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nutrition_page_take_serving_size_from_product_quantity =>
-      'Use the product quantity as serving size';
+      'Usar la cantidad del producto como tamaño de la porción';
 
   @override
-  String get nutrition_page_photo_error => 'Unable to load the photo';
+  String get nutrition_page_photo_error => 'No se pudo cargar la foto';
 
   @override
   String get more_photos => 'Más fotos interesantes';
@@ -1148,13 +1149,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get view_more_photo_button => 'Ver todas las fotos de este producto';
 
   @override
-  String get no_product_found => 'No se ha encontrado ningún producto';
+  String get no_product_found => 'No se encontró ningún producto';
 
   @override
-  String get no_location_found => 'No location found';
+  String get no_location_found => 'No se encontró la ubicación';
 
   @override
-  String get not_found => 'no se ha encontrado:';
+  String get not_found => 'no se encontró:';
 
   @override
   String get refreshing_product => 'Actualizando producto';
@@ -1164,61 +1165,61 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String product_image_accessibility_label(String date) {
-    return 'Image taken on $date';
+    return 'Imagen tomada el $date';
   }
 
   @override
   String product_image_outdated_accessibility_label(String date) {
-    return 'Image taken on $date. This image may be outdated';
+    return 'Imagen tomada el $date. Esta imagen puede estar desactualizada';
   }
 
   @override
-  String get product_image_outdated => 'This image may be outdated';
+  String get product_image_outdated => 'Esta imagen puede estar desactualizada';
 
   @override
   String get product_image_outdated_explanations_title =>
-      'This image may be outdated';
+      'Esta imagen puede estar desactualizada';
 
   @override
   String get product_image_outdated_explanations_content =>
-      'This image was taken more than a year ago.\n**Please check that\'s it\'s still up-to-date**.\n\nThis is **just a warning**. If the content is still the same, you can ignore this message.';
+      'Esta imagen fue tomada hace más de un año.\n**Por favor, verificá que siga vigente**.\n\nEsto es **solo una advertencia**. Si el contenido sigue siendo el mismo, podés ignorar este mensaje.';
 
   @override
   String product_image_action_replace_photo(String type) {
-    return 'Replace photo ($type)';
+    return 'Reemplazar foto ($type)';
   }
 
   @override
   String product_image_action_add_photo(String type) {
-    return 'Add a photo ($type)';
+    return 'Añadir una foto ($type)';
   }
 
   @override
   String get product_image_action_take_new_picture => 'Nueva captura';
 
   @override
-  String get product_image_action_take_picture => 'Saca una foto';
+  String get product_image_action_take_picture => 'Sacá una foto';
 
   @override
   String get product_image_action_from_gallery =>
-      'Select from your phone\'s gallery';
+      'Seleccionar de la galería de tu teléfono';
 
   @override
   String get product_image_action_choose_existing_photo =>
-      'Select from the product photos';
+      'Seleccionar de las fotos del producto';
 
   @override
-  String get product_image_details_label => 'Information about the photo';
+  String get product_image_details_label => 'Información sobre la foto';
 
   @override
-  String get product_image_details_from_producer => 'From the producer';
+  String get product_image_details_from_producer => 'Del productor';
 
   @override
   String get product_image_details_contributor => 'Colaborador/a';
 
   @override
   String get product_image_details_contributor_producer =>
-      'Contributor (producer)';
+      'Colaborador/a (productor/a)';
 
   @override
   String get product_image_details_date => 'Fecha';
@@ -1231,7 +1232,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get homepage_main_card_subheading =>
-      '**Escanea** un código de barras o\n**busca** por nombre';
+      '**Escaneá** un código de barras o\n**buscá** por nombre';
 
   @override
   String get homepage_main_card_search_field_hint => 'Buscar por nombre';
@@ -1254,7 +1255,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tagline_app_review_button_negative => 'No mucho…';
 
   @override
-  String get tagline_app_review_button_later => 'Pregúntame más tarde';
+  String get tagline_app_review_button_later => 'Preguntame más tarde';
 
   @override
   String get tagline_feed_news_button => 'Más información';
@@ -1273,22 +1274,22 @@ class AppLocalizationsEs extends AppLocalizations {
   String get app_review_negative_modal_negative_button => 'No';
 
   @override
-  String get could_not_refresh => 'No se ha podido actualizar el producto';
+  String get could_not_refresh => 'No se pudo actualizar el producto';
 
   @override
-  String get product_internet_error_modal_title => '¡Se ha producido un error!';
+  String get product_internet_error_modal_title => '¡Ocurrió un error!';
 
   @override
   String product_internet_error_modal_message(String error) {
-    return 'We are unable to fetch information about this product due to a network error. Please check your internet connection and try again.\n\nInternal error:\n$error';
+    return 'No podemos obtener información sobre este producto debido a un error de red. Por favor, revisá tu conexión a internet e intentalo de nuevo.\n\nError interno:\n$error';
   }
 
   @override
-  String get product_tags_title => 'Product properties';
+  String get product_tags_title => 'Propiedades del producto';
 
   @override
   String get no_product_tags_found_message =>
-      'No se han encontrado propiedades del producto. Las mismas se pueden utilizar para describir los productos con más detalle, de una manera más flexible.';
+      'No se encontraron propiedades del producto. Las mismas se pueden utilizar para describir los productos con más detalle, de una manera más flexible.';
 
   @override
   String get add_tag => 'Añadir una propiedad';
@@ -1300,25 +1301,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get add_edit_tags => 'Añadir o modificar propiedades';
 
   @override
-  String get edit_tag => 'Edit property';
+  String get edit_tag => 'Editar propiedad';
 
   @override
-  String get remove_tag => 'Remove property';
+  String get remove_tag => 'Eliminar propiedad';
 
   @override
-  String get tag_key => 'Property';
+  String get tag_key => 'Propiedad';
 
   @override
   String get tag_key_uneditable => 'Propiedad (no editable)';
 
   @override
-  String get tag_key_input_hint => 'Ingrese una propiedad';
+  String get tag_key_input_hint => 'Ingresá una propiedad';
 
   @override
   String get tag_value => 'Valor';
 
   @override
-  String get tag_value_input_hint => 'Ingrese un valor';
+  String get tag_value_input_hint => 'Ingresá un valor';
 
   @override
   String get tag_key_item => 'Propiedad:';
@@ -1343,58 +1344,58 @@ class AppLocalizationsEs extends AppLocalizations {
   String get cached_results_from => 'Mostrando resultados de:';
 
   @override
-  String get product_search_same_category => 'Encuentra alternativas';
+  String get product_search_same_category => 'Encontrá alternativas';
 
   @override
   String get product_search_same_category_short => 'Comparar';
 
   @override
   String get product_search_same_category_error =>
-      'This feature can only be used for products with a category.\n\nPlease edit the product to add a category.';
+      'Esta función solo se puede usar para productos con una categoría.\n\nPor favor, editá el producto para agregar una categoría.';
 
   @override
   String get product_improvement_add_category =>
-      'Añade una categoría para calcular la puntuación Nutri-Score.';
+      'Añadí una categoría para calcular la puntuación Nutri-Score.';
 
   @override
   String get product_improvement_add_nutrition_facts =>
-      'Añade la información nutricional para calcular la puntuación Nutri-Score.';
+      'Añadí la información nutricional para calcular la puntuación Nutri-Score.';
 
   @override
   String get product_improvement_add_nutrition_facts_and_category =>
-      'Añade una categoría y la información nutricional para calcular la puntuación de Nutri-Score.';
+      'Añadí una categoría y la información nutricional para calcular la puntuación de Nutri-Score.';
 
   @override
   String get product_improvement_categories_but_no_nutriscore =>
-      'No se ha podido calcular la puntuación Nutri-Score para este producto. Esto puede deberse a que, por ejemplo, una categoría no es estándar. Si crees que es un error, por favor, ponte en contacto con nosotros.';
+      'No se pudo calcular la puntuación Nutri-Score para este producto. Esto puede deberse a que, por ejemplo, una categoría no es estándar. Si creés que es un error, por favor, ponete en contacto con nosotros.';
 
   @override
   String get product_improvement_obsolete_nutrition_image =>
-      'La imagen nutricional está obsoleta: por favor, actualízala.';
+      'La imagen nutricional está obsoleta: por favor, actualizala.';
 
   @override
   String get product_improvement_origins_to_be_completed =>
-      'El Green-Score tiene en cuenta el origen de los ingredientes. Haz una foto de los ingredientes o a cualquier indicio geográfico y edita el producto para que se tengan en cuenta estos datos.';
+      'El Green-Score tiene en cuenta el origen de los ingredientes. Sacá una foto de los ingredientes o a cualquier indicio geográfico y editá el producto para que se tengan en cuenta estos datos.';
 
   @override
-  String get country_chooser_label => 'Elige un país';
+  String get country_chooser_label => 'Elegí un país';
 
   @override
-  String get currency_chooser_label => 'Por favor, elija una moneda';
+  String get currency_chooser_label => 'Por favor, elegí una moneda';
 
   @override
-  String get country_change_message => 'You have just changed countries.';
+  String get country_change_message => 'Acabás de cambiar de país.';
 
   @override
   String currency_auto_change_message(
     String previousCurrency,
     String possibleCurrency,
   ) {
-    return 'Do you want to change the currency from $previousCurrency to $possibleCurrency?';
+    return '¿Querés cambiar la moneda de $previousCurrency a $possibleCurrency?';
   }
 
   @override
-  String get onboarding_country_chooser_label => 'Por favor, elige un país:';
+  String get onboarding_country_chooser_label => 'Por favor, elegí un país:';
 
   @override
   String get country_chooser_label_from_settings => 'Tu país';
@@ -1421,7 +1422,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_removed_list => 'Producto eliminado de la lista';
 
   @override
-  String get product_could_not_remove => 'No se ha podido eliminar el producto';
+  String get product_could_not_remove => 'No se pudo eliminar el producto';
 
   @override
   String get no_prodcut_in_list => 'No hay ningún producto en esta lista';
@@ -1439,7 +1440,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get clear_long => 'Vaciar la lista';
 
   @override
-  String get really_clear => '¿Realmente quieres eliminar esta lista?';
+  String get really_clear => '¿Realmente querés eliminar esta lista?';
 
   @override
   String pct_match(Object percent) {
@@ -1508,7 +1509,7 @@ class AppLocalizationsEs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Comparar $count productos',
-      one: 'Comparar un producto',
+      one: 'Comparar 1 producto',
     );
     return '$_temp0';
   }
@@ -1518,64 +1519,64 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count selected products',
-      one: 'One selected product',
-      zero: 'No selected product',
+      other: '$count productos seleccionados',
+      one: 'Un producto seleccionado',
+      zero: 'Ningún producto seleccionado',
     );
     return '$_temp0';
   }
 
   @override
-  String get compare_products_mode => 'Compare selected products';
+  String get compare_products_mode => 'Comparar productos seleccionados';
 
   @override
-  String get delete_products_mode => 'Delete selected products';
+  String get delete_products_mode => 'Eliminar productos seleccionados';
 
   @override
-  String get select_all_products_mode => 'Select all products';
+  String get select_all_products_mode => 'Seleccionar todos los productos';
 
   @override
-  String get select_none_products_mode => 'Select none';
+  String get select_none_products_mode => 'No seleccionar ninguno';
 
   @override
   String get compare_products_appbar_title => 'Comparar productos';
 
   @override
   String get compare_products_appbar_subtitle =>
-      'Por favor, selecciona al menos dos productos';
+      'Por favor, seleccioná al menos dos productos';
 
   @override
   String get retry_button_label => 'Reintentar';
 
   @override
-  String get connect_with_us => 'Contáctanos';
+  String get connect_with_us => 'Contactanos';
 
   @override
-  String get tiktok => 'Follow us on TikTok';
+  String get tiktok => 'Seguinos en TikTok';
 
   @override
   String get tiktok_link => 'https://www.tiktok.com/@luppa';
 
   @override
-  String get instagram => 'Síguenos en Instagram';
+  String get instagram => 'Seguinos en Instagram';
 
   @override
   String get instagram_link => 'https://instagram.com/open.food.facts';
 
   @override
-  String get twitter => 'Síguenos en X (anteriormente Twitter)';
+  String get twitter => 'Seguinos en X (anteriormente Twitter)';
 
   @override
   String get twitter_link => 'https://www.twitter.com/luppa';
 
   @override
-  String get mastodon => 'Follow us on Mastodon';
+  String get mastodon => 'Seguinos en Mastodon';
 
   @override
   String get mastodon_link => 'https://mastodon.social/@luppa';
 
   @override
-  String get bsky => 'Follow us on BlueSky';
+  String get bsky => 'Seguinos en BlueSky';
 
   @override
   String get bsky_link => 'https://bsky.app/profile/luppa.bsky.social';
@@ -1594,18 +1595,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get hint_knowledge_panel_message =>
-      'Puedes tocar en cualquier parte de la tarjeta para obtener más detalles sobre lo que ves. ¡Pruébalo!';
+      'Podés tocar en cualquier parte de la tarjeta para obtener más detalles sobre lo que ves. ¡Probalo!';
 
   @override
   String get permissions_page_title => 'Acceso a la cámara';
 
   @override
   String get permissions_page_body1 =>
-      'Para poder escanear los códigos de barras con la cámara, primero tienes que autorizar el acceso.';
+      'Para poder escanear los códigos de barras con la cámara, primero tenés que autorizar el acceso.';
 
   @override
   String get permissions_page_body2 =>
-      'En cualquier caso, recuerda que si cambias de opinión, puedes activar y desactivar esta opción desde la configuración cuando quieras.';
+      'En cualquier caso, recordá que si cambiás de opinión, podés activar y desactivar esta opción desde la configuración cuando quieras.';
 
   @override
   String contact_form_body_android(
@@ -1660,7 +1661,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get onboarding_home_welcome_text2 =>
-      '**Luppa** es la app que te ayuda a **conocer** lo que consumes.';
+      '**Luppa** es la app que te ayuda a **conocer** lo que consumís.';
 
   @override
   String get onboarding_continue_button => 'Continuar';
@@ -1676,7 +1677,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_list_empty_icon_desc => 'Historial no disponible';
 
   @override
-  String get product_list_empty_title => 'Empieza a escanear';
+  String get product_list_empty_title => 'Empezá a escanear';
 
   @override
   String get product_list_empty_message =>
@@ -1711,7 +1712,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get loading_dialog_default_error_message =>
-      'No se han podido descargar los datos';
+      'No se pudieron descargar los datos';
 
   @override
   String get account_delete => 'Eliminar cuenta';
@@ -1727,7 +1728,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get user_profile_subtitle_guest =>
-      'Inicia sesión o regístrate para unirte a la comunidad de Luppa';
+      'Iniciá sesión o registrate para unirte a la comunidad de Luppa';
 
   @override
   String user_profile_title_id_email(String email) {
@@ -1771,7 +1772,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get camera_window_accessibility_label =>
-      'Escanea un código de barras con la cámara';
+      'Escaneá un código de barras con la cámara';
 
   @override
   String get app_haptic_feedback_title => 'Vibración y respuesta táctil';
@@ -1806,14 +1807,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String permission_photo_denied_message(String appName) {
-    return 'Para disfrutar de una mejor experiencia, permite que $appName acceda a tu cámara. Así podrás escanear los códigos de barras directamente.';
+    return 'Para disfrutar de una mejor experiencia, permití que $appName acceda a tu cámara. Así podrás escanear los códigos de barras directamente.';
   }
 
   @override
   String get permission_photo_denied_button => 'Permitir';
 
   @override
-  String get permission_photo_denied_dialog_settings_title => 'Permiso dengado';
+  String get permission_photo_denied_dialog_settings_title =>
+      'Permiso denegado';
 
   @override
   String get permission_photo_denied_dialog_settings_message =>
@@ -1841,11 +1843,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_pending_operations_banner_title =>
-      'Uploading your edits…';
+      'Subiendo tus ediciones…';
 
   @override
   String get edit_product_pending_operations_banner_message =>
-      'Tus ediciones están siendo **enviadas a un segundo plano** (o más tarde en caso de error). Puedes continuar editando otros campos del producto.';
+      'Tus ediciones están siendo **enviadas a un segundo plano** (o más tarde en caso de error). Podés continuar editando otros campos del producto.';
 
   @override
   String get edit_product_pending_operations_banner_short_message =>
@@ -1856,41 +1858,47 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String edit_product_form_item_help(String value) {
-    return 'How to enter \"$value\"?';
+    return '¿Cómo ingresar \"$value\"?';
   }
 
   @override
   String get edit_product_form_item_error_empty =>
-      '¡Por favor ingrese un valor!';
+      '¡Por favor ingresá un valor!';
 
   @override
-  String get edit_product_form_item_error_existing =>
-      'This value is already there!';
+  String get edit_product_form_item_error_existing => '¡Este valor ya existe!';
 
   @override
-  String get edit_product_form_item_add_action_brand => 'Add a new brand';
+  String get edit_product_form_item_add_action_brand =>
+      'Añadir una nueva marca';
 
   @override
-  String get edit_product_form_item_add_action_label => 'Add a new label';
+  String get edit_product_form_item_add_action_label =>
+      'Añadir una nueva etiqueta';
 
   @override
-  String get edit_product_form_item_add_action_store => 'Add a new store';
+  String get edit_product_form_item_add_action_store =>
+      'Añadir una nueva tienda';
 
   @override
-  String get edit_product_form_item_add_action_origin => 'Add a new origin';
+  String get edit_product_form_item_add_action_origin =>
+      'Añadir un nuevo origen';
 
   @override
   String get edit_product_form_item_add_action_emb_code =>
-      'Add a new traceability code';
+      'Añadir un nuevo código de trazabilidad';
 
   @override
-  String get edit_product_form_item_add_action_country => 'Add a new country';
+  String get edit_product_form_item_add_action_country =>
+      'Añadir un nuevo país';
 
   @override
-  String get edit_product_form_item_add_action_category => 'Add a new category';
+  String get edit_product_form_item_add_action_category =>
+      'Añadir una nueva categoría';
 
   @override
-  String get edit_product_form_item_add_action_trace => 'Add a new trace';
+  String get edit_product_form_item_add_action_trace =>
+      'Añadir una nueva traza';
 
   @override
   String get edit_product_form_item_add_suggestion => 'Añadir una sugerencia';
@@ -1928,18 +1936,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_labels_hint =>
-      'Ingrese una etiqueta (por ejemplo: NutriScore)';
+      'Ingresá una etiqueta (por ejemplo: NutriScore)';
 
   @override
   String get edit_product_form_item_labels_type => 'sello';
 
   @override
   String get edit_product_form_item_labels_explanation_title =>
-      'Good practices: Labels';
+      'Buenas prácticas: Etiquetas';
 
   @override
   String get edit_product_form_item_labels_explanation_info1 =>
-      'Any characteristic of the product **which is factual** and different from the other fields.';
+      'Cualquier característica del producto **que sea un hecho** y diferente de los otros campos.';
 
   @override
   String get edit_product_form_item_labels_explanation_good_examples_1 =>
@@ -1947,7 +1955,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_labels_explanation_good_examples_2 =>
-      'Made in Belgium, produced in Brittany…';
+      'Hecho en Bélgica, producido en Bretaña…';
 
   @override
   String get edit_product_form_item_labels_explanation_good_examples_3 =>
@@ -1955,17 +1963,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_labels_explanation_good_examples_4 =>
-      'Rich in fiber, source of iron…';
+      'Rico en fibra, fuente de hierro…';
 
   @override
   String get edit_product_form_item_labels_explanation_good_examples_5 =>
-      'Fair trade, Max Havelaar…';
+      'Comercio justo, Max Havelaar…';
 
   @override
   String get edit_product_form_item_stores_title => 'Tiendas';
 
   @override
-  String get edit_product_form_item_stores_hint => 'Ingrese una tienda';
+  String get edit_product_form_item_stores_hint => 'Ingresá una tienda';
 
   @override
   String get edit_product_form_item_stores_type => 'tienda';
@@ -1976,7 +1984,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_stores_explanation_info1 =>
-      'Input the store where you bought the product.';
+      'Ingresá la tienda donde compraste el producto.';
 
   @override
   String get edit_product_form_item_stores_explanation_good_examples_1 =>
@@ -1995,7 +2003,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_origins_hint =>
-      'Ingrese un origen (por ejemplo: Alemania)';
+      'Ingresá un origen (por ejemplo: Alemania)';
 
   @override
   String get edit_product_form_item_origins_type => 'país';
@@ -2006,7 +2014,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_origins_explanation_info1 =>
-      'Add **any indications of origins you can find on the packaging**.\nYou need not worry about origins indicated directly in the ingredient list.';
+      'Añadí **cualquier indicación de origen que encuentres en el envase**.\nNo tenés que preocuparte por los orígenes indicados directamente en la lista de ingredientes.';
 
   @override
   String get edit_product_form_item_origins_explanation_good_examples_1 =>
@@ -2014,14 +2022,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_origins_explanation_good_examples_2 =>
-      'The soy does not come from the European Union';
+      'La soja no proviene de la Unión Europea';
 
   @override
   String get edit_product_form_item_countries_title => 'País';
 
   @override
   String get edit_product_form_item_countries_hint =>
-      'Ingrese un país (por ejemplo: Alemania)';
+      'Ingresá un país (por ejemplo: Alemania)';
 
   @override
   String get edit_product_form_item_countries_type => 'país';
@@ -2032,7 +2040,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_countries_explanations_info1 =>
-      '**Countries where the product is widely available** (not including stores specialising in foreign products).';
+      '**Países donde el producto está ampliamente disponible** (sin incluir tiendas especializadas en productos extranjeros).';
 
   @override
   String get edit_product_form_item_emb_codes_title =>
@@ -2040,26 +2048,26 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_emb_codes_hint =>
-      'Ingrese un código (por ejemplo EMB 53062, FR 62.448.034 CE, 84 R 20, 33 RECOLTANTE 522...)';
+      'Ingresá un código (por ejemplo EMB 53062, FR 62.448.034 CE, 84 R 20, 33 RECOLTANTE 522...)';
 
   @override
   String get edit_product_form_item_emb_codes_type => 'código de trazabilidad';
 
   @override
   String get edit_product_form_item_emb_help_title =>
-      'Good practices: Traceability codes';
+      'Buenas prácticas: Códigos de trazabilidad';
 
   @override
   String get edit_product_form_item_emb_help_info1 =>
-      'In this section, you can input codes related to **packaging marks**, **identification marks** or **health marks**.';
+      'En esta sección, podés ingresar códigos relacionados con **marcas de envasado**, **marcas de identificación** o **marcas sanitarias**.';
 
   @override
   String get edit_product_form_item_emb_help_info2_title =>
-      'Examples of traceability codes';
+      'Ejemplos de códigos de trazabilidad';
 
   @override
   String get edit_product_form_item_emb_help_info2_item1_text =>
-      '**EC codes** used in the European Community to identify food producers or packagers:';
+      '**Códigos CE** utilizados en la Comunidad Europea para identificar a los productores o envasadores de alimentos:';
 
   @override
   String get edit_product_form_item_emb_help_info2_item1_example =>
@@ -2067,7 +2075,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_emb_help_info2_item1_explanation =>
-      '**FR**: country code of **France**\n**72.264.002**: geographic data\n**CE**: European Community';
+      '**FR**: código de país de **Francia**\n**72.264.002**: datos geográficos\n**CE**: Comunidad Europea';
 
   @override
   String get edit_product_form_item_emb_help_info2_item2_text =>
@@ -2085,7 +2093,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_traces_type =>
-      'Input a trace (eg: Soy beans)';
+      'Ingresá una traza (ej: Soja)';
 
   @override
   String get edit_product_form_item_categories_title => 'Categorías';
@@ -2095,7 +2103,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_categories_type =>
-      'Ingrese una categoría (por ejemplo: jugo de naranja)';
+      'Ingresá una categoría (por ejemplo: jugo de naranja)';
 
   @override
   String get edit_product_form_item_categories_explanation_title =>
@@ -2103,30 +2111,30 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_categories_explanation_info1 =>
-      'Indicate **only the most specific category**.\nParent categories will be automatically added.';
+      'Indicá **solo la categoría más específica**.\nLas categorías superiores se añadirán automáticamente.';
 
   @override
   String get edit_product_form_item_categories_explanation_info2_title =>
-      'Missing category?';
+      '¿Falta una categoría?';
 
   @override
   String get edit_product_form_item_categories_explanation_info2_content =>
-      'In case a category is **not available in autocomplete**, feel free to add it anyway.\nThis will help us improve Luppa in your country.';
+      'En caso de que una categoría **no esté disponible en el autocompletado**, sentite libre de añadirla de todos modos.\nEsto nos ayudará a mejorar Luppa en tu país.';
 
   @override
   String get edit_product_form_item_categories_explanation_good_examples_1 =>
-      'Sardines in olive oil';
+      'Sardinas en aceite de oliva';
 
   @override
   String get edit_product_form_item_categories_explanation_good_examples_2 =>
-      'Orange juice from concentrate';
+      'Jugo de naranja de concentrado';
 
   @override
   String get edit_product_form_item_exit_title => '¿Salir sin guardar?';
 
   @override
   String get edit_product_form_item_exit_confirmation =>
-      '¿Deseas guardar los cambios antes de salir de esta página?';
+      '¿Deseás guardar los cambios antes de salir de esta página?';
 
   @override
   String get edit_product_form_item_exit_confirmation_positive_button =>
@@ -2141,33 +2149,33 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_ingredients_pinch_to_zoom_tooltip =>
-      'Zoom in and out by pinching the screen';
+      'Acercá y alejá la imagen pellizcando la pantalla';
 
   @override
   String get edit_product_form_item_ingredients_pinch_to_zoom_title =>
-      'Zoom in and out the photo';
+      'Acercá y alejá la foto';
 
   @override
   String get edit_product_form_item_ingredients_pinch_to_zoom_message =>
-      'Using the **Pinch-to-zoom gesture**, you can zoom in or out the photo:';
+      'Usando el **gesto de pellizcar para hacer zoom**, podés acercar o alejar la foto:';
 
   @override
   String get edit_product_form_item_add_valid_item_tooltip => 'Añadir';
 
   @override
   String get edit_product_form_item_add_invalid_item_tooltip =>
-      'Primero escribe algo';
+      'Primero escribí algo';
 
   @override
   String get edit_product_form_item_remove_item_tooltip => 'Eliminar';
 
   @override
   String get edit_product_form_item_save_edit_item_tooltip =>
-      'Guarda tu edición';
+      'Guardá tu edición';
 
   @override
   String get edit_product_form_item_cancel_edit_item_tooltip =>
-      'Cancela tu edición';
+      'Cancelá tu edición';
 
   @override
   String get edit_product_form_item_packaging_title =>
@@ -2183,15 +2191,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_nutrition_facts_explanation_title =>
-      'Good practices: Nutrition facts';
+      'Buenas prácticas: Información nutricional';
 
   @override
   String get edit_product_form_item_nutrition_facts_explanation_info1_title =>
-      'Nutritional values';
+      'Valores nutricionales';
 
   @override
   String get edit_product_form_item_nutrition_facts_explanation_info1_content =>
-      'First, select if the **values are provided**:';
+      'Primero, seleccioná si los **valores están proporcionados**:';
 
   @override
   String get edit_product_form_item_nutrition_facts_explanation_info2_title =>
@@ -2199,18 +2207,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_product_form_item_nutrition_facts_explanation_info2_content =>
-      'Then, input the nutritional values **as indicated on the packaging**. If there is no value, you can click on the \"Eye\" icon.';
+      'Luego, ingresá los valores nutricionales **como se indica en el envase**. Si no hay un valor, podés hacer clic en el ícono del \"Ojo\".';
 
   @override
   String get edit_product_form_item_nutrition_facts_explanation_info3_title =>
-      'Missing field?';
+      '¿Falta un campo?';
 
   @override
   String get edit_product_form_item_nutrition_facts_explanation_info3_content =>
-      'If an entry is missing, you can **click on the \"Plus\" icon** to add it (eg: vitamin D, magnesium…).';
+      'Si falta una entrada, podés **hacer clic en el ícono \"Más\"** para añadirla (ej: vitamina D, magnesio…).';
 
   @override
-  String get edit_product_form_save => 'Editar';
+  String get edit_product_form_save => 'Guardar';
 
   @override
   String get edit_product_ingredients_photo_title => 'Foto de los ingredientes';
@@ -2236,7 +2244,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get completed_basic_details_btn_text =>
-      'Completa los detalles básicos';
+      'Completá los detalles básicos';
 
   @override
   String get not_implemented_snackbar_text => 'Aún sin implementar';
@@ -2246,7 +2254,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_ingredients_extract_ingredients_btn_text =>
-      'Extract ingredients from the photo';
+      'Extraer ingredientes de la foto';
 
   @override
   String get edit_ingredients_extract_ingredients_btn_text_short =>
@@ -2254,7 +2262,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_ingredients_extracting_ingredients_btn_text =>
-      'Extracting ingredients\nfrom the photo';
+      'Extrayendo ingredientes\nde la foto';
 
   @override
   String get edit_ingredients_loading_photo_btn_text => 'Cargando foto…';
@@ -2265,21 +2273,20 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_ingredients_loading_photo_help_dialog_body =>
-      'To use the \"Extract ingredients\" feature, the photo needs to be uploaded first.\n\nPlease wait a few seconds or enter them manually.';
+      'Para usar la función \"Extraer ingredientes\", primero se debe subir la foto.\n\nPor favor, esperá unos segundos o ingresalos manualmente.';
 
   @override
   String get edit_ingredients_refresh_photo_btn_text => 'Actualizar foto';
 
   @override
-  String get edit_packaging_extract_btn_text =>
-      'Extract packaging\nfrom the photo';
+  String get edit_packaging_extract_btn_text => 'Extraer envase\nde la foto';
 
   @override
   String get edit_packaging_extract_btn_text_short => 'Extracto del embalaje';
 
   @override
   String get edit_packaging_extracting_btn_text =>
-      'Extracting packaging from the photo';
+      'Extrayendo envase de la foto';
 
   @override
   String get edit_packaging_loading_photo_btn_text => 'Cargando foto…';
@@ -2290,7 +2297,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_packaging_loading_photo_help_dialog_body =>
-      'To use the \"Extract packaging\" feature, the photo needs to be uploaded first.\n\nPlease wait a few seconds or enter them manually.';
+      'Para usar la función \"Extraer envase\", primero se debe subir la foto.\n\nPor favor, esperá unos segundos o ingresalos manually.';
 
   @override
   String get edit_packaging_refresh_photo_btn_text => 'Actualizar foto';
@@ -2299,11 +2306,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get edit_ocr_extract_failed => 'Error al detectar texto en la imagen.';
 
   @override
-  String get edit_ocr_extract_disabled_title => 'Sin imagen!';
+  String get edit_ocr_extract_disabled_title => '¡Sin imagen!';
 
   @override
   String get edit_ocr_extract_disabled_message =>
-      'Para poder utilizar la función de extracción de texto, primero debe tomar una foto.';
+      'Para poder utilizar la función de extracción de texto, primero debés tomar una foto.';
 
   @override
   String get user_list_dialog_new_title => 'Nueva lista de productos';
@@ -2318,14 +2325,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get user_list_title => 'Tus listas';
 
   @override
-  String get user_list_add_product => 'Añade el producto a tus listas';
+  String get user_list_add_product => 'Añadí el producto a tus listas';
 
   @override
   String get user_list_button_new => 'Crear una nueva lista';
 
   @override
   String get user_list_empty_label =>
-      'No hay ninguna lista disponible, puedes crear una.';
+      'No hay ninguna lista disponible, podés crear una.';
 
   @override
   String get user_list_button_add_product => 'Añadir a la lista';
@@ -2352,25 +2359,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get user_list_name_error_same => 'Es el mismo nombre';
 
   @override
-  String get user_list_name_input_hint => 'Name of the list';
+  String get user_list_name_input_hint => 'Nombre de la lista';
 
   @override
-  String get try_again => 'Inténtalo de nuevo';
+  String get try_again => 'Intentalo de nuevo';
 
   @override
-  String get there_was_an_error => 'Ha ocurrido un error';
+  String get there_was_an_error => 'Ocurrió un error';
 
   @override
   String category_picker_no_category_found_message(String items) {
-    return 'No se ha encontrado ninguna categoría para $items';
+    return 'No se encontró ninguna categoría para $items';
   }
 
   @override
   String get camera_toggle_camera =>
-      'Cambia entre la cámara frontal y la trasera';
+      'Cambiá entre la cámara frontal y la trasera';
 
   @override
-  String get camera_toggle_flash => 'Activa o desactiva el flash de la cámara';
+  String get camera_toggle_flash => 'Activá o desactivá el flash de la cámara';
 
   @override
   String get camera_enable_flash => 'Activar flash';
@@ -2379,18 +2386,18 @@ class AppLocalizationsEs extends AppLocalizations {
   String get camera_disable_flash => 'Desactivar flash';
 
   @override
-  String get camera_flash_error_dialog_title => '¡Ha ocurrido un error!';
+  String get camera_flash_error_dialog_title => '¡Ocurrió un error!';
 
   @override
   String get camera_flash_error_dialog_message =>
-      'Ha ocurrido un error al cambiar el estado del flash. Asegúrate que tu móvil no tenga la linterna encendida.';
+      'Ocurrió un error al cambiar el estado del flash. Asegurate que tu móvil no tenga la linterna encendida.';
 
   @override
   String get category_picker_no_category_found_button => 'Regresar';
 
   @override
   String get user_preferences_item_accessibility_hint =>
-      'Haz clic para abrir en el navegador o en la aplicación (si está instalada)';
+      'Hacé clic para abrir en el navegador o en la aplicación (si está instalada)';
 
   @override
   String get dev_preferences_screen_title => 'Modo de desarrollador';
@@ -2497,10 +2504,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get dev_preferences_news_custom_url_subtitle =>
-      'URL of the JSON file:';
+      'URL del archivo JSON:';
 
   @override
-  String get dev_preferences_news_custom_url_empty_value => 'Not set';
+  String get dev_preferences_news_custom_url_empty_value => 'No establecido';
 
   @override
   String get dev_preferences_news_provider_status_title => 'Estado';
@@ -2514,7 +2521,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_type_label_food => 'Alimento';
 
   @override
-  String get product_type_label_beauty => 'Personal care';
+  String get product_type_label_beauty => 'Cuidado personal';
 
   @override
   String get product_type_label_pet_food => 'Alimento para mascotas';
@@ -2523,19 +2530,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_type_label_product => 'Otro';
 
   @override
-  String get product_type_selection_title => 'Product type';
+  String get product_type_selection_title => 'Tipo de producto';
 
   @override
   String get product_type_selection_subtitle =>
-      'Select the type of this product';
+      'Seleccioná el tipo de este producto';
 
   @override
   String get product_type_selection_empty =>
-      'You need to select a product type first!';
+      '¡Primero tenés que seleccionar un tipo de producto!';
 
   @override
   String product_type_selection_already(String productType) {
-    return 'You cannot change the product type ($productType)!';
+    return '¡No podés cambiar el tipo de producto ($productType)!';
   }
 
   @override
@@ -2547,25 +2554,26 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get prices_bulk_proof_upload_select =>
-      'Add price tags directly from gallery';
+      'Añadir etiquetas de precios directamente desde la galería';
 
   @override
   String get prices_bulk_proof_upload_warning =>
-      'Once you\'ve selected images, you won\'t be able to edit them!';
+      'Una vez que hayas seleccionado las imágenes, ¡no podrás editarlas!';
 
   @override
   String get prices_bulk_proof_upload_warning_ai =>
-      'AI will run on your proofs to extract prices.';
+      'La IA se ejecutará en tus pruebas para extraer los precios.';
 
   @override
   String get prices_bulk_proof_upload_community_switch =>
       'Permitir que la comunidad valide los precios extraídos por IA.';
 
   @override
-  String get prices_bulk_proof_upload_subtitle => 'Multiple Price Tags';
+  String get prices_bulk_proof_upload_subtitle =>
+      'Múltiples etiquetas de precios';
 
   @override
-  String get prices_bulk_proof_upload_title => 'Bulk Proof Upload';
+  String get prices_bulk_proof_upload_title => 'Carga masiva de pruebas';
 
   @override
   String get prices_bulk_proof_upload_step_selecting => 'Seleccionar archivos';
@@ -2596,8 +2604,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Add $count prices',
-      one: 'Add a price',
+      other: 'Añadir $count precios',
+      one: 'Añadir un precio',
     );
     return '$_temp0';
   }
@@ -2607,34 +2615,34 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Send $count prices',
-      one: 'Send the price',
+      other: 'Enviar $count precios',
+      one: 'Enviar el precio',
     );
     return '$_temp0';
   }
 
   @override
-  String get prices_add_an_item => 'Add an item';
+  String get prices_add_an_item => 'Añadir un artículo';
 
   @override
   String get prices_add_a_price => 'Añadir un precio';
 
   @override
-  String get prices_add_a_receipt => 'Add a receipt';
+  String get prices_add_a_receipt => 'Añadir un ticket';
 
   @override
-  String get prices_add_price_tags => 'Add price tags';
+  String get prices_add_price_tags => 'Añadir etiquetas de precio';
 
   @override
   String prices_barcode_already(String barcode) {
-    return 'This barcode ($barcode) is already in the list!';
+    return '¡Este código de barras ($barcode) ya está en la lista!';
   }
 
   @override
   String get prices_barcode_search_not_found => 'Producto no encontrado';
 
   @override
-  String get prices_barcode_search_none_yet => 'No product yet';
+  String get prices_barcode_search_none_yet => 'Todavía no hay productos';
 
   @override
   String prices_barcode_search_running(String barcode) {
@@ -2642,7 +2650,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get prices_barcode_enter => 'Enter the Barcode';
+  String get prices_barcode_enter => 'Ingresá el código de barras';
 
   @override
   String get prices_category_enter => 'Artículo sin código de barras';
@@ -2681,7 +2689,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_list_count => 'Número de\nprecios';
 
   @override
-  String get prices_list_add_new_price => 'Añade un nuevo precio de\n';
+  String get prices_list_add_new_price => 'Añadí un nuevo precio de\n';
 
   @override
   String get prices_entry_shop_not_found => 'Tienda desconocida';
@@ -2712,10 +2720,10 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count prices',
-      one: '1 price',
+      other: '$count precios',
+      one: '1 precio',
     );
-    return '$_temp0 for $product';
+    return '$_temp0 para $product';
   }
 
   @override
@@ -2723,16 +2731,16 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'All $count prices',
-      one: 'Only one price',
-      zero: 'No price yet',
+      other: 'Todos los $count precios',
+      one: 'Solo un precio',
+      zero: 'Aún no hay precios',
     );
     return '$_temp0';
   }
 
   @override
   String prices_list_length_many_pages(int pageSize, int total) {
-    return 'Latest $pageSize prices (total: $total)';
+    return 'Últimos $pageSize precios (total: $total)';
   }
 
   @override
@@ -2742,42 +2750,42 @@ class AppLocalizationsEs extends AppLocalizations {
     String date,
     String user,
   ) {
-    return 'Price: $price / Store: \"$location\" / Published on $date by \"$user\"';
+    return 'Precio: $price / Tienda: \"$location\" / Publicado el $date por \"$user\"';
   }
 
   @override
   String prices_open_user_proofs(String user) {
-    return 'Open proofs of \"$user\"';
+    return 'Abrir pruebas de \"$user\"';
   }
 
   @override
-  String get prices_open_proof => 'Open price proof';
+  String get prices_open_proof => 'Abrir prueba de precio';
 
   @override
   String prices_proofs_list_length_one_page(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'All $count proofs',
-      one: 'Only one proof',
-      zero: 'No proof yet',
+      other: 'Todas las $count pruebas',
+      one: 'Solo una prueba',
+      zero: 'Aún no hay pruebas',
     );
     return '$_temp0';
   }
 
   @override
   String prices_proofs_list_length_many_pages(int pageSize, int total) {
-    return 'Latest $pageSize proofs (total: $total)';
+    return 'Últimas $pageSize pruebas (total: $total)';
   }
 
   @override
   String prices_users_list_length_many_pages(int pageSize, int total) {
-    return 'Top $pageSize contributors (total: $total)';
+    return 'Top $pageSize colaboradores (total: $total)';
   }
 
   @override
   String prices_locations_list_length_many_pages(int pageSize, int total) {
-    return 'Top $pageSize locations (total: $total)';
+    return 'Top $pageSize ubicaciones (total: $total)';
   }
 
   @override
@@ -2785,9 +2793,9 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count proofs',
-      one: 'One proof',
-      zero: 'No proof',
+      other: '$count pruebas',
+      one: 'Una prueba',
+      zero: 'Sin pruebas',
     );
     return '$_temp0';
   }
@@ -2797,9 +2805,9 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count products',
-      one: 'One product',
-      zero: 'No product',
+      other: '$count productos',
+      one: 'Un producto',
+      zero: 'Sin productos',
     );
     return '$_temp0';
   }
@@ -2809,9 +2817,9 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count users',
-      one: 'One user',
-      zero: 'No user',
+      other: '$count usuarios',
+      one: 'Un usuario',
+      zero: 'Sin usuarios',
     );
     return '$_temp0';
   }
@@ -2821,9 +2829,9 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count prices',
-      one: 'One price',
-      zero: 'No price',
+      other: '$count precios',
+      one: 'Un precio',
+      zero: 'Sin precios',
     );
     return '$_temp0';
   }
@@ -2832,7 +2840,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_amount_existing_subtitle => 'Precio previamente añadido';
 
   @override
-  String get prices_amount_subtitle => 'Amount';
+  String get prices_amount_subtitle => 'Importe';
 
   @override
   String get prices_amount_is_discounted => '¿Está rebajado?';
@@ -2847,13 +2855,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_amount_price_not_discounted => 'Precio original';
 
   @override
-  String get prices_amount_no_product => 'One product is missing!';
+  String get prices_amount_no_product => '¡Falta un producto!';
 
   @override
-  String get prices_amount_price_incorrect => 'Incorrect value';
+  String get prices_amount_price_incorrect => 'Valor incorrecto';
 
   @override
-  String get prices_amount_price_mandatory => 'Mandatory value';
+  String get prices_amount_price_mandatory => 'Valor obligatorio';
 
   @override
   String get prices_currency_subtitle => 'Moneda';
@@ -2862,23 +2870,23 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_date_subtitle => 'Fecha';
 
   @override
-  String get prices_location_subtitle => 'Shop';
+  String get prices_location_subtitle => 'Tienda';
 
   @override
-  String get prices_location_find => 'Find a shop';
+  String get prices_location_find => 'Encontrar una tienda';
 
   @override
-  String get prices_location_mandatory => 'You need to select a shop!';
+  String get prices_location_mandatory => '¡Tenés que seleccionar una tienda!';
 
   @override
   String get prices_location_search_broader =>
-      'Couldn\'t find what you were looking for? Let\'s try a broader search!';
+      '¿No encontraste lo que buscabas? ¡Probemos una búsqueda más amplia!';
 
   @override
   String get prices_proof_subtitle => 'Comprobante';
 
   @override
-  String get prices_proof_find => 'Select a proof';
+  String get prices_proof_find => 'Seleccioná una prueba';
 
   @override
   String get prices_proof_receipt => 'Ticket';
@@ -2887,58 +2895,58 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_proof_price_tag => 'Etiqueta de precio';
 
   @override
-  String get prices_proof_mandatory => 'You need to select a proof!';
+  String get prices_proof_mandatory => '¡Tenés que seleccionar una prueba!';
 
   @override
-  String get prices_add_validation_error => 'Validation error';
+  String get prices_add_validation_error => 'Error de validación';
 
   @override
-  String get prices_privacy_warning_title => 'Privacy warning';
+  String get prices_privacy_warning_title => 'Advertencia de privacidad';
 
   @override
   String get prices_unknown_product => 'Producto desconocido';
 
   @override
   String get prices_privacy_warning_main_message =>
-      'Prices **will be public**, along with the store they refer to.\n\nThat might allow people who know about your luppa pseudonym to:\n';
+      'Los precios **serán públicos**, junto con la tienda a la que se refieren.\n\nEso podría permitir que las personas que conocen tu seudónimo de luppa:\n';
 
   @override
   String get prices_privacy_warning_message_bullet_1 =>
-      'Infer in which area you live';
+      'Deduzcan en qué zona vivís';
 
   @override
   String get prices_privacy_warning_message_bullet_2 =>
-      'Know what you are buying';
+      'Sepan lo que estás comprando';
 
   @override
   String get prices_privacy_warning_sub_message =>
-      'If you are uneasy with that, please change your pseudonym, or create a new luppa account and log into the app with it.';
+      'Si no te sentís cómodo con esto, por favor cambiá tu seudónimo, o creá una nueva cuenta de luppa e iniciá sesión en la app con ella.';
 
   @override
-  String get i_refuse => 'I refuse';
+  String get i_refuse => 'Me niego';
 
   @override
-  String get i_accept => 'I accept';
+  String get i_accept => 'Acepto';
 
   @override
-  String get prices_currency_change_proposal_title => 'Change the currency?';
+  String get prices_currency_change_proposal_title => '¿Cambiar la moneda?';
 
   @override
   String prices_currency_change_proposal_message(
     String currency,
     String newCurrency,
   ) {
-    return 'Your current currency is **$currency**. Would you like to change it to **$newCurrency**?';
+    return 'Tu moneda actual es **$currency**. ¿Te gustaría cambiarla a **$newCurrency**?';
   }
 
   @override
   String prices_currency_change_proposal_action_approve(String newCurrency) {
-    return 'Yes, use $newCurrency';
+    return 'Sí, usar $newCurrency';
   }
 
   @override
   String prices_currency_change_proposal_action_cancel(String currency) {
-    return 'No, keep $currency';
+    return 'No, mantener $currency';
   }
 
   @override
@@ -2948,7 +2956,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dev_mode_section_server => 'Configuración del servidor';
 
   @override
-  String get dev_mode_section_news => 'News provider configuration';
+  String get dev_mode_section_news => 'Configuración del proveedor de noticias';
 
   @override
   String get dev_mode_section_product_page => 'Página del producto';
@@ -2964,14 +2972,14 @@ class AppLocalizationsEs extends AppLocalizations {
       'Funciones experimentales';
 
   @override
-  String get dev_preferences_show_folksonomy_title => 'Exclude Folksonomy';
+  String get dev_preferences_show_folksonomy_title => 'Excluir Folksonomy';
 
   @override
   String get dev_mode_hide_environmental_score_title => 'Excluir Green-Score';
 
   @override
   String get dev_mode_spellchecker_for_ocr_title =>
-      'Use a spellchecker for OCR screens';
+      'Usar un corrector ortográfico para las pantallas de OCR';
 
   @override
   String get dev_mode_spellchecker_for_ocr_subtitle =>
@@ -2983,7 +2991,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String product_search_no_more_results(int totalSize) {
-    return 'Has descargado todos los $totalSize productos.';
+    return 'Descargaste todos los $totalSize productos.';
   }
 
   @override
@@ -2997,17 +3005,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String product_search_loading_message(Object search) {
-    return 'Tu búsqueda de $search está en progreso.\n\nEspera unos segundos…';
+    return 'Tu búsqueda de $search está en progreso.\n\nEsperá unos segundos…';
   }
 
   @override
-  String get user_search_contributor_title => 'Productos que he añadido';
+  String get user_search_contributor_title => 'Productos que añadí';
 
   @override
-  String get user_search_informer_title => 'Productos que he editado';
+  String get user_search_informer_title => 'Productos que edité';
 
   @override
-  String get user_search_photographer_title => 'Productos que he fotografiado';
+  String get user_search_photographer_title => 'Productos que fotografié';
 
   @override
   String get user_search_to_be_completed_title => 'Mis productos por completar';
@@ -3019,7 +3027,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get user_search_proofs_title => 'Mis pruebas';
 
   @override
-  String get user_search_proof_title => 'My proof';
+  String get user_search_proof_title => 'Mi prueba';
 
   @override
   String user_any_search_prices_title(String user) {
@@ -3027,34 +3035,36 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get all_search_prices_latest_title => 'Latest Prices added';
+  String get all_search_prices_latest_title => 'Últimos precios añadidos';
 
   @override
-  String get all_search_prices_top_user_title => 'Top price contributors';
+  String get all_search_prices_top_user_title =>
+      'Principales colaboradores de precios';
 
   @override
-  String get all_search_prices_top_location_title =>
-      'Stores with the most prices';
+  String get all_search_prices_top_location_title => 'Tiendas con más precios';
 
   @override
   String get prices_contribution_assistant =>
       'Asistente de contribución de precios';
 
   @override
-  String get prices_validation_assistant => 'Price Validation Assistant';
+  String get prices_validation_assistant =>
+      'Asistente de validación de precios';
 
   @override
   String get prices_challenges_page => 'Desafíos';
 
   @override
-  String get prices_multiple_proof_addition_system => 'Add Multiple Proofs';
+  String get prices_multiple_proof_addition_system =>
+      'Añadir múltiples pruebas';
 
   @override
-  String get all_search_prices_top_location_single_title => 'Prices in a store';
+  String get all_search_prices_top_location_single_title =>
+      'Precios en una tienda';
 
   @override
-  String get all_search_prices_top_product_title =>
-      'Products with the most prices';
+  String get all_search_prices_top_product_title => 'Productos con más precios';
 
   @override
   String get all_search_to_be_completed_title =>
@@ -3062,7 +3072,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get categorize_products_country_title =>
-      'Ayuda a categorizar productos en tu país';
+      'Ayudá a categorizar productos en tu país';
 
   @override
   String get edit_product_action_retake_picture => 'Volver a sacar la foto';
@@ -3096,7 +3106,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get summary_card_button_add_basic_details =>
-      'Completa los detalles básicos';
+      'Completá los detalles básicos';
 
   @override
   String get edit_photo_button_label => 'Editar';
@@ -3110,11 +3120,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_photo_select_existing_all_label =>
-      'Existing images for this product';
+      'Imágenes existentes para este producto';
 
   @override
   String get edit_photo_select_existing_all_subtitle =>
-      'Select an image by clicking on it';
+      'Seleccioná una imagen haciendo clic en ella';
 
   @override
   String get edit_photo_select_existing_download_label =>
@@ -3141,25 +3151,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_name => 'Nombre del producto';
 
   @override
-  String get product_names => 'Product Names';
+  String get product_names => 'Nombres del producto';
 
   @override
   String get add_basic_details_product_name_add_translation =>
-      'Add a new translation';
+      'Añadir una nueva traducción';
 
   @override
   String get add_basic_details_product_name_warning_translations =>
-      'Before validating, please ensure you only add a translation **if the language is present on the packaging**';
+      'Antes de validar, asegurate de añadir solo una traducción **si el idioma está presente en el envase**';
 
   @override
-  String get add_basic_details_product_name_open_photo => 'View front photo';
+  String get add_basic_details_product_name_open_photo => 'Ver foto frontal';
 
   @override
-  String get add_basic_details_product_name_take_photo => 'Take front photo';
+  String get add_basic_details_product_name_take_photo => 'Sacar foto frontal';
 
   @override
   String get add_basic_details_product_name_hint =>
-      'Ingrese el nombre del producto (por ejemplo: Nutella)';
+      'Ingresá el nombre del producto (por ejemplo: Nutella)';
 
   @override
   String get add_basic_details_product_name_change_main_language_title =>
@@ -3169,26 +3179,26 @@ class AppLocalizationsEs extends AppLocalizations {
   String add_basic_details_product_name_change_main_language_text(
     String language,
   ) {
-    return '¿Quieres que el idioma predeterminado del producto se establezca en \'$language\'?';
+    return '¿Querés que el idioma predeterminado del producto se establezca en \'$language\'?';
   }
 
   @override
-  String get explanation_section_good_examples => 'Good examples';
+  String get explanation_section_good_examples => 'Buenos ejemplos';
 
   @override
-  String get explanation_section_bad_examples => 'Bad examples';
+  String get explanation_section_bad_examples => 'Malos ejemplos';
 
   @override
   String get add_basic_details_product_name_help_title =>
-      'Good practices: Product name';
+      'Buenas prácticas: Nombre del producto';
 
   @override
   String get add_basic_details_product_name_help_info1 =>
-      'The product name is the **main name printed on the packaging**. It can be a registered trademark.';
+      'El nombre del producto es el **nombre principal impreso en el envase**. Puede ser una marca registrada.';
 
   @override
   String get add_basic_details_product_name_help_info2 =>
-      '**Note:** Please don\'t add a translation **if the language is not present on the packaging**.';
+      '**Nota:** Por favor, no agregues una traducción **si el idioma no está presente en el envase**.';
 
   @override
   String get add_basic_details_product_name_help_good_examples_1 => 'Nesquik';
@@ -3199,15 +3209,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get add_basic_details_product_name_help_bad_examples_1_explanation =>
-      'Don\'t include the brand in the name';
+      'No incluyas la marca en el nombre';
 
   @override
   String get add_basic_details_product_name_help_bad_examples_1_example =>
-      'Tomato Ketchup **by Heinz**';
+      'Tomato Ketchup **de Heinz**';
 
   @override
   String get add_basic_details_product_name_help_bad_examples_2_explanation =>
-      'Don\'t use symbols ®, ™, © or similar';
+      'No uses símbolos ®, ™, © o similares';
 
   @override
   String get add_basic_details_product_name_help_bad_examples_2_example =>
@@ -3218,8 +3228,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count other translations',
-      one: '$count other translation',
+      other: '$count otras traducciones',
+      one: '$count otra traducción',
     );
     return '$_temp0';
   }
@@ -3232,19 +3242,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get add_basic_details_brand_name_error =>
-      'Por favor, introduce el nombre de la marca';
+      'Por favor, introducí el nombre de la marca';
 
   @override
   String get add_basic_details_brand_names_hint =>
-      'Ingrese las marcas (por ejemplo Ferrero)';
+      'Ingresá las marcas (por ejemplo Ferrero)';
 
   @override
   String get add_basic_details_product_brand_help_title =>
-      'Good practices: Brands';
+      'Buenas prácticas: Marcas';
 
   @override
   String get add_basic_details_product_brand_help_info1 =>
-      'Input **all the brands of the product**.';
+      'Ingresá **todas las marcas del producto**.';
 
   @override
   String get add_basic_details_product_brand_help_info2_title =>
@@ -3252,26 +3262,26 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get add_basic_details_product_brand_help_info2_content =>
-      'The **main brand**, generally clearly displayed on the front pack, should be **entered first**.';
+      'La **marca principal**, generalmente mostrada de forma clara en el frente del paquete, debe **ingresarse primero**.';
 
   @override
   String get add_basic_details_product_brand_help_info3_title => 'Otras marcas';
 
   @override
   String get add_basic_details_product_brand_help_info3_item1_text =>
-      'When sold **by a big company**:';
+      'Cuando es vendido **por una gran empresa**:';
 
   @override
   String get add_basic_details_product_brand_help_info3_item1_explanation =>
-      '**Actimel** is sold by **Danone**';
+      '**Actimel** es vendido por **Danone**';
 
   @override
   String get add_basic_details_product_brand_help_info3_item2_text =>
-      'When sold with its brand **translated in multiple languages**:';
+      'Cuando se vende con su marca **traducida a varios idiomas**:';
 
   @override
   String get add_basic_details_product_brand_help_info3_item2_explanation =>
-      '**Nature Valley** is sometimes written **Val Nature**';
+      '**Nature Valley** a veces se escribe **Val Nature**';
 
   @override
   String get add_basic_details_product_brand_help_good_examples_1 => 'Nutella';
@@ -3285,7 +3295,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get add_basic_details_quantity_hint =>
-      'Ingrese el peso y si es necesario la cantidad (por ejemplo: 4x100g)';
+      'Ingresá el peso y si es necesario la cantidad (por ejemplo: 4x100g)';
 
   @override
   String get add_basic_details_product_quantity_help_title =>
@@ -3293,7 +3303,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get add_basic_details_product_quantity_help_info1 =>
-      'Copy the value indicated on the product and **don\'t forget the units**.';
+      'Copiá el valor indicado en el producto y **no te olvides de las unidades**.';
 
   @override
   String get add_basic_details_product_quantity_help_good_examples_1 =>
@@ -3305,7 +3315,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get add_basic_details_product_quantity_help_good_examples_3 =>
-      '**3 x 150g**\n(for a product with 3 boxes, each of 150g)';
+      '**3 x 150g**\n(para un producto con 3 cajas, cada una de 150g)';
 
   @override
   String get barcode => 'Código de barras';
@@ -3323,14 +3333,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get basic_details_add_error =>
-      'No se han podido añadir los aspectos básicos. Vuelve a intentarlo en un rato.';
+      'No se pudieron añadir los aspectos básicos. Volvé a intentarlo en un rato.';
 
   @override
   String get clear_search => 'Limpiar tu búsqueda';
 
   @override
   String get confirm_clear =>
-      'Estás a punto de eliminar todo tu historial, ¿seguro que deseas continuar?';
+      'Estás a punto de eliminar todo tu historial, ¿seguro que deseás continuar?';
 
   @override
   String get alert_clear_selected_user_list =>
@@ -3338,15 +3348,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get confirm_clear_selected_user_list =>
-      '¿Seguro que deseas continuar?';
+      '¿Seguro que deseás continuar?';
 
   @override
   String get alert_select_items_to_clear =>
-      'Selecciona uno o más ítems para eliminar.';
+      'Seleccioná uno o más ítems para eliminar.';
 
   @override
   String confirm_clear_user_list(String name) {
-    return 'Estás a punto de eliminar esta lista ($name), ¿seguro que deseas continuar?';
+    return 'Estás a punto de eliminar esta lista ($name), ¿seguro que deseás continuar?';
   }
 
   @override
@@ -3354,7 +3364,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String confirm_delete_user_list_message(String name) {
-    return 'Estás a punto de eliminar la lista «$name», ¿seguro que deseas continuar?';
+    return 'Estás a punto de eliminar la lista «$name», ¿seguro que deseás continuar?';
   }
 
   @override
@@ -3369,10 +3379,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get user_list_all_title => 'Listas';
 
   @override
-  String get user_list_all_empty => 'Crea tu primera lista';
+  String get user_list_all_empty => 'Creá tu primera lista';
 
   @override
-  String get product_list_select => 'Selecciona una lista';
+  String get product_list_select => 'Seleccioná una lista';
 
   @override
   String user_list_length(num count) {
@@ -3391,33 +3401,33 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get open_food_preferences_tooltip =>
-      'Edita tus preferencias alimentarias';
+      'Editá tus preferencias alimentarias';
 
   @override
   String get add_photo_button_label => 'Añadir foto';
 
   @override
   String get add_packaging_photo_button_label =>
-      'Saca fotos de cualquier información del envase/reciclaje';
+      'Sacá fotos de cualquier información del envase/reciclaje';
 
   @override
   String get add_origin_photo_button_label =>
-      'Toma fotos de cualquier información del envase';
+      'Tomá fotos de cualquier información del envase';
 
   @override
   String get add_emb_photo_button_label =>
-      'Toma fotos de cualquier información del código de trazabilidad';
+      'Tomá fotos de cualquier información del código de trazabilidad';
 
   @override
   String get add_label_photo_button_label =>
-      'Tomar fotos de cualquier etiqueta e información de certificaciones';
+      'Tomá fotos de cualquier etiqueta e información de certificaciones';
 
   @override
   String get choose_image_source_title => 'Elegir fuente de la imagen';
 
   @override
   String get choose_image_source_body =>
-      'Por favor, elige la fuente de la imagen';
+      'Por favor, elegí la fuente de la imagen';
 
   @override
   String get gallery_source_label => 'Galería';
@@ -3427,7 +3437,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gallery_source_access_denied_dialog_message_ios =>
-      'Lamentablemente, la aplicación no puede acceder a tu galería porque previamente le has denegado el permiso.\n\nVe a la configuración de la aplicación en tu teléfono móvil en Ajustes → Fotos';
+      'Lamentablemente, la aplicación no puede acceder a tu galería porque previamente le denegaste el permiso.\n\nAndá a la configuración de la aplicación en tu teléfono móvil en Ajustes → Fotos';
 
   @override
   String get gallery_source_access_denied_dialog_button =>
@@ -3438,34 +3448,34 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String share_product_text(String url) {
-    return 'Echa un vistazo a este producto en Luppa: $url';
+    return 'Mirá este producto en Luppa: $url';
   }
 
   @override
   String share_product_text_beauty(String url) {
-    return 'Have a look at this product on Open Beauty Facts: $url';
+    return 'Mirá este producto en Open Beauty Facts: $url';
   }
 
   @override
   String share_product_text_pet_food(String url) {
-    return 'Have a look at this product on Open PetFood Facts: $url';
+    return 'Mirá este producto en Open PetFood Facts: $url';
   }
 
   @override
   String share_product_text_product(String url) {
-    return 'Have a look at this product on Open Products Facts: $url';
+    return 'Mirá este producto en Open Products Facts: $url';
   }
 
   @override
   String share_product_list_text(String url) {
-    return 'Echa un vistazo a mi lista de productos en Luppa: $url';
+    return 'Mirá mi lista de productos en Luppa: $url';
   }
 
   @override
   String get capture => 'Nueva captura';
 
   @override
-  String get capture_new_picture => 'Saca una foto';
+  String get capture_new_picture => 'Sacá una foto';
 
   @override
   String get choose_from_gallery => 'Seleccionar de la galería';
@@ -3476,7 +3486,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get add_price_queued =>
-      'The price will be sent to the server as soon as possible.';
+      'El precio se enviará al servidor tan pronto como sea posible.';
 
   @override
   String get background_task_title_full_refresh =>
@@ -3503,11 +3513,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get search_product_filter_visibility_title =>
-      'Show a filter in the search';
+      'Mostrar un filtro en la búsqueda';
 
   @override
   String get search_product_filter_visibility_subtitle =>
-      'Select search site: luppa, Open Beauty Facts, Open Pet Food Facts or Open Products Facts';
+      'Seleccionar sitio de búsqueda: luppa, Open Beauty Facts, Open Pet Food Facts u Open Products Facts';
 
   @override
   String get no_internet_connection => 'No hay conexión a internet';
@@ -3526,7 +3536,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get no_data_available_in_clipboard =>
-      'No data available in your clipboard';
+      'No hay datos disponibles en tu portapapeles';
 
   @override
   String get clipboard_barcode_copy =>
@@ -3538,7 +3548,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get open_product_website => 'Open this product on the website';
+  String get open_product_website => 'Abrir este producto en el sitio web';
 
   @override
   String get language_picker_label => 'Tu idioma';
@@ -3558,11 +3568,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get no_email_client_available_dialog_title =>
-      '¡No hay aplicaciones de correo elecrtrónico!';
+      '¡No hay aplicaciones de correo electrónico!';
 
   @override
   String get no_email_client_available_dialog_content =>
-      'Por favor envíanos un correo electrónico a mobile@luppa.ar';
+      'Por favor envianos un correo electrónico a mobile@luppa.ar';
 
   @override
   String get all_images => 'Todas las imágenes';
@@ -3584,18 +3594,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get scan_header_compare_button_invalid_state_tooltip =>
-      'Escanea por lo menos dos productos para poder compararlos.';
+      'Escaneá por lo menos dos productos para poder compararlos.';
 
   @override
   String get scan_header_compare_button_valid_state_tooltip =>
-      'Haz clic para comparar los productos que has escaneado.';
+      'Hacé clic para comparar los productos que escaneaste.';
 
   @override
-  String get scan_product_loading => 'Has escaneado\nel código de barras:';
+  String get scan_product_loading => 'Escaneaste\nel código de barras:';
 
   @override
   String get scan_product_loading_initial =>
-      '¡Estamos buscando este producto!\nPor favor, espera unos segundos…';
+      '¡Estamos buscando este producto!\nPor favor, esperá unos segundos…';
 
   @override
   String get scan_product_loading_long_request =>
@@ -3610,23 +3620,23 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get portion_calculator_description =>
-      'Calcula información nutricional para una cantidad específica';
+      'Calculá información nutricional para una cantidad específica';
 
   @override
   String get portion_calculator_hint => 'Cantidad';
 
   @override
   String get portion_calculator_accessibility =>
-      'Introduce una cantidad para calcular la información nutricional';
+      'Introducí una cantidad para calcular la información nutricional';
 
   @override
   String portion_calculator_error(int min, int max) {
-    return 'Por favor, introduce una cantidad entre $min y $max g';
+    return 'Por favor, introducí una cantidad entre $min y $max g';
   }
 
   @override
   String get portion_calculator_computation_error =>
-      'Missing data. Calculation could not be performed.';
+      'Faltan datos. No se pudo realizar el cálculo.';
 
   @override
   String portion_calculator_result_title(int grams) {
@@ -3638,7 +3648,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get ocr_image_upload_instruction =>
-      'Sube una imagen para extraer automáticamente la información que contiene.';
+      'Subí una imagen para extraer automáticamente la información que contiene.';
 
   @override
   String get upload_image => 'Subir foto';
@@ -3654,13 +3664,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get image_edit_url_error =>
-      'No se ha podido editar la imagen porque la URL de la imagen no está configurada.';
+      'No se pudo editar la imagen porque la URL de la imagen no está configurada.';
 
   @override
   String get user_picture_source_remember => 'Recordar mi elección';
 
   @override
-  String get user_picture_source_ask => 'Ask each time';
+  String get user_picture_source_ask => 'Preguntar cada vez';
 
   @override
   String get robotoff_continue => 'Continuar';
@@ -3680,18 +3690,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get show_password => 'Mostrar contraseña';
 
   @override
-  String get owner_field_info_title => 'Producer provided values';
+  String get owner_field_info_title =>
+      'Valores proporcionados por el productor';
 
   @override
   String get owner_field_info_message =>
-      'With that logo we highlight data provided by the producer, and that may not be editable.';
+      'Con ese logo destacamos los datos proporcionados por el productor, y que pueden no ser editables.';
 
   @override
-  String get owner_field_info_close_button => 'Close this info';
+  String get owner_field_info_close_button => 'Cerrar esta información';
 
   @override
   String get owner_field_image =>
-      'This image is provided by the producer. It may not be editable.';
+      'Esta imagen es proporcionada por el productor. Puede que no sea editable.';
 
   @override
   String get edit_packagings_title => 'Componentes del envase';
@@ -3712,14 +3723,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_packagings_element_hint_units =>
-      'Introduce el número de unidades de envases con el mismo formato y material.';
+      'Introducí el número de unidades de envases con el mismo formato y material.';
 
   @override
   String get edit_packagings_element_field_shape => 'Formato';
 
   @override
   String get edit_packagings_element_hint_shape =>
-      'Introduce los formatos indicados en las instrucciones de reciclaje, si están disponibles, o selecciona un formato.';
+      'Introducí los formatos indicados en las instrucciones de reciclaje, si están disponibles, o seleccioná un formato.';
 
   @override
   String get edit_packagings_element_example_shape => 'Botella';
@@ -3729,7 +3740,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_packagings_element_hint_material =>
-      'Si es posible, introduce el material específico, muchas veces, el código del material viene indicado dentro de un triángulo en el envase. Si tienes dudas, puedes introducir un material genérico (por ejemplo, plástico o metal).';
+      'Si es posible, introducí el material específico, muchas veces, el código del material viene indicado dentro de un triángulo en el envase. Si tenés dudas, podés introducir un material genérico (por ejemplo, plástico o metal).';
 
   @override
   String get edit_packagings_element_example_material => 'Vidrio';
@@ -3740,7 +3751,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_packagings_element_hint_recycling =>
-      'Introduce las instrucciones de reciclaje solo si aparecen en el producto.';
+      'Introducí las instrucciones de reciclaje solo si aparecen en el producto.';
 
   @override
   String get edit_packagings_element_example_recycling => 'Reciclar';
@@ -3751,7 +3762,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_packagings_element_hint_quantity =>
-      'Introduce el peso neto o el volumen neto y el tipo de unidad (por ejemplo, g o ml).';
+      'Introducí el peso neto o el volumen neto y el tipo de unidad (por ejemplo, g o ml).';
 
   @override
   String get edit_packagings_element_field_weight =>
@@ -3759,7 +3770,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get edit_packagings_element_hint_weight =>
-      'Elimina cualquier resto de alimento y lava y seca el envase antes de pesarlo. Si es posible, usa una báscula con 0,1 g o 0,01 g de precisión.';
+      'Eliminá cualquier resto de alimento y lavá y secá el envase antes de pesarlo. Si es posible, usá una báscula con 0,1 g o 0,01 g de precisión.';
 
   @override
   String get background_task_title => 'Contribuciones pendientes';
@@ -3778,7 +3789,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get background_task_error_no_internet =>
-      'Error de conexión a Internet. Inténtalo más tarde.';
+      'Error de conexión a Internet. Intentalo más tarde.';
 
   @override
   String get background_task_operation_unknown =>
@@ -3805,7 +3816,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get background_task_question_stop =>
-      '¿Quieres detener esa tarea lo antes posible?';
+      '¿Querés detener esa tarea lo antes posible?';
 
   @override
   String get feed_back => 'Sugerencias';
@@ -3819,14 +3830,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get please_send_us_an_email_to =>
-      'Por favor, envíanos un correo electrónico a';
+      'Por favor, envianos un correo electrónico a';
 
   @override
   String get email_copied_to_clip_board =>
       '¡Correo electrónico copiado al portapapeles!';
 
   @override
-  String get select_accent_color => 'Selecciona el color de énfasis';
+  String get select_accent_color => 'Seleccioná el color de énfasis';
 
   @override
   String get theme_amoled => 'AMOLED';
@@ -3875,7 +3886,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get product_refresher_internet_not_found =>
-      '¡No se ha encontrado el producto!';
+      '¡No se encontró el producto!';
 
   @override
   String get product_refresher_internet_not_connected =>
@@ -3892,8 +3903,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get product_loader_not_found_title =>
-      '¡No se ha encontrado el producto!';
+  String get product_loader_not_found_title => '¡No se encontró el producto!';
 
   @override
   String product_loader_not_found_message(String barcode) {
@@ -3905,10 +3915,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get product_loader_network_error_message =>
-      'Comprueba que tu teléfono móvil está conectado a una red wifi o tiene los datos móviles habilitados.';
+      'Comprobá que tu teléfono móvil está conectado a una red wifi o tiene los datos móviles habilitados.';
 
   @override
-  String get page_not_found_title => '¡No se ha encontrado la página!';
+  String get page_not_found_title => '¡No se encontró la página!';
 
   @override
   String get page_not_found_button => 'Volver a la página de inicio';
@@ -3918,7 +3928,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get download_top_products =>
-      'Descarga los 1000 productos mejor valorados de tu país para escanearlos al instante.';
+      'Descargá los 1000 productos mejor valorados de tu país para escanearlos al instante.';
 
   @override
   String download_top_n_products(int count) {
@@ -3928,7 +3938,7 @@ class AppLocalizationsEs extends AppLocalizations {
       other: 'los $count productos mejor valorados',
       one: 'el producto mejor valorado',
     );
-    return 'Descarga $_temp0 de tu país para escanear al instante.';
+    return 'Descargá $_temp0 de tu país para escanear al instante.';
   }
 
   @override
@@ -3946,14 +3956,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get update_local_database_sub =>
-      'Actualiza la base de datos local de productos con los últimos datos de Luppa.';
+      'Actualizá la base de datos local de productos con los últimos datos de Luppa.';
 
   @override
   String get clear_local_database => 'Eliminar datos del producto sin conexión';
 
   @override
   String get clear_local_database_sub =>
-      'Elimina todos los datos de productos locales de tu aplicación para liberar espacio.';
+      'Eliminá todos los datos de productos locales de tu aplicación para liberar espacio.';
 
   @override
   String deleted_products(int num) {
@@ -3968,7 +3978,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get offline_data_desc =>
-      'Haz clic para obtener más información sobre los datos sin conexión.';
+      'Hacé clic para obtener más información sobre los datos sin conexión.';
 
   @override
   String get offline_product_data_title => 'Datos sin conexión del producto';
@@ -3979,25 +3989,26 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get country_selector_title => 'Selecciona tu país:';
+  String get country_selector_title => 'Seleccioná tu país:';
 
   @override
-  String get currency_selector_title => 'Seleccione su moneda:';
+  String get currency_selector_title => 'Seleccioná tu moneda:';
 
   @override
-  String get language_selector_title => 'Selecciona tu idioma:';
+  String get language_selector_title => 'Seleccioná tu idioma:';
 
   @override
-  String get language_selector_section_selected => 'Selected languages';
+  String get language_selector_section_selected => 'Idiomas seleccionados';
 
   @override
-  String get language_selector_section_frequently_used => 'Frequently used';
+  String get language_selector_section_frequently_used =>
+      'Usados frecuentemente';
 
   @override
   String get action_delete_list => 'Eliminar';
 
   @override
-  String get action_change_list => 'Cambiar la lista acual';
+  String get action_change_list => 'Cambiar la lista actual';
 
   @override
   String get product_list_create => 'Crear';
@@ -4025,18 +4036,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String nutriscore_new_formula(String letter) {
-    return 'Nutri-Score $letter (New calculation)';
+    return 'Nutri-Score $letter (Nuevo cálculo)';
   }
 
   @override
-  String get nutriscore_new_formula_title => 'Nutri-Score (New calculation)';
+  String get nutriscore_new_formula_title => 'Nutri-Score (Nuevo cálculo)';
 
   @override
   String get nutriscore_unknown => 'Nutri-Score desconocido';
 
   @override
   String get nutriscore_unknown_new_formula =>
-      'Unknown Nutri-Score (New calculation)';
+      'Nutri-Score desconocido (Nuevo cálculo)';
 
   @override
   String get nutriscore_not_applicable =>
@@ -4044,7 +4055,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nutriscore_not_applicable_new_formula =>
-      'Nutri-Score is not applicable (New calculation)';
+      'No es posible aplicar el Nutri-Score (Nuevo cálculo)';
 
   @override
   String get environmental_score_generic => 'Green-Score';
@@ -4069,10 +4080,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get environmental_score_not_applicable =>
-      'No es posiible aplicar el Green-Score';
+      'No es posible aplicar el Green-Score';
 
   @override
-  String get nova_group_generic => 'Ultraprocesados: gurpos NOVA';
+  String get nova_group_generic => 'Ultraprocesados: grupos NOVA';
 
   @override
   String get nova_group_1 => 'Grupo NOVA 1';
@@ -4100,23 +4111,23 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get faq_title_install_beauty =>
-      'Instala Open Beauty Facts para crear una base de datos sobre cosmética';
+      'Instalá Open Beauty Facts para crear una base de datos sobre cosmética';
 
   @override
   String get faq_title_install_pet =>
-      'Instala Open Pet Food Facts para crear una base de datos sobre alimentación para mascotas';
+      'Instalá Open Pet Food Facts para crear una base de datos sobre alimentación para mascotas';
 
   @override
   String get faq_title_install_product =>
-      'Instala Open Products Facts para crear una base de datos sobre productos del día a día';
+      'Instalá Open Products Facts para crear una base de datos sobre productos del día a día';
 
   @override
   String get faq_nutriscore_nutriscore =>
-      'New calculation of the Nutri-Score: what\'s new?';
+      'Nuevo cálculo del Nutri-Score: ¿qué hay de nuevo?';
 
   @override
   String get contact_title_pro_page =>
-      '¿Eres profesional? Importa tus productos a luppa';
+      '¿Sos profesional? Importá tus productos a luppa';
 
   @override
   String get contact_title_pro_email => 'Contacto para productores';
@@ -4128,13 +4139,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get contact_title_press_email => 'Contacto para prensa';
 
   @override
-  String get contact_title_newsletter => 'Suscríbete a nuestro boletín';
+  String get contact_title_newsletter => 'Suscribite a nuestro boletín';
 
   @override
-  String get contact_title_calendar => 'Subscribe to our community calendar';
+  String get contact_title_calendar =>
+      'Suscribite a nuestro calendario comunitario';
 
   @override
-  String get hunger_games_loading_line1 => 'Please give us a few seconds…';
+  String get hunger_games_loading_line1 => 'Por favor, danos unos segundos…';
 
   @override
   String get hunger_games_loading_line2 =>
@@ -4142,7 +4154,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get hunger_games_error_label =>
-      '¡Vaya! Algo ha salido mal… No hemos podido cargar las preguntas.';
+      '¡Vaya! Algo salió mal… No pudimos cargar las preguntas.';
 
   @override
   String get hunger_games_error_retry_button => '¡Vamos a intentarlo de nuevo!';
@@ -4152,20 +4164,20 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get link_cant_be_opened =>
-      'Este enlace no se puede abrir en tu dispositivo. Comprueba que tienes un navegador instalado.';
+      'Este enlace no se puede abrir en tu dispositivo. Comprobá que tenés un navegador instalado.';
 
   @override
   String knowledge_panel_page_title_no_title(String productName) {
-    return 'Details for $productName';
+    return 'Detalles de $productName';
   }
 
   @override
   String knowledge_panel_page_title(String pageName, String productName) {
-    return 'Details for $pageName with $productName';
+    return 'Detalles de $pageName con $productName';
   }
 
   @override
-  String get guide_title => 'Guide';
+  String get guide_title => 'Guía';
 
   @override
   String get guide_share_label => 'Compartir';
@@ -4175,7 +4187,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guide_nutriscore_v2_title =>
-      'The Nutri-Score is evolving: explanations!';
+      'El Nutri-Score está evolucionando: ¡te lo explicamos!';
 
   @override
   String get guide_nutriscore_v2_what_is_nutriscore_title =>
@@ -4183,73 +4195,74 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guide_nutriscore_v2_what_is_nutriscore_paragraph1 =>
-      'The Nutri-Score is a logo which aims to inform you about the **nutritional quality of foods**.';
+      'El Nutri-Score es un logo que tiene como objetivo informarte sobre la **calidad nutricional de los alimentos**.';
 
   @override
   String get guide_nutriscore_v2_what_is_nutriscore_paragraph2 =>
-      'The color code varies from dark green (**A**) for the **healthiest** products to dark red (**E**) for the **less healthy** ones.';
+      'El código de colores varía desde el verde oscuro (**A**) para los productos **más saludables** hasta el rojo oscuro (**E**) para los **menos saludables**.';
 
   @override
   String get guide_nutriscore_v2_nutriscore_a_caption =>
-      'The Nutri-Score A logo';
+      'El logo del Nutri-Score A';
 
   @override
-  String get guide_nutriscore_v2_why_v2_title => 'Why is Nutri-Score evolving?';
+  String get guide_nutriscore_v2_why_v2_title =>
+      '¿Por qué está evolucionando el Nutri-Score?';
 
   @override
   String get guide_nutriscore_v2_why_v2_intro =>
-      'The Nutri-Score formula **is evolving** to provide better recommendations:';
+      'La fórmula del Nutri-Score **está evolucionando** para ofrecer mejores recomendaciones:';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg1_title =>
-      'Better evaluate all drinks';
+      'Evaluar mejor todas las bebidas';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg1_text =>
-      'The comparative notes of **milk**, **dairy drinks** with added sugar and **vegetable** drinks were better differentiated in the new algorithm.';
+      'Las notas comparativas de la **leche**, las **bebidas lácteas** con azúcar añadido y las bebidas **vegetales** se diferenciaron mejor en el nuevo algoritmo.';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg2_title =>
-      'Better ranking of drinks';
+      'Mejor clasificación de las bebidas';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg2_text =>
-      'The **sugar content** is better taken into account and favors **lowly sweetened** drinks.\\n**Sweeteners will also be penalized**: diet sodas will be downgraded from a B rating to between C and E. Water remains the recommended drink.';
+      'El **contenido de azúcar** se tiene más en cuenta y favorece a las bebidas **poco endulzadas**.\\nLos **edulcorantes también serán penalizados**: las gaseosas dietéticas pasarán de una calificación B a una entre C y E. El agua sigue siendo la bebida recomendada.';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg3_title =>
-      'Salt and sugar penalized';
+      'Sal y azúcar penalizados';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg3_text =>
-      'Products **too sweet** or **too salty** will see their **rating further downgraded**.';
+      'Los productos **demasiado dulces** o **demasiado salados** verán su **calificación aún más rebajada**.';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg4_title =>
-      'Hierarchy within oils and fishes';
+      'Jerarquía dentro de aceites y pescados';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg4_text =>
-      'The rating of certain **fatty fish** and **oils rich in good fats** will improve.';
+      'Mejorará la calificación de ciertos **pescados grasos** y **aceites ricos en grasas buenas**.';
 
   @override
-  String get guide_nutriscore_v2_why_v2_arg5_title => 'Limit red meat';
+  String get guide_nutriscore_v2_why_v2_arg5_title => 'Limitar la carne roja';
 
   @override
   String get guide_nutriscore_v2_why_v2_arg5_text =>
-      'Consumption of **red meat should be limited**. This is why **poultry will be comparatively better ranked**.';
+      'El consumo de **carne roja debe ser limitado**. Por eso, la **carne de ave tendrá una clasificación comparativamente mejor**.';
 
   @override
   String get guide_nutriscore_v2_new_logo_title =>
-      'How to differentiate old Nutri-Score and new calculation?';
+      '¿Cómo diferenciar el Nutri-Score antiguo del nuevo cálculo?';
 
   @override
   String get guide_nutriscore_v2_new_logo_text =>
-      'From now on, the logo can display a mention \"**New calculation**\" to clarify that this is indeed the new calculation.';
+      'A partir de ahora, el logo puede mostrar la mención \"**Nuevo cálculo**\" para aclarar que se trata efectivamente del nuevo cálculo.';
 
   @override
   String get guide_nutriscore_v2_new_logo_image_caption =>
-      'The logo of the new Nutri-Score';
+      'El logo del nuevo Nutri-Score';
 
   @override
   String get guide_nutriscore_v2_where_title =>
@@ -4257,26 +4270,26 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guide_nutriscore_v2_where_paragraph1 =>
-      'The Nutri-Score is applied in 7 countries: France, Germany, Belgium, Spain, Luxembourg, the Netherlands and Switzerland.';
+      'El Nutri-Score se aplica en 7 países: Francia, Alemania, Bélgica, España, Luxemburgo, Países Bajos y Suiza.';
 
   @override
   String get guide_nutriscore_v2_where_paragraph2 =>
-      'Manufacturers have at most **2 years** at the latest after the signature of the decree **to replace** the old calculation with the new one.';
+      'Los fabricantes tienen como máximo **2 años** a más tardar después de la firma del decreto para **reemplazar** el cálculo antiguo por el nuevo.';
 
   @override
   String get guide_nutriscore_v2_where_paragraph3 =>
-      'Without waiting, you **will already find in the luppa application**, the new calculation, including if the manufacturers have not updated the score.';
+      'Sin esperar, **ya encontrarás en la aplicación luppa**, el nuevo cálculo, incluso si los fabricantes no han actualizado la puntuación.';
 
   @override
-  String get guide_nutriscore_v2_unchanged_title => 'What doesn\'t change';
+  String get guide_nutriscore_v2_unchanged_title => 'Lo que no cambia';
 
   @override
   String get guide_nutriscore_v2_unchanged_paragraph1 =>
-      'The Nutri-Score is a score designed to **measure nutritional quality**. It is **complementary to the NOVA group** on **ultra-processed foods** (also present in the application).';
+      'El Nutri-Score es una puntuación diseñada para **medir la calidad nutricional**. Es **complementaria al grupo NOVA** sobre **alimentos ultraprocesados** (también presente en la aplicación).';
 
   @override
   String get guide_nutriscore_v2_unchanged_paragraph2 =>
-      'For manufacturers, the display of the Nutri-Score **remains optional**.';
+      'Para los fabricantes, la exhibición del Nutri-Score **sigue siendo opcional**.';
 
   @override
   String get guide_nutriscore_v2_share_link =>
@@ -4286,27 +4299,27 @@ class AppLocalizationsEs extends AppLocalizations {
   String get guide_nutriscore_v2_share_message => '';
 
   @override
-  String get preview_badge => 'Preview';
+  String get preview_badge => 'Vista previa';
 
   @override
   String get prices_feedback_form =>
-      'Click here to send us your feedback about this new feature!';
+      '¡Hacé clic acá para enviarnos tus comentarios sobre esta nueva función!';
 
   @override
-  String get menu_button_list_actions => 'Elija una acción';
+  String get menu_button_list_actions => 'Elegí una acción';
 
   @override
-  String get error_loading_photo => 'Error loading photo';
+  String get error_loading_photo => 'Error al cargar la foto';
 
   @override
-  String get photo_viewer_action_use_picture_as => 'Use as…';
+  String get photo_viewer_action_use_picture_as => 'Usar como…';
 
   @override
-  String get photo_viewer_use_picture_as_tooltip => 'Use this picture as…';
+  String get photo_viewer_use_picture_as_tooltip => 'Usar esta imagen como…';
 
   @override
   String photo_viewer_use_picture_as_title(String language) {
-    return 'Use this picture as… ($language)';
+    return 'Usar esta imagen como… ($language)';
   }
 
   @override
@@ -4314,20 +4327,20 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get photo_viewer_details_button_accessibility_label =>
-      'Details of this photo';
+      'Detalles de esta foto';
 
   @override
-  String get photo_viewer_details_title => 'Details of the photo';
+  String get photo_viewer_details_title => 'Detalles de la foto';
 
   @override
   String get photo_viewer_details_contributor_title => 'Colaborador/a';
 
   @override
-  String get photo_viewer_details_size_title => 'Size';
+  String get photo_viewer_details_size_title => 'Tamaño';
 
   @override
   String photo_viewer_details_size_value(int width, int height) {
-    return '$width x $height pixels';
+    return '$width x $height píxeles';
   }
 
   @override
@@ -4340,11 +4353,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_page_compatibility_score => 'Compatible';
 
   @override
-  String get user_lists_action_multi_select => 'Multi-select';
+  String get user_lists_action_multi_select => 'Selección múltiple';
 
   @override
   String product_page_compatibility_score_tooltip(String score) {
-    return 'Your compatibility score: $score%';
+    return 'Tu puntuación de compatibilidad: $score%';
   }
 
   @override
@@ -4356,103 +4369,105 @@ class AppLocalizationsEs extends AppLocalizations {
       'Imagen de los ingredientes del producto';
 
   @override
-  String get product_image_nutrition_accessibility_label => 'Nutrition picture';
+  String get product_image_nutrition_accessibility_label =>
+      'Imagen de información nutricional';
 
   @override
-  String get product_image_packaging_accessibility_label => 'Packaging picture';
+  String get product_image_packaging_accessibility_label => 'Imagen del envase';
 
   @override
-  String get product_image_other_accessibility_label => 'Other picture';
+  String get product_image_other_accessibility_label => 'Otra imagen';
 
   @override
-  String get product_image_outdated_message => 'This picture may be outdated';
+  String get product_image_outdated_message =>
+      'Esta imagen puede estar desactualizada';
 
   @override
   String product_image_outdated_message_accessibility_label(String type) {
-    return '$type (this image may be outdated)';
+    return '$type (esta imagen puede estar desactualizada)';
   }
 
   @override
   String product_image_locked_message_accessibility_label(String type) {
-    return '$type (this image may be locked by the producer)';
+    return '$type (esta imagen puede estar bloqueada por el productor)';
   }
 
   @override
-  String get product_image_error => 'Unable to load the image!';
+  String get product_image_error => '¡No se pudo cargar la imagen!';
 
   @override
   String product_image_error_accessibility_label(String type) {
-    return 'Unable to load the $type (network error?)';
+    return 'No se pudo cargar la $type (¿error de red?)';
   }
 
   @override
-  String get product_page_image_no_image_available => 'No\nimage!';
+  String get product_page_image_no_image_available => '¡No hay\nimagen!';
 
   @override
   String get product_page_image_no_image_available_accessibility_label =>
-      'No picture available for this product';
+      'No hay imagen disponible para este producto';
 
   @override
   String get product_page_action_bar_settings_accessibility_label =>
-      'Reorder or hide actions';
+      'Reordenar u ocultar acciones';
 
   @override
-  String get product_page_action_bar_setting_modal_title => 'Edit actions';
+  String get product_page_action_bar_setting_modal_title => 'Editar acciones';
 
   @override
-  String get product_page_action_bar_item_move_up => 'Move up';
+  String get product_page_action_bar_item_move_up => 'Mover hacia arriba';
 
   @override
-  String get product_page_action_bar_item_move_down => 'Move down';
+  String get product_page_action_bar_item_move_down => 'Mover hacia abajo';
 
   @override
-  String get product_page_action_bar_item_enable => 'Enable action';
+  String get product_page_action_bar_item_enable => 'Activar acción';
 
   @override
-  String get product_page_action_bar_item_disable => 'Disable action';
+  String get product_page_action_bar_item_disable => 'Desactivar acción';
 
   @override
   String get product_page_pending_operations_banner_title =>
-      'Uploading your edits…';
+      'Subiendo tus ediciones…';
 
   @override
   String get product_page_pending_operations_banner_message =>
-      'The data displayed on this page **does not yet reflect your modifications**.\nPlease wait a few seconds…';
+      'Los datos que se muestran en esta página **aún no reflejan tus modificaciones**.\nPor favor, esperá unos segundos…';
 
   @override
-  String get product_add_a_language => 'Add a language';
+  String get product_add_a_language => 'Añadir un idioma';
 
   @override
   String barcode_accessibility_label(String barcode) {
-    return 'Barcode $barcode';
+    return 'Código de barras $barcode';
   }
 
   @override
-  String get carousel_close_tooltip => 'Remove this product from the carousel';
+  String get carousel_close_tooltip => 'Eliminar este producto del carrusel';
 
   @override
-  String get carousel_unsupported_header => 'Unsupported barcode!';
+  String get carousel_unsupported_header => '¡Código de barras no compatible!';
 
   @override
-  String get carousel_unsupported_title => 'Ooops!';
+  String get carousel_unsupported_title => '¡Ups!';
 
   @override
   String get carousel_unsupported_text =>
-      'The barcode scanned is not supported by Luppa!';
+      '¡El código de barras escaneado no es compatible con Luppa!';
 
   @override
-  String get carousel_error_header => 'Error!';
+  String get carousel_error_header => '¡Error!';
 
   @override
-  String get carousel_error_title => 'It\'s a bummer!';
+  String get carousel_error_title => '¡Qué lástima!';
 
   @override
   String get carousel_error_text_1 =>
-      'We couldn\'t download information on this barcode:';
+      'No pudimos descargar información sobre este código de barras:';
 
   @override
   String get carousel_error_text_2 =>
-      'Please check your Internet connection or click this button:';
+      'Por favor, revisá tu conexión a Internet o hacé clic en este botón:';
 
   @override
   String get carousel_error_button => 'Reintentar';
@@ -4462,55 +4477,56 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get carousel_unknown_product_title =>
-      'Congratulations!\nYou\'ve found __the rare gem!__';
+      '¡Felicitaciones!\n¡Encontraste __una joya rara!__';
 
   @override
   String get carousel_unknown_product_text =>
-      'Our collaborative database contains more than **3 million products**, but this barcode doesn\'t exist: ';
+      'Nuestra base de datos contiene más de **12.000 productos**, pero este código de barras no existe: ';
 
   @override
   String get carousel_unknown_product_button => 'Añadir este producto';
 
   @override
-  String get carousel_loading_header => 'Loading information...';
+  String get carousel_loading_header => 'Cargando información...';
 
   @override
   String get carousel_loading_title =>
-      'You\'ve just scanned a product with the following barcode:';
+      'Acabás de escanear un producto con el siguiente código de barras:';
 
   @override
   String get carousel_loading_text =>
-      'We are searching for it in our database of more than **3 million products!**';
+      '¡Lo estamos buscando en nuestra base de datos de más de **3 millones de productos!**';
 
   @override
-  String get product_type_subtitle_food => 'Vegetables, fruits, frozen food…';
+  String get product_type_subtitle_food => 'Verduras, frutas, congelados…';
 
   @override
-  String get product_type_subtitle_beauty => 'Makeup, soaps, toothpastes…';
+  String get product_type_subtitle_beauty =>
+      'Maquillaje, jabones, dentífricos…';
 
   @override
-  String get product_type_subtitle_pet_food => 'Food for dogs, cats…';
+  String get product_type_subtitle_pet_food => 'Comida para perros, gatos…';
 
   @override
-  String get product_type_subtitle_product => 'Smartphones, furniture…';
+  String get product_type_subtitle_product => 'Smartphones, muebles…';
 
   @override
-  String get photo_field_front => 'Product photo';
+  String get photo_field_front => 'Foto del producto';
 
   @override
   String get photo_field_ingredients => 'Foto de los ingredientes';
 
   @override
-  String get photo_field_nutrition => 'Nutrition photo';
+  String get photo_field_nutrition => 'Foto de información nutricional';
 
   @override
   String get photo_field_packaging => 'Foto de la información del envase';
 
   @override
-  String get photo_already_exists => 'This photo already exists';
+  String get photo_already_exists => 'Esta foto ya existe';
 
   @override
-  String get photo_missing => 'This photo is missing';
+  String get photo_missing => 'Falta esta foto';
 
   @override
   String get date => 'Fecha';
@@ -4541,19 +4557,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get knowledge_panel_nutriscore_banner_incorrect_score_title =>
-      'Why is this Nutri-Score different from the one on the package?';
+      '¿Por qué este Nutri-Score es diferente al del paquete?';
 
   @override
   String get knowledge_panel_nutriscore_banner_incorrect_score_message =>
-      'There are two possible explanations:\nThe list of ingredients and/or nutrition facts are not up-to-date.\n\nWe provide the \"New calculation\" of the Nutri-Score (or V2). Please check that you have the banner \"New calculation\" on the package.';
+      'Hay dos explicaciones posibles:\nLa lista de ingredientes y/o la información nutricional no están actualizadas.\n\nProporcionamos el \"Nuevo cálculo\" del Nutri-Score (o V2). Por favor, verificá que tengas el banner \"Nuevo cálculo\" en el paquete.';
 
   @override
   String get knowledge_panel_nutriscore_banner_incorrect_score_button1 =>
-      'Check ingredients';
+      'Verificar ingredientes';
 
   @override
   String get knowledge_panel_nutriscore_banner_incorrect_score_button2 =>
-      'Check nutrition facts';
+      'Verificar información nutricional';
 
   @override
   String url_not_supported(String url) {
@@ -4567,22 +4583,22 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_list_import => 'Importar';
 
   @override
-  String get product_footer_action_barcode => 'View barcode';
+  String get product_footer_action_barcode => 'Ver código de barras';
 
   @override
   String get product_footer_action_barcode_short => 'Código de barras';
 
   @override
-  String get product_footer_action_open_website => 'Open website';
+  String get product_footer_action_open_website => 'Abrir sitio web';
 
   @override
-  String get product_footer_action_report => 'Report';
+  String get product_footer_action_report => 'Reportar';
 
   @override
   String get product_footer_action_contributor_guide => 'Ayuda';
 
   @override
-  String get product_footer_action_data_quality_tags => 'Data quality';
+  String get product_footer_action_data_quality_tags => 'Calidad de los datos';
 
   @override
   String get product_page_tab_for_me => 'Para mí';
@@ -4594,52 +4610,52 @@ class AppLocalizationsEs extends AppLocalizations {
   String get product_page_tab_prices => 'Precios';
 
   @override
-  String get product_page_tab_folksonomy => 'Folksonomy';
+  String get product_page_tab_folksonomy => 'Folksonomía';
 
   @override
   String prices_products_list_length_many_pages(int pageSize, int total) {
-    return 'Top $pageSize products (total: $total)';
+    return 'Top $pageSize productos (total: $total)';
   }
 
   @override
-  String get app_review_title => 'Are you enjoying this app?';
+  String get app_review_title => '¿Te está gustando esta aplicación?';
 
   @override
-  String get app_review_low => 'Could do better';
+  String get app_review_low => 'Podría mejorar';
 
   @override
-  String get app_review_medium => 'Not bad';
+  String get app_review_medium => 'No está mal';
 
   @override
-  String get app_review_high => 'I love it!';
+  String get app_review_high => '¡Me encanta!';
 
   @override
   String get app_review_feedback_modal_title =>
-      'Help us improve our application';
+      'Ayudanos a mejorar nuestra aplicación';
 
   @override
   String get app_review_feedback_modal_content =>
-      'If you have a few minutes, could you answer this form so that **we can improve in future updates**:';
+      'Si tenés unos minutos, ¿podrías responder este formulario para que **podamos mejorar en futuras actualizaciones**?:';
 
   @override
-  String get app_review_feedback_modal_open_form => 'Answer the form';
+  String get app_review_feedback_modal_open_form => 'Responder el formulario';
 
   @override
-  String get app_review_feedback_modal_later => 'Pregúntame más tarde';
+  String get app_review_feedback_modal_later => 'Preguntame más tarde';
 
   @override
   String get nutrition_facts_extract_new =>
-      'NEW: You can automatically extract the nutrients from the picture!';
+      'NUEVO: ¡Podés extraer automáticamente los nutrientes de la imagen!';
 
   @override
-  String get nutrition_facts_extract_button_text => 'Extract now';
+  String get nutrition_facts_extract_button_text => 'Extraer ahora';
 
   @override
-  String get nutrition_facts_extract_succesful => 'Extraction succesful';
+  String get nutrition_facts_extract_succesful => 'Extracción exitosa';
 
   @override
   String get nutrition_facts_extract_failed =>
-      'Failed to extract nutrients from picture';
+      'Falló la extracción de nutrientes de la imagen';
 
   @override
   String get prices_discount => 'Descuento';
@@ -4660,13 +4676,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_stats_locations_section => 'Ubicaciones';
 
   @override
-  String get prices_stats_proofs_section => 'Proofs';
+  String get prices_stats_proofs_section => 'Pruebas';
 
   @override
   String get prices_stats_contributors_section => 'Colaboradores';
 
   @override
-  String get prices_stats_experiments_section => 'Experiments';
+  String get prices_stats_experiments_section => 'Experimentos';
 
   @override
   String get prices_stats_misc_section => 'Miscelánea';
@@ -4675,16 +4691,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_stats_total => 'Total';
 
   @override
-  String get prices_stats_with_barcode => 'With a barcode';
+  String get prices_stats_with_barcode => 'Con código de barras';
 
   @override
-  String get prices_stats_with_category => 'With a category';
+  String get prices_stats_with_category => 'Con categoría';
 
   @override
   String get prices_stats_with_discount => 'Con descuento';
 
   @override
-  String get prices_stats_community => 'Community';
+  String get prices_stats_community => 'Comunidad';
 
   @override
   String get prices_stats_consumption => 'Consumo';
@@ -4708,7 +4724,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_stats_osm => 'OpenStreetMap';
 
   @override
-  String get prices_stats_online => 'Online';
+  String get prices_stats_online => 'En línea';
 
   @override
   String get prices_stats_countries => 'Países';
@@ -4723,28 +4739,29 @@ class AppLocalizationsEs extends AppLocalizations {
   String get prices_stats_gdpr_request => 'Solicitud GDPR';
 
   @override
-  String get prices_stats_shop_import => 'Shop import';
+  String get prices_stats_shop_import => 'Importación de tienda';
 
   @override
   String get prices_stats_challenges => 'Desafíos';
 
   @override
-  String get prices_stats_linked_to_price_tag => 'Prices linked to a price tag';
+  String get prices_stats_linked_to_price_tag =>
+      'Precios vinculados a una etiqueta de precio';
 
   @override
-  String get prices_stats_currencies => 'Currencies';
+  String get prices_stats_currencies => 'Monedas';
 
   @override
-  String get prices_stats_years => 'Years';
+  String get prices_stats_years => 'Años';
 
   @override
-  String get prices_stats_by_source_title => 'Prices and proofs per source';
+  String get prices_stats_by_source_title => 'Precios y pruebas por fuente';
 
   @override
   String get prices_stats_website => 'Sitio web';
 
   @override
-  String get prices_stats_mobile_app => 'Mobile app';
+  String get prices_stats_mobile_app => 'Aplicación móvil';
 
   @override
   String get prices_stats_api => 'API';
@@ -4760,7 +4777,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Se produjo un error al cargar las estadísticas.';
 
   @override
-  String get product_edit_robotoff_question_answered => 'Question answered!';
+  String get product_edit_robotoff_question_answered => '¡Pregunta respondida!';
 
   @override
   String get product_edit_robotoff_proof => 'Comprobante';
@@ -4845,11 +4862,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nutriscore_a_message =>
-      'Puedes consumirlo con tranquilidad, incluso a diario.';
+      'Podés consumirlo con tranquilidad, incluso a diario.';
 
   @override
   String get nutriscore_b_message =>
-      'Puedes incluirlo regularmente en tu alimentación, solo cuida el resto de tu dieta.';
+      'Podés incluirlo regularmente en tu alimentación, solo cuidá el resto de tu dieta.';
 
   @override
   String get nutriscore_c_message =>
@@ -4857,11 +4874,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nutriscore_d_message =>
-      'No es la mejor opción si buscas algo saludable.';
+      'No es la mejor opción si buscás algo saludable.';
 
   @override
   String get nutriscore_e_message =>
-      'Mejor evítalo o consúmelo muy rara vez, porque su impacto en la salud puede ser negativo si lo consumes seguido.';
+      'Mejor evitalo o consumilo muy rara vez, porque su impacto en la salud puede ser negativo si lo consumís seguido.';
 
   @override
   String get nutrition_energy => 'Energía';

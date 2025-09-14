@@ -18,7 +18,7 @@ import 'package:smooth_app/generic_lib/widgets/smooth_card.dart';
 import 'package:smooth_app/generic_lib/widgets/smooth_error_card.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/personalized_ranking_page.dart';
+// import 'package:smooth_app/pages/personalized_ranking_page.dart';
 import 'package:smooth_app/pages/preferences/country_selector/country.dart';
 import 'package:smooth_app/pages/product/common/loading_status.dart';
 import 'package:smooth_app/pages/product/common/product_list_item_simple.dart';
@@ -27,7 +27,6 @@ import 'package:smooth_app/pages/product/common/search_app_bar_title.dart';
 import 'package:smooth_app/pages/product/common/search_empty_screen.dart';
 import 'package:smooth_app/pages/product/common/search_loading_screen.dart';
 import 'package:smooth_app/query/paged_product_query.dart';
-import 'package:smooth_app/widgets/ranking_floating_action_button.dart';
 import 'package:smooth_app/widgets/smooth_app_bar.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
 
@@ -163,58 +162,39 @@ class _ProductQueryPageState extends State<ProductQueryPage>
     final int itemCount = _getItemCount();
 
     return SmoothScaffold(
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          Expanded(
-            child: RankingFloatingActionButton(
-              onPressed: () =>
-                  Navigator.of(context, rootNavigator: true).push<Widget>(
-                    MaterialPageRoute<Widget>(
-                      builder: (BuildContext context) =>
-                          PersonalizedRankingPage(
-                            barcodes: _model.displayBarcodes,
-                            title: widget.name,
-                          ),
-                    ),
+      floatingActionButton: Visibility(
+        visible: _showBackToTopButton,
+        child: AnimatedOpacity(
+          duration: SmoothAnimationsDuration.short,
+          opacity: _showBackToTopButton ? 1.0 : 0.0,
+          child: SmoothRevealAnimation(
+            animationCurve: Curves.easeInOutBack,
+            startOffset: const Offset(0.0, 1.0),
+            child: Padding(
+              padding: const EdgeInsetsDirectional.only(start: SMALL_SPACE),
+              child: SizedBox(
+                height: MINIMUM_TOUCH_SIZE,
+                child: ElevatedButton(
+                  onPressed: () {
+                    _scrollToTop();
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: themeData.colorScheme.secondary,
+                    foregroundColor: themeData.colorScheme.onSecondary,
+                    shape: const CircleBorder(),
+                    padding: EdgeInsets.zero,
                   ),
-            ),
-          ),
-          Visibility(
-            visible: _showBackToTopButton,
-            child: AnimatedOpacity(
-              duration: SmoothAnimationsDuration.short,
-              opacity: _showBackToTopButton ? 1.0 : 0.0,
-              child: SmoothRevealAnimation(
-                animationCurve: Curves.easeInOutBack,
-                startOffset: const Offset(0.0, 1.0),
-                child: Padding(
-                  padding: const EdgeInsetsDirectional.only(start: SMALL_SPACE),
-                  child: SizedBox(
-                    height: MINIMUM_TOUCH_SIZE,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        _scrollToTop();
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: themeData.colorScheme.secondary,
-                        foregroundColor: themeData.colorScheme.onSecondary,
-                        shape: const CircleBorder(),
-                        padding: EdgeInsets.zero,
-                      ),
-                      child: Center(
-                        child: Icon(
-                          Icons.arrow_upward,
-                          color: themeData.colorScheme.onSecondary,
-                        ),
-                      ),
+                  child: Center(
+                    child: Icon(
+                      Icons.arrow_upward,
+                      color: themeData.colorScheme.onSecondary,
                     ),
                   ),
                 ),
               ),
             ),
           ),
-        ],
+        ),
       ),
       appBar: widget.includeAppBar
           ? SmoothAppBar(

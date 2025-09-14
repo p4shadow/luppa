@@ -14,11 +14,13 @@ class KnowledgePanelCard extends StatelessWidget {
     required this.panelId,
     required this.product,
     required this.isClickable,
+    this.showSummary = true,
   });
 
   final String panelId;
   final Product product;
   final bool isClickable;
+  final bool showSummary;
 
   static const String PANEL_NUTRITION_TABLE_ID = 'nutrition_facts_table';
   static const String PANEL_INGREDIENTS_ID = 'ingredients';
@@ -71,13 +73,14 @@ class KnowledgePanelCard extends StatelessWidget {
                   ),
                 ),
               ),
-        child:
-            KnowledgePanelsBuilder.getPanelSummaryWidget(
-              panel,
-              isClickable: improvedIsClickable,
-              margin: EdgeInsets.zero,
-            ) ??
-            const SizedBox(),
+        child: showSummary
+            ? KnowledgePanelsBuilder.getPanelSummaryWidget(
+                    panel,
+                    isClickable: improvedIsClickable,
+                    margin: EdgeInsets.zero,
+                  ) ??
+                  const SizedBox()
+            : const SizedBox(),
       ),
     );
   }
