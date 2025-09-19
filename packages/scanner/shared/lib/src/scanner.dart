@@ -27,5 +27,8 @@ abstract class Scanner {
 
     /// Padding to apply to the content (eg: the visor)
     EdgeInsetsGeometry? contentPadding,
+
+    /// A widget to display at the bottom of the scanner.
+    Widget? bottomWidget,
   });
 }

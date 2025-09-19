@@ -16,8 +16,9 @@ import 'package:smooth_app/pages/scan/scan_header.dart';
 
 /// A page showing the camera feed and decoding barcodes.
 class CameraScannerPage extends StatefulWidget {
-  const CameraScannerPage();
-
+  const CameraScannerPage({this.isFullScreen = false, this.bottomWidget});
+  final bool isFullScreen;
+  final Widget? bottomWidget;
   @override
   State<CameraScannerPage> createState() => _CameraScannerPageState();
 
@@ -109,6 +110,7 @@ class _CameraScannerPageState extends State<CameraScannerPage>
               contentPadding: _model.compareFeatureEnabled
                   ? EdgeInsets.only(top: _headerHeight ?? 0.0)
                   : null,
+              bottomWidget: widget.bottomWidget,
             ),
           ),
           Positioned(
@@ -121,12 +123,13 @@ class _CameraScannerPageState extends State<CameraScannerPage>
               color: Colors.black12,
             ),
           ),
-          Positioned(
-            top: statusBarHeight,
-            left: 0.0,
-            right: 0.0,
-            child: ScanHeader(key: _headerKey),
-          ),
+          if (!widget.isFullScreen)
+            Positioned(
+              top: statusBarHeight,
+              left: 0.0,
+              right: 0.0,
+              child: ScanHeader(key: _headerKey),
+            ),
         ],
       ),
     );

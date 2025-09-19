@@ -30,6 +30,7 @@ class ScannerMLKit extends Scanner {
     String? toggleCameraModeTooltip,
     String? toggleFlashModeTooltip,
     EdgeInsetsGeometry? contentPadding,
+    Widget? bottomWidget,
   }) {
     return _SmoothBarcodeScannerMLKit(
       onScan: onScan,
@@ -40,6 +41,7 @@ class ScannerMLKit extends Scanner {
       toggleCameraModeTooltip: toggleCameraModeTooltip,
       toggleFlashModeTooltip: toggleFlashModeTooltip,
       contentPadding: contentPadding,
+      bottomWidget: bottomWidget,
     );
   }
 }
@@ -55,6 +57,7 @@ class _SmoothBarcodeScannerMLKit extends StatefulWidget {
     this.toggleCameraModeTooltip,
     this.toggleFlashModeTooltip,
     this.contentPadding,
+    this.bottomWidget,
   });
 
   final Future<bool> Function(String) onScan;
@@ -73,6 +76,7 @@ class _SmoothBarcodeScannerMLKit extends StatefulWidget {
   final EdgeInsetsGeometry? contentPadding;
   final String? toggleCameraModeTooltip;
   final String? toggleFlashModeTooltip;
+  final Widget? bottomWidget;
 
   @override
   State<StatefulWidget> createState() => _SmoothBarcodeScannerMLKitState();
@@ -174,6 +178,7 @@ class _SmoothBarcodeScannerMLKitState extends State<_SmoothBarcodeScannerMLKit>
                       toggleCameraModeTooltip: widget.toggleCameraModeTooltip,
                       hapticFeedback: widget.hapticFeedback,
                     ),
+                    if (widget.bottomWidget != null) widget.bottomWidget!,
                     _TorchIcon(
                       toggleFlashModeTooltip: widget.toggleFlashModeTooltip,
                       hapticFeedback: widget.hapticFeedback,

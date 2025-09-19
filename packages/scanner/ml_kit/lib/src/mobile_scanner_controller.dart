@@ -31,6 +31,7 @@ class CustomScannerController {
     try {
       _controller.addListener(_onControllerChanged);
       await _controller.start();
+      await _controller.setZoomScale(0.50);
       _isStarted = true;
 
       if (isTorchOn) {

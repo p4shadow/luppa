@@ -24,5 +24,6 @@ class MockedScanner extends Scanner {
     String? toggleCameraModeTooltip,
     String? toggleFlashModeTooltip,
     EdgeInsetsGeometry? contentPadding,
+    Widget? bottomWidget,
   }) => Container();
 }

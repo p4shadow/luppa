@@ -9,7 +9,9 @@ import 'package:smooth_app/data_models/preferences/user_preferences.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/dialogs/smooth_alert_dialog.dart';
 import 'package:smooth_app/generic_lib/widgets/smooth_card.dart';
+import 'package:scanner_zxing/scanner_zxing.dart';
 import 'package:smooth_app/helpers/camera_helper.dart';
+import 'package:smooth_app/helpers/global_vars.dart';
 import 'package:smooth_app/helpers/haptic_feedback_helper.dart';
 import 'package:smooth_app/helpers/permission_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
@@ -33,9 +35,24 @@ class _ScanPageState extends State<ScanPage> {
   AudioPlayer? _musicPlayer;
 
   late UserPreferences _userPreferences;
+  bool _isFullScreen = false;
 
   /// Percentage of the bottom part of the screen that hosts the carousel.
   static const int _carouselHeightPct = 60;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (GlobalVars.barcodeScanner is ScannerZXing) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Zoom is not available for the ZXing scanner'),
+          ),
+        );
+      }
+    });
+  }
 
   @override
   void didChangeDependencies() {
@@ -68,7 +85,7 @@ class _ScanPageState extends State<ScanPage> {
         children: <Widget>[
           if (hasACamera)
             Expanded(
-              flex: 100 - _carouselHeightPct,
+              flex: _isFullScreen ? 100 : 100 - _carouselHeightPct,
               child: Consumer<PermissionListener>(
                 builder:
                     (BuildContext context, PermissionListener listener, _) {
@@ -77,17 +94,31 @@ class _ScanPageState extends State<ScanPage> {
                           return EMPTY_WIDGET;
                         case DevicePermissionStatus.granted:
                           // TODO(m123): change
-                          return const CameraScannerPage();
+                          return CameraScannerPage(
+                            isFullScreen: _isFullScreen,
+                            bottomWidget: IconButton(
+                              icon: Icon(
+                                _isFullScreen
+                                    ? Icons.fullscreen_exit
+                                    : Icons.fullscreen,
+                                color: Colors.white,
+                              ),
+                              onPressed: () {
+                                setState(() {
+                                  _isFullScreen = !_isFullScreen;
+                                });
+                              },
+                            ),
+                          );
                         default:
                           return const _PermissionDeniedCard();
                       }
                     },
               ),
             ),
-          Expanded(
-            flex: _carouselHeightPct,
-            child: Padding(
-              padding: const EdgeInsetsDirectional.only(bottom: BALANCED_SPACE),
+          if (!_isFullScreen)
+            Expanded(
+              flex: _carouselHeightPct,
               child: ScanPageCarousel(
                 onPageChangedTo: (int page, String? barcode) async {
                   if (barcode == null) {
@@ -130,7 +161,6 @@ class _ScanPageState extends State<ScanPage> {
                 },
               ),
             ),
-          ),
         ],
       ),
     );

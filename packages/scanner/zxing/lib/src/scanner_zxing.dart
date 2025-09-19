@@ -30,6 +30,7 @@ class ScannerZXing extends Scanner {
     String? toggleCameraModeTooltip,
     String? toggleFlashModeTooltip,
     EdgeInsetsGeometry? contentPadding,
+    Widget? bottomWidget,
   }) {
     return _SmoothBarcodeScannerZXing(
       onScan: onScan,
@@ -39,6 +40,7 @@ class ScannerZXing extends Scanner {
       toggleCameraModeTooltip: toggleCameraModeTooltip,
       toggleFlashModeTooltip: toggleFlashModeTooltip,
       contentPadding: contentPadding,
+      bottomWidget: bottomWidget,
     );
   }
 }
@@ -53,6 +55,7 @@ class _SmoothBarcodeScannerZXing extends StatefulWidget {
     this.toggleCameraModeTooltip,
     this.toggleFlashModeTooltip,
     this.contentPadding,
+    this.bottomWidget,
   });
 
   final Future<bool> Function(String) onScan;
@@ -63,6 +66,7 @@ class _SmoothBarcodeScannerZXing extends StatefulWidget {
   final EdgeInsetsGeometry? contentPadding;
   final String? toggleCameraModeTooltip;
   final String? toggleFlashModeTooltip;
+  final Widget? bottomWidget;
 
   @override
   State<StatefulWidget> createState() => _SmoothBarcodeScannerZXingState();
@@ -160,6 +164,7 @@ class _SmoothBarcodeScannerZXingState
                     },
                     child: Icon(getCameraFlip()),
                   ),
+                if (widget.bottomWidget != null) widget.bottomWidget!,
                 FutureBuilder<bool?>(
                   future: _controller?.getFlashStatus(),
                   builder: (_, final AsyncSnapshot<bool?> snapshot) {
