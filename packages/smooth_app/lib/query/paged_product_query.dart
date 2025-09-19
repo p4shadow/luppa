@@ -5,7 +5,7 @@ import 'package:smooth_app/query/search_products_manager.dart';
 
 /// Paged product query (with [pageSize] and [pageNumber]).
 abstract class PagedProductQuery {
-  PagedProductQuery({required this.productType, this.world = true});
+  PagedProductQuery({required this.productType, this.world = false});
 
   final ProductType productType;
   final int pageSize = _typicalPageSize;
