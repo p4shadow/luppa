@@ -1,6 +1,6 @@
 name: smooth_app
 description: The next generation of the Luppa mobile apps.
-version: 0.0.3
+version: 0.0.4
 publish_to: "none"
 
 environment:
@@ -36,6 +36,7 @@ dependencies:
   photo_view: 0.15.0
   uuid: 4.5.1
   provider: 6.1.5
+  purchases_flutter: ^9.6.0
   sentry_flutter: 9.6.0
   sqflite: 2.4.2
   sqflite_common_ffi: 2.3.6

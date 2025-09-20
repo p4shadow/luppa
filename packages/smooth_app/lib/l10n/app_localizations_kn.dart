@@ -4808,4 +4808,8 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get nutrition_proteins => 'Proteins';
+
+  @override
+  String get sign_up_page_have_already_an_account =>
+      'Already have an account? Sign In';
 }

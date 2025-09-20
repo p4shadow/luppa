@@ -169,8 +169,7 @@ class AppLocalizationsEs extends AppLocalizations {
       '¡No hay respuesta del servidor! Podés alertar de esta instancia con el siguiente enlace.';
 
   @override
-  String get sign_in_text =>
-      'Iniciá sesión en tu cuenta de luppa para guardar tus contribuciones';
+  String get sign_in_text => 'Crea una cuenta o ingresa en ella';
 
   @override
   String get incorrect_credentials =>
@@ -340,7 +339,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get sign_up_page_agree_error_invalid =>
-      'Al crear una cuenta, es obligatorio aceptar las condiciones de uso. Sin embargo, aún se pueden hacer contribuciones anónimas a través de la aplicación.';
+      'Al crear una cuenta, es obligatorio aceptar las condiciones de uso.';
 
   @override
   String get sign_up_page_producer_checkbox => 'Soy productor/a de alimentos';
@@ -620,7 +619,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get history_navbar_label => 'Historial';
 
   @override
-  String get list_navbar_label => 'Listas';
+  String get list_navbar_label => 'Historial';
 
   @override
   String get category => 'Filtrar por categoría';
@@ -4891,4 +4890,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nutrition_proteins => 'Proteínas';
+
+  @override
+  String get sign_up_page_have_already_an_account =>
+      '¿Ya tienes una cuenta? Ingresa aquí';
 }

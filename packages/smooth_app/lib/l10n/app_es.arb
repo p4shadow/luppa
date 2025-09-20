@@ -155,7 +155,7 @@
   },
   "server_error_open_new_issue": "¡No hay respuesta del servidor! Podés alertar de esta instancia con el siguiente enlace.",
   "@user_management": {},
-  "sign_in_text": "Iniciá sesión en tu cuenta de luppa para guardar tus contribuciones",
+  "sign_in_text": "Crea una cuenta o ingresa en ella",
   "incorrect_credentials": "Nombre de usuario o contraseña incorrecto.",
   "password_lost_incorrect_credentials": "Este correo electrónico o nombre de usuario no existe. Por favor, comprobá tus credenciales.",
   "password_lost_server_unavailable": "Estamos sufriendo retrasos en nuestros servidores y nos disculpamos por ello. Por favor, intentalo de nuevo más tarde.",
@@ -276,7 +276,7 @@
   "@donate_url": {
     "description": "Please insert the right url from the website here."
   },
-  "sign_up_page_agree_error_invalid": "Al crear una cuenta, es obligatorio aceptar las condiciones de uso. Sin embargo, aún se pueden hacer contribuciones anónimas a través de la aplicación.",
+  "sign_up_page_agree_error_invalid": "Al crear una cuenta, es obligatorio aceptar las condiciones de uso.",
   "@sign_up_page_agree_error_invalid": {
     "description": "Error message: You have to agree to the terms-of-use (A checkbox to do so is above this error message)"
   },
@@ -489,7 +489,7 @@
   "@history_navbar_label": {
     "description": "BottomNavigationBarLabel: For the history and compare mode"
   },
-  "list_navbar_label": "Listas",
+  "list_navbar_label": "Historial",
   "@list_navbar_label": {
     "description": "BottomNavigationBarLabel: For the lists"
   },
@@ -4582,5 +4582,6 @@
   "nutrition_energy": "Energía",
   "nutrition_fat": "Grasas",
   "nutrition_carbohydrates": "Carbohidratos",
-  "nutrition_proteins": "Proteínas"
+  "nutrition_proteins": "Proteínas",
+  "sign_up_page_have_already_an_account": "¿Ya tienes una cuenta? Ingresa aquí"
 }

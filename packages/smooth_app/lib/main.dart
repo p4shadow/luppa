@@ -39,6 +39,7 @@ import 'package:smooth_app/services/smooth_services.dart';
 import 'package:smooth_app/themes/color_provider.dart';
 import 'package:smooth_app/themes/contrast_provider.dart';
 import 'package:smooth_app/themes/smooth_theme.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:smooth_app/themes/theme_provider.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
 
@@ -129,6 +130,18 @@ Future<bool> _init1() async {
   if (_init1done) {
     return false;
   }
+
+  // Initialize RevenueCat
+  if (Platform.isAndroid) {
+    await Purchases.configure(
+      PurchasesConfiguration("sk_JkprTDVBhVuGSajczizkKIpJfZsaA"),
+    );
+  } else if (Platform.isIOS) {
+    await Purchases.configure(
+      PurchasesConfiguration("appl_placeholder_api_key"),
+    );
+  }
+  await Purchases.setLogLevel(LogLevel.debug);
 
   DartPingIOS.register();
   await SmoothServices().init(GlobalVars.appStore);

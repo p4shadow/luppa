@@ -17,6 +17,12 @@ import 'package:uuid/uuid.dart';
 abstract class ProductQuery {
   const ProductQuery._();
 
+  static String? _customDomain;
+
+  static void setCustomDomain(String domain) {
+    _customDomain = domain;
+  }
+
   static const ProductQueryVersion productQueryVersion = ProductQueryVersion.v3;
 
   static late OpenFoodFactsCountry _country;
@@ -185,10 +191,17 @@ abstract class ProductQuery {
 
   /// Sets the query type according to the current [UserPreferences]
   static void setQueryType(final UserPreferences userPreferences) {
-    UriProductHelper getProductHelper(final String flagProd) =>
-        userPreferences.getFlag(flagProd) ?? true
-        ? uriHelperFoodProd
-        : getTestUriProductHelper(userPreferences);
+    UriProductHelper getProductHelper(final String flagProd) {
+      if (userPreferences.getFlag(flagProd) ?? true) {
+        // Production
+        if (_customDomain != null) {
+          return UriProductHelper(domain: _customDomain!);
+        }
+        return uriHelperFoodProd;
+      }
+      // Test
+      return getTestUriProductHelper(userPreferences);
+    }
 
     _uriProductHelper = getProductHelper(
       UserPreferencesDevMode.userPreferencesFlagProd,

@@ -4581,5 +4581,6 @@
   "nutrition_energy": "Energy",
   "nutrition_fat": "Fat",
   "nutrition_carbohydrates": "Carbohydrates",
-  "nutrition_proteins": "Proteins"
+  "nutrition_proteins": "Proteins",
+  "sign_up_page_have_already_an_account": "Already have an account? Sign In"
 }

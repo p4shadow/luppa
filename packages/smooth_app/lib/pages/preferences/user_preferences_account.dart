@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_app/data_models/user_management_provider.dart';
@@ -9,6 +10,7 @@ import 'package:smooth_app/generic_lib/dialogs/smooth_alert_dialog.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
 import 'package:smooth_app/helpers/launch_url_helper.dart';
 import 'package:smooth_app/helpers/user_management_helper.dart';
+import 'package:smooth_app/pages/navigator/app_navigator.dart';
 import 'package:smooth_app/pages/preferences/abstract_user_preferences.dart';
 import 'package:smooth_app/pages/preferences/account_deletion_webview.dart';
 import 'package:smooth_app/pages/preferences/lazy_counter.dart';
@@ -158,6 +160,11 @@ class UserPreferencesAccount extends AbstractUserPreferences {
     // Credentials
     final String userId = ProductQuery.getWriteUser().userId;
     return <UserPreferencesItem>[
+      _getListTile(
+        'Go Premium',
+        () => GoRouter.of(context).go(AppRoutes.PREMIUM),
+        Icons.star,
+      ),
       _buildProductQueryTile(
         productQuery: PagedUserProductQuery(
           userId: userId,
@@ -239,7 +246,8 @@ class UserPreferencesAccount extends AbstractUserPreferences {
         () async => Navigator.push<void>(
           context,
           MaterialPageRoute<void>(
-            builder: (BuildContext context) => AccountDeletionWebview(),
+            builder: (BuildContext context) =>
+                AccountDeletionWebview(userId: userId),
           ),
         ),
         Icons.delete,

@@ -8388,6 +8388,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Proteins'**
   String get nutrition_proteins;
+
+  /// No description provided for @sign_up_page_have_already_an_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account? Sign In'**
+  String get sign_up_page_have_already_an_account;
 }
 
 class _AppLocalizationsDelegate

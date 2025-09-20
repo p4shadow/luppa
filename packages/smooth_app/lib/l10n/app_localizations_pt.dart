@@ -4887,6 +4887,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get nutrition_proteins => 'Proteins';
+
+  @override
+  String get sign_up_page_have_already_an_account =>
+      'Already have an account? Sign In';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
