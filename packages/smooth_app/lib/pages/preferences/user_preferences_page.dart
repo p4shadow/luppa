@@ -17,6 +17,7 @@ import 'package:smooth_app/pages/preferences/user_preferences_connect.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_contribute.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_dev_mode.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_donation.dart';
+import 'package:smooth_app/pages/preferences/user_preferences_about.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_faq.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_food.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_item.dart';
@@ -34,6 +35,7 @@ enum PreferencePageType {
   SETTINGS('settings'),
   CONTRIBUTE('contribute'),
   FAQ('faq'),
+  ABOUT('about'),
   DONATION('donation'),
   PRICES('prices'),
   CONNECT('connect');
@@ -103,6 +105,13 @@ enum PreferencePageType {
           appLocalizations: appLocalizations,
           themeData: themeData,
         );
+      case PreferencePageType.ABOUT:
+        return UserPreferencesAbout(
+          context: context,
+          userPreferences: userPreferences,
+          appLocalizations: appLocalizations,
+          themeData: themeData,
+        );
       case PreferencePageType.DONATION:
         return UserPreferencesDonation(
           context: context,
@@ -135,6 +144,7 @@ enum PreferencePageType {
     // PreferencePageType.PRICES,
     // PreferencePageType.DONATION,
     PreferencePageType.SETTINGS,
+    PreferencePageType.ABOUT,
     // PreferencePageType.CONTRIBUTE,
     // PreferencePageType.FAQ,
     // PreferencePageType.CONNECT,

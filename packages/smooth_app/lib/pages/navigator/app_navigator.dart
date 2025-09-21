@@ -114,7 +114,7 @@ class _SmoothGoRouter {
           },
           routes: <GoRoute>[
             GoRoute(
-              path: '${_InternalAppRoutes.PRODUCT_DETAILS_PAGE}/:productId',
+              path: _InternalAppRoutes.PRODUCT_DETAILS_PAGE_SUB,
               pageBuilder: (BuildContext context, GoRouterState state) {
                 Product product;
                 if (state.extra is Product) {
@@ -154,7 +154,7 @@ class _SmoothGoRouter {
               },
             ),
             GoRoute(
-              path: '${_InternalAppRoutes.PRODUCT_EDITOR_PAGE}/:productId',
+              path: _InternalAppRoutes.PRODUCT_EDITOR_PAGE_SUB,
               builder: (BuildContext context, GoRouterState state) {
                 Product product;
                 if (state.extra is Product) {
@@ -166,7 +166,7 @@ class _SmoothGoRouter {
               },
             ),
             GoRoute(
-              path: '${_InternalAppRoutes.PRODUCT_LOADER_PAGE}/:productId',
+              path: _InternalAppRoutes.PRODUCT_LOADER_PAGE_SUB,
               builder: (BuildContext context, GoRouterState state) {
                 final String barcode = state.pathParameters['productId']!;
                 return ProductLoaderPage(
@@ -178,14 +178,14 @@ class _SmoothGoRouter {
               },
             ),
             GoRoute(
-              path: '${_InternalAppRoutes.PRODUCT_CREATOR_PAGE}/:productId',
+              path: _InternalAppRoutes.PRODUCT_CREATOR_PAGE_SUB,
               builder: (BuildContext context, GoRouterState state) {
                 final String barcode = state.pathParameters['productId']!;
                 return AddNewProductPage.fromBarcode(barcode);
               },
             ),
             GoRoute(
-              path: '${_InternalAppRoutes.PREFERENCES_PAGE}/:preferenceType',
+              path: _InternalAppRoutes.PREFERENCES_PAGE_SUB,
               builder: (BuildContext context, GoRouterState state) {
                 final String? type = state.pathParameters['preferenceType'];
                 final PreferencePageType? pageType = PreferencePageType.values
@@ -197,7 +197,7 @@ class _SmoothGoRouter {
               },
             ),
             GoRoute(
-              path: _InternalAppRoutes.SEARCH_PAGE,
+              path: _InternalAppRoutes.SEARCH_PAGE_SUB,
               builder: (_, GoRouterState state) {
                 if (state.extra != null) {
                   return SearchPage.fromExtra(state.extra! as SearchPageExtra);
@@ -207,35 +207,29 @@ class _SmoothGoRouter {
               },
             ),
             GoRoute(
-              path: _InternalAppRoutes._GUIDES,
+              path: _InternalAppRoutes.GUIDES_SUB,
               routes: <GoRoute>[
                 GoRoute(
-                  path: _InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE,
+                  path: _InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE_SUB,
                   builder: (_, _) => const GuideNutriscoreV2(),
                 ),
               ],
               redirect: (_, GoRouterState state) {
                 if (state.uri.pathSegments.last !=
-                    _InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE) {
+                    _InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE_SUB) {
                   return AppRoutes.EXTERNAL(state.path ?? '');
                 } else {
                   return null;
                 }
               },
             ),
-            GoRoute(
-              path: _InternalAppRoutes.SIGNUP_PAGE,
-              builder: (_, _) => const SignUpPage(),
-            ),
-            GoRoute(
-              path: _InternalAppRoutes.LOGIN_PAGE,
-              builder: (_, __) => const LoginPage(),
-            ),
-            GoRoute(
-              path: _InternalAppRoutes.PREMIUM_PAGE,
-              builder: (_, __) => const PremiumPage(),
-            ),
           ],
+        ),
+        GoRoute(path: AppRoutes.LOGIN, builder: (_, __) => const LoginPage()),
+        GoRoute(path: AppRoutes.SIGNUP, builder: (_, __) => const SignUpPage()),
+        GoRoute(
+          path: AppRoutes.PREMIUM,
+          builder: (_, __) => const PremiumPage(),
         ),
         GoRoute(
           path: '/${_InternalAppRoutes.EXTERNAL_PAGE}',
@@ -259,7 +253,6 @@ class _SmoothGoRouter {
         ),
       ],
       redirect: (BuildContext context, GoRouterState state) {
-        // JULES' DEBUG PRINT
         debugPrint(
           '--- JULES DEBUG: Running new redirect logic. Current location: ${state.uri.toString()} ---',
         );
@@ -271,33 +264,21 @@ class _SmoothGoRouter {
         final bool onSignupRoute = state.matchedLocation == AppRoutes.SIGNUP;
         final bool onAuthRoute = onLoginRoute || onSignupRoute;
 
-        // 1. If user is not logged in
-        if (!loggedIn) {
-          // If they are not trying to access an auth route, force them to the login page.
-          if (!onAuthRoute) {
-            debugPrint(
-              '--- JULES DEBUG: Not logged in, redirecting to LOGIN ---',
-            );
-            return AppRoutes.LOGIN;
-          }
-          // Otherwise, allow them to stay on the login/signup page.
+        if (!loggedIn && !onAuthRoute) {
           debugPrint(
-            '--- JULES DEBUG: Not logged in, but on auth route. Allowing. ---',
+            '--- JULES DEBUG: Not logged in, redirecting to LOGIN ---',
           );
-          return null;
+          return AppRoutes.LOGIN;
         }
 
-        // 2. If user IS logged in
-        // If they are trying to access an auth page, redirect them to home.
-        if (onAuthRoute) {
+        if (loggedIn && onAuthRoute) {
           debugPrint(
             '--- JULES DEBUG: Logged in, but on auth route. Redirecting to HOME. ---',
           );
           return AppRoutes.HOME();
         }
 
-        // 3. If user is logged in and not on an auth route, handle onboarding.
-        if (!_isOnboardingComplete(context)) {
+        if (loggedIn && !_isOnboardingComplete(context)) {
           if (state.matchedLocation != AppRoutes.HOME()) {
             debugPrint(
               '--- JULES DEBUG: Logged in, but onboarding not complete. Redirecting to HOME. ---',
@@ -309,14 +290,12 @@ class _SmoothGoRouter {
         debugPrint(
           '--- JULES DEBUG: Proceeding with original deep link logic. ---',
         );
-        // 4. Handle deep links and other cases for logged-in, onboarded users.
         final String path = state.matchedLocation;
         if (_isAnInternalRoute(path)) {
           return null;
         }
 
         bool externalLink = false;
-
         if (path.isNotEmpty) {
           final int subPaths = path.count('/');
           if (subPaths > 1) {
@@ -398,6 +377,11 @@ class _SmoothGoRouter {
   }
 
   bool _isAnInternalRoute(String path) {
+    if (path == AppRoutes.LOGIN ||
+        path == AppRoutes.SIGNUP ||
+        path == AppRoutes.PREMIUM) {
+      return true;
+    }
     if (path == _InternalAppRoutes.HOME_PAGE) {
       return true;
     } else {
@@ -423,19 +407,23 @@ class _SmoothGoRouter {
 
 class _InternalAppRoutes {
   static const String HOME_PAGE = '/';
-  static const String PRODUCT_DETAILS_PAGE = '_product';
-  static const String PRODUCT_LOADER_PAGE = '_product_loader';
-  static const String PRODUCT_CREATOR_PAGE = '_product_creator';
-  static const String PRODUCT_EDITOR_PAGE = '_product_editor';
-  static const String PREFERENCES_PAGE = '_preferences';
-  static const String SEARCH_PAGE = '_search';
+
+  // Sub-routes of HOME_PAGE
+  static const String PRODUCT_DETAILS_PAGE_SUB = '_product/:productId';
+  static const String PRODUCT_LOADER_PAGE_SUB = '_product_loader/:productId';
+  static const String PRODUCT_CREATOR_PAGE_SUB = '_product_creator/:productId';
+  static const String PRODUCT_EDITOR_PAGE_SUB = '_product_editor/:productId';
+  static const String PREFERENCES_PAGE_SUB = '_preferences/:preferenceType';
+  static const String SEARCH_PAGE_SUB = '_search';
+  static const String GUIDES_SUB = '_guides';
+  static const String GUIDE_NUTRISCORE_V2_PAGE_SUB = '_nutriscore-v2';
+
+  // Top-level routes
+  static const String LOGIN_PAGE = 'login';
+  static const String SIGNUP_PAGE = 'signup';
+  static const String PREMIUM_PAGE = 'premium';
   static const String EXTERNAL_PAGE = '_external';
   static const String EXTERNAL_WEBVIEW_PAGE = '_external_webview';
-  static const String SIGNUP_PAGE = '_signup';
-  static const String LOGIN_PAGE = '_login';
-  static const String PREMIUM_PAGE = '_premium';
-  static const String _GUIDES = '_guides';
-  static const String GUIDE_NUTRISCORE_V2_PAGE = '_nutriscore-v2';
 }
 
 class _ExternalRoutes {
@@ -448,6 +436,10 @@ class _ExternalRoutes {
 class AppRoutes {
   AppRoutes._();
 
+  static const String LOGIN = '/${_InternalAppRoutes.LOGIN_PAGE}';
+  static const String SIGNUP = '/${_InternalAppRoutes.SIGNUP_PAGE}';
+  static const String PREMIUM = '/${_InternalAppRoutes.PREMIUM_PAGE}';
+
   static String HOME({bool redraw = false}) =>
       '${_InternalAppRoutes.HOME_PAGE}?redraw:$redraw';
 
@@ -458,34 +450,28 @@ class AppRoutes {
     ProductPageBackButton? backButtonType,
     ProductPageTransition? transition = ProductPageTransition.standard,
   }) =>
-      '/${_InternalAppRoutes.PRODUCT_DETAILS_PAGE}/$barcode'
+      '/${_InternalAppRoutes.PRODUCT_DETAILS_PAGE_SUB.replaceFirst(':productId', barcode)}'
       '?heroAnimation=$useHeroAnimation'
       '&heroTag=$heroTag'
       '&backButtonType=${backButtonType?.name}'
       '&transition=${transition?.name}';
 
   static String PRODUCT_LOADER(String barcode, {bool edit = false}) =>
-      '/${_InternalAppRoutes.PRODUCT_LOADER_PAGE}/$barcode?edit=$edit';
+      '/${_InternalAppRoutes.PRODUCT_LOADER_PAGE_SUB.replaceFirst(':productId', barcode)}?edit=$edit';
 
   static String PRODUCT_CREATOR(String barcode) =>
-      '/${_InternalAppRoutes.PRODUCT_CREATOR_PAGE}/$barcode';
+      '/${_InternalAppRoutes.PRODUCT_CREATOR_PAGE_SUB.replaceFirst(':productId', barcode)}';
 
   static String PRODUCT_EDITOR(String barcode) =>
-      '/${_InternalAppRoutes.PRODUCT_EDITOR_PAGE}/$barcode';
+      '/${_InternalAppRoutes.PRODUCT_EDITOR_PAGE_SUB.replaceFirst(':productId', barcode)}';
 
   static String PREFERENCES(PreferencePageType type) =>
-      '/${_InternalAppRoutes.PREFERENCES_PAGE}/${type.name}';
+      '/${_InternalAppRoutes.PREFERENCES_PAGE_SUB.replaceFirst(':preferenceType', type.name)}';
 
-  static String get SEARCH => '/${_InternalAppRoutes.SEARCH_PAGE}';
+  static String get SEARCH => '/${_InternalAppRoutes.SEARCH_PAGE_SUB}';
 
   static String get GUIDE_NUTRISCORE_V2 =>
-      '/${_InternalAppRoutes._GUIDES}/${_InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE}';
-
-  static String get SIGNUP => '/${_InternalAppRoutes.SIGNUP_PAGE}';
-
-  static String get LOGIN => '/${_InternalAppRoutes.LOGIN_PAGE}';
-
-  static String get PREMIUM => '/${_InternalAppRoutes.PREMIUM_PAGE}';
+      '/${_InternalAppRoutes.GUIDES_SUB}/${_InternalAppRoutes.GUIDE_NUTRISCORE_V2_PAGE_SUB}';
 
   static String EXTERNAL(String path) =>
       '/${_InternalAppRoutes.EXTERNAL_PAGE}?path=${_encodePath(path)}';

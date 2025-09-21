@@ -1,7 +1,10 @@
+import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import 'package:http/http.dart' as http;
 import 'package:matomo_tracker/matomo_tracker.dart';
 import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:provider/provider.dart';
@@ -15,8 +18,7 @@ import 'package:smooth_app/helpers/analytics_helper.dart';
 import 'package:smooth_app/helpers/user_management_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
-import 'package:smooth_app/pages/preferences/user_preferences_dev_mode.dart';
-import 'package:smooth_app/query/product_query.dart';
+import 'package:smooth_app/pages/preferences/user_preferences_page.dart';
 import 'package:smooth_app/widgets/smooth_app_bar.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -38,14 +40,12 @@ class _SignUpPageState extends State<SignUpPage> with TraceableClientMixin {
   final TextEditingController _userController = TextEditingController();
   final TextEditingController _password1Controller = TextEditingController();
   final TextEditingController _password2Controller = TextEditingController();
-  final TextEditingController _brandController = TextEditingController();
 
   final FocusNode _userFocusNode = FocusNode();
   final FocusNode _emailFocusNode = FocusNode();
   final FocusNode _password1FocusNode = FocusNode();
   final FocusNode _password2FocusNode = FocusNode();
 
-  bool _foodProducer = false;
   bool _agree = false;
   bool _subscribe = false;
   bool _disagreed = false;
@@ -55,9 +55,9 @@ class _SignUpPageState extends State<SignUpPage> with TraceableClientMixin {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
     final AppLocalizations appLocalizations = AppLocalizations.of(context);
     final Size size = MediaQuery.sizeOf(context);
+    final ThemeData theme = Theme.of(context);
 
     Color getCheckBoxColor(Set<WidgetState> states) {
       const Set<WidgetState> interactiveStates = <WidgetState>{
@@ -81,7 +81,6 @@ class _SignUpPageState extends State<SignUpPage> with TraceableClientMixin {
         if (didPop) {
           return;
         }
-        // Exits the app if the user tries to go back
         SystemNavigator.pop();
       },
       child: SmoothScaffold(
@@ -223,7 +222,7 @@ class _SignUpPageState extends State<SignUpPage> with TraceableClientMixin {
                     },
                     onFieldSubmitted: (String password) {
                       if (password.isNotEmpty) {
-                        _signUp();
+                        _signUp(context);
                       } else {
                         _formKey.currentState!.validate();
                       }
@@ -265,7 +264,7 @@ class _SignUpPageState extends State<SignUpPage> with TraceableClientMixin {
                   ),
                   const SizedBox(height: space),
                   ElevatedButton(
-                    onPressed: () async => _signUp(),
+                    onPressed: () => _signUp(context),
                     style: ButtonStyle(
                       minimumSize: WidgetStateProperty.all<Size>(
                         Size(size.width * 0.5, theme.buttonTheme.height + 10),
@@ -305,128 +304,84 @@ class _SignUpPageState extends State<SignUpPage> with TraceableClientMixin {
     );
   }
 
-  Future<void> _signUp() async {
-    final AppLocalizations appLocalisations = AppLocalizations.of(context);
-    _disagreed = !_agree;
-    setState(() {});
-    if (!_formKey.currentState!.validate() || _disagreed) {
+  Future<void> _signUp(BuildContext context) async {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context);
+    if (!_formKey.currentState!.validate()) {
       return;
     }
+
+    _disagreed = !_agree;
+    if (_disagreed) {
+      setState(() {});
+      return;
+    }
+
     final User user = User(
       userId: _userController.trimmedText,
       password: _password1Controller.text,
     );
-    final bool prodUrl =
-        context.read<UserPreferences>().getFlag(
-          UserPreferencesDevMode.userPreferencesFlagProd,
-        ) ??
-        true;
 
-    final SignUpStatus? status = await LoadingDialog.run<SignUpStatus>(
+    final String? errorMessage = await LoadingDialog.run<String?>(
       context: context,
-      future: OpenFoodAPIClient.register(
-        user: user,
-        name: _displayNameController.trimmedText,
-        email: _emailController.trimmedText,
-        newsletter: _subscribe,
-        orgName: _foodProducer ? _brandController.trimmedText : null,
-        country: ProductQuery.getCountry(),
-        language: ProductQuery.getLanguage(),
-        uriHelper: ProductQuery.getUriProductHelper(
-          productType: prodUrl ? ProductType.food : null,
-        ),
-      ),
-      title: appLocalisations.sign_up_page_action_doing_it,
+      future: _performManualRegistration(user),
+      title: appLocalizations.sign_up_page_action_doing_it,
     );
-    if (status == null) {
+
+    if (!mounted) {
       return;
     }
-    if (status.error != null) {
-      String? errorMessage;
-      if (status.statusErrors?.isNotEmpty == true) {
-        if (status.statusErrors!.contains(
-          SignUpStatusError.EMAIL_ALREADY_USED,
-        )) {
-          _emailFocusNode.requestFocus();
-          errorMessage =
-              '${_emailController.trimmedText} ${appLocalisations.sign_up_page_email_already_exists}';
-        } else if (status.statusErrors!.contains(
-              SignUpStatusError.INCORRECT_EMAIL,
-            ) ||
-            status.error!.contains('Invalid e-mail address')) {
-          _emailFocusNode.requestFocus();
-          errorMessage = appLocalisations.sign_up_page_provide_valid_email;
-        } else if (status.statusErrors!.contains(
-          SignUpStatusError.INVALID_PASSWORD,
-        )) {
-          _password1FocusNode.requestFocus();
-          errorMessage = appLocalisations.sign_up_page_password_error_invalid;
-        } else if (status.statusErrors!.contains(
-          SignUpStatusError.INVALID_USERNAME,
-        )) {
-          _userFocusNode.requestFocus();
-          errorMessage =
-              '${appLocalisations.sign_up_page_username_description}  ${appLocalisations.sign_up_page_username_length_invalid}';
-        } else if (status.statusErrors!.contains(
-          SignUpStatusError.USERNAME_ALREADY_USED,
-        )) {
-          _userFocusNode.requestFocus();
-          errorMessage = appLocalisations.sign_up_page_user_name_already_used;
-        } else if (status.statusErrors!.contains(
-          SignUpStatusError.SERVER_BUSY,
-        )) {
-          errorMessage = appLocalisations.sign_up_page_server_busy;
-        } else {
-          final Iterable<RegExpMatch> allMatches = RegExp(
-            '(<li class="error">)(.*?)(</li>)',
-          ).allMatches(status.error!);
-          if (allMatches.isNotEmpty) {
-            final StringBuffer buffer = StringBuffer();
-            for (final RegExpMatch match in allMatches) {
-              if (buffer.isNotEmpty) {
-                buffer.write('\n\n');
-              }
 
-              buffer.write(match.group(2));
-            }
-            errorMessage = buffer.toString();
-          } else {
-            errorMessage = status.error;
-          }
-        }
-      }
-
-      if (mounted) {
-        await LoadingDialog.error(
-          context: context,
-          title: errorMessage,
-          shouldOpenNewIssue: status.shouldOpenNewIssue(),
-        );
-      }
+    if (errorMessage != null) {
+      await LoadingDialog.error(context: context, title: errorMessage);
       return;
     }
+
     AnalyticsHelper.trackEvent(AnalyticsEvent.registerAction);
-    if (_foodProducer) {
-      AnalyticsHelper.trackEvent(AnalyticsEvent.producerSignup);
-    }
-    if (!mounted) {
-      return;
-    }
     await context.read<UserManagementProvider>().putUser(user);
-    if (!mounted) {
-      return;
-    }
+
     final UserPreferences userPreferences =
         await UserPreferences.getUserPreferences();
     userPreferences.resetOnboarding();
+
     if (!mounted) {
       return;
     }
-    // Force router to refresh and redirect to home after successful sign up
-    GoRouter.of(context).go(AppRoutes.HOME());
+
+    GoRouter.of(context).go(AppRoutes.PREFERENCES(PreferencePageType.ACCOUNT));
   }
 
-  // No need to pop, GoRouter redirect will handle it
+  Future<String?> _performManualRegistration(User user) async {
+    try {
+      final Uri uri = Uri.https('world.luppa.ar', '/cgi/user.pl');
+      final http.MultipartRequest request = http.MultipartRequest('POST', uri)
+        ..fields['user_id'] = user.userId
+        ..fields['password'] = user.password
+        ..fields['name'] = _displayNameController.trimmedText
+        ..fields['email'] = _emailController.trimmedText
+        ..fields['newsletter'] = _subscribe ? 'on' : 'off'
+        ..fields['process'] = 'Sign-up'
+        ..fields['type'] = 'add_user_json';
+
+      final http.StreamedResponse response = await request.send();
+      final String responseBody = await response.stream.bytesToString();
+
+      if (response.statusCode != 200) {
+        return 'Server error: ${response.statusCode}';
+      }
+
+      final dynamic jsonResponse = json.decode(responseBody);
+      if (jsonResponse['status'] != null &&
+          jsonResponse['status'] == 'user_created') {
+        return null; // Success
+      } else if (jsonResponse['error'] != null) {
+        return jsonResponse['error'];
+      } else {
+        return 'An unknown error occurred.';
+      }
+    } catch (e) {
+      return e.toString();
+    }
+  }
 }
 
 class _TermsOfUseCheckbox extends StatelessWidget {
