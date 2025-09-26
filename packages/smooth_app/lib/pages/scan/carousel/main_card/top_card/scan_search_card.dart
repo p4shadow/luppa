@@ -37,11 +37,11 @@ class ScanSearchCard extends StatelessWidget {
       ignoreDefaultSemantics: true,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          vertical: MEDIUM_SPACE,
+          vertical: VERY_SMALL_SPACE,
           horizontal: LARGE_SPACE,
         ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             // LayoutBuilder(
             //   builder: (_, BoxConstraints constraints) {
@@ -61,7 +61,7 @@ class ScanSearchCard extends StatelessWidget {
               textAlign: TextAlign.center,
               textStyle: const TextStyle(height: 1.6, fontSize: 15.0),
             ),
-            const SizedBox(height: MEDIUM_SPACE),
+            const SizedBox(height: VERY_SMALL_SPACE),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: SMALL_SPACE),
               child: _ScanSearchBar(),

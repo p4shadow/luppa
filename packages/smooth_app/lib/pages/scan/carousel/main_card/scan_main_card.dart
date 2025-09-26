@@ -43,7 +43,7 @@ class ScanMainCard extends StatelessWidget {
                         ),
                         child: const ScanSearchCard(expandedMode: false),
                       ),
-                      const SizedBox(height: SMALL_SPACE),
+                      const SizedBox(height: VERY_SMALL_SPACE),
                       const ScanBottomCard(dense: true),
                     ],
                   );
@@ -54,7 +54,7 @@ class ScanMainCard extends StatelessWidget {
                         flex: 6,
                         child: ScanSearchCard(expandedMode: false),
                       ),
-                      SizedBox(height: SMALL_SPACE),
+                      SizedBox(height: VERY_SMALL_SPACE),
                       Expanded(flex: 4, child: ScanBottomCard(dense: false)),
                     ],
                   );
