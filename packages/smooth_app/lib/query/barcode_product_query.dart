@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:smooth_app/data_models/fetched_product.dart';
 import 'package:smooth_app/database/dao_product.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
@@ -11,11 +12,13 @@ class BarcodeProductQuery {
     required this.barcode,
     required this.daoProduct,
     required this.isScanned,
+    this.fields,
   });
 
   final String barcode;
   final DaoProduct daoProduct;
   final bool isScanned;
+  final List<ProductField>? fields;
 
   Future<FetchedProduct> getFetchedProduct() async {
     ProductQuery.setUserAgentComment(isScanned ? 'scan' : 'search');
@@ -23,6 +26,7 @@ class BarcodeProductQuery {
         .silentFetchAndRefresh(
           barcode: barcode,
           localDatabase: daoProduct.localDatabase,
+          fields: fields,
         );
     ProductQuery.setUserAgentComment('');
     if (fetchedProduct.product != null) {

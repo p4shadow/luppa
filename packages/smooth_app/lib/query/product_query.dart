@@ -17,6 +17,12 @@ import 'package:uuid/uuid.dart';
 abstract class ProductQuery {
   const ProductQuery._();
 
+  static String? _customDomain;
+
+  static void setCustomDomain(String domain) {
+    _customDomain = domain;
+  }
+
   static const ProductQueryVersion productQueryVersion = ProductQueryVersion.v3;
 
   static late OpenFoodFactsCountry _country;
@@ -28,6 +34,7 @@ abstract class ProductQuery {
         country: getCountry(),
       ).toString();
 
+  /// Returns the global language for API queries.
   static OpenFoodFactsLanguage getLanguage() {
     final List<OpenFoodFactsLanguage> languages =
         OpenFoodAPIConfiguration.globalLanguages ?? <OpenFoodFactsLanguage>[];
@@ -38,6 +45,7 @@ abstract class ProductQuery {
     return languages[0];
   }
 
+  /// Sets the global language for API queries.
   static void setLanguage(
     final BuildContext? context,
     final UserPreferences userPreferences, {
@@ -59,8 +67,10 @@ abstract class ProductQuery {
     }
   }
 
+  /// Returns the global country for API queries.
   static OpenFoodFactsCountry getCountry() => _country;
 
+  /// Sets the global country for API queries: implicit choice at init time.
   static Future<void> initCountry(final UserPreferences userPreferences) async {
     // not ideal, but we have many contributors monitoring France
     const OpenFoodFactsCountry defaultCountry = OpenFoodFactsCountry.FRANCE;
@@ -79,6 +89,9 @@ abstract class ProductQuery {
     }
   }
 
+  /// Sets the global country for API queries: explicit choice by the user.
+  ///
+  /// Returns true if the [isoCode] was correctly detected.
   static Future<bool> setCountry(
     final UserPreferences userPreferences,
     final String isoCode,
@@ -93,6 +106,7 @@ abstract class ProductQuery {
     return true;
   }
 
+  /// Sets the global country for API queries.
   static Future<void> _setCountry(
     final UserPreferences userPreferences,
     final OpenFoodFactsCountry country,
@@ -107,11 +121,15 @@ abstract class ProductQuery {
     }
   }
 
+  /// Returns the global locale string (e.g. 'pt_BR')
   static String getLocaleString() =>
       '${getLanguage().code}'
       '_'
       '${getCountry().offTag.toUpperCase()}';
 
+  /// Sets a comment for the user agent.
+  ///
+  /// cf. https://github.com/openfoodfacts/smooth-app/issues/2248
   static void setUserAgentComment(final String comment) {
     final UserAgent? previous = OpenFoodAPIConfiguration.userAgent;
     if (previous == null) {
@@ -128,6 +146,9 @@ abstract class ProductQuery {
 
   static const String _UUID_NAME = 'UUID_NAME_REV_1';
 
+  /// Sets the uuid id as "final variable", for instance for API queries.
+  ///
+  /// To be called at main / init.
   static Future<void> setUuid(final LocalDatabase localDatabase) async {
     final DaoString uuidString = DaoString(localDatabase);
     String? uuid = await uuidString.get(_UUID_NAME);
@@ -144,9 +165,11 @@ abstract class ProductQuery {
     });
   }
 
+  /// We don't track users for READ operations if they didn't consent.
   static User getReadUser() =>
       AnalyticsHelper.isEnabled ? getWriteUser() : _testUser;
 
+  /// We do track users for WRITE operations.
   static User getWriteUser() =>
       OpenFoodAPIConfiguration.globalUser ?? _testUser;
 
@@ -157,16 +180,28 @@ abstract class ProductQuery {
   );
 
   static late UriProductHelper _uriProductHelper;
+
+  /// Product helper only for prices.
   static late UriProductHelper uriPricesHelper;
+
+  /// Product helper only for Folksonomy.
   static late UriHelper uriFolksonomyHelper;
 
   static bool isLoggedIn() => OpenFoodAPIConfiguration.globalUser != null;
 
+  /// Sets the query type according to the current [UserPreferences]
   static void setQueryType(final UserPreferences userPreferences) {
-    UriProductHelper getProductHelper(final String flagProd) =>
-        userPreferences.getFlag(flagProd) ?? true
-        ? uriHelperFoodProd
-        : getTestUriProductHelper(userPreferences);
+    UriProductHelper getProductHelper(final String flagProd) {
+      if (userPreferences.getFlag(flagProd) ?? true) {
+        // Production
+        if (_customDomain != null) {
+          return UriProductHelper(domain: _customDomain!);
+        }
+        return uriHelperFoodProd;
+      }
+      // Test
+      return getTestUriProductHelper(userPreferences);
+    }
 
     _uriProductHelper = getProductHelper(
       UserPreferencesDevMode.userPreferencesFlagProd,
@@ -183,6 +218,7 @@ abstract class ProductQuery {
     );
   }
 
+  /// Returns the standard test env, or the custom test env if relevant.
   static UriProductHelper getTestUriProductHelper(
     final UserPreferences userPreferences,
   ) {
@@ -212,6 +248,7 @@ abstract class ProductQuery {
     return null;
   }
 
+  // TODO(monsieurtanuki): make the parameter "required"
   static UriProductHelper getUriProductHelper({
     required final ProductType? productType,
   }) {
@@ -242,10 +279,64 @@ abstract class ProductQuery {
 
   static List<ProductField> get fields => const <ProductField>[
     ProductField.NAME,
+    ProductField.NAME_ALL_LANGUAGES,
+    ProductField.BRANDS,
     ProductField.BARCODE,
-    // ... other fields
+    ProductField.PRODUCT_TYPE,
+    ProductField.NUTRISCORE,
+    ProductField.FRONT_IMAGE,
+    ProductField.IMAGE_FRONT_URL,
+    ProductField.IMAGE_INGREDIENTS_URL,
+    ProductField.IMAGE_NUTRITION_URL,
+    ProductField.IMAGE_PACKAGING_URL,
+    ProductField.IMAGES,
+    ProductField.SELECTED_IMAGE,
+    ProductField.QUANTITY,
+    ProductField.SERVING_SIZE,
+    ProductField.STORES,
+    ProductField.PACKAGING_QUANTITY,
+    ProductField.PACKAGING,
+    ProductField.PACKAGINGS,
+    ProductField.PACKAGINGS_COMPLETE,
+    ProductField.PACKAGING_TAGS,
+    ProductField.PACKAGING_TEXT_ALL_LANGUAGES,
+    ProductField.NO_NUTRITION_DATA,
+    ProductField.NUTRIMENT_DATA_PER,
+    ProductField.NUTRITION_DATA,
+    ProductField.NUTRIMENTS,
+    ProductField.NUTRIENT_LEVELS,
+    ProductField.NUTRIMENT_ENERGY_UNIT,
+    ProductField.ADDITIVES,
+    ProductField.INGREDIENTS_ANALYSIS_TAGS,
+    ProductField.INGREDIENTS_TEXT,
+    ProductField.INGREDIENTS_TEXT_ALL_LANGUAGES,
+    ProductField.LABELS_TAGS,
+    ProductField.LABELS_TAGS_IN_LANGUAGES,
+    ProductField.COMPARED_TO_CATEGORY,
+    ProductField.CATEGORIES_TAGS,
+    ProductField.CATEGORIES_TAGS_IN_LANGUAGES,
+    ProductField.LANGUAGE,
+    ProductField.ATTRIBUTE_GROUPS,
+    ProductField.STATES_TAGS,
+    ProductField.ECOSCORE_DATA,
+    ProductField.ECOSCORE_GRADE,
+    ProductField.ECOSCORE_SCORE,
+    ProductField.KNOWLEDGE_PANELS,
+    ProductField.COUNTRIES,
+    ProductField.COUNTRIES_TAGS,
+    ProductField.COUNTRIES_TAGS_IN_LANGUAGES,
+    ProductField.EMB_CODES,
+    ProductField.ORIGINS,
+    ProductField.WEBSITE,
+    ProductField.OBSOLETE,
+    ProductField.OWNER_FIELDS,
+    ProductField.OWNER,
+    ProductField.TRACES,
+    ProductField.TRACES_TAGS,
+    ProductField.TRACES_TAGS_IN_LANGUAGES,
   ];
 
+  /// Returns the token for Prices, as cached or just downloaded.
   static Future<MaybeError<String>> getPriceToken(
     final User user,
     final LocalDatabase localDatabase,
@@ -255,6 +346,7 @@ abstract class ProductQuery {
         'priceBearerToken:${user.userId}|${user.password}|${uriHelper.domain}';
     final String? cached = await DaoSecuredString.get(key);
     if (cached != null) {
+      // token still valid?
       final MaybeError<Session> session =
           await OpenPricesAPIClient.getUserSession(
             bearerToken: cached,

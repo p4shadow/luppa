@@ -15,6 +15,7 @@ import 'package:smooth_app/helpers/haptic_feedback_helper.dart';
 import 'package:smooth_app/helpers/product_cards_helper.dart';
 import 'package:smooth_app/helpers/ui_helpers.dart';
 import 'package:smooth_app/knowledge_panel/knowledge_panels/knowledge_panel_page.dart';
+import 'package:smooth_app/pages/product/palm_oil_text.dart';
 import 'package:smooth_app/knowledge_panel/knowledge_panels_builder.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/product/hideable_container.dart';
@@ -263,6 +264,13 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
       allAttributes.addAll(importantAttributes);
     }
 
+    allAttributes.removeWhere(
+      (Attribute attribute) =>
+          attribute.id == 'en:palm-oil-free' ||
+          attribute.id == 'en:palm-oil' ||
+          attribute.id == 'en:palm-oil-content-unknown',
+    );
+
     final List<Attribute> positiveAttributes = <Attribute>[];
     final List<Attribute> negativeAttributes = <Attribute>[];
 
@@ -464,11 +472,47 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: MEDIUM_SPACE),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(icon, style: const TextStyle(fontSize: 24)),
-          const SizedBox(width: SMALL_SPACE),
-          Expanded(child: Text(message)),
+          Row(
+            children: <Widget>[
+              Text(icon, style: const TextStyle(fontSize: 24)),
+              const SizedBox(width: SMALL_SPACE),
+              Expanded(child: Text(message)),
+            ],
+          ),
+          if (upToDateProduct.ingredients?.isNotEmpty == true)
+            Row(
+              children: [
+                Icon(
+                  Icons.restaurant_menu,
+                  size: 18.0,
+                  color:
+                      Theme.of(context).textTheme.bodyMedium?.color ??
+                      Colors.black54,
+                ),
+                SizedBox(width: 4.0),
+                Text(
+                  localizations.ingredients_count(
+                    upToDateProduct.ingredients!.length,
+                  ),
+                  style:
+                      Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        fontSize:
+                            (Theme.of(context).textTheme.bodyMedium?.fontSize ??
+                                14.0) *
+                            1.15,
+                      ) ??
+                      TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize:
+                            16, // 14.0 * 1.1 tamaño fuente de contiene ingredientes
+                      ),
+                ),
+              ],
+            ),
         ],
       ),
     );
@@ -528,6 +572,26 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
   }
 
   Widget? _buildAttributeChipForValidAttributes(final Attribute attribute) {
+    if (attribute.id == 'en:palm-oil-free' ||
+        attribute.id == 'en:palm-oil' ||
+        attribute.id == 'en:palm-oil-content-unknown') {
+      final bool isUnknown = attribute.id == 'en:palm-oil-content-unknown';
+      final Widget textWidget = Padding(
+        padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
+        child: PalmOilText(attribute),
+      );
+
+      if (isUnknown) {
+        return textWidget;
+      } else {
+        return InkWell(
+          borderRadius: ANGULAR_BORDER_RADIUS,
+          enableFeedback: _isAttributeOpeningAllowed(attribute),
+          onTap: () async => _openFullKnowledgePanel(attribute: attribute),
+          child: textWidget,
+        );
+      }
+    }
     if (attribute.status == Attribute.STATUS_UNKNOWN &&
         _attributesToExcludeIfStatusIsUnknown.contains(attribute.id)) {
       return null;

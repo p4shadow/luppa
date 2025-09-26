@@ -53,44 +53,44 @@ class _SvgSafeNetworkState extends State<SvgSafeNetwork> {
     throw Exception('Force fallback to local cache');
 
     // const int statusOk = 200;
-    // const int statusNotFound = 404;
+    //     const int statusNotFound = 404;
 
-    // final String? alternateUrl = _getAlternateUrl();
+    //     final String? alternateUrl = _getAlternateUrl();
 
-    // // is the url already cached?
-    // String? cached = _networkCache[_url];
-    // if (cached != null) {
-    //   return cached;
+    //     // is the url already cached?
+    //     String? cached = _networkCache[_url];
+    //     if (cached != null) {
+    //         return cached;
     // }
-    // // is the alternate url already cached?
-    // if (alternateUrl != null) {
-    //   cached = _networkCache[alternateUrl];
-    //   if (cached != null) {
-    //     return cached;
+    //     // is the alternate url already cached?
+    //     if (alternateUrl != null) {
+    //         cached = _networkCache[alternateUrl];
+    //         if (cached != null) {
+    //             return cached;
     //   }
-    // }
-
-    // // try with the url
-    // final http.Response response1 = await http.get(Uri.parse(_url));
-    // if (response1.statusCode == statusOk) {
-    //   _networkCache[_url] = cached = response1.body;
-    //   return cached;
-    // }
-    // if (response1.statusCode == statusNotFound) {
-    //   if (alternateUrl != null) {
-    //     // try with the alternate url
-    //     final http.Response response2 = await http.get(Uri.parse(alternateUrl));
-    //     if (response2.statusCode == statusOk) {
-    //       _networkCache[alternateUrl] = cached = response2.body;
-    //       return cached;
     //     }
-    //     throw Exception(
-    //       'Failed to load SVG: $_url ${response1.statusCode} $alternateUrl ${response2.statusCode}',
-    //     );
-    //   }
-    // }
 
-    // throw Exception('Failed to load SVG: $_url ${response1.statusCode}');
+    //     // try with the url
+    //     final http.Response response1 = await http.get(Uri.parse(_url));
+    //     if (response1.statusCode == statusOk) {
+    //         _networkCache[_url] = cached = response1.body;
+    //         return cached;
+    // }
+    //     if (response1.statusCode == statusNotFound) {
+    //         if (alternateUrl != null) {
+    //             // try with the alternate url
+    //             final http.Response response2 = await http.get(Uri.parse(alternateUrl));
+    //             if (response2.statusCode == statusOk) {
+    //                 _networkCache[alternateUrl] = cached = response2.body;
+    //                 return cached;
+    //     }
+    //             throw Exception(
+    //                 'Failed to load SVG: $_url ${response1.statusCode} $alternateUrl ${response2.statusCode}',
+    //             );
+    //   }
+    //     }
+
+    //     throw Exception('Failed to load SVG: $_url ${response1.statusCode}');
   }
 
   /// Returns the alternate /dist/ url or null if irrelevant.

@@ -1,6 +1,6 @@
 name: smooth_app
 description: The next generation of the Luppa mobile apps.
-version: 1.1.0+3
+version: 0.0.4+100
 publish_to: "none"
 
 environment:
@@ -21,7 +21,6 @@ dependencies:
   flutter_map: 8.2.1
   html: 0.15.6
   flutter_widget_from_html_core: 0.17.0
-  google_mobile_ads: ^6.0.0
   flutter_secure_storage: 9.2.4
   hive: 2.2.3
   hive_flutter: 1.1.0

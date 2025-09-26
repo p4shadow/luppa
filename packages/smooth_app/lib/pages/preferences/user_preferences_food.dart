@@ -4,8 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:smooth_app/data_models/product_preferences.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/dialogs/smooth_alert_dialog.dart';
-import 'package:smooth_app/helpers/premium_helper.dart';
-import 'package:smooth_app/providers/ad_provider.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/preferences/abstract_user_preferences.dart';
 import 'package:smooth_app/pages/preferences/user_preferences_attribute_group.dart';
@@ -50,16 +48,6 @@ class UserPreferencesFood extends AbstractUserPreferences {
 
   @override
   String? getHeaderAsset() => 'assets/onboarding/preferences.svg';
-
-  @override
-  Future<void> runHeaderAction() async {
-    final AdProvider adProvider = context.read<AdProvider>();
-    if (adProvider.isPremium) {
-      return super.runHeaderAction();
-    } else {
-      await PremiumHelper.showPremiumDialog(context);
-    }
-  }
 
   @override
   Color? getHeaderColor() => const Color(0xFFEBF1FF);

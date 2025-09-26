@@ -41,8 +41,22 @@ class KnowledgePanelsBuilder {
         ),
       );
       if (rootPanel.elements != null) {
-        for (int i = 0; i < rootPanel.elements!.length; i++) {
-          final KnowledgePanelElement element = rootPanel.elements![i];
+        final List<KnowledgePanelElement> elements = rootPanel.elements!;
+        if (panelId == 'nova') {
+          elements.sort((a, b) {
+            if (a.elementType == KnowledgePanelElementType.TEXT &&
+                (a.textElement?.html.contains('nova-group-') ?? false)) {
+              return -1;
+            }
+            if (b.elementType == KnowledgePanelElementType.TEXT &&
+                (b.textElement?.html.contains('nova-group-') ?? false)) {
+              return 1;
+            }
+            return 0;
+          });
+        }
+        for (int i = 0; i < elements.length; i++) {
+          final KnowledgePanelElement element = elements[i];
           final Widget? widget = getElementWidget(
             knowledgePanelElement: element,
             product: product,

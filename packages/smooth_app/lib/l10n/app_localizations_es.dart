@@ -681,6 +681,18 @@ class AppLocalizationsEs extends AppLocalizations {
   String get ingredients => 'Ingredientes';
 
   @override
+  String ingredients_count(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Contiene $count ingredientes',
+      one: 'Contiene 1 ingrediente',
+      zero: 'Sin ingredientes',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get ingredients_editing_instructions =>
       'Mantené el orden original. Indicá el porcentaje cuando se especifique. Separá con una coma o un guion y usá paréntesis para los ingredientes de un ingrediente.';
 
@@ -4894,4 +4906,13 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get sign_up_page_have_already_an_account =>
       '¿Ya tienes una cuenta? Ingresa aquí';
+
+  @override
+  String get palm_oil_free => 'No contiene aceite de palma';
+
+  @override
+  String get palm_oil => 'Contiene aceite de palma (alto en grasas saturadas)';
+
+  @override
+  String get palm_oil_unknown => 'Se desconoce si contiene aceite de palma';
 }

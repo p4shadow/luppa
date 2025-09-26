@@ -674,6 +674,18 @@ class AppLocalizationsCs extends AppLocalizations {
   String get ingredients => 'Složení';
 
   @override
+  String ingredients_count(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ingredients',
+      one: '1 ingredient',
+      zero: 'No ingredients',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get ingredients_editing_instructions =>
       'Zachovejte původní řazení. Při specifikaci uveďte procento. Oddělte je čárkou nebo pomlčkou, použijte závorky pro složky přísady a označte alergeny mezi podtržítka.';
 
@@ -4835,4 +4847,13 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get sign_up_page_have_already_an_account =>
       'Already have an account? Sign In';
+
+  @override
+  String get palm_oil_free => 'No palm oil';
+
+  @override
+  String get palm_oil => 'Contains palm oil (high in saturated fat)';
+
+  @override
+  String get palm_oil_unknown => 'Unknown palm oil content';
 }

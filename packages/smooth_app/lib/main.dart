@@ -12,7 +12,6 @@ import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
-import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:rive/rive.dart';
 import 'package:scanner_shared/scanner_shared.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
@@ -34,18 +33,32 @@ import 'package:smooth_app/pages/app_review.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
 import 'package:smooth_app/pages/onboarding/onboarding_flow_navigator.dart';
 import 'package:smooth_app/pages/tmp_loading_page.dart';
-import 'package:smooth_app/providers/ad_provider.dart';
 import 'package:smooth_app/query/product_query.dart';
 import 'package:smooth_app/resources/app_animations.dart';
 import 'package:smooth_app/services/smooth_services.dart';
 import 'package:smooth_app/themes/color_provider.dart';
 import 'package:smooth_app/themes/contrast_provider.dart';
 import 'package:smooth_app/themes/smooth_theme.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:smooth_app/themes/theme_provider.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
 
 void main() {
-  // main.dart is not the entry point of the app
+  debugPrint('--------');
+  debugPrint('The app must not be started using the main.dart file');
+  debugPrint('Please start the app using:');
+  debugPrint(' - flutter run -t lib/entrypoints/android/main_google_play.dart');
+  debugPrint(' - flutter run -t lib/entrypoints/ios/main_ios.dart');
+  debugPrint(
+    'More information here: https://github.com/openfoodfacts/smooth-app#how-to-run-the-project',
+  );
+  debugPrint('--------');
+
+  if (Platform.isAndroid) {
+    SystemNavigator.pop();
+  } else {
+    exit(2);
+  }
 }
 
 late final bool _screenshots;
@@ -98,6 +111,7 @@ void _enableEdgeToEdgeMode() {
 class SmoothApp extends StatefulWidget {
   const SmoothApp();
 
+  // This widget is the root of your application
   @override
   State<SmoothApp> createState() => _SmoothAppState();
 }
@@ -106,20 +120,21 @@ late UserPreferences _userPreferences;
 late ProductPreferences _productPreferences;
 late LocalDatabase _localDatabase;
 late ThemeProvider _themeProvider;
-final AdProvider _adProvider = AdProvider();
-final ContinuousScanModel _continuousScanModel = ContinuousScanModel(
-  adProvider: _adProvider,
-);
+final ContinuousScanModel _continuousScanModel = ContinuousScanModel();
 bool _init1done = false;
 
+// Had to split init in 2 methods, for test/screenshots reasons.
+// Don't know why, but some init codes seem to freeze the test.
+// Now we run them before running the app, during the tests.
 Future<bool> _init1() async {
   if (_init1done) {
     return false;
   }
 
+  // Initialize RevenueCat
   if (Platform.isAndroid) {
     await Purchases.configure(
-      PurchasesConfiguration("goog_placeholder_api_key"),
+      PurchasesConfiguration("sk_JkprTDVBhVuGSajczizkKIpJfZsaA"),
     );
   } else if (Platform.isIOS) {
     await Purchases.configure(
@@ -164,6 +179,9 @@ class _SmoothAppState extends State<SmoothApp> {
   bool systemDarkmodeOn = false;
   final Brightness brightness = PlatformDispatcher.instance.platformBrightness;
 
+  // We store the argument of FutureBuilder to avoid re-initialization on
+  // subsequent builds. This enables hot reloading. See
+  // https://github.com/openfoodfacts/smooth-app/issues/473
   late Future<void> _initFuture;
 
   @override
@@ -174,7 +192,6 @@ class _SmoothAppState extends State<SmoothApp> {
 
   Future<bool> _init2() async {
     await _init1();
-
     systemDarkmodeOn = brightness == Brightness.dark;
     if (!mounted) {
       return false;
@@ -217,10 +234,12 @@ class _SmoothAppState extends State<SmoothApp> {
           return _buildError(snapshot);
         }
         if (snapshot.connectionState != ConnectionState.done) {
+          //We don't need a loading indicator since the splash screen is still visible
           return const TmpLoadingPage();
         }
 
         if (!_screenshots) {
+          // ending FlutterNativeSplash.preserve()
           FlutterNativeSplash.remove();
         }
 
@@ -234,12 +253,15 @@ class _SmoothAppState extends State<SmoothApp> {
               (_) => PermissionListener(permission: Permission.camera),
             ),
             _provide<ThemeProvider>(_themeProvider),
-            _provide<AdProvider>(_adProvider),
+
+            /// The next two providers are only used with the AMOLED theme
             _lazyProvide<ColorProvider>((_) => ColorProvider(_userPreferences)),
             _lazyProvide<TextContrastProvider>(
               (_) => TextContrastProvider(_userPreferences),
             ),
             _provide<ContinuousScanModel>(_continuousScanModel),
+
+            /// Only used after the onboarding
             _lazyProvide<AppNewsProvider>(
               (_) => AppNewsProvider(_userPreferences),
             ),
@@ -277,6 +299,9 @@ class _SmoothAppState extends State<SmoothApp> {
         .isOnboardingComplete();
     themeProvider.setOnboardingComplete(isOnboardingComplete);
 
+    // Still need the value from the UserPreferences here, not the ProductQuery
+    // as the value is not available at this time
+    // will refresh each time the language changes
     final String? languageCode = context.select(
       (UserPreferences up) => up.appLanguageCode,
     );

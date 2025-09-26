@@ -558,6 +558,15 @@
   },
   "ingredients": "Ingredientes",
   "@ingredients": {},
+  "ingredients_count": "{count,plural, =1{1 ingrediente} other{{count} ingredientes}}",
+  "@ingredients_count": {
+    "description": "The number of ingredients in a product",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "ingredients_editing_instructions": "Mantené el orden original. Indicá el porcentaje cuando se especifique. Separá con una coma o un guion y usá paréntesis para los ingredientes de un ingrediente.",
   "ingredients_editing_error": "Error al guardar los ingredientes.",
   "ingredients_editing_image_error": "No se pudo obtener una nueva imagen de los ingredientes.",
@@ -4583,5 +4592,17 @@
   "nutrition_fat": "Grasas",
   "nutrition_carbohydrates": "Carbohidratos",
   "nutrition_proteins": "Proteínas",
-  "sign_up_page_have_already_an_account": "¿Ya tienes una cuenta? Ingresa aquí"
+  "ingredients_count": "{count,plural, =0{Sin ingredientes} =1{Contiene 1 ingrediente} other{Contiene {count} ingredientes}}",
+  "@ingredients_count": {
+    "description": "Number of ingredients in a product",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sign_up_page_have_already_an_account": "¿Ya tienes una cuenta? Ingresa aquí",
+   "palm_oil_free": "No contiene aceite de palma",
+  "palm_oil": "Contiene aceite de palma (alto en grasas saturadas)",
+  "palm_oil_unknown": "Se desconoce si contiene aceite de palma"
 }

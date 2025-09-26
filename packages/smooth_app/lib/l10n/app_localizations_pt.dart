@@ -679,6 +679,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get ingredients => 'Ingredientes';
 
   @override
+  String ingredients_count(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ingredients',
+      one: '1 ingredient',
+      zero: 'No ingredients',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get ingredients_editing_instructions =>
       'Mantenha a ordem original. Indique a percentagem quando especificado. Separe com vírgula ou hífen e use parênteses para os ingredientes de um ingrediente.';
 
@@ -4891,6 +4903,15 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get sign_up_page_have_already_an_account =>
       'Already have an account? Sign In';
+
+  @override
+  String get palm_oil_free => 'No palm oil';
+
+  @override
+  String get palm_oil => 'Contains palm oil (high in saturated fat)';
+
+  @override
+  String get palm_oil_unknown => 'Unknown palm oil content';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).

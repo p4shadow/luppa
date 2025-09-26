@@ -1553,6 +1553,12 @@ abstract class AppLocalizations {
   /// **'Ingredients'**
   String get ingredients;
 
+  /// Number of ingredients in a product
+  ///
+  /// In en, this message translates to:
+  /// **'{count,plural, =0{No ingredients} =1{1 ingredient} other{{count} ingredients}}'**
+  String ingredients_count(int count);
+
   /// No description provided for @ingredients_editing_instructions.
   ///
   /// In en, this message translates to:
@@ -8394,6 +8400,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Already have an account? Sign In'**
   String get sign_up_page_have_already_an_account;
+
+  /// No description provided for @palm_oil_free.
+  ///
+  /// In en, this message translates to:
+  /// **'No palm oil'**
+  String get palm_oil_free;
+
+  /// No description provided for @palm_oil.
+  ///
+  /// In en, this message translates to:
+  /// **'Contains palm oil (high in saturated fat)'**
+  String get palm_oil;
+
+  /// No description provided for @palm_oil_unknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown palm oil content'**
+  String get palm_oil_unknown;
 }
 
 class _AppLocalizationsDelegate

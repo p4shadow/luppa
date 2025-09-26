@@ -73,10 +73,11 @@ class ProductRefresher {
   /// Returns the standard configuration for barcode product query.
   ProductQueryConfiguration getBarcodeQueryConfiguration(
     final String barcode,
-    final OpenFoodFactsLanguage language,
-  ) => ProductQueryConfiguration(
+    final OpenFoodFactsLanguage language, {
+    final List<ProductField>? fields,
+  }) => ProductQueryConfiguration(
     barcode,
-    fields: ProductQuery.fields,
+    fields: fields ?? ProductQuery.fields,
     language: language,
     country: ProductQuery.getCountry(),
     version: ProductQuery.productQueryVersion,
@@ -165,6 +166,7 @@ class ProductRefresher {
   Future<FetchedProduct> silentFetchAndRefresh({
     required final LocalDatabase localDatabase,
     required final String barcode,
+    final List<ProductField>? fields,
   }) async {
     // Now we let "food" redirect the queries if needed, as we use
     // ProductTypeFilter.all
@@ -175,7 +177,7 @@ class ProductRefresher {
     try {
       final OpenFoodFactsLanguage language = ProductQuery.getLanguage();
       final ProductResultV3 result = await OpenFoodAPIClient.getProductV3(
-        getBarcodeQueryConfiguration(barcode, language),
+        getBarcodeQueryConfiguration(barcode, language, fields: fields),
         uriHelper: uriProductHelper,
         user: ProductQuery.getReadUser(),
       );

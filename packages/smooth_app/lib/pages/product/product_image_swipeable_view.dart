@@ -4,12 +4,10 @@ import 'package:openfoodfacts/openfoodfacts.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_app/data_models/up_to_date_mixin.dart';
 import 'package:smooth_app/database/local_database.dart';
-import 'package:smooth_app/generic_lib/bottom_sheets/smooth_bottom_sheet.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/widgets/smooth_back_button.dart';
 import 'package:smooth_app/helpers/image_field_extension.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/product/owner_field_info.dart';
 import 'package:smooth_app/pages/product/product_image_viewer.dart';
 import 'package:smooth_app/query/product_query.dart';
 import 'package:smooth_app/widgets/smooth_app_bar.dart';
@@ -96,14 +94,6 @@ class _ProductImageSwipeableViewState extends State<ProductImageSwipeableView>
           iconColor: Colors.white,
           onPressed: () => Navigator.maybePop(context),
         ),
-        actions: <Widget>[
-          ValueListenableBuilder<int>(
-            valueListenable: _currentImageDataIndex,
-            builder: (_, int index, _) {
-              return _lockedIcon(_imageFields[index]);
-            },
-          ),
-        ],
       ),
       body: PageView.builder(
         onPageChanged: (int index) => _currentImageDataIndex.value = index,
@@ -114,58 +104,8 @@ class _ProductImageSwipeableViewState extends State<ProductImageSwipeableView>
           imageField: _imageFields[index],
           isInitialImageViewed: widget.initialImageIndex == index,
           language: _currentLanguage,
-          setLanguage: (final OpenFoodFactsLanguage? newLanguage) async {
-            if (newLanguage == null || newLanguage == _currentLanguage) {
-              return;
-            }
-            setState(() => _currentLanguage = newLanguage);
-          },
-          isLoggedInMandatory: widget.isLoggedInMandatory,
         ),
       ),
     );
-  }
-
-  Widget _lockedIcon(ImageField imageField) {
-    if (widget.product.isImageLocked(imageField, _currentLanguage) != true) {
-      return EMPTY_WIDGET;
-    } else {
-      final AppLocalizations appLocalizations = AppLocalizations.of(context);
-      return IconButton(
-        onPressed: () {
-          showSmoothModalSheet(
-            context: context,
-            builder: (BuildContext context) {
-              return SmoothModalSheet(
-                title: appLocalizations.owner_field_info_title,
-                prefixIndicator: true,
-                body: SafeArea(
-                  top: false,
-                  child: Column(
-                    children: <Widget>[
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).colorScheme.secondary,
-                          shape: BoxShape.circle,
-                        ),
-                        padding: const EdgeInsetsDirectional.all(LARGE_SPACE),
-                        child: const OwnerFieldIcon(size: 30.0),
-                      ),
-                      const SizedBox(height: MEDIUM_SPACE),
-                      Text(
-                        appLocalizations.owner_field_info_message,
-                        style: const TextStyle(fontSize: 15.0),
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            },
-          );
-        },
-        tooltip: appLocalizations.owner_field_info_title,
-        icon: const OwnerFieldIcon(),
-      );
-    }
   }
 }

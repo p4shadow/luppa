@@ -11,8 +11,8 @@ import 'package:smooth_app/database/local_database.dart';
 import 'package:smooth_app/generic_lib/duration_constants.dart';
 import 'package:smooth_app/helpers/analytics_helper.dart';
 import 'package:smooth_app/helpers/collections_helper.dart';
-import 'package:smooth_app/providers/ad_provider.dart';
 import 'package:smooth_app/query/barcode_product_query.dart';
+import 'package:smooth_app/query/product_query.dart';
 import 'package:smooth_app/services/smooth_services.dart';
 
 enum ScannedProductState {
@@ -27,9 +27,8 @@ enum ScannedProductState {
 }
 
 class ContinuousScanModel with ChangeNotifier {
-  ContinuousScanModel({required this.adProvider});
+  ContinuousScanModel();
 
-  final AdProvider adProvider;
   final Map<String, ScannedProductState> _states =
       <String, ScannedProductState>{};
   final List<String> _barcodes = <String>[];
@@ -220,6 +219,10 @@ class ContinuousScanModel with ChangeNotifier {
         barcode: barcode,
         daoProduct: _daoProduct,
         isScanned: true,
+        fields: <ProductField>[
+          ...ProductQuery.fields,
+          ProductField.INGREDIENTS,
+        ],
       ).getFetchedProduct();
 
   Future<void> _loadBarcode(final String barcode) async {
@@ -276,9 +279,6 @@ class ContinuousScanModel with ChangeNotifier {
     final String barcode,
     final ScannedProductState state,
   ) async {
-    // Increment the ad counter every time a product is successfully added.
-    adProvider.incrementScanCount();
-
     if (_latestFoundBarcode != barcode) {
       _latestFoundBarcode = barcode;
       await _daoProductList.push(productList, _latestFoundBarcode!);

@@ -15,7 +15,6 @@ import 'package:smooth_app/helpers/analytics_helper.dart';
 import 'package:smooth_app/helpers/app_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
 import 'package:smooth_app/pages/navigator/app_navigator.dart';
-import 'package:smooth_app/pages/preferences/user_preferences_page.dart';
 import 'package:smooth_app/pages/user_management/forgot_password_page.dart';
 import 'package:smooth_app/widgets/smooth_app_bar.dart';
 import 'package:smooth_app/widgets/smooth_scaffold.dart';
@@ -66,9 +65,8 @@ class _LoginPageState extends State<LoginPage> with TraceableClientMixin {
     if (!context.mounted) {
       return;
     }
-    // START OF CHANGE: Navigate to account page instead of home
-    GoRouter.of(context).go(AppRoutes.PREFERENCES(PreferencePageType.ACCOUNT));
-    // END OF CHANGE
+    // Force router to refresh and redirect to home
+    GoRouter.of(context).go(AppRoutes.HOME());
   }
 
   @override
@@ -93,6 +91,7 @@ class _LoginPageState extends State<LoginPage> with TraceableClientMixin {
         if (didPop) {
           return;
         }
+        // Exits the app if the user tries to go back
         SystemNavigator.pop();
       },
       child: SmoothScaffold(

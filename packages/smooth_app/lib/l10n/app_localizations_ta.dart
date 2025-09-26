@@ -668,6 +668,18 @@ class AppLocalizationsTa extends AppLocalizations {
   String get ingredients => 'Ingredients';
 
   @override
+  String ingredients_count(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ingredients',
+      one: '1 ingredient',
+      zero: 'No ingredients',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get ingredients_editing_instructions =>
       'அசல் ஆர்டரை வைத்திருங்கள். குறிப்பிடப்படும்போது சதவீதத்தைக் குறிக்கவும். காற்புள்ளி அல்லது ஹைபனுடன் பிரித்து, மூலப்பொருளின் பொருட்களுக்கு அடைப்புக்குறிகளைப் பயன்படுத்தவும்.';
 
@@ -4825,4 +4837,13 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get sign_up_page_have_already_an_account =>
       'Already have an account? Sign In';
+
+  @override
+  String get palm_oil_free => 'No palm oil';
+
+  @override
+  String get palm_oil => 'Contains palm oil (high in saturated fat)';
+
+  @override
+  String get palm_oil_unknown => 'Unknown palm oil content';
 }

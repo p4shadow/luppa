@@ -7,7 +7,7 @@ import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/widgets/picture_not_found.dart';
 import 'package:smooth_app/helpers/product_cards_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/product/gallery_view/product_image_gallery_view.dart';
+import 'package:smooth_app/pages/product/product_image_swipeable_view.dart';
 
 class ProductTitleCard extends StatelessWidget {
   const ProductTitleCard(
@@ -80,11 +80,15 @@ class ProductTitleCard extends StatelessWidget {
                     heroTag: heroTag,
                     noImageBuilder: (_) => const PictureNotFound(),
                     onTap: !dense
-                        ? () async => Navigator.push<void>(
+                        ? () => Navigator.push<void>(
                             context,
-                            MaterialPageRoute<bool>(
+                            MaterialPageRoute<void>(
                               builder: (BuildContext context) =>
-                                  ProductImageGalleryView(product: product),
+                                  ProductImageSwipeableView(
+                                    product: product,
+                                    initialImageIndex: 0,
+                                    isLoggedInMandatory: false,
+                                  ),
                             ),
                           )
                         : null,

@@ -9,12 +9,9 @@ import 'package:smooth_app/database/local_database.dart';
 import 'package:smooth_app/database/transient_file.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
 import 'package:smooth_app/generic_lib/duration_constants.dart';
-import 'package:smooth_app/generic_lib/widgets/languages_selector.dart';
 import 'package:smooth_app/generic_lib/widgets/picture_not_found.dart';
 import 'package:smooth_app/helpers/product_cards_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
-import 'package:smooth_app/pages/image_crop_page.dart';
-import 'package:smooth_app/pages/product/product_image_button.dart';
 import 'package:smooth_app/resources/app_animations.dart';
 
 /// Displays a full-screen image with an "edit" floating button.
@@ -23,16 +20,12 @@ class ProductImageViewer extends StatefulWidget {
     required this.product,
     required this.imageField,
     required this.language,
-    required this.setLanguage,
-    required this.isLoggedInMandatory,
     required this.isInitialImageViewed,
   });
 
   final Product product;
   final ImageField imageField;
   final OpenFoodFactsLanguage language;
-  final Future<void> Function(OpenFoodFactsLanguage? newLanguage) setLanguage;
-  final bool isLoggedInMandatory;
 
   /// If the image is opened from the gallery: is this image selected?
   /// If true, the Hero animation will be enabled only on this picture
@@ -53,20 +46,6 @@ class _ProductImageViewerState extends State<ProductImageViewer>
     initUpToDate(widget.product, context.read<LocalDatabase>());
   }
 
-  Widget _getImageButton(
-    final ProductImageButtonType type,
-    final bool imageExists,
-  ) => Padding(
-    padding: const EdgeInsets.symmetric(horizontal: SMALL_SPACE),
-    child: type.getButton(
-      product: upToDateProduct,
-      imageField: widget.imageField,
-      imageExists: imageExists,
-      language: widget.language,
-      isLoggedInMandatory: widget.isLoggedInMandatory,
-    ),
-  );
-
   @override
   Widget build(BuildContext context) {
     final AppLocalizations appLocalizations = AppLocalizations.of(context);
@@ -79,7 +58,6 @@ class _ProductImageViewerState extends State<ProductImageViewer>
     );
     final TransientFile transientFile = _getTransientFile();
     final ImageProvider? imageProvider = transientFile.getImageProvider();
-    final bool imageExists = imageProvider != null;
     final bool isLoading =
         transientFile.isImageAvailable() && !transientFile.isServerImage();
     final Iterable<OpenFoodFactsLanguage> selectedLanguages =
@@ -121,26 +99,6 @@ class _ProductImageViewerState extends State<ProductImageViewer>
                                         ?.copyWith(color: Colors.black) ??
                                     const TextStyle(color: Colors.black),
                                 textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Positioned.fill(
-                          child: Material(
-                            type: MaterialType.transparency,
-                            child: Semantics(
-                              label: appLocalizations.take_photo_title,
-                              child: InkWell(
-                                onTap: () async {
-                                  await confirmAndUploadNewPicture(
-                                    context,
-                                    imageField: widget.imageField,
-                                    barcode: barcode,
-                                    productType: upToDateProduct.productType,
-                                    language: widget.language,
-                                    isLoggedInMandatory: true,
-                                  );
-                                },
                               ),
                             ),
                           ),
@@ -218,74 +176,6 @@ class _ProductImageViewerState extends State<ProductImageViewer>
                     ),
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(SMALL_SPACE),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(LARGE_SPACE),
-                      border: Border.all(color: Colors.white, width: 3),
-                    ),
-                    child: LanguagesSelector(
-                      setLanguage: widget.setLanguage,
-                      displayedLanguage: widget.language,
-                      selectedLanguages: selectedLanguages,
-                      foregroundColor: Colors.white,
-                      checkedIcon: const Icon(Icons.camera_alt_rounded),
-                      padding: const EdgeInsetsDirectional.symmetric(
-                        horizontal: 13.0,
-                        vertical: SMALL_SPACE,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-              Expanded(
-                child: _getImageButton(
-                  ProductImageButtonType.server,
-                  imageExists,
-                ),
-              ),
-              Expanded(
-                child: _getImageButton(
-                  ProductImageButtonType.local,
-                  imageExists,
-                ),
-              ),
-            ],
-          ),
-          if (imageProvider != null)
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                Expanded(
-                  child: _getImageButton(
-                    ProductImageButtonType.unselect,
-                    imageExists,
-                  ),
-                ),
-                Expanded(
-                  child: _getImageButton(
-                    ProductImageButtonType.edit,
-                    imageExists,
-                  ),
-                ),
-              ],
-            ),
         ],
       ),
     );

@@ -88,18 +88,8 @@ class _ImageGalleryPhotoRowState extends State<ImageGalleryPhotoRow> {
           borderRadius: ANGULAR_BORDER_RADIUS,
           child: InkWell(
             borderRadius: ANGULAR_BORDER_RADIUS,
-            onTap: () => _onTap(
-              context: context,
-              product: product,
-              transientFile: transientFile,
-              initialImageIndex: widget.position,
-            ),
-            onLongPress: () => _onLongTap(
-              context: context,
-              product: product,
-              transientFile: transientFile,
-              language: widget.language,
-            ),
+            onTap: null,
+            onLongPress: null,
             child: ClipRRect(
               borderRadius: ANGULAR_BORDER_RADIUS,
               child: Column(
@@ -128,13 +118,6 @@ class _ImageGalleryPhotoRowState extends State<ImageGalleryPhotoRow> {
                                       color: Colors.white,
                                     ),
                                   ),
-                                ),
-                                const SizedBox(width: SMALL_SPACE),
-                                icons.CircledArrow.right(
-                                  color: extension.primaryDark,
-                                  type: icons.CircledArrowType.normal,
-                                  circleColor: Colors.white,
-                                  size: 20.0,
                                 ),
                               ],
                             ),

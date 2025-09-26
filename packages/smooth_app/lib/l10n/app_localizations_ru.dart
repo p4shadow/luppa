@@ -679,6 +679,18 @@ class AppLocalizationsRu extends AppLocalizations {
   String get ingredients => 'Ингредиенты';
 
   @override
+  String ingredients_count(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ingredients',
+      one: '1 ingredient',
+      zero: 'No ingredients',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get ingredients_editing_instructions =>
       'Сохраняйте первоначальный порядок. Укажите процент, если он указан. Разделяйте запятой или дефисом, используйте круглые скобки для ингредиентов и указывайте аллергены между символами подчеркивания.';
 
@@ -4917,4 +4929,13 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get sign_up_page_have_already_an_account =>
       'Already have an account? Sign In';
+
+  @override
+  String get palm_oil_free => 'No palm oil';
+
+  @override
+  String get palm_oil => 'Contains palm oil (high in saturated fat)';
+
+  @override
+  String get palm_oil_unknown => 'Unknown palm oil content';
 }
