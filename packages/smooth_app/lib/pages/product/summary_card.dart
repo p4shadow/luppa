@@ -482,35 +482,35 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
       if (novaGroup == 1 || novaGroup == 2) {
         if (nutriScoreUpper == 'A' || nutriScoreUpper == 'B') {
           message = localizations.nova_1_2_nutri_a_b_message;
-          icon = '✅🌿';
+          icon = '🌿';
         } else if (nutriScoreUpper == 'C') {
           message = localizations.nova_1_2_nutri_c_message;
-          icon = '👍⚠️';
+          icon = '👍';
         } else if (nutriScoreUpper == 'D' || nutriScoreUpper == 'E') {
           message = localizations.nova_1_2_nutri_d_e_message;
-          icon = '🟡✋';
+          icon = '✋';
         }
       } else if (novaGroup == 3) {
         if (nutriScoreUpper == 'A' || nutriScoreUpper == 'B') {
           message = localizations.nova_3_nutri_a_b_message;
-          icon = '✅👍';
+          icon = '✅';
         } else if (nutriScoreUpper == 'C') {
           message = localizations.nova_3_nutri_c_message;
-          icon = '👍⚠️';
+          icon = '⚠️';
         } else if (nutriScoreUpper == 'D' || nutriScoreUpper == 'E') {
           message = localizations.nova_3_nutri_d_e_message;
-          icon = '🟡✋';
+          icon = '🟡';
         }
       } else if (novaGroup == 4) {
         if (nutriScoreUpper == 'A' || nutriScoreUpper == 'B') {
           message = localizations.nova_4_nutri_a_b_message;
-          icon = '👍⚠️';
+          icon = '⚠️';
         } else if (nutriScoreUpper == 'C') {
           message = localizations.nova_4_nutri_c_message;
-          icon = '❌🛑';
+          icon = '❌';
         } else if (nutriScoreUpper == 'D' || nutriScoreUpper == 'E') {
           message = localizations.nova_4_nutri_d_e_message;
-          icon = '❌🛑';
+          icon = '❌';
         }
       }
     }
@@ -525,9 +525,11 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(icon, style: const TextStyle(fontSize: 24)),
-              const SizedBox(width: SMALL_SPACE),
+              const SizedBox(width: VERY_SMALL_SPACE),
               Expanded(child: Text(message)),
             ],
           ),
@@ -544,7 +546,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
                 const SizedBox(width: 4.0),
                 Text(
                   localizations.ingredients_count(
-                    upToDateProduct.ingredients!.length,
+                    _getIngredientsCount(upToDateProduct),
                   ),
                   style:
                       Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -564,6 +566,22 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
         ],
       ),
     );
+  }
+
+  int _getIngredientsCount(Product product) {
+    final knowledgePanel = KnowledgePanelsBuilder.getKnowledgePanel(
+      product,
+      'ingredients',
+    );
+    if (knowledgePanel == null || knowledgePanel.titleElement == null) {
+      return product.ingredients!.length;
+    }
+
+    final count = int.tryParse(
+      knowledgePanel.titleElement!.title.replaceAll(RegExp(r'[^0-9]'), ''),
+    );
+
+    return count ?? product.ingredients!.length;
   }
 
   List<Widget> _getAttributes(List<Attribute> scoreAttributes) {
