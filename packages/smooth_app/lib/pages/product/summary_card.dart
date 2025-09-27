@@ -437,37 +437,86 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
   }
 
   Widget _getNutriScoreMessage(String? nutriScore) {
-    if (nutriScore == null) {
-      return const SizedBox.shrink();
+    final AppLocalizations localizations = AppLocalizations.of(context);
+    String? message;
+    String? icon;
+
+    int? novaGroup;
+    Attribute? novaAttribute;
+    if (upToDateProduct.attributeGroups != null) {
+      for (final AttributeGroup group in upToDateProduct.attributeGroups!) {
+        if (group.attributes != null) {
+          for (final Attribute attribute in group.attributes!) {
+            if (attribute.id == 'nova') {
+              novaAttribute = attribute;
+              break;
+            }
+          }
+        }
+        if (novaAttribute != null) {
+          break;
+        }
+      }
     }
 
-    final AppLocalizations localizations = AppLocalizations.of(context);
-    final String message;
-    final String icon;
+    if (novaAttribute?.iconUrl != null) {
+      if (novaAttribute!.iconUrl!.endsWith('nova-group-1.svg')) {
+        novaGroup = 1;
+      } else if (novaAttribute.iconUrl!.endsWith('nova-group-2.svg')) {
+        novaGroup = 2;
+      } else if (novaAttribute.iconUrl!.endsWith('nova-group-3.svg')) {
+        novaGroup = 3;
+      } else if (novaAttribute.iconUrl!.endsWith('nova-group-4.svg')) {
+        novaGroup = 4;
+      }
+    }
 
-    switch (nutriScore.toUpperCase()) {
-      case 'A':
-        message = localizations.nutriscore_a_message;
-        icon = '✅';
-        break;
-      case 'B':
-        message = localizations.nutriscore_b_message;
-        icon = '✅';
-        break;
-      case 'C':
-        message = localizations.nutriscore_c_message;
-        icon = '⚠️';
-        break;
-      case 'D':
-        message = localizations.nutriscore_d_message;
-        icon = '⚠️';
-        break;
-      case 'E':
-        message = localizations.nutriscore_e_message;
-        icon = '❌';
-        break;
-      default:
-        return const SizedBox.shrink();
+    novaGroup ??= upToDateProduct.novaGroup;
+
+    if (nutriScore == null || nutriScore.isEmpty || novaGroup == null) {
+      message = localizations.no_data_message;
+      icon = '⚠️';
+    } else {
+      final String nutriScoreUpper = nutriScore.toUpperCase();
+
+      if (novaGroup == 1 || novaGroup == 2) {
+        if (nutriScoreUpper == 'A' || nutriScoreUpper == 'B') {
+          message = localizations.nova_1_2_nutri_a_b_message;
+          icon = '✅🌿';
+        } else if (nutriScoreUpper == 'C') {
+          message = localizations.nova_1_2_nutri_c_message;
+          icon = '👍⚠️';
+        } else if (nutriScoreUpper == 'D' || nutriScoreUpper == 'E') {
+          message = localizations.nova_1_2_nutri_d_e_message;
+          icon = '🟡✋';
+        }
+      } else if (novaGroup == 3) {
+        if (nutriScoreUpper == 'A' || nutriScoreUpper == 'B') {
+          message = localizations.nova_3_nutri_a_b_message;
+          icon = '✅👍';
+        } else if (nutriScoreUpper == 'C') {
+          message = localizations.nova_3_nutri_c_message;
+          icon = '👍⚠️';
+        } else if (nutriScoreUpper == 'D' || nutriScoreUpper == 'E') {
+          message = localizations.nova_3_nutri_d_e_message;
+          icon = '🟡✋';
+        }
+      } else if (novaGroup == 4) {
+        if (nutriScoreUpper == 'A' || nutriScoreUpper == 'B') {
+          message = localizations.nova_4_nutri_a_b_message;
+          icon = '👍⚠️';
+        } else if (nutriScoreUpper == 'C') {
+          message = localizations.nova_4_nutri_c_message;
+          icon = '❌🛑';
+        } else if (nutriScoreUpper == 'D' || nutriScoreUpper == 'E') {
+          message = localizations.nova_4_nutri_d_e_message;
+          icon = '❌🛑';
+        }
+      }
+    }
+
+    if (message == null || icon == null) {
+      return const SizedBox.shrink();
     }
 
     return Padding(
@@ -484,7 +533,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
           ),
           if (upToDateProduct.ingredients?.isNotEmpty == true)
             Row(
-              children: [
+              children: <Widget>[
                 Icon(
                   Icons.restaurant_menu,
                   size: 18.0,
@@ -492,7 +541,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
                       Theme.of(context).textTheme.bodyMedium?.color ??
                       Colors.black54,
                 ),
-                SizedBox(width: 4.0),
+                const SizedBox(width: 4.0),
                 Text(
                   localizations.ingredients_count(
                     upToDateProduct.ingredients!.length,
@@ -505,10 +554,9 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
                                 14.0) *
                             1.15,
                       ) ??
-                      TextStyle(
+                      const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize:
-                            16, // 14.0 * 1.1 tamaño fuente de contiene ingredientes
+                        fontSize: 16,
                       ),
                 ),
               ],

@@ -4872,6 +4872,46 @@ class AppLocalizationsPl extends AppLocalizations {
   String get nutrition_proteins => 'Proteins';
 
   @override
+  String get nova_1_2_nutri_a_b_message =>
+      'Natural food with very good nutritional profile. Excellent option for everyday consumption.';
+
+  @override
+  String get nova_1_2_nutri_c_message =>
+      'Natural food, but containing some sugar/fat/salt. You can enjoy it while controlling the amount.';
+
+  @override
+  String get nova_1_2_nutri_d_e_message =>
+      'This is a minimally processed product, high in sugar or fat. Consume it occasionally.';
+
+  @override
+  String get nova_3_nutri_a_b_message =>
+      'Processed product, but balanced. Can be part of healthy eating.';
+
+  @override
+  String get nova_3_nutri_c_message =>
+      'Contains simple ingredients, though its sugar/fat/salt content requires moderation. Look for versions with fewer additives.';
+
+  @override
+  String get nova_3_nutri_d_e_message =>
+      'Processed food high in sugar, salt or fat. Better to reserve it for specific occasions.';
+
+  @override
+  String get nova_4_nutri_a_b_message =>
+      'Good nutritional profile, though ultra-processed. Prefer alternating with more natural options.';
+
+  @override
+  String get nova_4_nutri_c_message =>
+      'Ultra-processed with sugars or additives. Best consumed in moderation and, if possible, choose simpler alternatives.';
+
+  @override
+  String get nova_4_nutri_d_e_message =>
+      'Ultra-processed and poorly nutritious product. Ideally limit it and opt for natural or homemade versions.';
+
+  @override
+  String get no_data_message =>
+      'We don\'t have complete information, consume with care.';
+
+  @override
   String get sign_up_page_have_already_an_account =>
       'Already have an account? Sign In';
 

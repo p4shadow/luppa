@@ -4904,6 +4904,46 @@ class AppLocalizationsEs extends AppLocalizations {
   String get nutrition_proteins => 'Proteínas';
 
   @override
+  String get nova_1_2_nutri_a_b_message =>
+      'Alimento natural con muy buen perfil nutricional. Excelente opción para todos los días.';
+
+  @override
+  String get nova_1_2_nutri_c_message =>
+      'Alimento natural, pero con algo de azúcar/grasa/sal. Podés disfrutarlo moderando la cantidad.';
+
+  @override
+  String get nova_1_2_nutri_d_e_message =>
+      'Es un producto poco procesado, pero alto en azúcar o grasa. Consumilo de forma ocasional.';
+
+  @override
+  String get nova_3_nutri_a_b_message =>
+      'Producto procesado, pero equilibrado. Puede ser parte de una alimentación saludable.';
+
+  @override
+  String get nova_3_nutri_c_message =>
+      'Contiene ingredientes simples, aunque su aporte de azúcar/grasa/sal pide moderación. Busca versiones con menos agregado.';
+
+  @override
+  String get nova_3_nutri_d_e_message =>
+      'Alimento procesado con exceso de azúcar, sal o grasa. Mejor reservarlo para ocasiones puntuales.';
+
+  @override
+  String get nova_4_nutri_a_b_message =>
+      'Buen perfil nutricional, aunque es ultraprocesado. Preferí alternar con opciones más naturales.';
+
+  @override
+  String get nova_4_nutri_c_message =>
+      'Ultraprocesado con azúcares o aditivos. Mejor consumir con moderación y, si podés, elegir alternativas más simples.';
+
+  @override
+  String get nova_4_nutri_d_e_message =>
+      'Producto ultraprocesado y poco nutritivo. Lo ideal es limitarlo y optar por versiones naturales o caseras.';
+
+  @override
+  String get no_data_message =>
+      'No contamos con toda la información, consumelo con cuidado.';
+
+  @override
   String get sign_up_page_have_already_an_account =>
       '¿Ya tienes una cuenta? Ingresa aquí';
 

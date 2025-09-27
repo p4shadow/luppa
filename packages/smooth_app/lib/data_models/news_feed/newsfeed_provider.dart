@@ -147,7 +147,7 @@ class AppNewsProvider extends ChangeNotifier {
 
   /// Based on the platform, the URL may differ
   String get _newsUrl {
-    //final String env = _prodEnv != false ? 'prod' : 'dev';
+    final String env = _prodEnv != false ? 'prod' : 'dev';
 
     if (Platform.isIOS || Platform.isMacOS) {
       return 'https://luppa.ar/images/noticias/ios/noticias.json';

@@ -4591,7 +4591,17 @@
   "nutrition_fat": "Fat",
   "nutrition_carbohydrates": "Carbohydrates",
   "nutrition_proteins": "Proteins",
-   "ingredients_count": "{count,plural, =0{No ingredients} =1{1 ingredient} other{{count} ingredients}}",
+  "nova_1_2_nutri_a_b_message": "Natural food with very good nutritional profile. Excellent option for everyday consumption.",
+  "nova_1_2_nutri_c_message": "Natural food, but containing some sugar/fat/salt. You can enjoy it while controlling the amount.",
+  "nova_1_2_nutri_d_e_message": "This is a minimally processed product, high in sugar or fat. Consume it occasionally.",
+  "nova_3_nutri_a_b_message": "Processed product, but balanced. Can be part of healthy eating.",
+  "nova_3_nutri_c_message": "Contains simple ingredients, though its sugar/fat/salt content requires moderation. Look for versions with fewer additives.",
+  "nova_3_nutri_d_e_message": "Processed food high in sugar, salt or fat. Better to reserve it for specific occasions.",
+  "nova_4_nutri_a_b_message": "Good nutritional profile, though ultra-processed. Prefer alternating with more natural options.",
+  "nova_4_nutri_c_message": "Ultra-processed with sugars or additives. Best consumed in moderation and, if possible, choose simpler alternatives.",
+  "nova_4_nutri_d_e_message": "Ultra-processed and poorly nutritious product. Ideally limit it and opt for natural or homemade versions.",
+  "no_data_message": "We don't have complete information, consume with care.",
+ "ingredients_count": "{count,plural, =0{No ingredients} =1{1 ingredient} other{{count} ingredients}}",
   "@ingredients_count": {
     "description": "Number of ingredients in a product",
     "placeholders": {

@@ -39,7 +39,7 @@ class _ScanPageState extends State<ScanPage> {
 
   /// Percentage of the bottom part of the screen that hosts the carousel.
   /// PORCENTAJE DEL ESPACIO INFERIOR DE LA PANTLLA QUE ALOJA EL CARROUSEL.
-  static const int _carouselHeightPct = 60;
+  static const int _carouselHeightPct = 64;
 
   @override
   void initState() {
