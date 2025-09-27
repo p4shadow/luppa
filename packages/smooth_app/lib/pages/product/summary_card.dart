@@ -161,7 +161,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
               width: double.infinity,
               padding:
                   widget.buttonPadding ??
-                  const EdgeInsets.symmetric(vertical: SMALL_SPACE),
+                  const EdgeInsets.symmetric(vertical: VERY_SMALL_SPACE),
               decoration: BoxDecoration(
                 color: context.lightTheme()
                     ? themeExtension.primaryDark
@@ -172,8 +172,8 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
               ),
               child: Padding(
                 padding: const EdgeInsetsDirectional.only(
-                  start: SMALL_SPACE,
-                  end: SMALL_SPACE,
+                  start: VERY_SMALL_SPACE,
+                  end: VERY_SMALL_SPACE,
                   bottom: 2.0,
                 ),
                 child: FittedBox(
@@ -309,10 +309,10 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     final Widget attributesContainer = displayedGroups.isNotEmpty
         ? Container(
             alignment: AlignmentDirectional.topStart,
-            margin: const EdgeInsetsDirectional.only(bottom: LARGE_SPACE),
+            margin: const EdgeInsetsDirectional.only(bottom: VERY_SMALL_SPACE),
             child: Column(children: displayedGroups),
           )
-        : const SizedBox(height: SMALL_SPACE);
+        : const SizedBox(height: VERY_SMALL_SPACE);
     // cf. https://github.com/openfoodfacts/smooth-app/issues/2147
 
     final List<Widget> summaryCardButtons = <Widget>[];
@@ -520,21 +520,13 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
     }
 
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: MEDIUM_SPACE),
+      padding: const EdgeInsets.symmetric(vertical: VERY_SMALL_SPACE),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Text(icon, style: const TextStyle(fontSize: 24)),
-              const SizedBox(width: VERY_SMALL_SPACE),
-              Expanded(child: Text(message)),
-            ],
-          ),
           if (upToDateProduct.ingredients?.isNotEmpty == true)
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Icon(
                   Icons.restaurant_menu,
@@ -563,6 +555,16 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
                 ),
               ],
             ),
+          const SizedBox(height: VERY_SMALL_SPACE),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text(icon, style: const TextStyle(fontSize: 24)),
+              const SizedBox(width: VERY_SMALL_SPACE),
+              Expanded(child: Text(message)),
+            ],
+          ),
         ],
       ),
     );
@@ -613,7 +615,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
         ),
       );
       if (i < scoreAttributes.length - 1) {
-        scoreWidgets.add(const SizedBox(width: SMALL_SPACE));
+        scoreWidgets.add(const SizedBox(width: VERY_SMALL_SPACE));
       }
     }
 
@@ -643,7 +645,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
         attribute.id == 'en:palm-oil-content-unknown') {
       final bool isUnknown = attribute.id == 'en:palm-oil-content-unknown';
       final Widget textWidget = Padding(
-        padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
+        padding: const EdgeInsets.symmetric(vertical: VERY_SMALL_SPACE),
         child: PalmOilText(attribute),
       );
 
@@ -672,11 +674,11 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
       enableFeedback: _isAttributeOpeningAllowed(attribute),
       onTap: () async => _openFullKnowledgePanel(attribute: attribute),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: SMALL_SPACE),
+        padding: const EdgeInsets.symmetric(vertical: VERY_SMALL_SPACE),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
-          spacing: LARGE_SPACE,
+          spacing: VERY_SMALL_SPACE,
           children: <Widget>[
             attributeIcon,
             Expanded(
