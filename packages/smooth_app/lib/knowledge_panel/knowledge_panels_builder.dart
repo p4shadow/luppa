@@ -84,23 +84,23 @@ class KnowledgePanelsBuilder {
           }
         }
 
-        final bool needEditIngredients =
-            context.read<UserPreferences>().getFlag(
-              UserPreferencesDevMode.userPreferencesFlagEditIngredients,
-            ) ??
-            false;
-        if ((product.ingredientsText == null ||
-                product.ingredientsText!.isEmpty) &&
-            needEditIngredients) {
-          // When the flag is removed, this should be the following:
-          // if (product.statesTags?.contains('en:ingredients-to-be-completed') ?? false) {
-          children.add(
-            AddOcrButton(
-              product: product,
-              editor: ProductFieldOcrIngredientEditor(),
-            ),
-          );
-        }
+        // final bool needEditIngredients =
+        //     context.read<UserPreferences>().getFlag(
+        //           UserPreferencesDevMode.userPreferencesFlagEditIngredients,
+        //         ) ??
+        //         false;
+        // if ((product.ingredientsText == null ||
+        //         product.ingredientsText!.isEmpty) &&
+        //     needEditIngredients) {
+        //   // When the flag is removed, this should be the following:
+        //   // if (product.statesTags?.contains('en:ingredients-to-be-completed') ?? false) {
+        //   children.add(
+        //     AddOcrButton(
+        //       product: product,
+        //       editor: ProductFieldOcrIngredientEditor(),
+        //     ),
+        //   );
+        // }
       }
     }
     if (children.isEmpty) {

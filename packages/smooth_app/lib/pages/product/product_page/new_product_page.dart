@@ -174,10 +174,7 @@ class ProductPageState extends State<ProductPage>
             },
             child: hasPendingOperations
                 ? const ProductPageLoadingIndicator()
-                : KeepQuestionWidgetAlive(
-                    keepWidgetAlive: _keepRobotoffQuestionsAlive,
-                    child: ProductQuestionsWidget(upToDateProduct),
-                  ),
+                : const SizedBox.shrink(),
           ),
           const ProductFooter(),
         ],

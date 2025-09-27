@@ -68,11 +68,7 @@ class KnowledgePanelTextCard extends StatelessWidget {
             appLocalizations.knowledge_panel_text_source(
               textElement.sourceText!,
             ),
-            trailingIcon: Icon(ConstantIcons.forwardIcon),
-            onPressed: () async => LaunchUrlHelper.launchURLInWebViewOrBrowser(
-              context,
-              textElement.sourceUrl!,
-            ),
+            onPressed: () {},
             borderRadius: ANGULAR_BORDER_RADIUS,
             elevation: const WidgetStatePropertyAll<double>(0.5),
             padding: const EdgeInsetsDirectional.symmetric(

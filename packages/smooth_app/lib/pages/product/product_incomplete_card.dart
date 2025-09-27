@@ -88,6 +88,6 @@ class ProductIncompleteCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return EMPTY_WIDGET;
+    return Container();
   }
 }

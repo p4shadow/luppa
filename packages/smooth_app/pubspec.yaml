@@ -1,6 +1,6 @@
 name: smooth_app
 description: The next generation of the Luppa mobile apps.
-version: 0.0.4+100
+version: 0.0.5+100
 publish_to: "none"
 
 environment:

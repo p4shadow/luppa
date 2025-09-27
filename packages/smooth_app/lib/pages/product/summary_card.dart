@@ -322,7 +322,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
           upToDateProduct.statesTags ?? List<String>.empty();
 
       // Complete basic details
-      if (statesTags.contains(
+      /* if (statesTags.contains(
             ProductState.PRODUCT_NAME_COMPLETED.toBeCompletedTag,
           ) ||
           statesTags.contains(
@@ -337,7 +337,7 @@ class _SummaryCardState extends State<SummaryCard> with UpToDateMixin {
                 : null,
           ),
         );
-      }
+      } */
     }
 
     final Widget child = Column(

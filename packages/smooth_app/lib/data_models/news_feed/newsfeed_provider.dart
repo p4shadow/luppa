@@ -27,9 +27,6 @@ class AppNewsProvider extends ChangeNotifier {
       _preferences = preferences,
       _uriOverride = preferences.getDevModeString(
         UserPreferencesDevMode.userPreferencesCustomNewsJSONURI,
-      ),
-      _prodEnv = preferences.getFlag(
-        UserPreferencesDevMode.userPreferencesFlagProd,
       ) {
     _preferences.addListener(_onPreferencesChanged);
     loadLatestNews(forceUpdate: true);
@@ -147,14 +144,11 @@ class AppNewsProvider extends ChangeNotifier {
 
   /// Based on the platform, the URL may differ
   String get _newsUrl {
-    final String env = _prodEnv != false ? 'prod' : 'dev';
-
     if (Platform.isIOS || Platform.isMacOS) {
       return 'https://luppa.ar/images/noticias/ios/noticias.json';
     } else {
       return 'https://luppa.ar/images/noticias/android/noticias.json';
     }
-    // return 'https://luppa.ar/images/noticias/android/noticias.json';
   }
 
   Future<File> get _newsCacheFile => getApplicationCacheDirectory().then(
@@ -173,7 +167,6 @@ class AppNewsProvider extends ChangeNotifier {
         DateTime.now().add(const Duration(days: -1)),
       );
 
-  bool? _prodEnv;
   String? _uriOverride;
 
   /// [ProductQuery._uriProductHelper] is not synced yet,
@@ -184,12 +177,8 @@ class AppNewsProvider extends ChangeNotifier {
           UserPreferencesDevMode.userPreferencesCustomNewsJSONURI,
         ) ??
         '';
-    final bool prodEnv =
-        _preferences.getFlag(UserPreferencesDevMode.userPreferencesFlagProd) ??
-        true;
 
-    if (prodEnv != _prodEnv || jsonURI != _uriOverride) {
-      _prodEnv = prodEnv;
+    if (jsonURI != _uriOverride) {
       _uriOverride = jsonURI;
       loadLatestNews(forceUpdate: true);
     }
