@@ -4395,14 +4395,53 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get carousel_unknown_product_title =>
-      'Congratulations!\nYou\'ve found __the rare gem!__';
+      'Oops, we don\'t have this product in our database yet 🤓.';
 
   @override
   String get carousel_unknown_product_text =>
-      'Our collaborative database contains more than **3 million products**, but this barcode doesn\'t exist: ';
+      'Thanks for helping to improve Luppa!';
 
   @override
-  String get carousel_unknown_product_button => 'Add this product';
+  String get carousel_unknown_product_button => 'Help us!';
+
+  @override
+  String get add_new_product_submission_title => 'Help us add a new product';
+
+  @override
+  String get add_new_product_submission_comments_label =>
+      'Enter any important details for you';
+
+  @override
+  String get add_new_product_submission_photo_front => 'Front photo';
+
+  @override
+  String get add_new_product_submission_photo_ingredients =>
+      'Ingredients photo';
+
+  @override
+  String get add_new_product_submission_photo_nutrition =>
+      'Nutrition facts photo';
+
+  @override
+  String get add_new_product_submission_photo_barcode => 'Barcode photo';
+
+  @override
+  String get add_new_product_submission_submit_button => 'Submit';
+
+  @override
+  String get add_new_product_submission_error_title => 'Error';
+
+  @override
+  String get add_new_product_submission_error_message =>
+      'Please add all 4 photos to submit.';
+
+  @override
+  String get add_new_product_submission_email_subject => 'New product to add';
+
+  @override
+  String add_new_product_submission_email_body(String comments) {
+    return 'Hello, I\'m sending you the information for a new product.\\n\\nComments: $comments\\n\\nThanks!';
+  }
 
   @override
   String get carousel_loading_header => 'Loading information...';
@@ -4844,6 +4883,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get no_data_message =>
       'We don\'t have complete information, consume with care.';
+
+  @override
+  String get new_product_submission_success =>
+      'Your contribution is now under review. Thanks to you, everyone will now be able to learn about this product 👏';
 
   @override
   String get sign_up_page_have_already_an_account =>

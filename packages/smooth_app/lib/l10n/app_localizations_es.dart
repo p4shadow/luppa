@@ -3486,7 +3486,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get capture => 'Nueva captura';
 
   @override
-  String get capture_new_picture => 'Sacá una foto';
+  String get capture_new_picture => 'Sacar una foto';
 
   @override
   String get choose_from_gallery => 'Seleccionar de la galería';
@@ -4488,14 +4488,53 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get carousel_unknown_product_title =>
-      '¡Felicitaciones!\n¡Encontraste __una joya rara!__';
+      'Ups, todavía no tenemos este producto en nuestra base 🤓.';
 
   @override
   String get carousel_unknown_product_text =>
-      'Nuestra base de datos contiene más de **12.000 productos**, pero este código de barras no existe: ';
+      '¡Puedes ayudar a mejorar Luppa!  Solo debes sacar unas fotos y enviarlas a nuestro equipo para que podamos agregar el producto a nuestra base de datos.\n\n**¡Gracias por tu ayuda!**';
 
   @override
-  String get carousel_unknown_product_button => 'Añadir este producto';
+  String get carousel_unknown_product_button => 'Tengo un producto Nuevo!';
+
+  @override
+  String get add_new_product_submission_title =>
+      'Ayudanos a agregar un nuevo producto';
+
+  @override
+  String get add_new_product_submission_comments_label =>
+      'Ingresa algun detalle importante para ti';
+
+  @override
+  String get add_new_product_submission_photo_front => 'Frente';
+
+  @override
+  String get add_new_product_submission_photo_ingredients => 'Ingredientes';
+
+  @override
+  String get add_new_product_submission_photo_nutrition => 'Tabla nutricional';
+
+  @override
+  String get add_new_product_submission_photo_barcode => 'Código de barras';
+
+  @override
+  String get add_new_product_submission_submit_button => 'Enviar';
+
+  @override
+  String get add_new_product_submission_error_title => 'Error';
+
+  @override
+  String get add_new_product_submission_error_message =>
+      'Por favor, agregá las 4 fotos para poder enviar.';
+
+  @override
+  String get add_new_product_submission_email_subject =>
+      'Nuevo producto para agregar';
+
+  @override
+  String add_new_product_submission_email_body(String comments) {
+    return 'Hola, les envío la información de un nuevo producto.\\n\\nComentarios: $comments\\n\\nGracias!';
+  }
 
   @override
   String get carousel_loading_header => 'Cargando información...';
@@ -4942,6 +4981,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get no_data_message =>
       'No contamos con toda la información, consumelo con cuidado.';
+
+  @override
+  String get new_product_submission_success =>
+      'Tu aporte ya está en revisión. Gracias a vos, ahora todos podrán conocer este producto 👏';
 
   @override
   String get sign_up_page_have_already_an_account =>

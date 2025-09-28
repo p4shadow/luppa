@@ -19,6 +19,7 @@ import 'package:smooth_app/pages/preferences/user_preferences_page.dart';
 import 'package:smooth_app/pages/premium/premium_page.dart';
 import 'package:smooth_app/pages/product/add_new_product/add_new_product_page.dart';
 import 'package:smooth_app/pages/product/edit_product/edit_product_page.dart';
+import 'package:smooth_app/pages/product/new_product_submission_page.dart';
 import 'package:smooth_app/pages/product/product_loader_page.dart';
 import 'package:smooth_app/pages/product/product_page/new_product_header.dart';
 import 'package:smooth_app/pages/product/product_page/new_product_page.dart';
@@ -235,6 +236,10 @@ class _SmoothGoRouter {
               path: _InternalAppRoutes.PREMIUM_PAGE,
               builder: (_, __) => const PremiumPage(),
             ),
+            GoRoute(
+              path: _InternalAppRoutes.NEW_PRODUCT_SUBMISSION_PAGE,
+              builder: (_, __) => const NewProductSubmissionPage(),
+            ),
           ],
         ),
         GoRoute(
@@ -427,6 +432,7 @@ class _InternalAppRoutes {
   static const String PRODUCT_LOADER_PAGE = '_product_loader';
   static const String PRODUCT_CREATOR_PAGE = '_product_creator';
   static const String PRODUCT_EDITOR_PAGE = '_product_editor';
+  static const String NEW_PRODUCT_SUBMISSION_PAGE = '_new_product_submission';
   static const String PREFERENCES_PAGE = '_preferences';
   static const String SEARCH_PAGE = '_search';
   static const String EXTERNAL_PAGE = '_external';
@@ -486,6 +492,9 @@ class AppRoutes {
   static String get LOGIN => '/${_InternalAppRoutes.LOGIN_PAGE}';
 
   static String get PREMIUM => '/${_InternalAppRoutes.PREMIUM_PAGE}';
+
+  static String get NEW_PRODUCT_SUBMISSION =>
+      '/${_InternalAppRoutes.NEW_PRODUCT_SUBMISSION_PAGE}';
 
   static String EXTERNAL(String path) =>
       '/${_InternalAppRoutes.EXTERNAL_PAGE}?path=${_encodePath(path)}';

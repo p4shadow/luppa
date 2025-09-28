@@ -4134,15 +4134,43 @@
   "@carousel_unknown_product_header": {
     "description": "A label on top of the carousel card when the product is not in the database (= it needs to be created)"
   },
-  "carousel_unknown_product_title": "¡Felicitaciones!\n¡Encontraste __una joya rara!__",
+  "carousel_unknown_product_title": "Ups, todavía no tenemos este producto en nuestra base 🤓.",
   "@carousel_unknown_product_title": {
     "description": "Please keep the __ syntax to underline the text"
   },
-  "carousel_unknown_product_text": "Nuestra base de datos contiene más de **12.000 productos**, pero este código de barras no existe: ",
+  "carousel_unknown_product_text": "¡Puedes ayudar a mejorar Luppa!  Solo debes sacar unas fotos y enviarlas a nuestro equipo para que podamos agregar el producto a nuestra base de datos.\n\n**¡Gracias por tu ayuda!**",
   "@carousel_unknown_product_text": {
     "description": "Please keep the ** syntax to make the text bold"
   },
-  "carousel_unknown_product_button": "Añadir este producto",
+  "carousel_unknown_product_button": "Tengo un producto Nuevo!",
+  "add_new_product_submission_title": "Ayudanos a agregar un nuevo producto",
+  "@add_new_product_submission_title": {},
+  "add_new_product_submission_comments_label": "Ingresa algun detalle importante para ti",
+  "@add_new_product_submission_comments_label": {},
+  "add_new_product_submission_photo_front": "Frente",
+  "@add_new_product_submission_photo_front": {},
+  "add_new_product_submission_photo_ingredients": "Ingredientes",
+  "@add_new_product_submission_photo_ingredients": {},
+  "add_new_product_submission_photo_nutrition": "Tabla nutricional",
+  "@add_new_product_submission_photo_nutrition": {},
+  "add_new_product_submission_photo_barcode": "Código de barras",
+  "@add_new_product_submission_photo_barcode": {},
+  "add_new_product_submission_submit_button": "Enviar",
+  "@add_new_product_submission_submit_button": {},
+  "add_new_product_submission_error_title": "Error",
+  "@add_new_product_submission_error_title": {},
+  "add_new_product_submission_error_message": "Por favor, agregá las 4 fotos para poder enviar.",
+  "@add_new_product_submission_error_message": {},
+  "add_new_product_submission_email_subject": "Nuevo producto para agregar",
+  "@add_new_product_submission_email_subject": {},
+  "add_new_product_submission_email_body": "Hola, les envío la información de un nuevo producto.\\n\\nComentarios: {comments}\\n\\nGracias!",
+  "@add_new_product_submission_email_body": {
+    "placeholders": {
+      "comments": {
+        "type": "String"
+      }
+    }
+  },
   "carousel_loading_header": "Cargando información...",
   "@carousel_loading_header": {
     "description": "A label on top of the carousel card when data about the product is loading"
@@ -4611,8 +4639,13 @@
       }
     }
   },
+  "new_product_submission_success": "Tu aporte ya está en revisión. Gracias a vos, ahora todos podrán conocer este producto 👏",
+  "@new_product_submission_success": {},
   "sign_up_page_have_already_an_account": "¿Ya tienes una cuenta? Ingresa aquí",
    "palm_oil_free": "No contiene aceite de palma",
   "palm_oil": "Contiene aceite de palma (alto en grasas saturadas)",
-  "palm_oil_unknown": "Se desconoce si contiene aceite de palma"
+  "palm_oil_unknown": "Se desconoce si contiene aceite de palma",
+  "choose_image_source_title": "Elegir fuente de la imagen",
+  "gallery_source_label": "Galería",
+  "capture_new_picture": "Sacar una foto"
 }

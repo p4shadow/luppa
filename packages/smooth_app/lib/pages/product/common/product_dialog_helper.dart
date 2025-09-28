@@ -5,10 +5,12 @@ import 'package:smooth_app/database/dao_product.dart';
 import 'package:smooth_app/database/local_database.dart';
 import 'package:smooth_app/generic_lib/bottom_sheets/smooth_bottom_sheet.dart';
 import 'package:smooth_app/generic_lib/design_constants.dart';
+import 'package:smooth_app/generic_lib/buttons/smooth_simple_button.dart';
 import 'package:smooth_app/generic_lib/dialogs/smooth_alert_dialog.dart';
 import 'package:smooth_app/generic_lib/loading_dialog.dart';
 import 'package:smooth_app/helpers/haptic_feedback_helper.dart';
 import 'package:smooth_app/l10n/app_localizations.dart';
+import 'package:smooth_app/pages/navigator/app_navigator.dart';
 import 'package:smooth_app/query/barcode_product_query.dart';
 import 'package:smooth_app/resources/app_animations.dart';
 import 'package:smooth_app/themes/smooth_theme.dart';
@@ -91,22 +93,7 @@ class ProductDialogHelper {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  TextWithBubbleParts(
-                    text: appLocalizations.new_product_found_text,
-                    backgroundColor: theme.primarySemiDark,
-                    textStyle: const TextStyle(fontSize: 15.5),
-                    bubbleTextStyle: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14.5,
-                    ),
-                    bubblePadding: const EdgeInsetsDirectional.only(
-                      top: 2.5,
-                      bottom: 3.5,
-                      start: 10.0,
-                      end: 10.0,
-                    ),
-                  ),
+                  Text(appLocalizations.new_product_found_text),
                   const SizedBox(height: LARGE_SPACE),
                   DecoratedBox(
                     decoration: BoxDecoration(
@@ -131,6 +118,15 @@ class ProductDialogHelper {
                     ),
                   ),
                   const SizedBox(height: MEDIUM_SPACE * 2),
+                  SmoothSimpleButton(
+                    child: Text(appLocalizations.new_product_found_button),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                      AppNavigator.of(
+                        context,
+                      ).push(AppRoutes.NEW_PRODUCT_SUBMISSION);
+                    },
+                  ),
                   SizedBox(
                     height:
                         MediaQuery.of(context).viewPadding.bottom + SMALL_SPACE,

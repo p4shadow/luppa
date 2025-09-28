@@ -7642,20 +7642,86 @@ abstract class AppLocalizations {
   /// Please keep the __ syntax to underline the text
   ///
   /// In en, this message translates to:
-  /// **'Congratulations!\nYou\'ve found __the rare gem!__'**
+  /// **'Oops, we don\'t have this product in our database yet 🤓.'**
   String get carousel_unknown_product_title;
 
   /// Please keep the ** syntax to make the text bold
   ///
   /// In en, this message translates to:
-  /// **'Our collaborative database contains more than **3 million products**, but this barcode doesn\'t exist: '**
+  /// **'Thanks for helping to improve Luppa!'**
   String get carousel_unknown_product_text;
 
   /// No description provided for @carousel_unknown_product_button.
   ///
   /// In en, this message translates to:
-  /// **'Add this product'**
+  /// **'Help us!'**
   String get carousel_unknown_product_button;
+
+  /// No description provided for @add_new_product_submission_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Help us add a new product'**
+  String get add_new_product_submission_title;
+
+  /// No description provided for @add_new_product_submission_comments_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter any important details for you'**
+  String get add_new_product_submission_comments_label;
+
+  /// No description provided for @add_new_product_submission_photo_front.
+  ///
+  /// In en, this message translates to:
+  /// **'Front photo'**
+  String get add_new_product_submission_photo_front;
+
+  /// No description provided for @add_new_product_submission_photo_ingredients.
+  ///
+  /// In en, this message translates to:
+  /// **'Ingredients photo'**
+  String get add_new_product_submission_photo_ingredients;
+
+  /// No description provided for @add_new_product_submission_photo_nutrition.
+  ///
+  /// In en, this message translates to:
+  /// **'Nutrition facts photo'**
+  String get add_new_product_submission_photo_nutrition;
+
+  /// No description provided for @add_new_product_submission_photo_barcode.
+  ///
+  /// In en, this message translates to:
+  /// **'Barcode photo'**
+  String get add_new_product_submission_photo_barcode;
+
+  /// No description provided for @add_new_product_submission_submit_button.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get add_new_product_submission_submit_button;
+
+  /// No description provided for @add_new_product_submission_error_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Error'**
+  String get add_new_product_submission_error_title;
+
+  /// No description provided for @add_new_product_submission_error_message.
+  ///
+  /// In en, this message translates to:
+  /// **'Please add all 4 photos to submit.'**
+  String get add_new_product_submission_error_message;
+
+  /// No description provided for @add_new_product_submission_email_subject.
+  ///
+  /// In en, this message translates to:
+  /// **'New product to add'**
+  String get add_new_product_submission_email_subject;
+
+  /// No description provided for @add_new_product_submission_email_body.
+  ///
+  /// In en, this message translates to:
+  /// **'Hello, I\'m sending you the information for a new product.\\n\\nComments: {comments}\\n\\nThanks!'**
+  String add_new_product_submission_email_body(String comments);
 
   /// A label on top of the carousel card when data about the product is loading
   ///
@@ -8454,6 +8520,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We don\'t have complete information, consume with care.'**
   String get no_data_message;
+
+  /// No description provided for @new_product_submission_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Your contribution is now under review. Thanks to you, everyone will now be able to learn about this product 👏'**
+  String get new_product_submission_success;
 
   /// No description provided for @sign_up_page_have_already_an_account.
   ///

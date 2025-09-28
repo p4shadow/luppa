@@ -4133,15 +4133,43 @@
   "@carousel_unknown_product_header": {
     "description": "A label on top of the carousel card when the product is not in the database (= it needs to be created)"
   },
-  "carousel_unknown_product_title": "Congratulations!\nYou've found __the rare gem!__",
+  "carousel_unknown_product_title": "Oops, we don't have this product in our database yet 🤓.",
   "@carousel_unknown_product_title": {
     "description": "Please keep the __ syntax to underline the text"
   },
-  "carousel_unknown_product_text": "Our collaborative database contains more than **3 million products**, but this barcode doesn't exist: ",
+  "carousel_unknown_product_text": "Thanks for helping to improve Luppa!",
   "@carousel_unknown_product_text": {
     "description": "Please keep the ** syntax to make the text bold"
   },
-  "carousel_unknown_product_button": "Add this product",
+  "carousel_unknown_product_button": "Help us!",
+  "add_new_product_submission_title": "Help us add a new product",
+  "@add_new_product_submission_title": {},
+  "add_new_product_submission_comments_label": "Enter any important details for you",
+  "@add_new_product_submission_comments_label": {},
+  "add_new_product_submission_photo_front": "Front photo",
+  "@add_new_product_submission_photo_front": {},
+  "add_new_product_submission_photo_ingredients": "Ingredients photo",
+  "@add_new_product_submission_photo_ingredients": {},
+  "add_new_product_submission_photo_nutrition": "Nutrition facts photo",
+  "@add_new_product_submission_photo_nutrition": {},
+  "add_new_product_submission_photo_barcode": "Barcode photo",
+  "@add_new_product_submission_photo_barcode": {},
+  "add_new_product_submission_submit_button": "Submit",
+  "@add_new_product_submission_submit_button": {},
+  "add_new_product_submission_error_title": "Error",
+  "@add_new_product_submission_error_title": {},
+  "add_new_product_submission_error_message": "Please add all 4 photos to submit.",
+  "@add_new_product_submission_error_message": {},
+  "add_new_product_submission_email_subject": "New product to add",
+  "@add_new_product_submission_email_subject": {},
+  "add_new_product_submission_email_body": "Hello, I'm sending you the information for a new product.\\n\\nComments: {comments}\\n\\nThanks!",
+  "@add_new_product_submission_email_body": {
+    "placeholders": {
+      "comments": {
+        "type": "String"
+      }
+    }
+  },
   "carousel_loading_header": "Loading information...",
   "@carousel_loading_header": {
     "description": "A label on top of the carousel card when data about the product is loading"
@@ -4610,8 +4638,13 @@
       }
     }
   },
+  "new_product_submission_success": "Your contribution is now under review. Thanks to you, everyone will now be able to learn about this product 👏",
+  "@new_product_submission_success": {},
   "sign_up_page_have_already_an_account": "Already have an account? Sign In",
   "palm_oil_free": "No palm oil",
   "palm_oil": "Contains palm oil (high in saturated fat)",
-  "palm_oil_unknown": "Unknown palm oil content"
+  "palm_oil_unknown": "Unknown palm oil content",
+  "choose_image_source_title": "Choose image source",
+  "gallery_source_label": "Gallery",
+  "capture_new_picture": "Take a picture"
 }
